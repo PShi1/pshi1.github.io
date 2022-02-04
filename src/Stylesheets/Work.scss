@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari');
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+$base-font-family: Manjari, Manrope, Verdana, sans-serif;
+
+.background {
+  background-color: #FCF9FF;
+}
+
+.work-page {
+  margin: 50px 200px;
+
+
+  .purple-background {
+    background-color: #DDD3FC;
+    display: initial;
+  }
+
+  .header-area {
+    width: 60%;
+    box-sizing: border-box;
+    display: inline-block;
+
+    //.purple-background:hover {
+    //  background-color: #DDD3FC;
+    //  transition: 1s;
+    //  left: 0;
+    //}
+
+    .welcome-header {
+      font-size: 96px;
+      font-family: $base-font-family;
+      line-height: 105px;
+      color: black;
+      font-style: normal;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+  }
+
+  .profile-image-area {
+    width: 40%;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .body-text {
+    font-family: $base-font-family;
+    font-size: 24px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .h4-text {
+    font-family: $base-font-family;
+    font-size: 36px;
+    line-height: 54px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .purple-text {
+    display: inline;
+    font-weight: bold;
+    color: #7043AC;
+  }
+
+  .half-width {
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+  }
+
+  .spacer-div {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 3000px){
+  .work-page {
+    .half-width {
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (max-width: 2400px){
+  .work-page {
+    .half-width {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .work-page {
+    .half-width {
+      width: 100%;
+    }
+  }
+}
+

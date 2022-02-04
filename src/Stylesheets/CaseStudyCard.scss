@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari');
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+$card-width: 640px;
+$card-top-height: 460px;
+$card-bottom-height: 200px;
+
+.case-study-card {
+  margin-bottom: 80px;
+
+  .case-study-card-top {
+    background-color: #0B2CB8;
+    border-radius: 50px 50px 0 0;
+    width: $card-width;
+    height: $card-top-height;
+    margin: auto;
+  }
+
+  .case-study-card-bottom {
+    width: $card-width;
+    height: $card-bottom-height;
+    margin: auto;
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+    padding: 0 30px 36px 30px;
+    box-sizing: border-box;
+  }
+
+  .card-header {
+    font-family: Manjari, Manrope, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #0B2CB8;
+  }
+
+  .card-title {
+    font-family: Manjari, Manrope, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: black;
+  }
+
+  .card-description {
+    font-family: Manjari, Manrope, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1700px){
+  .case-study-card {
+    .case-study-card-top {
+      width: $card-width * 0.85;
+      height: $card-top-height * 0.85;
+    }
+
+    .case-study-card-bottom {
+      width: $card-width * 0.85;
+      height: $card-bottom-height * 0.85;
+    }
+  }
+}
+
+@media screen and (max-width: 1525px){
+  .case-study-card {
+    .case-study-card-top {
+      width: $card-width * 0.75;
+      height: $card-top-height * 0.75;
+    }
+
+    .case-study-card-bottom {
+      width: $card-width * 0.75;
+      height: $card-bottom-height * 0.75;
+    }
+  }
+}
+
+@media screen and (max-width: 1525px){
+  .case-study-card {
+    .case-study-card-top {
+      width: $card-width * 0.75;
+      height: $card-top-height * 0.75;
+    }
+
+    .case-study-card-bottom {
+      width: $card-width * 0.75;
+      height: $card-bottom-height * 0.75;
+    }
+  }
+}
