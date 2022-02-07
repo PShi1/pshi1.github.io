@@ -3,55 +3,127 @@
 
 $card-width: 640px;
 $card-top-height: 460px;
-$card-bottom-height: 200px;
+$card-bottom-height: 220px;
 
 .case-study-card {
   margin-bottom: 80px;
 
+  .case-study-card-inner-area {
+    width: 640px;
+    height: 680px;
+    border-radius: 50px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+
+    .case-study-card-top {
+      background-color: #0B2CB8;
+      border-radius: 50px 50px 0 0;
+      width: $card-width;
+      height: $card-top-height;
+      margin: auto;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .case-study-card-bottom {
+      width: $card-width;
+      height: $card-bottom-height;
+      margin: auto;
+      background-color: white;
+      border-radius: 0 0 50px 50px;
+      padding: 5px 30px 36px 30px;
+      box-sizing: border-box;
+    }
+
+    .card-header {
+      font-family: Manjari, Manrope, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      color: #0B2CB8;
+    }
+
+    .card-title {
+      font-family: Manjari, Manrope, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 40px;
+      color: black;
+    }
+
+    .card-description {
+      font-family: Manjari, Manrope, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      color: black;
+      display: flex;
+    }
+  }
+}
+
+#finwell-case-study-card {
   .case-study-card-top {
     background-color: #0B2CB8;
-    border-radius: 50px 50px 0 0;
-    width: $card-width;
-    height: $card-top-height;
-    margin: auto;
   }
+}
 
-  .case-study-card-bottom {
-    width: $card-width;
-    height: $card-bottom-height;
-    margin: auto;
-    background-color: white;
-    border-radius: 0 0 50px 50px;
-    padding: 0 30px 36px 30px;
-    box-sizing: border-box;
+#finwell-case-study-card:hover {
+  top: -10px;
+  transition: all 0.5s ease-in-out;
+
+  .case-study-card-top {
+    background-color: rgba(11, 44, 184, 0.15);
   }
+}
 
-  .card-header {
-    font-family: Manjari, Manrope, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    color: #0B2CB8;
+#pivot-case-study-card {
+  .case-study-card-top {
+    background-color: #00796B;
   }
+}
 
-  .card-title {
-    font-family: Manjari, Manrope, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 40px;
-    color: black;
+#pivot-case-study-card:hover {
+  top: -10px;
+  transition: all 0.5s ease-in-out;
+
+  .case-study-card-top {
+    background-color: rgba(0, 121, 107, 0.2);
   }
+}
 
-  .card-description {
-    font-family: Manjari, Manrope, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: black;
+#sponsor-circle-case-study-card {
+  .case-study-card-top {
+    background-color: #CA3273;
+  }
+}
+
+#sponsor-circle-case-study-card:hover {
+  top: -10px;
+  transition: all 0.5s ease-in-out;
+
+  .case-study-card-top {
+    background-color: rgba(255, 212, 230, 0.4);
+  }
+}
+
+#recharge-case-study-card {
+  .case-study-card-top {
+    background-color: #58417C;
+  }
+}
+
+#recharge-case-study-card:hover {
+  top: -10px;
+  transition: all 0.5s ease-in-out;
+
+  .case-study-card-top {
+    background-color: rgba(221, 211, 252, 0.5);
   }
 }
 
