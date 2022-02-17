@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c71337-3a98-4cd2-ba7e-91aaf20680a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/FinWell.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Pivot.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Recharge.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/SponsorCircle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/profile_image.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/profile_image.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CaseStudyCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CaseStudyCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Work.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Work.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/CaseStudyCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/CaseStudyCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Work.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +68,7 @@
       <workItem from="1643925155228" duration="721000" />
       <workItem from="1643925893600" duration="8578000" />
       <workItem from="1644257177666" duration="33000" />
+      <workItem from="1645124886689" duration="12000" />
     </task>
     <servers />
   </component>

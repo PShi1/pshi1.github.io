@@ -27,25 +27,25 @@ export const Work = () => {
             <div className="half-width">
               <CaseStudyCard unFocusedColour="#0B2CB8" header="MOBILE APPLICATION | SOLO | 10 MIN READ" title="FinWell"
                              description="Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time."
-                             cardID="finwell-case-study-card"/>
+                             cardID="finwell-case-study-card" redirectLink="/finwell"/>
             </div>
 
             <div className="half-width">
               <CaseStudyCard unFocusedColour="#00796B" header="WEB APPLICATION | SOLO | 10 MIN READ" title="Pivot"
                              description="Leveraging mentorship and community to support career changers pivoting to their dream careers."
-                             cardID="pivot-case-study-card"/>
+                             cardID="pivot-case-study-card" redirectLink="/pivot"/>
             </div>
 
             <div className="half-width">
               <CaseStudyCard unFocusedColour="#CA3273" header="WEB & MOBILE APPLICATION | TEAM | 5 MIN READ" title="Sponsor Circle Internship"
                              description="Redesigning a checkout flow for a sponsorship platform."
-                             cardID="sponsor-circle-case-study-card"/>
+                             cardID="sponsor-circle-case-study-card" redirectLink="/sponsorcircle"/>
             </div>
 
             <div className="half-width">
               <CaseStudyCard unFocusedColour="#58417C" header="WEB APPLICATION | TEAM | 10 MIN READ" title="Recharge"
                              description="Reinventing what it means to take a break-by recommending break time activities based on preferences and goals."
-                             cardID="recharge-case-study-card"/>
+                             cardID="recharge-case-study-card" redirectLink="/recharge"/>
             </div>
 
           </div>

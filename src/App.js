@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 import { About } from './Pages/About';
 import { Playground } from "./Pages/Playground";
 import { Work } from "./Pages/Work";
+import { FinWell } from "./Pages/FinWell";
+import { Pivot } from "./Pages/Pivot";
+import { SponsorCircle } from "./Pages/SponsorCircle";
+import { Recharge } from "./Pages/Recharge";
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
         <Route exact path="/" element={<Work/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/playground" element={<Playground/>} />
+        <Route path="/finwell" element={<FinWell/>} />
+        <Route path="/pivot" element={<Pivot/>} />
+        <Route path="/sponsorcircle" element={<SponsorCircle/>} />
+        <Route path="/recharge" element={<Recharge/>} />
       </Routes>
     </Router>
   );

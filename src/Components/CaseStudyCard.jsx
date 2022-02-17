@@ -1,12 +1,14 @@
 import React from 'react';
 import "../Stylesheets/CaseStudyCard.scss"
 
-export const CaseStudyCard = ({cardID, unFocusedColour, header, title, description}) => {
+export const CaseStudyCard = ({cardID, unFocusedColour, header, title, description, redirectLink}) => {
 
-
+  const redirect = () => {
+    window.location.assign(redirectLink);
+  }
   return (
     <div className="case-study-card">
-      <div className="case-study-card-inner-area" id={cardID}>
+      <div className="case-study-card-inner-area" id={cardID} onClick={redirect}>
         <div className="case-study-card-top">
 
         </div>
