@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Manjari');
-@import url('https://fonts.googleapis.com/css2?family=Manrope');
-
-$base-font-family: Manjari, Manrope, Verdana, sans-serif;
+@import 'index';
 
 .background {
-  background-color: #FCF9FF;
+  background-color: $background-color;
 }
 
 .work-page {
-  margin: 50px 200px;
+  margin: 0 200px;
 
 
   .purple-background {
@@ -27,8 +24,6 @@ $base-font-family: Manjari, Manrope, Verdana, sans-serif;
     box-sizing: border-box;
     display: inline-block;
 
-
-
     .welcome-header {
       font-size: 96px;
       font-family: $base-font-family;
@@ -46,13 +41,6 @@ $base-font-family: Manjari, Manrope, Verdana, sans-serif;
     display: inline-block;
   }
 
-  .body-text {
-    font-family: $base-font-family;
-    font-size: 24px;
-    line-height: 36px;
-    font-style: normal;
-    font-weight: normal;
-  }
 
   .h4-text {
     font-family: $base-font-family;

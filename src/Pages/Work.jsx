@@ -18,8 +18,8 @@ export const Work = () => {
           </div>
 
           <div>
-            <p className="body-text">An empathetic and coffee-infused <div className="purple-background">product designer</div> passionate about creating user-focused experiences that work together with pixel-perfect designs to bring a smile to your face. </p>
-            <p className="body-text">I’m currently building <div className="purple-background">web-based solutions to empower startup innovators to change the world @ Moken Agency.</div></p>
+            <p className="body-font">An empathetic and coffee-infused <div className="purple-background">product designer</div> passionate about creating user-focused experiences that work together with pixel-perfect designs to bring a smile to your face. </p>
+            <p className="body-font">I’m currently building <div className="purple-background">web-based solutions to empower startup innovators to change the world @ Moken Agency.</div></p>
             <h4 className="h4-text">I’m also <div className="purple-text">an engaging story teller.</div></h4>
           </div>
 

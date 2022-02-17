@@ -1,0 +1,99 @@
+@import 'index';
+
+.nav-wrapper {
+  background: $background-color;
+
+  .navbar {
+    color: rgb(13, 26, 38);
+    position: initial;
+    top: 0;
+    height: 100px;
+    line-height: 60px;
+    width: 90%;
+    text-align: center;
+    z-index: 10;
+    display: block;
+    margin: auto;
+
+    .logo {
+      float: left;
+      height: 60px;
+      margin: 10px;
+    }
+
+    .menu {
+      display: inline-block;
+      float: right;
+      list-style: none;
+      margin-right: 14px;
+      text-align: right;
+      transition: transform 0.5s ease-out;
+      -webkit-transition: transform 0.5s ease-out;
+
+      .menu-item {
+        display: inline-block;
+        margin: 0 50px;
+
+        a {
+          display: block;
+          position: relative;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+        }
+
+        a:hover {
+          /* border-bottom: 1px solid rgb(28, 121, 184); */
+          color: rgb(28, 121, 184);
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+        }
+
+        /* Animated Bottom Line */
+        a:before, a:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          bottom: -1px;
+          background: rgb(13, 26, 38);
+        }
+
+        a:before {
+          left: 0;
+          transition: 0.5s;
+        }
+
+        a:after {
+          background: rgb(13, 26, 38);
+          right: 0;
+          /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+        }
+
+        a:hover:before {
+          background: rgb(13, 26, 38);
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        a:hover:after {
+          background: transparent;
+          width: 100%;
+          /* transition: 0s; */
+        }
+      }
+    }
+    @media(max-width: 640px) {
+      #navbar ul {
+        display: none;
+      }
+    }
+    @media(orientation: landscape) {
+      #navbar ul {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
