@@ -3,6 +3,8 @@
 
 // 0. Margins
 $default-margin-width: 80%;
+$default-mobile-margin-width: 95%;
+$mobile-view-max-width: 600px;
 
 // 1. Colours
 $white: #ffffff;
@@ -24,8 +26,8 @@ $base-font-family: Manjari, Manrope, Verdana, sans-serif;
 
 .body-font {
   font-family: $base-font-family;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: max(1.5vw, 24px);
+  line-height: max(2.25vw, 36px);
   font-style: normal;
   font-weight: normal;
 }

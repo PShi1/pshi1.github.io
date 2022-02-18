@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Stylesheets/CaseStudyCard.scss"
 
-export const CaseStudyCard = ({cardID, unFocusedColour, opacity, header, title, description, redirectLink, image}) => {
+export const CaseStudyCard = ({cardID, unFocusedColour, opacity, headerColour, header, title, description, redirectLink, image}) => {
 
   const redirect = () => {
     window.location.assign(redirectLink);
@@ -16,7 +16,7 @@ export const CaseStudyCard = ({cardID, unFocusedColour, opacity, header, title, 
           <img className="card-image" src={image} alt="image"/>
         </div>
         <div className="case-study-card-bottom" >
-          <h3 className="card-header" style={{color: `${unFocusedColour}`}}>{header}</h3>
+          <h3 className="card-header" style={{color: `${headerColour}`}}>{header}</h3>
           <h1 className="card-title"><div className="card-title-highlight">{title}</div></h1>
           <p className="card-description">{description}</p>
         </div>
