@@ -18,7 +18,7 @@ export const Work = () => {
 
     let elements = document.getElementsByClassName("highlight");
 
-    let delay = 0;
+    let delay = 500;
     for (const element of elements) {
       let pos = element.scrollTop;
       setTimeout(() => highlightElement(element, scroll, height, pos), delay);
@@ -37,7 +37,7 @@ export const Work = () => {
         <div className="work-page">
           <div className="row">
             <div className="header-area">
-              <h1 className="welcome-header">Hey there! I'm <div className="purple-background highlight"><p className="highlighted-text">Emma</p></div></h1>
+              <h1 className="welcome-header">Hey there! I'm <div className="purple-background highlight fast"><p className="highlighted-text">Emma</p></div></h1>
               <img id="underline" src={Underline} alt="Underline"/>
             </div>
             <div className="profile-image-area">
@@ -46,7 +46,7 @@ export const Work = () => {
           </div>
 
           <div>
-            <p className="body-font">An empathetic and coffee-infused <div className="purple-background highlight">product designer</div> passionate about creating user-focused experiences that work together with pixel-perfect designs to bring a smile to your face. </p>
+            <p className="body-font">An empathetic and coffee-infused <div className="purple-background highlight fast">product designer</div> passionate about creating user-focused experiences that work together with pixel-perfect designs to bring a smile to your face. </p>
             <p className="body-font">I’m currently building <div className="purple-background highlight">products to empower startup innovators to change the world @ Moken.</div></p>
             <h4 className="h4-text">I’m also <div className="purple-text">an engaging story teller.</div></h4>
           </div>
