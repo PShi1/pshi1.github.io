@@ -5,12 +5,77 @@
 }
 
 .work-page {
-  margin: 0 200px;
+  width: 80%;
+  padding: 30px 0 0 0;
+  margin: auto;
 
+  .row {
+    display: inline-flex;
+    margin-bottom: 20px;
+
+    .header-area {
+      width: 70%;
+      box-sizing: border-box;
+      display: block;
+      margin: auto;
+      padding-bottom: 15px;
+
+      .welcome-header {
+        font-size: 6vw;
+        font-family: $base-font-family;
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1em;
+        margin: 0;
+      }
+
+      #underline {
+        width: 97%;
+      }
+    }
+
+    .profile-image-area {
+      width: 30%;
+      box-sizing: border-box;
+      display: inline-block;
+
+      #profile-image {
+        float: right;
+        width: 90%;
+      }
+    }
+  }
 
   .purple-background {
-    background-color: white;
+    background-color: $background-color;
+    margin: 0;
+    padding-bottom: 0;
     display: inline-block;
+
+    .highlighted-text {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  .highlight{
+    display: inline-block;
+    width: max-content;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,$background-color 50%,$lilac 50%);
+    background-position: 0 0;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .highlight.active{
+    animation-name: highlight;
+  }
+
+  @keyframes highlight {
+    from {background-position: 0 0;}
+    to {background-position: -100% 0;}
   }
 
   .purple-background:hover {
@@ -18,29 +83,6 @@
     //left: 0;
     box-shadow: inset 276px 0 0 0 #DDD3FC;
   }
-
-  .header-area {
-    width: 60%;
-    box-sizing: border-box;
-    display: inline-block;
-
-    .welcome-header {
-      font-size: 96px;
-      font-family: $base-font-family;
-      line-height: 105px;
-      color: black;
-      font-style: normal;
-      font-weight: normal;
-      margin-bottom: 30px;
-    }
-  }
-
-  .profile-image-area {
-    width: 40%;
-    box-sizing: border-box;
-    display: inline-block;
-  }
-
 
   .h4-text {
     font-family: $base-font-family;

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../Assets/coffee-cup 1.svg";
+import logo from "../Assets/CoffeeCupImage.svg";
 import {Link} from "react-router-dom";
 import '../Stylesheets/Header.scss';
 
@@ -22,7 +22,7 @@ export const Header = () => {
           <li className="menu-item"><Link to="/playground">
             <p className="header-font">Playground</p>
           </Link></li>
-          <div className="secondary-button menu-item">
+          <div className="secondary-button menu-item" id="resume-button">
             <p className="header-font">Resume</p>
           </div>
         </ul>
