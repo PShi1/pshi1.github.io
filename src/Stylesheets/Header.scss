@@ -1,7 +1,7 @@
 @import 'index';
 
 .nav-wrapper {
-  background: $background-color;
+  background: $white;
   display: flow-root;
 
   .navbar {
@@ -86,6 +86,7 @@
       }
 
       #resume-button {
+        background-color: $white;
         margin-right: 0;
       }
     }

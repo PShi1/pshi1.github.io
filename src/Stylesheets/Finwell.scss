@@ -1,10 +1,13 @@
 @import 'index';
 
+$smaller-margin-width: 60%;
+
 .finwell-page {
-  width: $default-margin-width;
   margin: auto;
 
   .intro-wrapper {
+    width: $default-margin-width;
+    margin: auto;
     display: flex;
 
     .left-column, .right-column {
@@ -22,6 +25,35 @@
         line-height: max(24px, 3vw);
       }
 
+      .left-float, .right-float {
+        position: relative;
+        left: 0;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+      }
+
+      .left-float.active {
+        animation-name: float-in-from-left;
+      }
+
+      .right-float.active {
+        animation-name: float-in-from-right;
+      }
+
+      @keyframes float-in-from-left {
+        from {left: -50%;
+          opacity: 0;}
+        to {left: 0;
+          opacity: 100%;}
+      }
+
+      @keyframes float-in-from-right {
+        from {left: 50%;
+          opacity: 0;}
+        to {left: 0;
+          opacity: 100%;}
+      }
+
       #samsung-phones {
         width: 100%;
         margin-top: 10%;
@@ -33,6 +65,21 @@
       flex-direction: column;
       justify-content: center;
     }
+  }
+
+  .appear-on-scroll {
+    opacity: 0;
+    animation-duration: 1.5s;
+  }
+
+  .appear-on-scroll.active {
+    animation-name: appearOnScroll;
+    opacity: 100%;
+  }
+
+  @keyframes appearOnScroll {
+    from {transform: translateY(25%); opacity: 0;}
+    to {transform: translateY(0); opacity: 100%;}
   }
 
   .section-header {
@@ -63,6 +110,8 @@
 
   .overview {
     margin: 100px auto;
+    width: $smaller-margin-width;
+
     .left-column {
       display: inline-block;
       width: 60%;
@@ -78,7 +127,8 @@
   }
 
   .approaches {
-    margin-bottom: 60px;
+    margin: 0 auto 60px auto;
+    width: $smaller-margin-width;
 
     .column {
       display: inline-block;
@@ -93,6 +143,9 @@
   }
 
   .designed-solution {
+    width: $default-margin-width;
+    margin: auto;
+
     .solution-title {
       font-family: $manrope-font-family;
       font-weight: 700;

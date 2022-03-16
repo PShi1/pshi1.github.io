@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../Stylesheets/Finwell.scss';
 import SamsungImage from '../Assets/Samsung.jpg'
 import FinWellImage from '../Assets/Finwell.svg'
@@ -8,19 +8,59 @@ import iPhone3 from '../Assets/iPhone3.svg'
 import iPhone4 from '../Assets/iPhone4.svg'
 
 export const FinWell = () => {
+
+  useEffect(() => {
+    fadeInIntro();
+    fadeInOnScroll();
+  }, []);
+
+  const fadeInIntro = () => {
+    let leftElements = document.getElementsByClassName("left-float");
+    leftElements[0].classList.add("active");
+    leftElements[1].classList.add("active");
+    // for (const element in elements) {
+    //   element.classList.add("active");
+    // }
+
+    let rightElements = document.getElementsByClassName("right-float");
+    rightElements[0].classList.add("active");
+    // for (const element in elements) {
+    //   element.classList.add("active");
+    // }
+  }
+
+  const fadeInOnScroll = () => {
+    let elements = document.getElementsByClassName("appear-on-scroll");
+    let scroll = window.scrollY;
+    let innerHeight = window.innerHeight;
+    window.addEventListener("scroll", () => {
+      scroll = window.scrollY;
+      console.log("scroll: " + scroll);
+
+      for (const element of elements) {
+        let pos = element.offsetTop;
+        console.log(pos);
+        if (scroll + innerHeight / 1.3 >= pos) {
+          element.classList.add("active");
+        }
+      }
+    })
+
+  }
+
   return (
     <div className="finwell-page">
       <div className="intro-wrapper">
         <div className="left-column">
-          <img id="finwell-logo" src={FinWellImage} alt="finwell logo"/>
-          <p id="finwell-description">Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time.</p>
+          <img id="finwell-logo" className="left-float" src={FinWellImage} alt="finwell logo"/>
+          <p id="finwell-description" className="left-float">Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time.</p>
         </div>
         <div className="right-column">
-          <img id="samsung-phones" src={SamsungImage} alt="samsung phones"/>
+          <img className="right-float" id="samsung-phones" src={SamsungImage} alt="samsung phones"/>
         </div>
       </div>
 
-      <div className="overview">
+      <div className="overview appear-on-scroll">
         <h2 className="section-header">Overview</h2>
         <div className="left-column">
           <h3 className="section-subheader">Problem</h3>
@@ -44,7 +84,7 @@ export const FinWell = () => {
         </div>
       </div>
 
-      <div className="approaches">
+      <div className="approaches appear-on-scroll">
         <h2 className="section-header">Approach</h2>
         <div className="column">
           <h3 className="section-subheader"><strong>01</strong> Discovery</h3>
@@ -88,7 +128,7 @@ export const FinWell = () => {
         </div>
       </div>
 
-      <div className="designed-solution">
+      <div className="designed-solution appear-on-scroll">
         <h2 className="section-header">Designed Solution</h2>
         <div className="intelligent-budgeting">
           <div className="left-column">
