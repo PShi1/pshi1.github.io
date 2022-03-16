@@ -32,8 +32,20 @@ export const Work = () => {
     }
   }
 
+
   return (
       <div className="background">
+        {/*<div className="parallax-wrapper">*/}
+        {/*  <header className="parallax-header">*/}
+        {/*    <img src={RechargeImage} className="parallax-background">*/}
+
+        {/*    </img>*/}
+        {/*    <img src={FinWellImage} className="parallax-foreground">*/}
+
+        {/*    </img>*/}
+        {/*    <h1 className="parallax-title">Welcome!</h1>*/}
+        {/*  </header>*/}
+        {/*</div>*/}
         <div className="work-page">
           <div className="row">
             <div className="header-area">

@@ -8,12 +8,14 @@ $mobile-view-max-width: 600px;
 
 // 1. Colours
 $white: #ffffff;
+$finwell-blue: #0B22B8;
 $black: #000000;
 $lilac: #DDD3FC;
 $background-color: #FCF9FF;
 
 // 2. Fonts
 $base-font-family: Manjari, Manrope, Verdana, sans-serif;
+$manrope-font-family: Manrope, sans-serif;
 
 .header-font {
   font-family: $base-font-family;
@@ -22,6 +24,10 @@ $base-font-family: Manjari, Manrope, Verdana, sans-serif;
   color: $black;
   font-style: normal;
   font-weight: normal;
+}
+
+.header-32px-font {
+
 }
 
 .body-font {
