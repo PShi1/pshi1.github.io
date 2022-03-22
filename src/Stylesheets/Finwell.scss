@@ -5,6 +5,50 @@ $smaller-margin-width: 60%;
 .finwell-page {
   margin: auto;
 
+  .testing {
+    height: 1000px;
+    width: 100%;
+    display: inline-flex;
+
+    .right-box {
+      background-color: #f8f8f8;
+      height: 1000px;
+      display: inline-flex;
+      width: 50%;
+      box-sizing: border-box;
+      animation-duration: 2s;
+    }
+
+    .right-box.active {
+      width: 0;
+      animation-name: fill-sideways2;
+    }
+
+    .left-box {
+      background-color: $lilac;
+      height: 1000px;
+      display: inline-flex;
+      width: 50%;
+      box-sizing: border-box;
+      animation-duration: 2s;
+    }
+
+    .left-box.active {
+      width: 100%;
+      animation-name: fill-sideways;
+    }
+
+    @keyframes fill-sideways {
+      from {width: 50%;}
+      to {width: 100%;}
+    }
+
+    @keyframes fill-sideways2 {
+      from {width: 50%;}
+      to {width: 0;}
+    }
+  }
+
   .intro-wrapper {
     width: $default-margin-width;
     margin: auto;
@@ -168,6 +212,25 @@ $smaller-margin-width: 60%;
       line-height: 3vw;
     }
 
+    #intelligent-budgeting-bubbles, #purchase-tracking-bubbles, #actionable-insights-bubbles {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      width: 100%;
+    }
+
+    #intelligent-budgeting-bubbles {
+      transform: translateY(-8%);
+    }
+
+    #purchase-tracking-bubbles {
+      transform: translateY(-10%);
+    }
+
+    #actionable-insights-bubbles {
+      transform: translateY(33%);
+    }
+
     .intelligent-budgeting {
       display: flex;
 
@@ -215,22 +278,26 @@ $smaller-margin-width: 60%;
       }
     }
 
-    .actionable-insights {
-      display: flex;
+    #actionable-insights-container {
+      margin-top: 20%;
 
-      .left-column {
-        width: 60%;
-        display: inline-block;
-        box-sizing: border-box;
-      }
+      .actionable-insights {
+        display: flex;
 
-      .right-column {
-        width: 40%;
-        display: inline-block;
-        box-sizing: border-box;
+        .left-column {
+          width: 60%;
+          display: inline-block;
+          box-sizing: border-box;
+        }
 
-        img {
-          width: 100%;
+        .right-column {
+          width: 40%;
+          display: inline-block;
+          box-sizing: border-box;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }

@@ -6,13 +6,43 @@ import iPhone1 from '../Assets/iPhone1.svg'
 import iPhone2 from '../Assets/iPhone2.svg'
 import iPhone3 from '../Assets/iPhone3.svg'
 import iPhone4 from '../Assets/iPhone4.svg'
+import IntelligentBudgetingBubbles from '../Assets/IntelligentBudgetingBubbles.svg';
+import PurchaseTrackingBubbles from '../Assets/PurchaseTrackingBubbles.svg';
+import ActionableInsightsBubbles from '../Assets/ActionableInsightsBubbles.svg';
 
 export const FinWell = () => {
 
   useEffect(() => {
+    // fadeInTesting();
     fadeInIntro();
     fadeInOnScroll();
   }, []);
+
+  const fadeInTesting = () => {
+    document.scrollingElement.addEventListener("wheel", (event) => {
+      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+      event.preventDefault();
+    })
+
+    window.addEventListener("scroll", () => {
+      let elements = document.getElementsByClassName("left-box");
+      if (window.scrollY > elements[0].offsetTop) {
+        elements[0].classList.add("active");
+      }
+      let elements2 = document.getElementsByClassName("right-box");
+      if (window.scrollY > elements2[0].offsetTop) {
+        elements2[0].classList.add("active");
+      }
+
+      // if (window.scrollY - window.innerHeight > elements[0].offsetTop) {
+      //   elements[0].classList.replace("active", "");
+      // }
+      // if (window.scrollY - window.innerHeight > elements2[0].offsetTop) {
+      //   elements2[0].classList.replace("active", "");
+      // }
+    }, (e) => {e.preventDefault(); e.stopPropagation();})
+
+  }
 
   const fadeInIntro = () => {
     let leftElements = document.getElementsByClassName("left-float");
@@ -50,6 +80,15 @@ export const FinWell = () => {
 
   return (
     <div className="finwell-page">
+      {/*<div className="testing">*/}
+      {/*  <div className="left-box">*/}
+
+      {/*  </div>*/}
+      {/*  <div className="right-box">*/}
+
+      {/*  </div>*/}
+      {/*</div>*/}
+
       <div className="intro-wrapper">
         <div className="left-column">
           <img id="finwell-logo" className="left-float" src={FinWellImage} alt="finwell logo"/>
@@ -128,41 +167,50 @@ export const FinWell = () => {
         </div>
       </div>
 
-      <div className="designed-solution appear-on-scroll">
-        <h2 className="section-header">Designed Solution</h2>
-        <div className="intelligent-budgeting">
-          <div className="left-column">
-            <img src={iPhone1} alt=""/>
+      <div className="designed-solution">
+        <img id="intelligent-budgeting-bubbles" src={IntelligentBudgetingBubbles} alt=""/>
+        <div className="appear-on-scroll">
+          <h2 className="section-header">Designed Solution</h2>
+          <div className="intelligent-budgeting">
+            <div className="left-column">
+              <img src={iPhone1} alt=""/>
 
-          </div>
-          <div className="right-column">
-            <h1 className="solution-title">Intelligent Budgeting</h1>
-            <h2 className="solution-subtitle">A financial tool that adapts to you.</h2>
-            <p className="solution-text">A budget that adjusts based on spending habits which allows you to make adjustments to fit your life stage or life style.</p>
-            <img src={iPhone2} alt=""/>
+            </div>
+            <div className="right-column">
+              <h1 className="solution-title">Intelligent Budgeting</h1>
+              <h2 className="solution-subtitle">A financial tool that adapts to you.</h2>
+              <p className="solution-text">A budget that adjusts based on spending habits which allows you to make adjustments to fit your life stage or life style.</p>
+              <img src={iPhone2} alt=""/>
+            </div>
           </div>
         </div>
 
-        <div className="purchase-tracking">
-          <div className="left-column">
-            <img src={iPhone3} alt=""/>
-          </div>
-          <div className="right-column">
-            <h1 className="solution-title">Purchase Tracking</h1>
-            <h2 className="solution-subtitle">Track your thoughts and feelings towards a purchase over time.</h2>
-            <p className="solution-text">FinWell helps you track how you feel about certain purchases over time to increase mindfulness and ensure
-              you’re purchasing things that give the most value. </p>
+        <img id="purchase-tracking-bubbles" src={PurchaseTrackingBubbles} alt=""/>
+        <div className="appear-on-scroll">
+          <div className="purchase-tracking">
+            <div className="left-column">
+              <img src={iPhone3} alt=""/>
+            </div>
+            <div className="right-column">
+              <h1 className="solution-title">Purchase Tracking</h1>
+              <h2 className="solution-subtitle">Track your thoughts and feelings towards a purchase over time.</h2>
+              <p className="solution-text">FinWell helps you track how you feel about certain purchases over time to increase mindfulness and ensure
+                you’re purchasing things that give the most value. </p>
+            </div>
           </div>
         </div>
 
-        <div className="actionable-insights">
-          <div className="left-column">
-            <h1 className="solution-title">Actionable Insights</h1>
-            <h2 className="solution-subtitle">Reflect and adapt to build better financial habits.</h2>
-            <p className="solution-text">FinWell's AI produces actionable insights for reflection and let's you know any areas for improvements.</p>
-          </div>
-          <div className="right-column">
-            <img src={iPhone4} alt=""/>
+        <img id="actionable-insights-bubbles" src={ActionableInsightsBubbles} alt=""/>
+        <div className="appear-on-scroll" id="actionable-insights-container">
+          <div className="actionable-insights">
+            <div className="left-column">
+              <h1 className="solution-title">Actionable Insights</h1>
+              <h2 className="solution-subtitle">Reflect and adapt to build better financial habits.</h2>
+              <p className="solution-text">FinWell's AI produces actionable insights for reflection and let's you know any areas for improvements.</p>
+            </div>
+            <div className="right-column">
+              <img src={iPhone4} alt=""/>
+            </div>
           </div>
         </div>
 
