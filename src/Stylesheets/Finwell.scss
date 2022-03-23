@@ -1,6 +1,7 @@
 @import 'index';
 
 $smaller-margin-width: 60%;
+$medium-margin-width: 70%;
 
 .finwell-page {
   margin: auto;
@@ -318,6 +319,100 @@ $smaller-margin-width: 60%;
           font-family: $manrope-font-family;
         }
       }
+    }
+  }
+
+  .discovery {
+    .large-margins {
+      width: $smaller-margin-width;
+      margin: auto;
+    }
+
+    .medium-margins {
+      width: $default-margin-width;
+      margin: auto;
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 10%;
+      font-family: $manrope-font-family;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+
+      strong {
+        color: $finwell-blue;
+      }
+    }
+
+    h4 {
+      font-family: $manrope-font-family;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    p, .body-font-18px {
+      font-family: $manrope-font-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 36px;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    ul {
+      margin-top: 5px;
+    }
+
+    ol {
+      margin-top: 0;
+    }
+
+    .grey-text {
+      color: #828282;
+    }
+
+    .row {
+      display: flex;
+      margin-bottom: 4%;
+    }
+
+    .no-bottom-margin {
+      margin-bottom: 0;
+    }
+
+    .left-column {
+      width: 50%;
+      box-sizing: border-box;
+      display: inline-block;
+      float: left;
+      padding-right: 6%;
+    }
+
+    .right-column {
+      width: 50%;
+      box-sizing: border-box;
+      display: inline-block;
+      float: right;
+      padding-left: 6%;
+    }
+
+    #competitive-analysis-header {
+      margin-top: 4%;
+      margin-bottom: 0;
+    }
+
+    #competitive-analysis-image {
+      width: 100%;
+    }
+
+    .image {
+      width: 100%;
     }
   }
 }
