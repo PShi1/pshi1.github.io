@@ -20,86 +20,58 @@ import ConfidentCarl from '../Assets/ConfidentCarl.png';
 import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
 
+/**
+ * FinWell page component
+ */
 export const FinWell = () => {
 
+  /**
+   * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
+   */
   useEffect(() => {
-    // fadeInTesting();
-    fadeInIntro();
-    fadeInOnScroll();
+    window.addEventListener('load', () => {
+      fadeInOnScroll();
+      fadeInIntro();
+    })
   }, []);
 
-  const fadeInTesting = () => {
-    document.scrollingElement.addEventListener("wheel", (event) => {
-      event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
-      event.preventDefault();
-    })
-
-    window.addEventListener("scroll", () => {
-      let elements = document.getElementsByClassName("left-box");
-      if (window.scrollY > elements[0].offsetTop) {
-        elements[0].classList.add("active");
-      }
-      let elements2 = document.getElementsByClassName("right-box");
-      if (window.scrollY > elements2[0].offsetTop) {
-        elements2[0].classList.add("active");
-      }
-
-      // if (window.scrollY - window.innerHeight > elements[0].offsetTop) {
-      //   elements[0].classList.replace("active", "");
-      // }
-      // if (window.scrollY - window.innerHeight > elements2[0].offsetTop) {
-      //   elements2[0].classList.replace("active", "");
-      // }
-    }, (e) => {e.preventDefault(); e.stopPropagation();})
-
-  }
-
+  /**
+   * Fades in the finwell intro part, by adding active class to all elements needed
+   */
   const fadeInIntro = () => {
     let leftElements = document.getElementsByClassName("left-float");
-    leftElements[0].classList.add("active");
-    leftElements[1].classList.add("active");
-    // for (const element in elements) {
-    //   element.classList.add("active");
-    // }
+    for (const element of leftElements) {
+      element.classList.add("active");
+    }
 
     let rightElements = document.getElementsByClassName("right-float");
-    rightElements[0].classList.add("active");
-    // for (const element in elements) {
-    //   element.classList.add("active");
-    // }
+    for (const element of rightElements) {
+      element.classList.add("active");
+    }
   }
 
+  /**
+   * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen
+   */
   const fadeInOnScroll = () => {
     let elements = document.getElementsByClassName("appear-on-scroll");
     let scroll = window.scrollY;
     let innerHeight = window.innerHeight;
     window.addEventListener("scroll", () => {
       scroll = window.scrollY;
-      console.log("scroll: " + scroll);
 
       for (const element of elements) {
         let pos = element.offsetTop;
-        console.log(pos);
         if (scroll + innerHeight / 1.3 >= pos) {
           element.classList.add("active");
         }
       }
     })
-
   }
 
   return (
     <div className="finwell-page">
-      {/*<div className="testing">*/}
-      {/*  <div className="left-box">*/}
-
-      {/*  </div>*/}
-      {/*  <div className="right-box">*/}
-
-      {/*  </div>*/}
-      {/*</div>*/}
-
-      <div className="intro-wrapper">
+      <div className="intro-wrapper foreground">
         <div className="left-column">
           <img id="finwell-logo" className="left-float" src={FinWellImage} alt="finwell logo"/>
           <p id="finwell-description" className="left-float">Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time.</p>
@@ -334,7 +306,7 @@ export const FinWell = () => {
               <p>“The biggest offenders are definitely takeout and shopping, those two categories make up around 30% of my expenses every month.”</p>
             </ul>
           </div>
-            <img className="image" src={AffinityMap} alt=""/>
+          <img className="image" src={AffinityMap} alt=""/>
 
           <div className="large-margins">
             <h4>User Personas</h4>
@@ -352,8 +324,8 @@ export const FinWell = () => {
           </div>
           <img src={EmpathyMap1} alt="" className="image"/>
           <img src={EmpathyMap2} alt="" className="image"/>
+        </div>
       </div>
-    </div>
   </div>
   )
 }

@@ -20,18 +20,23 @@ export const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="left-column">
-        <img src={Coffee} alt="coffee"/>
-      </div>
-      <div className="center-column">
-        <p className="large-text"> Let's chat! </p>
-        <p className="medium-text"> Designed & coded with 💜 and lots of ☕️ </p>
-        <p className="small-text"> Emma Li @ 2021 All Rights Reserved </p>
-      </div>
-      <div className="right-column">
-        <img src={InstagramIcon} alt="instagram" onClick={redirectInstagram}/>
-        <img src={LinkedinIcon} alt="linkedin" onClick={redirectLinkedin}/>
-        <img src={MailIcon} alt="email" onClick={redirectEmail}/>
+      <div className="foreground">
+        <div className="margins">
+          <div className="left-column">
+            <img src={Coffee} alt="coffee"/>
+          </div>
+          <div className="center-column">
+            <p className="large-text"> Let's chat! </p>
+            <p className="medium-text"> Designed & coded with 💜 and lots of ☕️ </p>
+            <p className="small-text"> Emma Li @ 2021 All Rights Reserved </p>
+          </div>
+          <div className="right-column">
+            <img src={InstagramIcon} alt="instagram" onClick={redirectInstagram}/>
+            <img src={LinkedinIcon} alt="linkedin" onClick={redirectLinkedin}/>
+            <img src={MailIcon} alt="email" onClick={redirectEmail}/>
+          </div>
+        </div>
+
       </div>
     </div>
   )
