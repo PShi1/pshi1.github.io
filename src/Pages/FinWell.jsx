@@ -19,6 +19,7 @@ import AnxiousAnnie from '../Assets/AnxiousAnnie.png';
 import ConfidentCarl from '../Assets/ConfidentCarl.png';
 import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
+import DownArrowWhite from '../Assets/downArrowSmallWhite.gif';
 
 /**
  * FinWell page component
@@ -32,6 +33,7 @@ export const FinWell = () => {
     window.addEventListener('load', () => {
       fadeInOnScroll();
       fadeInIntro();
+      removeDownArrow();
     })
   }, []);
 
@@ -48,6 +50,20 @@ export const FinWell = () => {
     for (const element of rightElements) {
       element.classList.add("active");
     }
+  }
+
+  const removeDownArrow = () => {
+    let element = document.getElementById("down-arrow-second");
+    let scroll = window.scrollY;
+    let innerHeight = window.innerHeight;
+    window.addEventListener("scroll", () => {
+      scroll = window.scrollY;
+
+      let pos = element.offsetTop;
+      if ((scroll + innerHeight) / 1.3 >= pos) {
+        element.classList.add("active");
+      }
+    })
   }
 
   /**
@@ -79,9 +95,10 @@ export const FinWell = () => {
         <div className="right-column">
           <img className="right-float" id="samsung-phones" src={SamsungImage} alt="samsung phones"/>
         </div>
+        <img className="down-arrow" id="down-arrow-second" src={DownArrowWhite} alt=""/>
       </div>
 
-      <div className="overview appear-on-scroll">
+      <div className="overview">
         <h2 className="section-header">Overview</h2>
         <div className="left-column">
           <h3 className="section-subheader">Problem</h3>
@@ -105,7 +122,7 @@ export const FinWell = () => {
         </div>
       </div>
 
-      <div className="approaches appear-on-scroll">
+      <div className="approaches">
         <h2 className="section-header">Approach</h2>
         <div className="column">
           <h3 className="section-subheader"><strong>01</strong> Discovery</h3>
@@ -204,127 +221,122 @@ export const FinWell = () => {
       </div>
 
       <div className="discovery">
-        <div className="appear-on-scroll">
+        <div className="large-margins">
+          <h3><strong>01</strong> Discovery</h3>
+          <h4>Secondary Research</h4>
+          <p className="body-font">I discovered through secondary research that the way young adults make financial decisions is very intertwined
+            with both their emotional state and lifestyle choices. In addition, there is very limited exposure to financial
+            literacy through school. With student debt and credit debt on the rise, the average person’s ability to budget
+            and save is diminishing. Here are some key statistics I discovered from online sources about young adults living in America:
+          </p>
 
-          <div className="large-margins">
-            <h3><strong>01</strong> Discovery</h3>
-            <h4>Secondary Research</h4>
-            <p className="body-font">I discovered through secondary research that the way young adults make financial decisions is very intertwined
-              with both their emotional state and lifestyle choices. In addition, there is very limited exposure to financial
-              literacy through school. With student debt and credit debt on the rise, the average person’s ability to budget
-              and save is diminishing. Here are some key statistics I discovered from online sources about young adults living in America:
-            </p>
-
-            <div className="row">
-              <div className="left-column">
-                <img src={Coin} alt=""/>
-                <p className="no-bottom-margin">Young adults who receive financial education are less likely to carry credit card debt, and more likely to apply to and receive grants and financial aid.</p>
-                <ul>
-                  <li className="grey-text">Council for Economic Education</li>
-                </ul>
-              </div>
-              <div className="right-column">
-                <img src={StressedEmoji} alt=""/>
-                <p className="no-bottom-margin"><strong>59%</strong> of adults in the U.S. admitted to living paycheck to paycheck in 2019.</p>
-                <ul>
-                  <li className="grey-text">Schwab</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="left-column">
-                <img src={TeddyBear} alt=""/>
-                <p className="no-bottom-margin"><strong>One in four</strong> parents reported that they never or almost never talk to their kids about household finances.</p>
-                <ul>
-                  <li className="grey-text">Guidant</li>
-                </ul>
-              </div>
-              <div className="right-column">
-                <img src={Books} alt=""/>
-                <p className="no-bottom-margin"><strong>54%</strong> of student loan holders didn’t attempt to figure out their future monthly payments before taking out their loans.</p>
-                <ul>
-                  <li className="grey-text">GFLEC</li>
-                </ul>
-              </div>
-            </div>
-
-            <h4 id="competitive-analysis-header">Competitive Analysis</h4>
-            <p>I wanted to create a product that offered more than current solutions already on the market, to do this,
-              I went through a list of current financial/budgeting products and did an analysis of their heuristics along with their features.</p>
-          </div>
-          <img id="competitive-analysis-image" src={CompetitiveAnalysis} alt=""/>
-          <div className="large-margins">
-            <p><strong>Main takeaways:</strong></p>
-            <ol>
-              <li className="body-font-18px">Many of the existing products struggled with simplifying financial concepts and making their functionality
-                intuitive, which is why many users in my target group of young adults don’t really want to use these products
-                on a day-to-day basis.
-              </li>
-              <li className="body-font-18px">Even though there were many similar products on the market to help manage your money, none had any additional
-                innovative features to really solve the pain points of why people struggled so much with managing their money in the first place.</li>
-            </ol>
-          </div>
-        </div>
-
-        <div className="appear-on-scroll">
-          <div className="large-margins">
-            <h4>User Surveys</h4>
-            <p>I sent out a Google forms screener survey and collected <strong>36 responses</strong> to validate the
-              primary research and quickly identify the main pain points when it comes to making better financial decisions.
-              I decided to focus on the age group of young adults (18-30) because that was the group where the issue was
-              the most prevalent according to the primary research.</p>
+          <div className="row">
             <div className="left-column">
-              <h1>85%</h1>
-              <p>of respondents can recall "overspending" on a purchase in the last month due to an emotional trigger</p>
+              <img src={Coin} alt=""/>
+              <p className="no-bottom-margin">Young adults who receive financial education are less likely to carry credit card debt, and more likely to apply to and receive grants and financial aid.</p>
+              <ul>
+                <li className="grey-text">Council for Economic Education</li>
+              </ul>
             </div>
             <div className="right-column">
-              <h1>60%</h1>
-              <p>of respondents said that impulsive purchases made up the majority of their expenses outside of the necessities.</p>
+              <img src={StressedEmoji} alt=""/>
+              <p className="no-bottom-margin"><strong>59%</strong> of adults in the U.S. admitted to living paycheck to paycheck in 2019.</p>
+              <ul>
+                <li className="grey-text">Schwab</li>
+              </ul>
             </div>
-            <h4>User Interviews</h4>
-            <p>Out of the respondents to the screener survey, I chose 8 respondents for follow-up interviews. These respondents were chosen based on four criteria:</p>
-            <ul>
-              <li className="body-font-18px">The target age group of 18 - 30 years old</li>
-              <li className="body-font-18px">Expressed interest in learning more about financial literacy and using financial tools to help them reach financial goals</li>
-              <li className="body-font-18px">Expressed issues with money stemming from a lack of experience with building good financial habits like planning or budgeting</li>
-              <li className="body-font-18px">Self-identified as having lower financial literacy</li>
-            </ul>
-            <p>These interviews were conducted with the goal to talk more in-depth about the motivations behind some of their
-              financial decisions and why it was so hard to stick to basic budgets and build better financial habits in the first place.</p>
-            <h4>Affinity Map</h4>
-            <p>Afterwards, I organized my interview notes into sticky notes and did affinity mapping to discover common insights.</p>
-            <p>My main takeaways from all of my secondary research methods validated my primary research and also showed that:</p>
-            <ul>
-              <li className="body-font-18px">Impulsive spending and a lack of budget were the two main reasons that kept surfacing for why it was difficult to save their income.</li>
-              <p>“Sometimes it’s so hard to stop myself from buying something I really want at the moment.”</p>
-              <li className="body-font-18px">Lots of impulsive spending was tied to emotional triggers such as feeling upset,
-                something bad happening or even a positive emotion like getting a good grade and wanting to splurge to celebrate. This leads to many purchases that don’t retain their value.</li>
-              <p>“When I’m in a bad mood or something bad happens to me, spending money on a night out or new clothes actually
-                makes me feel better. However, lots of things I’ve purchased over the years have just sat in my house forgotten.”</p>
-              <li className="body-font-18px">Lots of interviewees admitted to spending more than was required or was wise, especially in categories such as clothing, takeout, and entertainment.</li>
-              <p>“The biggest offenders are definitely takeout and shopping, those two categories make up around 30% of my expenses every month.”</p>
-            </ul>
           </div>
-          <img className="image" src={AffinityMap} alt=""/>
 
-          <div className="large-margins">
-            <h4>User Personas</h4>
-            <p>Based on the previous research, I discovered that the large user group of young adults can be further broken
-              down into two distinct groups with separate pain points and motivations.</p>
+          <div className="row">
+            <div className="left-column">
+              <img src={TeddyBear} alt=""/>
+              <p className="no-bottom-margin"><strong>One in four</strong> parents reported that they never or almost never talk to their kids about household finances.</p>
+              <ul>
+                <li className="grey-text">Guidant</li>
+              </ul>
+            </div>
+            <div className="right-column">
+              <img src={Books} alt=""/>
+              <p className="no-bottom-margin"><strong>54%</strong> of student loan holders didn’t attempt to figure out their future monthly payments before taking out their loans.</p>
+              <ul>
+                <li className="grey-text">GFLEC</li>
+              </ul>
+            </div>
           </div>
-          <div className="medium-margins">
-            <img className="image" src={AnxiousAnnie} alt=""/>
-            <img className="image" src={ConfidentCarl} alt=""/>
-          </div>
-          <div className="large-margins">
-            <h4>Empathy Maps</h4>
-            <p>Based on the previous research, I discovered that the large user group of young adults can be further
-              broken down into two distinct groups with separate pain points and motivations.</p>
-          </div>
-          <img src={EmpathyMap1} alt="" className="image"/>
-          <img src={EmpathyMap2} alt="" className="image"/>
+
+          <h4 id="competitive-analysis-header">Competitive Analysis</h4>
+          <p>I wanted to create a product that offered more than current solutions already on the market, to do this,
+            I went through a list of current financial/budgeting products and did an analysis of their heuristics along with their features.</p>
         </div>
+        <img id="competitive-analysis-image" src={CompetitiveAnalysis} alt=""/>
+        <div className="large-margins">
+          <p><strong>Main takeaways:</strong></p>
+          <ol>
+            <li className="body-font-18px">Many of the existing products struggled with simplifying financial concepts and making their functionality
+              intuitive, which is why many users in my target group of young adults don’t really want to use these products
+              on a day-to-day basis.
+            </li>
+            <li className="body-font-18px">Even though there were many similar products on the market to help manage your money, none had any additional
+              innovative features to really solve the pain points of why people struggled so much with managing their money in the first place.</li>
+          </ol>
+        </div>
+
+        <div className="large-margins">
+          <h4>User Surveys</h4>
+          <p>I sent out a Google forms screener survey and collected <strong>36 responses</strong> to validate the
+            primary research and quickly identify the main pain points when it comes to making better financial decisions.
+            I decided to focus on the age group of young adults (18-30) because that was the group where the issue was
+            the most prevalent according to the primary research.</p>
+          <div className="left-column">
+            <h1>85%</h1>
+            <p>of respondents can recall "overspending" on a purchase in the last month due to an emotional trigger</p>
+          </div>
+          <div className="right-column">
+            <h1>60%</h1>
+            <p>of respondents said that impulsive purchases made up the majority of their expenses outside of the necessities.</p>
+          </div>
+          <h4>User Interviews</h4>
+          <p>Out of the respondents to the screener survey, I chose 8 respondents for follow-up interviews. These respondents were chosen based on four criteria:</p>
+          <ul>
+            <li className="body-font-18px">The target age group of 18 - 30 years old</li>
+            <li className="body-font-18px">Expressed interest in learning more about financial literacy and using financial tools to help them reach financial goals</li>
+            <li className="body-font-18px">Expressed issues with money stemming from a lack of experience with building good financial habits like planning or budgeting</li>
+            <li className="body-font-18px">Self-identified as having lower financial literacy</li>
+          </ul>
+          <p>These interviews were conducted with the goal to talk more in-depth about the motivations behind some of their
+            financial decisions and why it was so hard to stick to basic budgets and build better financial habits in the first place.</p>
+          <h4>Affinity Map</h4>
+          <p>Afterwards, I organized my interview notes into sticky notes and did affinity mapping to discover common insights.</p>
+          <p>My main takeaways from all of my secondary research methods validated my primary research and also showed that:</p>
+          <ul>
+            <li className="body-font-18px">Impulsive spending and a lack of budget were the two main reasons that kept surfacing for why it was difficult to save their income.</li>
+            <p>“Sometimes it’s so hard to stop myself from buying something I really want at the moment.”</p>
+            <li className="body-font-18px">Lots of impulsive spending was tied to emotional triggers such as feeling upset,
+              something bad happening or even a positive emotion like getting a good grade and wanting to splurge to celebrate. This leads to many purchases that don’t retain their value.</li>
+            <p>“When I’m in a bad mood or something bad happens to me, spending money on a night out or new clothes actually
+              makes me feel better. However, lots of things I’ve purchased over the years have just sat in my house forgotten.”</p>
+            <li className="body-font-18px">Lots of interviewees admitted to spending more than was required or was wise, especially in categories such as clothing, takeout, and entertainment.</li>
+            <p>“The biggest offenders are definitely takeout and shopping, those two categories make up around 30% of my expenses every month.”</p>
+          </ul>
+        </div>
+        <img className="image" src={AffinityMap} alt=""/>
+
+        <div className="large-margins">
+          <h4>User Personas</h4>
+          <p>Based on the previous research, I discovered that the large user group of young adults can be further broken
+            down into two distinct groups with separate pain points and motivations.</p>
+        </div>
+        <div className="medium-margins">
+          <img className="image" src={AnxiousAnnie} alt=""/>
+          <img className="image" src={ConfidentCarl} alt=""/>
+        </div>
+        <div className="large-margins">
+          <h4>Empathy Maps</h4>
+          <p>Based on the previous research, I discovered that the large user group of young adults can be further
+            broken down into two distinct groups with separate pain points and motivations.</p>
+        </div>
+        <img src={EmpathyMap1} alt="" className="image"/>
+        <img src={EmpathyMap2} alt="" className="image"/>
       </div>
   </div>
   )

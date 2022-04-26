@@ -8,12 +8,28 @@ $medium-margin-width: 70%;
   display: flex;
   flex-direction: column;
 
+  .down-arrow {
+    z-index: 11000;
+    height: fit-content;
+    width: fit-content;
+    transform: scale(0.5);
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .down-arrow.active {
+    opacity: 0;
+  }
+
   .intro-wrapper {
     background-color: white;
     width: $default-margin-width;
     margin: auto;
     display: flex;
     z-index: 100200;
+    padding: 200px 0;
 
     .left-column, .right-column {
       display: inline-flex;
