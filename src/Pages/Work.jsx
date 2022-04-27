@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../Stylesheets/Work.scss';
 import FinWellImage from '../Assets/FinWellImage.svg'
 import RechargeImage from '../Assets/RechargeImage.svg'
@@ -8,40 +8,8 @@ import {CaseStudyCard} from "../Components/CaseStudyCard";
  * Page component for the main page
  */
 export const Work = () => {
-
-  /**
-   * Before page load, add a scroll listener for components to fade in, and highlight the starting intro sequence
-   */
-  useEffect(() => {
-    highlight();
-  }, []);
-
-  /**
-   * Highlights words that are preset, when they're visible on the screen
-   */
-  const highlight = () => {
-    let scroll = window.scrollY;
-    let innerHeight = window.innerHeight;
-
-    let elements = document.getElementsByClassName("highlight");
-    let delay = 3200;
-
-    window.addEventListener("scroll", () => {
-      scroll = window.scrollY;
-
-      if ((scroll + innerHeight) >= elements[0].offsetTop) {
-        for (const element of elements) {
-          setTimeout(() => {
-            element.classList.add("active");
-          }, delay);
-          delay += 1000;
-        }
-      }
-    })
-  }
-
-  // Trying new stuff - https://codepen.io/hi-im-si/pen/ALgzqo
-  var TxtType = function(el, toRotate, period) {
+  // Start of Typewriter - https://codepen.io/hi-im-si/pen/ALgzqo
+  let TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -52,11 +20,11 @@ export const Work = () => {
   };
 
   TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-    let delta = 100;
+    let i = this.loopNum % this.toRotate.length;
+    let fullTxt = this.toRotate[i];
+    let delta = 100; // This sets the normal time per char
     if (this.isDeleting) {
-      delta = 50;
+      delta = 50; // This sets the time per char deletion
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
@@ -65,7 +33,6 @@ export const Work = () => {
     this.el.innerHTML = '<span class="wrap body-font">'+this.txt+'</span>';
 
     let that = this;
-
 
     if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
@@ -97,8 +64,14 @@ export const Work = () => {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
   };
+  // End of Typewriter
 
-  // End new stuff
+  const scrollToCaseStudies = () => {
+    let element = document.getElementById("case-studies-container");
+    if (element) {
+      element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+  }
 
   return (
       <div className="background">
@@ -112,16 +85,21 @@ export const Work = () => {
 
             <div>
               <p className="body-font">I'm Emma, a coffee-infused <strong>Product Designer</strong> based in Vancouver. 🍁</p>
-              <p className="body-font">Currently building digital products @ <strong> Moken Agency </strong> to empower founders to achieve their dreams. </p>
+              <p className="body-font">Currently building digital products @ <strong> Moken Agency </strong> to empower founders to achieve their wildest dreams. </p>
             </div>
             <div className="typewriter-wrapper-div">
               <p className="typewriter-prefix body-font">I'm also</p>
               <div className="typewrite"/>
             </div>
-            <h1 className="body-font" id="h1">EXPLORE SELECTED CASE STUDIES</h1>
+
+            <div id="scroll-down" onClick={() => scrollToCaseStudies()}>
+              <span id="scroll-title">
+                EXPLORE SELECTED CASE STUDIES
+              </span>
+            </div>
           </div>
 
-          <div>
+          <div id="case-studies-container">
             <div className="half-width">
               <CaseStudyCard unFocusedColour="#0B2CB8" opacity="0.15" headerColour="#0B2CB8" header="MOBILE APPLICATION | SOLO | 10 MIN READ" title="FinWell"
                              description="Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time."
