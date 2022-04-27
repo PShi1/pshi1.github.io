@@ -1,10 +1,27 @@
 @import 'index';
 
 .background {
-  background-color: $background-color;
+  background-color: $off-black;
 }
 
 .work-page {
+  .body-font {
+    font-size: max(24px, 2.3vw);
+    font-family: $manrope-font-family;
+    font-weight: 300;
+    line-height: 150%;
+    color: $off-white;
+  }
+
+  .header-outer-div {
+    width: $default-margin-width;
+    margin: auto;
+
+    p {
+      margin: 0;
+    }
+  }
+
   //width: $default-margin-width;
   padding: 30px 0 0 0;
   margin: auto;
@@ -19,42 +36,24 @@
     position: fixed;
   }
 
-  .foreground {
-    z-index: 10100;
-    background-color: $background-color;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-
-    #h1 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-  }
-
   .row {
     display: flex;
     margin-bottom: 20px;
 
     .header-area {
-      width: 75%;
       box-sizing: border-box;
       display: block;
-      margin: auto;
+      float: left;
       padding-bottom: 15px;
 
       .welcome-header {
-        font-size: max(32px, 6vw);
-        font-family: $base-font-family;
-        color: black;
+        font-size: max(32px, 9vw);
+        font-family: 'Major Mono Display', sans-serif;
+        color: $off-white;
         font-style: normal;
-        font-weight: normal;
-        line-height: 1em;
+        font-weight: 400;
+        line-height: 150%;
         margin: 0;
-      }
-
-      #underline {
-        width: 97%;
       }
     }
 
@@ -68,6 +67,49 @@
         width: 90%;
       }
     }
+  }
+
+  .typewriter-prefix {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .wrap {
+    background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .typewrite {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: fit-content;
+    display: inline-block;
+
+    p {
+      overflow: hidden;
+      border-right: .05em solid white;
+      white-space: nowrap;
+      animation: typing 3.5s steps(30, start), blink-caret .75s step-end infinite;
+      float: left;
+    }
+
+    strong {
+      background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+  }
+
+  @keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+  }
+
+  @keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: white}
   }
 
   .purple-background {
