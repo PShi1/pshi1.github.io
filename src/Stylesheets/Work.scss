@@ -48,7 +48,7 @@
 
       .welcome-header {
         font-size: max(32px, 9vw);
-        font-family: 'Major Mono Display', sans-serif;
+        font-family: $major-mono-display-font-family;
         color: $off-white;
         font-style: normal;
         font-weight: 400;
@@ -69,89 +69,53 @@
     }
   }
 
-  .typewriter-prefix {
-    display: inline-block;
-    padding-right: 10px;
-  }
-
-  .wrap {
-    background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .typewrite {
+  .typewriter-wrapper-div {
+    display: block;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: fit-content;
-    display: inline-block;
 
-    p {
-      overflow: hidden;
-      border-right: .05em solid white;
-      white-space: nowrap;
-      animation: typing 3.5s steps(30, start), blink-caret .75s step-end infinite;
-      float: left;
+    .typewriter-prefix {
+      display: inline-block;
+      padding-right: 6px;
+
     }
 
-    strong {
+    .wrap {
       background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-
+      overflow-wrap: break-word;
     }
-  }
 
-  @keyframes typing {
-    from {width: 0}
-    to {width: 100%}
-  }
+    .typewrite {
+      max-width: fit-content;
+      display: inline-block;
 
-  @keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color: white}
-  }
+      p {
+        overflow: hidden;
+        border-right: .05em solid white;
+        white-space: nowrap;
+        animation: typing 3.5s steps(30, start), blink-caret .75s step-end infinite;
+        float: left;
+      }
 
-  .purple-background {
-    background-color: $background-color;
-    margin: 0;
-    padding-bottom: 0;
-    display: inline-block;
+      strong {
+        background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-    .highlighted-text {
-      margin: 20px 0 0 0;
+      }
     }
-  }
 
-  .highlight{
-    display: inline-block;
-    width: max-content;
-    background-size: 200% auto;
-    background-image: linear-gradient(to right,$background-color 50%,$lilac 50%);
-    background-position: 0 0;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
+    @keyframes typing {
+      from {width: 0}
+      to {width: 100%}
+    }
 
-  .highlight.active{
-    animation-name: highlight;
-  }
-
-  .fast {
-    animation-duration: 1s;
-  }
-
-  @keyframes highlight {
-    from {background-position: 0 0;}
-    to {background-position: -100% 0;}
-  }
-
-  .purple-background:hover {
-    transition: all 2s ease-in-out;
-    //left: 0;
-    box-shadow: inset 276px 0 0 0 #DDD3FC;
+    @keyframes blink-caret {
+      from, to {border-color: transparent}
+      50% {border-color: white}
+    }
   }
 
   .h4-text {
@@ -206,6 +170,10 @@
 @media screen and (max-width: $mobile-view-max-width){
   .work-page {
     width: $default-mobile-margin-width;
+
+    .header-outer-div {
+      width: $default-mobile-margin-width;
+    }
 
     .row {
       display: block;

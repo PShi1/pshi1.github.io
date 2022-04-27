@@ -19,19 +19,7 @@ $background-color: #FCF9FF;
 // 2. Fonts
 $base-font-family: Manjari, Manrope, Verdana, sans-serif;
 $manrope-font-family: Manrope, sans-serif;
-
-.header-font {
-  font-family: $base-font-family;
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.header-32px-font {
-
-}
+$major-mono-display-font-family: Major Mono Display, sans-serif;
 
 .body-font {
   font-family: $base-font-family;

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../Assets/CoffeeCupImage.svg";
+import logo from "../Assets/shapeLogo.svg";
 import {Link} from "react-router-dom";
 import '../Stylesheets/Header.scss';
 
@@ -14,17 +14,18 @@ export const Header = () => {
         </div>
         <ul className="menu">
           <li className="menu-item"><Link to="/">
-            <p className="header-font">Work</p>
-          </Link></li>
-          <li className="menu-item"><Link to="/about">
-            <p className="header-font">About</p>
+            <p className="header-font">Work.</p>
           </Link></li>
           <li className="menu-item"><Link to="/playground">
-            <p className="header-font">Playground</p>
+            <p className="header-font">Play.</p>
           </Link></li>
-          <div className="secondary-button menu-item" id="resume-button">
-            <p className="header-font">Resume</p>
-          </div>
+          <li className="menu-item"><Link to="/about">
+            <p className="header-font">About.</p>
+          </Link></li>
+
+          <li className="menu-item"><Link to="/">
+            <p className="header-font">Resume.</p>
+          </Link></li>
         </ul>
       </nav>
     </div>

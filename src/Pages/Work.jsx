@@ -113,9 +113,10 @@ export const Work = () => {
             <div>
               <p className="body-font">I'm Emma, a coffee-infused <strong>Product Designer</strong> based in Vancouver. 🍁</p>
               <p className="body-font">Currently building digital products @ <strong> Moken Agency </strong> to empower founders to achieve their dreams. </p>
+            </div>
+            <div className="typewriter-wrapper-div">
               <p className="typewriter-prefix body-font">I'm also</p>
               <div className="typewrite"/>
-
             </div>
             <h1 className="body-font" id="h1">EXPLORE SELECTED CASE STUDIES</h1>
           </div>
