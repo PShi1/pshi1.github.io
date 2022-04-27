@@ -1,72 +1,61 @@
 @import 'index';
 
 .footer {
-  display: flex;
+  display: block;
+  background-color: $off-black;
+  width: 100%;
+  padding: 10px 0;
+  margin: auto;
 
-  .foreground{
-    z-index: 10200;
-    background-color: white;
-    width: 100%;
-    padding: 10px 0 30px 0;
+  .center-column {
+    width: $default-margin-width;
+    border-top: 1px solid $off-white;
     margin: auto;
-    display: flex;
 
-    .margins {
+    .large-text, .medium-text, .small-text {
+      color: $off-white;
+      text-align: center;
+    }
+
+    .large-text {
+      font-family: $major-mono-display-font-family;
+      font-size: max(35px, 3.25vw);
+      line-height: 200%;
+      margin-bottom: 3.25vw;
+    }
+
+    .medium-text {
+      font-family: $manrope-font-family;
+      font-size: max(20px, 1.75vw);
+      line-height: 150%;
+      margin-top: 5vw;
+      margin-bottom: 2.25vw;
+      font-weight: 300;
+    }
+
+    .small-text {
+      font-size: max(16px, 1.5vw);
+      line-height: 150%;
+      font-weight: 300;
+    }
+
+    .image-container {
       display: flex;
-      width: $default-margin-width;
+      justify-content: space-evenly;
+      max-width: 500px;
       margin: auto;
-
-      .left-column {
-        margin: auto;
-        width: 20%;
-        box-sizing: border-box;
-
-        img {
-          width: 75%;
-        }
+      
+      img {
+        cursor: pointer;
       }
+    }
+  }
+}
 
-      .center-column {
-        width: 60%;
-        box-sizing: border-box;
-
-        .large-text, .medium-text, .small-text {
-          font-family: $base-font-family;
-          color: $black;
-          text-align: center;
-        }
-
-        .large-text {
-          font-size: 48px;
-          line-height: 200%;
-          margin-bottom: 30px;
-        }
-
-        .medium-text {
-          font-size: 32px;
-          line-height: 150%;
-          margin-bottom: 40px;
-        }
-
-        .small-text {
-          font-size: 16px;
-          line-height: 150%;
-        }
-      }
-
-      .right-column {
-        width: 20%;
-        box-sizing: border-box;
-        display: flex;
-        padding-left: 30px;
-
-        img {
-          cursor: pointer;
-          max-width: 40px;
-          margin: 0 20px;
-          padding-bottom: 10px;
-        }
-      }
+@media screen and (max-width: $mobile-view-max-width){
+  .footer {
+    .center-column {
+      width: $default-mobile-margin-width;
     }
   }
 }
