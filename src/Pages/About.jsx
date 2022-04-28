@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import '../Stylesheets/About.scss';
 import Selfie from '../Assets/Selfie.png'
 import DownArrow from '../Assets/arrow-down.svg';
+import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
 
 export const About = () => {
@@ -19,6 +20,7 @@ export const About = () => {
   const handleCollapsible = (e) => {
     let id = e.target.id;
     let element = document.getElementById(id + "-item");
+    let arrow = document.getElementById(id + "-arrow");
     if (!element.classList.contains("active")) {
       if (element.classList.contains("closed")) {
         element.classList.replace("closed", "active");
@@ -26,9 +28,11 @@ export const About = () => {
         element.classList.add("active");
       }
       element.style.height = element.scrollHeight + "px";
+      arrow.src = UpArrow;
     } else {
       element.classList.replace("active", "closed");
       element.style.height = "0";
+      arrow.src = DownArrow;
     }
   }
 
@@ -77,7 +81,7 @@ export const About = () => {
         <div className="collapsibles-region">
           <div className="collapsible-header" id="bit-more-about-me" onClick={(e) => handleCollapsible(e)}>
             <h2>Bit more about me 😊</h2>
-            <img src={DownArrow} alt=""/>
+            <img src={DownArrow} alt="" id="bit-more-about-me-arrow"/>
           </div>
           <div className="collapsible-item" id="bit-more-about-me-item">
             <div className="third-columns">
@@ -114,7 +118,7 @@ export const About = () => {
         <div className="collapsibles-region">
           <div className="collapsible-header" id="after-hours" onClick={(e) => handleCollapsible(e)}>
             <h2>After hours 🌙</h2>
-            <img src={DownArrow} alt=""/>
+            <img src={DownArrow} alt="" id="after-hours-arrow"/>
           </div>
           <div className="collapsible-item" id="after-hours-item">
             <ul id="after-hours-ul">
@@ -129,7 +133,7 @@ export const About = () => {
         <div className="collapsibles-region">
           <div className="collapsible-header" id="on-my-bookshelf" onClick={(e) => handleCollapsible(e)}>
             <h2>On my bookshelf 📚</h2>
-            <img src={DownArrow} alt=""/>
+            <img src={DownArrow} alt="" id="on-my-bookshelf-arrow"/>
           </div>
           <div className="collapsible-item" id="on-my-bookshelf-item">
             <div className="books-container">
@@ -141,7 +145,7 @@ export const About = () => {
         <div className="collapsibles-region">
           <div className="collapsible-header" id="for-me-design-is" onClick={(e) => handleCollapsible(e)}>
             <h2>For me, design is 🎨</h2>
-            <img src={DownArrow} alt=""/>
+            <img src={DownArrow} alt="" id="for-me-design-is-arrow"/>
           </div>
           <div className="collapsible-item" id="for-me-design-is-item">
             <div className="third-columns" id="first-column">
@@ -168,7 +172,7 @@ export const About = () => {
         <div className="collapsibles-region">
           <div className="collapsible-header" id="design-resources" onClick={(e) => handleCollapsible(e)}>
             <h2>Design Resources 🖌️</h2>
-            <img src={DownArrow} alt=""/>
+            <img src={DownArrow} alt="" id="design-resources-arrow"/>
           </div>
           <div className="collapsible-item" id="design-resources-item">
             <div className="third-columns">

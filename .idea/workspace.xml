@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c71337-3a98-4cd2-ba7e-91aaf20680a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Stylesheets/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Work.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Work.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Finwell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Finwell.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stylesheets/Work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Work.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stylesheets/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/index.scss" afterDir="false" />
     </list>
