@@ -1,0 +1,142 @@
+@import 'index';
+
+.about-page {
+  background-color: $off-black;
+  width: $default-margin-width;
+  margin: auto;
+  padding-top: 17vh;
+  padding-bottom: 10vh;
+
+  .intro {
+    h1 {
+      margin: 0;
+    }
+
+    #subtitle-text {
+      margin-bottom: 7vh;
+    }
+  }
+
+  .more-about-me {
+    display: flex;
+    padding-top: 7vh;
+    padding-bottom: 10vh;
+
+    .left-column {
+      width: 33%;
+      display: inline-flex;
+      margin: auto;
+      justify-content: left;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .right-column {
+      width: 67%;
+      display: inline-block;
+    }
+  }
+
+  .collapsibles-region {
+    .collapsible-header {
+      border-bottom: 1px solid $off-white;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      h2 {
+        pointer-events: none;
+      }
+
+      img {
+        width: 3.5%;
+        display: block;
+        float: right;
+      }
+    }
+
+    .collapsible-item {
+      display: flex;
+      overflow: hidden;
+      height: 0;
+
+      .third-columns {
+        width: 33%;
+        display: inline-block;
+
+        ul {
+          li {
+            color: $off-white;
+            margin-bottom: 1.5vh;
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .link {
+      text-decoration-thickness: 1px;
+      text-underline-offset: 1px;
+    }
+
+    .collapsible-item.active {
+      display: flex;
+      height: 20vh;
+      transition: height 0.65s ease-in-out;
+    }
+
+    .collapsible-item.closed {
+      display: flex;
+      height: 0;
+      transition: height 0.65s ease-in-out;
+    }
+
+    #after-hours-ul {
+      li {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+      }
+    }
+
+    .books-container {
+      padding: 1.56vw 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    #bit-more-about-me-item {
+      #second-column {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    }
+
+    #for-me-design-is-item {
+      #second-column {
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+    }
+
+    #design-resources-item {
+      #second-column {
+        padding-left: 11%;
+        padding-right: 3%;
+      }
+    }
+  }
+
+  .outro {
+    margin-top: 16vh;
+  }
+}

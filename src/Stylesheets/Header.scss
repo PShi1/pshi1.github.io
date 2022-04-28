@@ -3,22 +3,16 @@
 .nav-wrapper {
   background: $off-black;
   display: flow-root;
-
-  .header-font {
-    font-family: $major-mono-display-font-family;
-    font-size: max(16px, 1.5vw);
-    line-height: 26px;
-    color: $off-white;
-    font-style: normal;
-    font-weight: normal;
-  }
+  z-index: 1000000;
+  width: 100%;
+  position: fixed;
 
   .navbar {
     color: $off-black;
     position: initial;
     top: 0;
     height: fit-content;
-    line-height: 60px;
+    line-height: 2.4vw;
     width: $default-margin-width;
     text-align: center;
     z-index: 10;
@@ -29,21 +23,21 @@
     .logo {
       float: left;
       height: fit-content;
-      margin: 10px;
+      margin: 0.4vw;
     }
 
     .menu {
       display: inline-block;
       float: right;
       list-style: none;
-      margin-right: 14px;
+      margin-right: 0.56px;
       text-align: right;
       transition: transform 0.5s ease-out;
       -webkit-transition: transform 0.5s ease-out;
 
       .menu-item {
         display: inline-block;
-        margin: 0 50px;
+        margin: 0 2vw;
 
         a {
           display: block;
@@ -66,7 +60,7 @@
           position: absolute;
           width: 0%;
           height: 1px;
-          bottom: -2px;
+          bottom: 0;
           background: $off-white;
         }
 
@@ -92,11 +86,6 @@
           width: 100%;
           /* transition: 0s; */
         }
-      }
-
-      #resume-button {
-        background-color: $white;
-        margin-right: 0;
       }
     }
     @media(max-width: 640px) {

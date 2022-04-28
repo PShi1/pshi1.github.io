@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari');
 @import url('https://fonts.googleapis.com/css2?family=Manrope');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
 
 // 0. Margins
@@ -29,6 +30,82 @@ $major-mono-display-font-family: Major Mono Display, sans-serif;
   font-weight: normal;
 }
 
+h1 {
+  font-family: $major-mono-display-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
+h2 {
+  font-family: $major-mono-display-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
+h3 {
+  font-family: $major-mono-display-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
+.b1-light {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
+.b2 {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.65vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
+.b3 {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 200%;
+  color: $off-white;
+}
+
+.b4 {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
+.colour-gradient {
+  font-weight: 600 !important;
+  background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-font-colour {
+  color: #F5D6A2;
+  font-weight: 300;
+  font-style: normal;
+}
+
 // 3. Buttons
 
 // Hollow Buttons
@@ -50,6 +127,265 @@ $major-mono-display-font-family: Major Mono Display, sans-serif;
   background-color: $lilac;
   transition: all 0.25s ease-in-out;
 }
+
+// 4. Shared Components
+// Start of explore selected case studies line - https://codepen.io/pavelderschleifer/pen/jrXpgq
+#wrapper {
+  display: table;
+  width:100%;
+  height:100%;
+}
+
+#wrapper-inner {
+  display: table-cell;
+  vertical-align:middle;
+  width:100%;
+  height:100%;
+}
+
+#scroll-down {
+  display: block;
+  position: relative;
+  padding-top: 6vh;
+  text-align:center;
+  margin-bottom: 6vh;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+#scroll-title {
+  display: block;
+  margin-top: 7.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+#scroll-down::before {
+  -webkit-animation: elasticus 3s cubic-bezier(1, 0, 0, 1) infinite;
+  /* Safari 4+ */
+
+  -moz-animation: elasticus 3s cubic-bezier(1, 0, 0, 1) infinite;
+  /* Fx 5+ */
+
+  -o-animation: elasticus 3s cubic-bezier(1, 0, 0, 1) infinite;
+  /* Opera 12+ */
+
+  animation: elasticus 3s cubic-bezier(1, 0, 0, 1) infinite;
+  /* IE 10+, Fx 29+ */
+
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -1px;
+  width: 1px;
+  height: 11vh;
+  background: $off-white;
+  content: ' ';
+}
+@-webkit-keyframes elasticus {
+  0% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+  50% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50.1% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+}
+@-moz-keyframes elasticus {
+  0% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+  50% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50.1% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+}
+@-o-keyframes elasticus {
+  0% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+  50% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50.1% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+}
+@keyframes elasticus {
+  0% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+  50% {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50.1% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+}
+// End of explore selected case studies line
 
 // Boiler Plate
 

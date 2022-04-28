@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../Stylesheets/Work.scss';
 import FinWellImage from '../Assets/FinWellImage.svg'
 import RechargeImage from '../Assets/RechargeImage.svg'
@@ -30,7 +30,7 @@ export const Work = () => {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap body-font">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap b1-light colour-gradient">'+this.txt+'</span>';
 
     let that = this;
 
@@ -48,7 +48,10 @@ export const Work = () => {
     }, delta);
   };
 
-  window.onload = () => {
+  useEffect(() => {
+
+    window.scrollTo(0,0);
+
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
       let toRotate = "[\"a life long learner.\", \"an engaging story teller.\", \"a driven entrepreneur.\",\n" +
@@ -63,7 +66,8 @@ export const Work = () => {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-  };
+  }, []);
+
   // End of Typewriter
 
   const scrollToCaseStudies = () => {
@@ -79,21 +83,21 @@ export const Work = () => {
           <div className="header-outer-div">
             <div className="row">
               <div className="header-area">
-                <h1 className="welcome-header">Hello.</h1>
+                <h1>Hello.</h1>
               </div>
             </div>
 
             <div>
-              <p className="body-font">I'm Emma, a coffee-infused <strong>Product Designer</strong> based in Vancouver. 🍁</p>
-              <p className="body-font">Currently building digital products @ <strong> Moken Agency </strong> to empower founders to achieve their wildest dreams. </p>
+              <p className="b1-light">I'm Emma, a coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
+              <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
             </div>
             <div className="typewriter-wrapper-div">
-              <p className="typewriter-prefix body-font">I'm also</p>
+              <p className="typewriter-prefix b1-light">I'm also</p>
               <div className="typewrite"/>
             </div>
 
             <div id="scroll-down" onClick={() => scrollToCaseStudies()}>
-              <span id="scroll-title">
+              <span id="scroll-title" className="b4">
                 EXPLORE SELECTED CASE STUDIES
               </span>
             </div>

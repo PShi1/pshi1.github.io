@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c71337-3a98-4cd2-ba7e-91aaf20680a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stylesheets/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.fc3ea581.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.fc3ea581.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.fc3ea581.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Work.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Work.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Finwell.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Finwell.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Work.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +58,7 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Assets" />
       <recent name="$PROJECT_DIR$/src/Stylesheets" />
     </key>
   </component>
