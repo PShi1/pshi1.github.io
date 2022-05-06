@@ -3,10 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b8c71337-3a98-4cd2-ba7e-91aaf20680a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/Pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stylesheets/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stylesheets/Work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Work.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stylesheets/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/index.scss" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.d695eed8.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/css/main.d695eed8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CaseStudyCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CaseStudyCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Work.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Work.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/CaseStudyCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/CaseStudyCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stylesheets/Work.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stylesheets/Work.scss" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< Updated upstream
       <recent name="$PROJECT_DIR$/src/Assets" />
+=======
+      <recent name="$PROJECT_DIR$/public" />
+>>>>>>> Stashed changes
       <recent name="$PROJECT_DIR$/src/Stylesheets" />
     </key>
   </component>
@@ -78,7 +90,8 @@
       <workItem from="1646244958018" duration="916000" />
       <workItem from="1651079638900" duration="1648000" />
       <workItem from="1651081302004" duration="359000" />
-      <workItem from="1651082045235" duration="323000" />
+      <workItem from="1651082045235" duration="528000" />
+      <workItem from="1651097532313" duration="2197000" />
     </task>
     <servers />
   </component>

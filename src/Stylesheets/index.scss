@@ -93,6 +93,24 @@ h3 {
   color: $off-white;
 }
 
+.b5 {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.15vw;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+}
+
+.b6 {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.15vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
 .colour-gradient {
   font-weight: 600 !important;
   background: linear-gradient(91.16deg, #C27193 23.24%, #EE988E 45.82%, #F5BB95 65.04%, #F5D6A2 90.07%);
