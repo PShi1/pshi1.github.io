@@ -6,7 +6,9 @@ import {Playground} from "../Pages/Playground";
 import {FinWell} from "../Pages/FinWell";
 import {Pivot} from "../Pages/Pivot";
 import {SponsorCircle} from "../Pages/SponsorCircle";
-import {Recharge} from "../Pages/Recharge";
+import {Access} from "../Pages/Access";
+import {Knowbie} from "../Pages/Knowbie";
+import {Aprio} from "../Pages/Aprio";
 
 export const RoutesComponent = () => {
   return (
@@ -17,7 +19,9 @@ export const RoutesComponent = () => {
       <Route path="/finwell" element={<FinWell/>} />
       <Route path="/pivot" element={<Pivot/>} />
       <Route path="/sponsorcircle" element={<SponsorCircle/>} />
-      <Route path="/recharge" element={<Recharge/>} />
+      <Route path="/access" element={<Access/>} />
+      <Route path="/knowbie" element={<Knowbie/>} />
+      <Route path="/aprio" element={<Aprio/>} />
     </Routes>
   )
 }

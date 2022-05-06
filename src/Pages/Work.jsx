@@ -87,7 +87,7 @@ export const Work = () => {
   }
 
   return (
-      <div className="case-study-card-top-background">
+      <div className="background">
         <div className="work-page">
           <div className="header-outer-div">
             <div className="row">
@@ -113,30 +113,30 @@ export const Work = () => {
           </div>
 
           <div id="case-studies-container">
-            <div className="cards-div">
+            <a className="cards-div" href="/access">
               <img className="first-active" src={AccessCard} alt=""/>
               <img className="first-inactive" src={AccessCardActive} alt=""/>
-            </div>
-            <div className="cards-div">
+            </a>
+            <a className="cards-div" href="/sponsorcircle">
               <img className="first-active" src={SponsorCircleCard} alt=""/>
               <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
-            </div>
-            <div className="cards-div">
+            </a>
+            <a className="cards-div" href="/knowbie">
               <img className="first-active" src={KnowbieCard} alt=""/>
               <img className="first-inactive" src={KnowbieCardActive} alt=""/>
-            </div>
-            <div className="cards-div">
+            </a>
+            <a className="cards-div" href="/aprio">
               <img className="first-active" src={AprioCard} alt=""/>
               <img className="first-inactive" src={AprioCardActive} alt=""/>
-            </div>
-            <div className="cards-div">
+            </a>
+            <a className="cards-div" href="/pivot">
               <img className="first-active" src={PivotCard} alt=""/>
               <img className="first-inactive" src={PivotCardActive} alt=""/>
-            </div>
-            <div className="cards-div">
+            </a>
+            <a className="cards-div" href="/finwell">
               <img className="first-active" src={FinWellCard} alt=""/>
               <img className="first-inactive" src={FinWellCardActive} alt=""/>
-            </div>
+            </a>
           </div>
         </div>
       </div>

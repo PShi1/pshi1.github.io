@@ -17,6 +17,10 @@ $off-black: #101010;
 $lilac: #DDD3FC;
 $background-color: #FCF9FF;
 
+.background {
+  background-color: $off-black;
+}
+
 // 2. Fonts
 $base-font-family: Manjari, Manrope, Verdana, sans-serif;
 $manrope-font-family: Manrope, sans-serif;
