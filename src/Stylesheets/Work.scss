@@ -94,7 +94,7 @@
     margin-right: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .cards-div {
@@ -102,6 +102,8 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 4vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 
     img {
       display: block;
@@ -110,7 +112,7 @@
     .first-active {
       opacity: 1;
       position: absolute;
-      transition: opacity 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
       top: 0;
       left: 0;
     }
@@ -118,7 +120,7 @@
     .first-inactive {
       opacity: 0;
       position: relative;
-      transition: opacity 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
       top: 0;
       left: 0;
     }
@@ -127,12 +129,14 @@
   .cards-div:hover {
     .first-active {
       opacity: 0;
-      transition: opacity 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      transform: translateY(-10px);
     }
 
     .first-inactive {
       opacity: 1;
-      transition: opacity 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      transform: translateY(-10px);
     }
   }
 }

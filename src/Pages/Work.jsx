@@ -3,9 +3,13 @@ import '../Stylesheets/Work.scss';
 import AccessCard from "../Assets/AccessCard.svg";
 import AccessCardActive from '../Assets/AccessCardActive.svg';
 import SponsorCircleCard from '../Assets/SponsorCircleCard.svg';
+import SponsorCircleCardActive from '../Assets/SponsorCircleCardActive.svg'
 import KnowbieCard from '../Assets/KnowbieCard.svg';
+import KnowbieCardActive from '../Assets/KnowbieCardActive.svg'
 import AprioCard from '../Assets/AprioCard.svg';
+import AprioCardActive from '../Assets/AprioCardActive.svg'
 import PivotCard from '../Assets/PivotCard.svg';
+import PivotCardActive from '../Assets/PivotCardActive.svg'
 import FinWellCard from '../Assets/FinWellCard.svg';
 import FinWellCardActive from '../Assets/FinWellCardActive.svg';
 
@@ -112,23 +116,22 @@ export const Work = () => {
             <div className="cards-div">
               <img className="first-active" src={AccessCard} alt=""/>
               <img className="first-inactive" src={AccessCardActive} alt=""/>
-
             </div>
             <div className="cards-div">
-              <img src={SponsorCircleCard} alt=""/>
-
+              <img className="first-active" src={SponsorCircleCard} alt=""/>
+              <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
             </div>
             <div className="cards-div">
-              <img src={KnowbieCard} alt=""/>
-
+              <img className="first-active" src={KnowbieCard} alt=""/>
+              <img className="first-inactive" src={KnowbieCardActive} alt=""/>
             </div>
             <div className="cards-div">
-              <img src={AprioCard} alt=""/>
-
+              <img className="first-active" src={AprioCard} alt=""/>
+              <img className="first-inactive" src={AprioCardActive} alt=""/>
             </div>
             <div className="cards-div">
-              <img src={PivotCard} alt=""/>
-
+              <img className="first-active" src={PivotCard} alt=""/>
+              <img className="first-inactive" src={PivotCardActive} alt=""/>
             </div>
             <div className="cards-div">
               <img className="first-active" src={FinWellCard} alt=""/>
