@@ -1,0 +1,149 @@
+@import 'index';
+
+.access-page {
+  // Since this page is white background, must alter all text to be black text
+  h1, h2, h3, p {
+    color: black;
+  }
+
+  .access-header {
+    width: 100%;
+  }
+
+  .overview, .ideation, .creation, .communication, .organization, .impact-inner, .reflection {
+    width: $default-small-margin-width;
+    margin: auto;
+  }
+
+  .left-column-33 {
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .right-column-67 {
+    width: 67%;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    #component-categorization, #file-organization-2 {
+      width: initial;
+      margin: auto;
+    }
+  }
+
+  .row-33-67 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.125vw;
+  }
+
+  .ideation {
+    .row {
+      margin-top: 2.5vw;
+
+      .left-column {
+        width: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        padding-right: 5%;
+      }
+
+      .right-column {
+        width: 50%;
+        float: right;
+        display: inline-block;
+        box-sizing: border-box;
+        padding-left: 5%;
+      }
+
+      .emoji {
+        margin: auto;
+      }
+    }
+
+    .north-star-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .left-column, .center-column, .right-column {
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .left-column {
+        padding-right: 2.5%;
+      }
+
+      .center-column {
+        padding: 0 2.5%;
+      }
+
+      .right-column {
+        padding-left: 2.5%;
+      }
+    }
+  }
+
+  .organization {
+    #onboarding {
+      width: 100%;
+    }
+  }
+
+  .impact {
+    background-color: $black;
+    padding-top: 1.56vw;
+    margin-top: 2.07vw;
+
+    .impact-inner {
+
+      #impact-title {
+        margin-bottom: 3.12vw;
+      }
+
+      p, .cs-body {
+        color: $white;
+      }
+
+      .cs-title {
+        margin-top: 0;
+      }
+
+      .impact-left, .impact-right {
+        width: 50%;
+        display: inline-flex;
+        flex-direction: column;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+          margin-bottom: 0.9375vw;
+        }
+      }
+
+      .impact-number {
+        font-family: $inter-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4vw;
+        line-height: 150%;
+      }
+    }
+  }
+
+  #access-final-image {
+    width: 100%;
+  }
+}
