@@ -13,7 +13,7 @@
     width: 100%;
   }
 
-  .overview, .ideation, .creation, .communication, .organization, .impact-inner, .reflection {
+  .overview, .ideation, .creation, .iteration, .organization, .impact-inner, .reflection {
     width: $default-small-margin-width;
     margin: auto;
   }
@@ -104,6 +104,12 @@
     width: 100%;
   }
 
+  .iteration {
+    #old-design-specs, #new-design-specs {
+      width: 100%;
+    }
+  }
+
   .organization {
     #onboarding {
       width: 100%;
@@ -117,6 +123,8 @@
     padding-bottom: 3.12vw;
 
     .impact-inner {
+      margin-top: 3.125vw;
+
       p, .cs-body {
         color: $white;
       }
@@ -161,5 +169,38 @@
 
   #access-final-image {
     width: 100%;
+  }
+
+  // Attempting highlight
+  .blue-background {
+    background-color: $light-blue;
+    margin: 0;
+    padding-bottom: 0;
+    display: inline-block;
+
+    .highlighted-text {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  .highlight{
+    display: inline-block;
+    width: max-content;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, $off-white 50%, $light-blue 50%);
+    background-position: 0 0;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .highlight.active{
+    animation-name: highlight;
+  }
+
+  @keyframes highlight {
+    from {background-position: 0 0;}
+    to {background-position: -100% 0;}
   }
 }
