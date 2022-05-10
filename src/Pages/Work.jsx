@@ -1,17 +1,17 @@
 import React, {useEffect} from 'react';
 import '../Stylesheets/Work.scss';
-import AccessCard from "../Assets/AccessCard.svg";
-import AccessCardActive from '../Assets/AccessCardActive.svg';
-import SponsorCircleCard from '../Assets/SponsorCircleCard.svg';
-import SponsorCircleCardActive from '../Assets/SponsorCircleCardActive.svg'
-import KnowbieCard from '../Assets/KnowbieCard.svg';
-import KnowbieCardActive from '../Assets/KnowbieCardActive.svg'
-import AprioCard from '../Assets/AprioCard.svg';
-import AprioCardActive from '../Assets/AprioCardActive.svg'
-import PivotCard from '../Assets/PivotCard.svg';
-import PivotCardActive from '../Assets/PivotCardActive.svg'
-import FinWellCard from '../Assets/FinWellCard.svg';
-import FinWellCardActive from '../Assets/FinWellCardActive.svg';
+import AccessCard from "../Assets/WorkPageImages/AccessCard.svg";
+import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.svg';
+import SponsorCircleCard from '../Assets/WorkPageImages/SponsorCircleCard.svg';
+import SponsorCircleCardActive from '../Assets/WorkPageImages/SponsorCircleCardActive.svg'
+import KnowbieCard from '../Assets/WorkPageImages/KnowbieCard.svg';
+import KnowbieCardActive from '../Assets/WorkPageImages/KnowbieCardActive.svg'
+import AprioCard from '../Assets/WorkPageImages/AprioCard.svg';
+import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.svg'
+import PivotCard from '../Assets/WorkPageImages/PivotCard.svg';
+import PivotCardActive from '../Assets/WorkPageImages/PivotCardActive.svg'
+import FinWellCard from '../Assets/WorkPageImages/FinWellCard.svg';
+import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.svg';
 
 /**
  * Page component for the main page
@@ -99,12 +99,12 @@ export const Work = () => {
           <div className="header-outer-div">
             <div className="row">
               <div className="header-area">
-                <h1>Hello.</h1>
+                <h1>HEY, I'M EMMA.</h1>
               </div>
             </div>
 
             <div>
-              <p className="b1-light">I'm Emma, a coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
+              <p className="b1-light">A coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
               <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
             </div>
             <div className="typewriter-wrapper-div">

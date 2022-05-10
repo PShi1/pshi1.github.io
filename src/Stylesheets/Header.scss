@@ -23,6 +23,12 @@
       float: left;
       height: fit-content;
       margin: 0.4vw;
+
+      a {
+        img {
+          width: fit-content;
+        }
+      }
     }
 
     .menu {

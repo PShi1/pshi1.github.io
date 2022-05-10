@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari');
 @import url('https://fonts.googleapis.com/css2?family=Manrope');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
 
 // 0. Margins
@@ -62,7 +63,7 @@ $black: #000000;
 $off-black: #101010;
 $lilac: #DDD3FC;
 $background-color: #FCF9FF;
-$light-blue: #E0EDF5;
+$light-blue: #BACBFF;
 
 $main-background-colour-dark: $black;
 
@@ -85,16 +86,16 @@ $inter-font-family: Inter, sans-serif;
 }
 
 h1 {
-  font-family: $major-mono-display-font-family;
+  font-family: $manrope-font-family;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 5vw;
   line-height: 150%;
   color: $white;
 }
 
 h2 {
-  font-family: $major-mono-display-font-family;
+  font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -103,9 +104,9 @@ h2 {
 }
 
 h3 {
-  font-family: $major-mono-display-font-family;
+  font-family: $manrope-font-family;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1vw;
   line-height: 150%;
   color: $white;
@@ -167,7 +168,7 @@ h3 {
 
 // Only for case studies
 .cs-title {
-  font-family: $inter-font-family;
+  font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 1.55vw;
@@ -202,8 +203,8 @@ h3 {
   color: $black;
 }
 
-.cs-inter {
-  font-family: $inter-font-family;
+.cs-manrope {
+  font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
   font-size: 1.7vw;

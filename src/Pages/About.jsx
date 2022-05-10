@@ -48,9 +48,9 @@ export const About = () => {
     <div className="background">
       <div className="about-page">
         <div className="intro">
-          <h1>Passionate.</h1>
-          <h1>Creative.</h1>
-          <h1>Empathetic.</h1>
+          <h1>PASSIONATE.</h1>
+          <h1>CREATIVE.</h1>
+          <h1>EMPATHETIC.</h1>
           <p className="b1-light" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
 
           <div id="scroll-down" onClick={() => scrollToCaseStudies()}>
@@ -88,7 +88,7 @@ export const About = () => {
 
         <div className="collapsibles-region">
           <div className="collapsible-header" id="bit-more-about-me" onClick={(e) => handleCollapsible(e)}>
-            <h2>Bit more about me 😊</h2>
+            <h2>BIT MORE ABOUT ME 😊</h2>
             <img src={DownArrow} alt="" id="bit-more-about-me-arrow"/>
           </div>
           <div className="collapsible-item" id="bit-more-about-me-item">
@@ -125,7 +125,7 @@ export const About = () => {
 
         <div className="collapsibles-region">
           <div className="collapsible-header" id="after-hours" onClick={(e) => handleCollapsible(e)}>
-            <h2>After hours 🌙</h2>
+            <h2>AFTER HOURS 🌙</h2>
             <img src={DownArrow} alt="" id="after-hours-arrow"/>
           </div>
           <div className="collapsible-item" id="after-hours-item">
@@ -140,7 +140,7 @@ export const About = () => {
 
         <div className="collapsibles-region">
           <div className="collapsible-header" id="on-my-bookshelf" onClick={(e) => handleCollapsible(e)}>
-            <h2>On my bookshelf 📚</h2>
+            <h2>ON MY BOOKSHELF 📚</h2>
             <img src={DownArrow} alt="" id="on-my-bookshelf-arrow"/>
           </div>
           <div className="collapsible-item" id="on-my-bookshelf-item">
@@ -152,7 +152,7 @@ export const About = () => {
 
         <div className="collapsibles-region">
           <div className="collapsible-header" id="for-me-design-is" onClick={(e) => handleCollapsible(e)}>
-            <h2>For me, design is 🎨</h2>
+            <h2>FOR ME, DESIGN IS 🎨</h2>
             <img src={DownArrow} alt="" id="for-me-design-is-arrow"/>
           </div>
           <div className="collapsible-item" id="for-me-design-is-item">
@@ -179,7 +179,7 @@ export const About = () => {
 
         <div className="collapsibles-region">
           <div className="collapsible-header" id="design-resources" onClick={(e) => handleCollapsible(e)}>
-            <h2>Design Resources 🖌️</h2>
+            <h2>DESIGN RESOURCES 🖌️</h2>
             <img src={DownArrow} alt="" id="design-resources-arrow"/>
           </div>
           <div className="collapsible-item" id="design-resources-item">
@@ -213,7 +213,7 @@ export const About = () => {
         </div>
 
         <div className="outro">
-          <h2>This doesn't have to be the end ✌️</h2>
+          <h2>THIS DOESN'T HAVE TO BE THE END ✌️</h2>
           <p className="b1-light">Reach me at <strong className="yellow-font-colour">uxemmali@gmail.com</strong> for
             any comments, feedback, or outrageous ideas. </p>
         </div>

@@ -18,7 +18,7 @@ import FlowChart from '../Assets/AccessPageImages/FlowChart.svg';
 import FileOrganization1 from '../Assets/AccessPageImages/FileOrganization1.svg';
 import FileOrganization2 from '../Assets/AccessPageImages/FileOrganization2.svg';
 import Onboarding from '../Assets/AccessPageImages/Onboarding.svg';
-import AccessFinalImage from '../Assets/AccessPageImages/accessFinalImage.svg';
+import AccessFinalImage from '../Assets/AccessPageImages/AccessIcons.png';
 import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.svg';
 import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpec1.svg';
 import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpec2.svg';
@@ -44,23 +44,27 @@ export const Access = () => {
    * Highlights words that are preset, when they're visible on the screen
    */
   const highlight = () => {
-    let scroll = window.scrollY;
-    let innerHeight = window.innerHeight;
+    let topOffset = 100;
+    let scroll = window.scrollY + topOffset;
+    let innerHeight = window.innerHeight - topOffset;
+    let screenBottom = innerHeight;
 
     let elements = document.getElementsByClassName("highlight");
-    let delay = 500;
 
     window.addEventListener("scroll", () => {
       scroll = window.scrollY;
+      screenBottom = scroll + innerHeight;
 
-      if ((scroll + innerHeight) >= elements[0].offsetTop) {
-        for (const element of elements) {
-          if ((scroll + innerHeight) >= elements[0].offsetTop) {
-            setTimeout(() => {
-              element.classList.add("active");
-            }, delay);
+      for (const element of elements) {
+        // If element is on the screen ...
+        if (element.offsetTop < screenBottom - topOffset && element.offsetTop > scroll + topOffset) {
+          if (!element.classList.contains("active")) {
+            element.classList.add("active");
           }
-          // delay += 1400;
+        } else if (element.offsetTop > screenBottom + 150 || element.offsetTop < scroll - 150) {
+          if (element.classList.contains("active")) {
+            element.classList.remove("active");
+          }
         }
       }
     })
@@ -72,7 +76,7 @@ export const Access = () => {
 
       <div className="overview">
         <h3 className="cs-title margin-bottom-80px">Overview</h3>
-        <h2 className="cs-inter margin-bottom-80px">i led a team to build and maintain a design system for an entire ecosystem
+        <h2 className="cs-manrope margin-bottom-80px">i led a team to build and maintain a design system for an entire ecosystem
           of software products.</h2>
 
         <h3 className="cs-subtitle margin-bottom-16px">Context</h3>
@@ -139,7 +143,7 @@ export const Access = () => {
           </div>
         </div>
 
-        <h3 className="cs-inter margin-bottom-80px">We needed to create a design system that would bring structure and organization to the entire design process.</h3>
+        <h3 className="cs-manrope margin-bottom-80px">We needed to create a design system that would bring structure and organization to the entire design process.</h3>
         <h3 className="cs-subtitle margin-bottom-12px">Stakeholder Buy In</h3>
 
         <p className="cs-body">
@@ -184,15 +188,15 @@ export const Access = () => {
 
           <h3 className="cs-subtitle-2 margin-bottom-12px">Preliminary Research</h3>
           <p className="cs-body">This was the first design system any of us had ever built, so we relied on research and following the
-            examples of some of the most recognized design systems out there such as Shopify’s <u>Polaris</u>,
-            IBM’s <u>Carbon</u>, or Saleforce’s <u>Lightning</u>. We <div className="highlight">took note of all the common practices and methods for
+            examples of some of the most recognized design systems out there such as Shopify’s <a className="cs-body" href="https://polaris.shopify.com/">Polaris</a>,
+            IBM’s <a className="cs-body" href="https://carbondesignsystem.com/">Carbon</a>, or Saleforce’s <a className="cs-body" href="https://www.salesforce.com/ca/campaign/lightning/">Lightning</a>. We <div className="highlight">took note of all the common practices and methods for
               how the systems were</div> <div className="highlight">organized and brainstormed on how those examples could serve our purposes best.</div></p>
         </div>
       </div>
 
       <div className="creation margin-bottom-80px">
         <h2 className="cs-title margin-bottom-80px"><strong className="blue-text">02 </strong>- Creation</h2>
-        <h3 className="cs-inter margin-bottom-80px">We started by breaking down the existing design elements into groups and categories.</h3>
+        <h3 className="cs-manrope margin-bottom-80px">We started by breaking down the existing design elements into groups and categories.</h3>
         <div className="row-42-58">
           <div className="left-column-42 right-padding-28px">
             <p className="cs-subtitle margin-bottom-12px">Foundation</p>
@@ -264,7 +268,7 @@ export const Access = () => {
           </div>
         </div>
 
-        <h2 className="cs-inter margin-bottom-80px">
+        <h2 className="cs-manrope margin-bottom-80px">
           Once we had organized the chaos, we knew we needed to document a standard process moving forward.
         </h2>
         <img className="margin-bottom-80px" id="creation-flowchart" src={FlowChart} alt=""/>

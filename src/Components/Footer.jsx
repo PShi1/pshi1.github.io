@@ -17,7 +17,7 @@ export const Footer = () => {
   return (
     <div className="footer" id="footer">
       <div className="center-column">
-        <h2 className="large-text"> Let's grab a cup of coffee. </h2>
+        <h2 className="large-text"> LET'S CREATE SOMETHING AMAZING TOGETHER. </h2>
         <div className="image-container">
           <img id="mail-icon" src={MailIcon} alt="email" onClick={copyEmail}/>
           <img id="mail-icon-dark" src={MailIconDark} alt="email" onClick={copyEmail}/>
