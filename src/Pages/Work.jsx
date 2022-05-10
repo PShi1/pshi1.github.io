@@ -119,6 +119,28 @@ export const Work = () => {
             </div>
           </div>
 
+          <div className="case-study-tags-container">
+            <div className="tag-container" id="all-tag">
+              <p className="cs-body"/>
+            </div>
+
+            <div className="tag-container" id="web-tag">
+              <p className="cs-body"/>
+            </div>
+
+            <div className="tag-container" id="mobile-tag">
+              <p className="cs-body"/>
+            </div>
+
+            <div className="tag-container" id="work-project-tag">
+              <p className="cs-body"/>
+            </div>
+
+            <div className="tag-container" id="design-system-tag">
+              <p className="cs-body"/>
+            </div>
+          </div>
+
           <div id="case-studies-container">
             <a className="cards-div" href="/access">
               <img className="first-active" src={AccessCard} alt=""/>

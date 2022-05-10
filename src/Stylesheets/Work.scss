@@ -76,14 +76,8 @@
     }
   }
 
-  .half-width {
-    display: block;
-    width: 25%;
-    box-sizing: border-box;
-  }
-
   #case-studies-container {
-    padding-top: 12vh;
+    padding-top: 6vh;
     display: flex;
     width: $default-margin-width;
     margin-left: auto;
@@ -135,30 +129,89 @@
       transform: translateY(-10px);
     }
   }
-}
 
-@media screen and (max-width: 3000px){
-  .work-page {
-    .half-width {
-      width: 33%;
+  .case-study-tags-container {
+    display: flex;
+    width: $default-margin-width;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vw;
+    justify-content: space-between;
+    perspective: 1000px;
+
+    .tag-container {
+
+      p {
+        margin: 0;
+        padding: 0;
+        color: $white;
+        font-size: 1vw;
+        line-height: 150%;
+      }
     }
   }
-}
 
-@media screen and (max-width: 2400px){
-  .work-page {
-    .half-width {
-      width: 48.5%;
-    }
+  // Start button test - https://codepen.io/Anon_satyam/pen/JjXLoNJ
+  .tag-container {
+    position: relative;
+    display: inline-flex;
+    height: 55px;
+    perspective: 1000px;
+    cursor: pointer;
   }
-}
 
-@media screen and (max-width: 1650px){
-  .work-page {
-    .half-width {
-      width: 100%;
-    }
+  .tag-container p{
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
   }
+
+  .tag-container p:before,
+  .tag-container p:after{
+    width: 10vw;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid $white;
+
+  }
+  .tag-container p:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .tag-container p:after{
+    background-color: $white;
+    color: black;
+    transform: rotateX(90deg) translateZ(80px);
+  }
+  .tag-container p:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+
+  #all-tag p:before, #all-tag p:after{
+    content: "ALL";
+  }
+
+  #web-tag p:before, #web-tag p:after{
+    content: "WEB";
+  }
+
+  #mobile-tag p:before, #mobile-tag p:after{
+    content: "MOBILE";
+  }
+
+  #work-project-tag p:before, #work-project-tag p:after{
+    content: "WORK PROJECT";
+  }
+
+  #design-system-tag p:before, #design-system-tag p:after{
+    content: "DESIGN SYSTEM";
+  }
+
+  // End button test
 }
 
 @media screen and (max-width: $mobile-view-max-width){
