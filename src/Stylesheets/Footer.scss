@@ -49,6 +49,30 @@
       }
     }
   }
+
+  #linkedin-icon-dark, #mail-icon-dark {
+    display: none;
+  }
+}
+
+.footer.light-mode {
+  background-color: $off-white;
+
+  .large-text, .medium-text, .small-text {
+    color: $black;
+  }
+
+  .center-column {
+    border-top: 1px solid $black;
+  }
+
+  #linkedin-icon-dark, #mail-icon-dark {
+    display: block;
+  }
+
+  #linkedin-icon, #mail-icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: $mobile-view-max-width){

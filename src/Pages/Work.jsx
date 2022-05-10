@@ -58,8 +58,15 @@ export const Work = () => {
   };
 
   useEffect(() => {
-
     window.scrollTo(0,0);
+
+    if (document.getElementById("nav-wrapper").classList.contains("light-mode")) {
+      document.getElementById("nav-wrapper").classList.remove("light-mode");
+    }
+
+    if (document.getElementById("footer").classList.contains("light-mode")) {
+      document.getElementById("footer").classList.remove("light-mode");
+    }
 
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {

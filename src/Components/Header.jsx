@@ -5,7 +5,7 @@ import '../Stylesheets/Header.scss';
 
 export const Header = () => {
   return (
-    <div className="nav-wrapper">
+    <div className="nav-wrapper" id="nav-wrapper">
       <nav className="navbar">
         <div className="logo">
           <a href="/">

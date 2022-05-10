@@ -8,7 +8,15 @@ import Books from "../Assets/Books.png"
 export const About = () => {
   useEffect(() => {
     window.scrollTo(0,0);
-  }, [])
+
+    if (document.getElementById("nav-wrapper").classList.contains("light-mode")) {
+      document.getElementById("nav-wrapper").classList.remove("light-mode");
+    }
+
+    if (document.getElementById("footer").classList.contains("light-mode")) {
+      document.getElementById("footer").classList.remove("light-mode");
+    }
+  }, []);
 
   const scrollToCaseStudies = () => {
     let element = document.getElementById("more-about-me");

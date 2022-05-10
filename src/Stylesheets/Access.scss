@@ -4,8 +4,9 @@
   background-color: $off-white;
 
   // Since this page is white background, must alter all text to be black text
-  h1, h2, h3, p {
+  h1, h2, h3, p, ul {
     color: black;
+    margin: 0;
   }
 
   .access-header {
@@ -17,14 +18,14 @@
     margin: auto;
   }
 
-  .left-column-33 {
-    width: 33%;
+  .left-column-42 {
+    width: 42%;
     box-sizing: border-box;
     display: inline-block;
   }
 
-  .right-column-67 {
-    width: 67%;
+  .right-column-58 {
+    width: 58%;
     box-sizing: border-box;
     display: inline-flex;
     flex-direction: column;
@@ -39,7 +40,7 @@
     }
   }
 
-  .row-33-67 {
+  .row-42-58 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,7 +56,7 @@
         width: 50%;
         display: inline-block;
         box-sizing: border-box;
-        padding-right: 5%;
+        padding-right: 0;
       }
 
       .right-column {
@@ -74,6 +75,10 @@
     .north-star-row {
       display: flex;
       flex-wrap: wrap;
+
+      .spacing-div {
+        display: flex;
+      }
 
       .left-column, .center-column, .right-column {
         width: 33%;
@@ -95,6 +100,10 @@
     }
   }
 
+  #creation-flowchart {
+    width: 100%;
+  }
+
   .organization {
     #onboarding {
       width: 100%;
@@ -105,13 +114,9 @@
     background-color: $black;
     padding-top: 1.56vw;
     margin-top: 2.07vw;
+    padding-bottom: 3.12vw;
 
     .impact-inner {
-
-      #impact-title {
-        margin-bottom: 3.12vw;
-      }
-
       p, .cs-body {
         color: $white;
       }
@@ -121,9 +126,16 @@
       }
 
       .impact-left, .impact-right {
-        width: 50%;
         display: inline-flex;
         flex-direction: column;
+      }
+
+      .impact-left {
+        width: 63%;
+      }
+
+      .impact-right {
+        width: 37%;
       }
 
       ul {
@@ -141,6 +153,8 @@
         font-weight: 700;
         font-size: 1.4vw;
         line-height: 150%;
+        display: inline-block;
+        padding-right: 0.2vw;
       }
     }
   }

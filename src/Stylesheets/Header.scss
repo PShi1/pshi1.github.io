@@ -8,7 +8,6 @@
   position: fixed;
 
   .navbar {
-    color: $off-black;
     position: initial;
     top: 0;
     height: fit-content;
@@ -61,7 +60,7 @@
           width: 0%;
           height: 1px;
           bottom: 0;
-          background: $off-white;
+          background: $off-white !important;
         }
 
         a:before {
@@ -70,13 +69,13 @@
         }
 
         a:after {
-          background: $off-white;
+          background: $off-white !important;
           right: 0;
-          /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
         }
 
         a:hover:before {
-          background: $off-white;
+          background: $off-white !important;
           width: 100%;
           transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
         }
@@ -96,6 +95,68 @@
     @media(orientation: landscape) {
       #navbar ul {
         display: inline-block;
+      }
+    }
+  }
+}
+
+.nav-wrapper.light-mode {
+  background-color: $off-white;
+
+  h3 {
+    color: $black;
+  }
+
+  .navbar {
+    .menu {
+      .menu-item {
+        a {
+          display: block;
+          position: relative;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+        }
+
+        a:hover {
+          /* border-bottom: 1px solid rgb(28, 121, 184); */
+          color: rgb(28, 121, 184);
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+        }
+
+        /* Animated Bottom Line */
+        a:before, a:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          bottom: 0;
+          background: $black !important;
+        }
+
+        a:before {
+          left: 0;
+          transition: 0.5s;
+        }
+
+        a:after {
+          background: $black !important;
+          right: 0;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        a:hover:before {
+          background: $black !important;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        a:hover:after {
+          background: transparent;
+          width: 100%;
+          /* transition: 0s; */
+        }
       }
     }
   }
