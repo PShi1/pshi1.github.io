@@ -18,8 +18,10 @@ $off-black: #101010;
 $lilac: #DDD3FC;
 $background-color: #FCF9FF;
 
+$main-background-colour-dark: $black;
+
 .background {
-  background-color: $off-black;
+  background-color: $main-background-colour-dark;
 }
 
 // 2. Fonts
@@ -42,7 +44,7 @@ h1 {
   font-weight: 400;
   font-size: 5vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
 h2 {
@@ -51,7 +53,7 @@ h2 {
   font-weight: 400;
   font-size: 2vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
 h3 {
@@ -60,7 +62,7 @@ h3 {
   font-weight: 400;
   font-size: 1.1vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
 .b1-light {
@@ -69,7 +71,7 @@ h3 {
   font-weight: 300;
   font-size: 2vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
 .b2 {
@@ -78,7 +80,7 @@ h3 {
   font-weight: 300;
   font-size: 1.65vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
 .b3 {
@@ -87,7 +89,7 @@ h3 {
   font-weight: 300;
   font-size: 1.25vw;
   line-height: 200%;
-  color: $off-white;
+  color: $white;
 }
 
 .b4 {
@@ -96,7 +98,7 @@ h3 {
   font-weight: 300;
   font-size: 1.4vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
 .b5 {
@@ -114,9 +116,10 @@ h3 {
   font-weight: 400;
   font-size: 1.15vw;
   line-height: 150%;
-  color: $off-white;
+  color: $white;
 }
 
+// Only for case studies
 .cs-title {
   font-family: $inter-font-family;
   font-style: normal;
@@ -162,6 +165,7 @@ h3 {
   text-transform: uppercase;
   color: $black;
 }
+// End of only for case studies
 
 .blue-text {
   color: $finwell-blue;

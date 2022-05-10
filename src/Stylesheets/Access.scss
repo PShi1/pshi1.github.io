@@ -1,6 +1,8 @@
 @import 'index';
 
 .access-page {
+  background-color: $off-white;
+
   // Since this page is white background, must alter all text to be black text
   h1, h2, h3, p {
     color: black;
