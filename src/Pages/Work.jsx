@@ -24,8 +24,18 @@ export const Work = () => {
   const mobileCards = ["sponsorcircle-card", "knowbie-card", "finwell-card"];
   const prototypingCards = ["knowbie-card", "pivot-card", "finwell-card"];
   const designSystemCards = ["access-card", "pivot-card", "finwell-card"];
+  const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
+    if (firstRender) return;
+    for (const cardName of allCards) {
+      let el = document.getElementById(cardName);
+      if (el.classList.contains("play-animation")) {
+        el.classList.remove("play-animation");
+      }
+    }
+    let cardsArrayUsed;
+
     if (currentTag === "all-tag") {
       for (const cardName of allCards) {
         let el = document.getElementById(cardName);
@@ -36,8 +46,8 @@ export const Work = () => {
       document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
       document.getElementById("knowbie-card").style.marginLeft = "1%";
       document.getElementById("knowbie-card").style.marginRight = "0%";
+      cardsArrayUsed = allCards;
     } else {
-      let cardsArrayUsed;
       if (currentTag === "mobile-tag" || currentTag === "prototyping-tag") {
         document.getElementById("knowbie-card").style.marginRight = "1%";
         if (currentTag === "mobile-tag") {
@@ -65,13 +75,9 @@ export const Work = () => {
       } else {
         cardsArrayUsed = allCards;
       }
+    }
 
-      for (const cardName of cardsArrayUsed) {
-        let el = document.getElementById(cardName);
-        if (!el.classList.contains("active")) {
-          el.classList.add("active");
-        }
-      }
+    setTimeout(() => {
       const filteredArray = allCards.filter(value => !cardsArrayUsed.includes(value));
       for (const cardName of filteredArray) {
         let el = document.getElementById(cardName);
@@ -79,19 +85,19 @@ export const Work = () => {
           el.classList.remove("active");
         }
       }
-    }
+      let delay = 0;
 
-    // Set header active state
-    // Mark current header link as active
-    if (!document.getElementById("work-menu-item").classList.contains("active")) {
-      document.getElementById("work-menu-item").classList.add("active");
-    }
-    if (document.getElementById("play-menu-item").classList.contains("active")) {
-      document.getElementById("play-menu-item").classList.remove("active");
-    }
-    if (document.getElementById("about-menu-item").classList.contains("active")) {
-      document.getElementById("about-menu-item").classList.remove("active");
-    }
+      cardsArrayUsed = shuffleArray(cardsArrayUsed);
+      for (const cardName of cardsArrayUsed) {
+        let el = document.getElementById(cardName);
+        if (!el.classList.contains("active")) {
+          el.classList.add("active");
+        }
+        setTimeout(() => {el.classList.add("play-animation")}, delay);
+        delay += 100;
+
+      }
+    }, 25);
   }, [currentTag]);
 
   // Start of Typewriter - https://codepen.io/hi-im-si/pen/ALgzqo
@@ -162,6 +168,18 @@ export const Work = () => {
 
     fadeInIntro();
     fadeInOnScroll();
+
+    // Set header active state
+    // Mark current header link as active
+    if (!document.getElementById("work-menu-item").classList.contains("active")) {
+      document.getElementById("work-menu-item").classList.add("active");
+    }
+    if (document.getElementById("play-menu-item").classList.contains("active")) {
+      document.getElementById("play-menu-item").classList.remove("active");
+    }
+    if (document.getElementById("about-menu-item").classList.contains("active")) {
+      document.getElementById("about-menu-item").classList.remove("active");
+    }
   }, []);
   // End of Typewriter
 
@@ -206,9 +224,7 @@ export const Work = () => {
     let elements1 = document.getElementsByClassName("appear-on-scroll-1");
     let elements2 = document.getElementsByClassName("appear-on-scroll-2");
     elements2 = Array.from(elements2);
-    console.log(elements2);
     elements2 = shuffleArray(elements2);
-    console.log(elements2);
     let firstCard = document.getElementById("access-card");
     let scroll = window.scrollY;
     let innerHeight = window.innerHeight;
@@ -237,6 +253,7 @@ export const Work = () => {
 
       let pos = firstCard.offsetTop;
       if (scroll + innerHeight / 1.1 >= pos) {
+        setFirstRender(false);
         setTimeout(function() {
           accessCard.classList.add("play-animation");
           aprioCard.classList.add("play-animation");
