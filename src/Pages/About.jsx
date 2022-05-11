@@ -9,12 +9,24 @@ export const About = () => {
   useEffect(() => {
     window.scrollTo(0,0);
 
+    // Reset filters
     if (document.getElementById("nav-wrapper").classList.contains("light-mode")) {
       document.getElementById("nav-wrapper").classList.remove("light-mode");
     }
 
     if (document.getElementById("footer").classList.contains("light-mode")) {
       document.getElementById("footer").classList.remove("light-mode");
+    }
+
+    // Mark current header link as active
+    if (!document.getElementById("about-menu-item").classList.contains("active")) {
+      document.getElementById("about-menu-item").classList.add("active");
+    }
+    if (document.getElementById("play-menu-item").classList.contains("active")) {
+      document.getElementById("play-menu-item").classList.remove("active");
+    }
+    if (document.getElementById("work-menu-item").classList.contains("active")) {
+      document.getElementById("work-menu-item").classList.remove("active");
     }
   }, []);
 

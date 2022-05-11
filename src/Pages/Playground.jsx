@@ -1,9 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import "../Stylesheets/Playground.scss"
 
 export const Playground = () => {
+  useEffect(() => {
+    // Mark current header link as active
+    if (!document.getElementById("play-menu-item").classList.contains("active")) {
+      document.getElementById("play-menu-item").classList.add("active");
+    }
+    if (document.getElementById("work-menu-item").classList.contains("active")) {
+      document.getElementById("work-menu-item").classList.remove("active");
+    }
+    if (document.getElementById("about-menu-item").classList.contains("active")) {
+      document.getElementById("about-menu-item").classList.remove("active");
+    }
+  }, []);
+
     return (
-        <div>
-            <h1> Playground </h1>
+      <div className="background">
+        <div className="playground-wrapper">
+          <h1>Life is not all about work.</h1>
         </div>
+      </div>
     )
 }

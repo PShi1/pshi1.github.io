@@ -79,6 +79,18 @@ export const Work = () => {
         }
       }
     }
+
+    // Set header active state
+    // Mark current header link as active
+    if (!document.getElementById("work-menu-item").classList.contains("active")) {
+      document.getElementById("work-menu-item").classList.add("active");
+    }
+    if (document.getElementById("play-menu-item").classList.contains("active")) {
+      document.getElementById("play-menu-item").classList.remove("active");
+    }
+    if (document.getElementById("about-menu-item").classList.contains("active")) {
+      document.getElementById("about-menu-item").classList.remove("active");
+    }
   }, [currentTag]);
 
   // Start of Typewriter - https://codepen.io/hi-im-si/pen/ALgzqo
@@ -171,86 +183,86 @@ export const Work = () => {
   }
 
   return (
-      <div className="background">
-        <div className="work-page">
-          <div className="header-outer-div">
-            <div className="row">
-              <div className="header-area">
-                <h1>HEY, I'M EMMA.</h1>
-              </div>
-            </div>
-
-            <div>
-              <p className="b1-light">A coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
-              <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
-            </div>
-            <div className="typewriter-wrapper-div">
-              <p className="typewriter-prefix b1-light">I'm also</p>
-              <div className="typewrite"/>
-            </div>
-
-            <div className="margin-bottom-80px" id="scroll-down" onClick={() => scrollToCaseStudies()}>
-              <span id="scroll-title" className="b4">
-                EXPLORE SELECTED CASE STUDIES
-              </span>
+    <div className="background">
+      <div className="work-page">
+        <div className="header-outer-div">
+          <div className="row">
+            <div className="header-area">
+              <h1>HEY, I'M EMMA.</h1>
             </div>
           </div>
 
-          <div className="case-study-tags-container" id="case-study-tags-container">
-            <div className="tag-container active" id="all-tag" onClick={() => handleTagClick("all-tag")}>
-              <p className="cs-body"/>
-            </div>
-
-            <div className="tag-container" id="web-tag" onClick={() => handleTagClick("web-tag")}>
-              <p className="cs-body"/>
-            </div>
-
-            <div className="tag-container" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
-              <p className="cs-body"/>
-            </div>
-
-            <div className="tag-container" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
-              <p className="cs-body"/>
-            </div>
-
-            <div className="tag-container" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
-              <p className="cs-body"/>
-            </div>
+          <div>
+            <p className="b1-light">A coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
+            <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
+          </div>
+          <div className="typewriter-wrapper-div">
+            <p className="typewriter-prefix b1-light">I'm also</p>
+            <div className="typewrite"/>
           </div>
 
-          <div id="case-studies-container">
-            <a className="cards-div active" href="/access" id="access-card">
-              <img className="first-active" src={AccessCard} alt=""/>
-              <img className="first-inactive" src={AccessCardActive} alt=""/>
-            </a>
-
-            <a className="cards-div active" href="/sponsorcircle" id="sponsorcircle-card">
-              <img className="first-active" src={SponsorCircleCard} alt=""/>
-              <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
-            </a>
-
-            <a className="cards-div active" href="/knowbie" id="knowbie-card">
-              <img className="first-active" src={KnowbieCard} alt=""/>
-              <img className="first-inactive" src={KnowbieCardActive} alt=""/>
-            </a>
-
-            <a className="cards-div active" href="/aprio" id="aprio-card">
-              <img className="first-active" src={AprioCard} alt=""/>
-              <img className="first-inactive" src={AprioCardActive} alt=""/>
-            </a>
-
-            <a className="cards-div active" href="/pivot" id="pivot-card">
-              <img className="first-active" src={PivotCard} alt=""/>
-              <img className="first-inactive" src={PivotCardActive} alt=""/>
-            </a>
-
-            <a className="cards-div active" href="/finwell" id="finwell-card">
-              <img className="first-active" src={FinWellCard} alt=""/>
-              <img className="first-inactive" src={FinWellCardActive} alt=""/>
-            </a>
-
+          <div className="margin-bottom-80px" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+            <span id="scroll-title" className="b4">
+              EXPLORE SELECTED CASE STUDIES
+            </span>
           </div>
         </div>
+
+        <div className="case-study-tags-container" id="case-study-tags-container">
+          <div className="tag-container active" id="all-tag" onClick={() => handleTagClick("all-tag")}>
+            <p className="cs-body"/>
+          </div>
+
+          <div className="tag-container" id="web-tag" onClick={() => handleTagClick("web-tag")}>
+            <p className="cs-body"/>
+          </div>
+
+          <div className="tag-container" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
+            <p className="cs-body"/>
+          </div>
+
+          <div className="tag-container" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
+            <p className="cs-body"/>
+          </div>
+
+          <div className="tag-container" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
+            <p className="cs-body"/>
+          </div>
+        </div>
+
+        <div id="case-studies-container">
+          <a className="cards-div active" href="/access" id="access-card">
+            <img className="first-active" src={AccessCard} alt=""/>
+            <img className="first-inactive" src={AccessCardActive} alt=""/>
+          </a>
+
+          <a className="cards-div active" href="/sponsorcircle" id="sponsorcircle-card">
+            <img className="first-active" src={SponsorCircleCard} alt=""/>
+            <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
+          </a>
+
+          <a className="cards-div active" href="/knowbie" id="knowbie-card">
+            <img className="first-active" src={KnowbieCard} alt=""/>
+            <img className="first-inactive" src={KnowbieCardActive} alt=""/>
+          </a>
+
+          <a className="cards-div active" href="/aprio" id="aprio-card">
+            <img className="first-active" src={AprioCard} alt=""/>
+            <img className="first-inactive" src={AprioCardActive} alt=""/>
+          </a>
+
+          <a className="cards-div active" href="/pivot" id="pivot-card">
+            <img className="first-active" src={PivotCard} alt=""/>
+            <img className="first-inactive" src={PivotCardActive} alt=""/>
+          </a>
+
+          <a className="cards-div active" href="/finwell" id="finwell-card">
+            <img className="first-active" src={FinWellCard} alt=""/>
+            <img className="first-inactive" src={FinWellCardActive} alt=""/>
+          </a>
+
+        </div>
       </div>
-    )
+    </div>
+  )
 }

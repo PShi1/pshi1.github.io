@@ -92,7 +92,14 @@
           /* transition: 0s; */
         }
       }
+
+      .menu-item.active {
+        a:before, a:after {
+          width: 100%;
+        }
+      }
     }
+
     @media(max-width: 640px) {
       #navbar ul {
         display: none;

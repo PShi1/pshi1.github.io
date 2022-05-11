@@ -13,13 +13,13 @@ export const Header = () => {
           </a>
         </div>
         <ul className="menu">
-          <li className="menu-item"><Link to="/">
+          <li className="menu-item" id="work-menu-item"><Link to="/">
             <h3>WORK</h3>
           </Link></li>
-          <li className="menu-item"><Link to="/playground">
+          <li className="menu-item" id="play-menu-item"><Link to="/playground">
             <h3>PLAY</h3>
           </Link></li>
-          <li className="menu-item"><Link to="/about">
+          <li className="menu-item" id="about-menu-item"><Link to="/about">
             <h3>ABOUT</h3>
           </Link></li>
 
