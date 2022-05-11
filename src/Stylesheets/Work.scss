@@ -154,20 +154,21 @@
   .tag-container {
     position: relative;
     display: inline-flex;
-    height: 55px;
+    height: 2.734vw;
     perspective: 1000px;
     cursor: pointer;
   }
 
   .tag-container p{
     transform-style: preserve-3d;
-    transform: translateZ(-25px);
-    transition: transform .15s;
+    transform: translateZ(-0.9766vw);
+    transition: transform 0.25s;
   }
 
   .tag-container p:before,
   .tag-container p:after{
-    padding: 0.625vw 1.56vw;
+    padding: 0.5vw 1.56vw;
+    height: 2.734vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,20 +178,20 @@
   .tag-container p:before{
     color: #fff;
     background: #000;
-    transform: rotateY(0deg) translateZ(25px);
+    transform: rotateY(0deg) translateZ(1.367vw);
     border: 2px solid $white;
   }
   .tag-container p:after{
     background-color: $white;
     color: black;
-    transform: rotateX(90deg) translateZ(80px);
+    transform: rotateX(90deg) translateZ(3.125vw);
   }
   .tag-container p:hover{
-    transform: translateZ(-45px) rotateX(-90deg);
+    transform: translateZ(-1.758vw) rotateX(-88deg);
   }
 
   .tag-container.active p{
-    transform: translateZ(-45px) rotateX(-90deg);
+    transform: translateZ(-1.758vw) rotateX(-88deg);
   }
 
   #all-tag p:before, #all-tag p:after{
