@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../Stylesheets/Work.scss';
 import AccessCard from "../Assets/WorkPageImages/AccessCard.svg";
 import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.svg';
@@ -17,6 +17,70 @@ import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.svg';
  * Page component for the main page
  */
 export const Work = () => {
+  const tags = ["all-tag", "web-tag", "mobile-tag", "prototyping-tag", "design-system-tag"];
+  const [currentTag, setCurrentTag] = useState("all-tag");
+  const allCards = ["access-card", "sponsorcircle-card", "knowbie-card", "aprio-card", "pivot-card", "finwell-card"];
+  const webCards = ["access-card", "sponsorcircle-card", "knowbie-card", "aprio-card", "pivot-card"];
+  const mobileCards = ["sponsorcircle-card", "knowbie-card", "finwell-card"];
+  const prototypingCards = ["knowbie-card", "pivot-card", "finwell-card"];
+  const designSystemCards = ["access-card", "pivot-card", "finwell-card"];
+
+  useEffect(() => {
+    if (currentTag === "all-tag") {
+      for (const cardName of allCards) {
+        let el = document.getElementById(cardName);
+        if (!el.classList.contains("active")) {
+          el.classList.add("active");
+        }
+      }
+    } else {
+      let cardsArrayUsed;
+      if (currentTag === "mobile-tag" || currentTag === "prototyping-tag") {
+        document.getElementById("knowbie-card").style.marginRight = "1%";
+        if (currentTag === "mobile-tag") {
+          document.getElementById("sponsorcircle-card").style.marginLeft = "0%";
+          document.getElementById("knowbie-card").style.marginLeft = "1%";
+
+        } else {
+          document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
+          document.getElementById("knowbie-card").style.marginLeft = "0%";
+        }
+      } else {
+        document.getElementById("knowbie-card").style.marginRight = "0%";
+        document.getElementById("knowbie-card").style.marginLeft = "1%";
+        document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
+      }
+
+
+
+      if (currentTag === "web-tag") {
+        cardsArrayUsed = webCards;
+      } else if (currentTag === "mobile-tag") {
+        cardsArrayUsed = mobileCards;
+      } else if (currentTag === "prototyping-tag") {
+        cardsArrayUsed = prototypingCards;
+      } else if (currentTag === "design-system-tag") {
+        cardsArrayUsed = designSystemCards;
+      } else {
+        cardsArrayUsed = allCards;
+      }
+
+      for (const cardName of cardsArrayUsed) {
+        let el = document.getElementById(cardName);
+        if (!el.classList.contains("active")) {
+          el.classList.add("active");
+        }
+      }
+      const filteredArray = allCards.filter(value => !cardsArrayUsed.includes(value));
+      for (const cardName of filteredArray) {
+        let el = document.getElementById(cardName);
+        if (el.classList.contains("active")) {
+          el.classList.remove("active");
+        }
+      }
+    }
+  }, [currentTag]);
+
   // Start of Typewriter - https://codepen.io/hi-im-si/pen/ALgzqo
   let TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -87,9 +151,22 @@ export const Work = () => {
   // End of Typewriter
 
   const scrollToCaseStudies = () => {
-    let element = document.getElementById("case-studies-container");
+    let element = document.getElementById("case-study-tags-container");
     if (element) {
       element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+  }
+
+  const handleTagClick = (tagID) => {
+    setCurrentTag(tagID);
+    for (const tag of tags) {
+      if (tagID === tag) {
+        document.getElementById(tag).classList.add("active");
+      } else {
+        if (document.getElementById(tag).classList.contains("active")) {
+          document.getElementById(tag).classList.remove("active");
+        }
+      }
     }
   }
 
@@ -112,60 +189,66 @@ export const Work = () => {
               <div className="typewrite"/>
             </div>
 
-            <div id="scroll-down" onClick={() => scrollToCaseStudies()}>
+            <div className="margin-bottom-80px" id="scroll-down" onClick={() => scrollToCaseStudies()}>
               <span id="scroll-title" className="b4">
                 EXPLORE SELECTED CASE STUDIES
               </span>
             </div>
           </div>
 
-          <div className="case-study-tags-container">
-            <div className="tag-container" id="all-tag">
+          <div className="case-study-tags-container" id="case-study-tags-container">
+            <div className="tag-container active" id="all-tag" onClick={() => handleTagClick("all-tag")}>
               <p className="cs-body"/>
             </div>
 
-            <div className="tag-container" id="web-tag">
+            <div className="tag-container" id="web-tag" onClick={() => handleTagClick("web-tag")}>
               <p className="cs-body"/>
             </div>
 
-            <div className="tag-container" id="mobile-tag">
+            <div className="tag-container" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
               <p className="cs-body"/>
             </div>
 
-            <div className="tag-container" id="work-project-tag">
+            <div className="tag-container" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
               <p className="cs-body"/>
             </div>
 
-            <div className="tag-container" id="design-system-tag">
+            <div className="tag-container" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
               <p className="cs-body"/>
             </div>
           </div>
 
           <div id="case-studies-container">
-            <a className="cards-div" href="/access">
+            <a className="cards-div active" href="/access" id="access-card">
               <img className="first-active" src={AccessCard} alt=""/>
               <img className="first-inactive" src={AccessCardActive} alt=""/>
             </a>
-            <a className="cards-div" href="/sponsorcircle">
+
+            <a className="cards-div active" href="/sponsorcircle" id="sponsorcircle-card">
               <img className="first-active" src={SponsorCircleCard} alt=""/>
               <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
             </a>
-            <a className="cards-div" href="/knowbie">
+
+            <a className="cards-div active" href="/knowbie" id="knowbie-card">
               <img className="first-active" src={KnowbieCard} alt=""/>
               <img className="first-inactive" src={KnowbieCardActive} alt=""/>
             </a>
-            <a className="cards-div" href="/aprio">
+
+            <a className="cards-div active" href="/aprio" id="aprio-card">
               <img className="first-active" src={AprioCard} alt=""/>
               <img className="first-inactive" src={AprioCardActive} alt=""/>
             </a>
-            <a className="cards-div" href="/pivot">
+
+            <a className="cards-div active" href="/pivot" id="pivot-card">
               <img className="first-active" src={PivotCard} alt=""/>
               <img className="first-inactive" src={PivotCardActive} alt=""/>
             </a>
-            <a className="cards-div" href="/finwell">
+
+            <a className="cards-div active" href="/finwell" id="finwell-card">
               <img className="first-active" src={FinWellCard} alt=""/>
               <img className="first-inactive" src={FinWellCardActive} alt=""/>
             </a>
+
           </div>
         </div>
       </div>
