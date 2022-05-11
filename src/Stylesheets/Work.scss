@@ -173,19 +173,21 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-
   }
+
   .tag-container p:before{
     color: #fff;
     background: #000;
     transform: rotateY(0deg) translateZ(1.367vw);
     border: 2px solid $white;
   }
+
   .tag-container p:after{
     background-color: $white;
     color: black;
     transform: rotateX(90deg) translateZ(3.125vw);
   }
+
   .tag-container p:hover{
     transform: translateZ(-1.758vw) rotateX(-88deg);
   }
@@ -226,7 +228,50 @@
   #knowbie-card, #finwell-card {
     margin-left: 1%;
   }
+
+  #access-card, #sponsorcircle-card, #knowbie-card {
+    z-index: 100;
+  }
   // End button test
+
+  // Start intro fade in
+  .intro-fade {
+    position: relative;
+    left: 0;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    opacity: 0;
+  }
+
+  .intro-fade.active {
+    opacity: 100%;
+    animation-name: fade-in;
+  }
+
+  @keyframes fade-in {
+    from {transform: translateY(-1vw);
+      opacity: 0;}
+    to {transform: translateY(0%);
+      opacity: 100%;}
+  }
+  // End intro fade in
+
+  // Start appear on scroll
+  .appear-on-scroll-1, .appear-on-scroll-2{
+    opacity: 0;
+    animation-duration: 1.5s;
+  }
+
+  .appear-on-scroll-1.play-animation, .appear-on-scroll-2.play-animation{
+    animation-name: appearOnScroll;
+    opacity: 100%;
+  }
+
+  @keyframes appearOnScroll {
+    from {transform: translateY(2vw); opacity: 0;}
+    to {transform: translateY(0); opacity: 100%;}
+  }
+  // End appear on scroll
 }
 
 @media screen and (max-width: $mobile-view-max-width){

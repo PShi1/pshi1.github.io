@@ -33,6 +33,9 @@ export const Work = () => {
           el.classList.add("active");
         }
       }
+      document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
+      document.getElementById("knowbie-card").style.marginLeft = "1%";
+      document.getElementById("knowbie-card").style.marginRight = "0%";
     } else {
       let cardsArrayUsed;
       if (currentTag === "mobile-tag" || currentTag === "prototyping-tag") {
@@ -50,8 +53,6 @@ export const Work = () => {
         document.getElementById("knowbie-card").style.marginLeft = "1%";
         document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
       }
-
-
 
       if (currentTag === "web-tag") {
         cardsArrayUsed = webCards;
@@ -158,8 +159,10 @@ export const Work = () => {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-  }, []);
 
+    fadeInIntro();
+    fadeInOnScroll();
+  }, []);
   // End of Typewriter
 
   const scrollToCaseStudies = () => {
@@ -182,33 +185,118 @@ export const Work = () => {
     }
   }
 
+  /**
+   * Fades in the intro part
+   */
+  const fadeInIntro = () => {
+    let elements = document.getElementsByClassName("intro-fade");
+    let delay = 0;
+    for (const element of elements) {
+      setTimeout(function() {
+        element.classList.add("active");
+      }, delay);
+      delay += 700;
+    }
+  }
+
+  /**
+   * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen
+   */
+  const fadeInOnScroll = () => {
+    let elements1 = document.getElementsByClassName("appear-on-scroll-1");
+    let elements2 = document.getElementsByClassName("appear-on-scroll-2");
+    elements2 = Array.from(elements2);
+    console.log(elements2);
+    elements2 = shuffleArray(elements2);
+    console.log(elements2);
+    let firstCard = document.getElementById("access-card");
+    let scroll = window.scrollY;
+    let innerHeight = window.innerHeight;
+    let delay = 0;
+
+    window.addEventListener("scroll", () => {
+      scroll = window.scrollY;
+
+      for (const element of elements1) {
+        let pos = element.offsetTop;
+        if (scroll + innerHeight / 1.3 >= pos) {
+          element.classList.add("play-animation");
+        }
+      }
+    })
+
+    let accessCard = document.getElementById("access-card");
+    let sponsorcircleCard = document.getElementById("sponsorcircle-card");
+    let knowbieCard = document.getElementById("knowbie-card");
+    let aprioCard = document.getElementById("aprio-card");
+    let pivotCard = document.getElementById("pivot-card");
+    let finwellCard = document.getElementById("finwell-card");
+
+    window.addEventListener("scroll", () => {
+      scroll = window.scrollY;
+
+      let pos = firstCard.offsetTop;
+      if (scroll + innerHeight / 1.1 >= pos) {
+        setTimeout(function() {
+          accessCard.classList.add("play-animation");
+          aprioCard.classList.add("play-animation");
+        }, 300);
+
+        setTimeout(function() {
+          knowbieCard.classList.add("play-animation");
+          finwellCard.classList.add("play-animation");
+        }, 400);
+
+        setTimeout(function() {
+          sponsorcircleCard.classList.add("play-animation");
+          pivotCard.classList.add("play-animation");
+        }, 700);
+      }
+    })
+  }
+
+  function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  }
+
   return (
     <div className="background">
       <div className="work-page">
         <div className="header-outer-div">
           <div className="row">
             <div className="header-area">
-              <h1>HEY, I'M EMMA.</h1>
+              <h1 className="intro-fade">HEY, I'M EMMA.</h1>
             </div>
           </div>
 
           <div>
-            <p className="b1-light">A coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
-            <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
-          </div>
-          <div className="typewriter-wrapper-div">
-            <p className="typewriter-prefix b1-light">I'm also</p>
-            <div className="typewrite"/>
+            <div className="intro-fade">
+              <p className="b1-light">A coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
+              <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
+            </div>
           </div>
 
-          <div className="margin-bottom-80px" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+          <div className="typewriter-wrapper-div">
+            <div className="intro-fade">
+              <p className="typewriter-prefix b1-light">I'm also</p>
+              <div className="typewrite"/>
+            </div>
+          </div>
+
+          <div className="margin-bottom-80px intro-fade" id="scroll-down" onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="b4">
               EXPLORE SELECTED CASE STUDIES
             </span>
           </div>
         </div>
 
-        <div className="case-study-tags-container" id="case-study-tags-container">
+        <div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">
           <div className="tag-container active" id="all-tag" onClick={() => handleTagClick("all-tag")}>
             <p className="cs-body"/>
           </div>
@@ -231,32 +319,32 @@ export const Work = () => {
         </div>
 
         <div id="case-studies-container">
-          <a className="cards-div active" href="/access" id="access-card">
+          <a className="cards-div active appear-on-scroll-2" href="/access" id="access-card">
             <img className="first-active" src={AccessCard} alt=""/>
             <img className="first-inactive" src={AccessCardActive} alt=""/>
           </a>
 
-          <a className="cards-div active" href="/sponsorcircle" id="sponsorcircle-card">
+          <a className="cards-div active appear-on-scroll-2" href="/sponsorcircle" id="sponsorcircle-card">
             <img className="first-active" src={SponsorCircleCard} alt=""/>
             <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
           </a>
 
-          <a className="cards-div active" href="/knowbie" id="knowbie-card">
+          <a className="cards-div active appear-on-scroll-2" href="/knowbie" id="knowbie-card">
             <img className="first-active" src={KnowbieCard} alt=""/>
             <img className="first-inactive" src={KnowbieCardActive} alt=""/>
           </a>
 
-          <a className="cards-div active" href="/aprio" id="aprio-card">
+          <a className="cards-div active appear-on-scroll-2" href="/aprio" id="aprio-card">
             <img className="first-active" src={AprioCard} alt=""/>
             <img className="first-inactive" src={AprioCardActive} alt=""/>
           </a>
 
-          <a className="cards-div active" href="/pivot" id="pivot-card">
+          <a className="cards-div active appear-on-scroll-2" href="/pivot" id="pivot-card">
             <img className="first-active" src={PivotCard} alt=""/>
             <img className="first-inactive" src={PivotCardActive} alt=""/>
           </a>
 
-          <a className="cards-div active" href="/finwell" id="finwell-card">
+          <a className="cards-div active appear-on-scroll-2" href="/finwell" id="finwell-card">
             <img className="first-active" src={FinWellCard} alt=""/>
             <img className="first-inactive" src={FinWellCardActive} alt=""/>
           </a>
