@@ -310,23 +310,23 @@ export const Work = () => {
 
         <div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">
           <div className="tag-container active invert" id="all-tag" onClick={() => handleTagClick("all-tag")}>
-            <p className="cs-body invert"/>
+            <p className="cs-body invert-target"/>
           </div>
 
           <div className="tag-container invert" id="web-tag" onClick={() => handleTagClick("web-tag")}>
-            <p className="cs-body invert"/>
+            <p className="cs-body invert-target"/>
           </div>
 
           <div className="tag-container invert" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
-            <p className="cs-body invert"/>
+            <p className="cs-body invert-target"/>
           </div>
 
           <div className="tag-container invert" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
-            <p className="cs-body invert"/>
+            <p className="cs-body invert-target"/>
           </div>
 
           <div className="tag-container invert" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
-            <p className="cs-body invert"/>
+            <p className="cs-body invert-target"/>
           </div>
         </div>
 

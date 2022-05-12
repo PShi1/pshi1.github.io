@@ -87,8 +87,9 @@ export function AnimatedCursor({
     )
 
     const mouseoverCallback = (l) => {
+      console.log(l.target)
       setIsActive(true)
-      if (l?.target?.className?.includes("invert") && cursorInnerRef.current.style.mixBlendMode !== "difference") {
+      if (l?.target?.className?.includes("invert-target")) {
         cursorInnerRef.current.style.mixBlendMode = "difference";
         cursorOuterRef.current.style.mixBlendMode = "difference";
       }
@@ -115,7 +116,7 @@ export function AnimatedCursor({
       console.log("Adding mouse out")
       setIsActive(false)
       setIsActiveClickable(false)
-      if (l?.target?.className?.includes("invert")) {
+      if (l?.target?.className?.includes("invert-target")) {
         cursorInnerRef.current.style.mixBlendMode = "normal";
         cursorOuterRef.current.style.mixBlendMode = "normal";
       }
