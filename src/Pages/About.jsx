@@ -40,17 +40,21 @@ export const About = () => {
   const handleCollapsible = (e) => {
     let id = e.target.id;
     let element = document.getElementById(id + "-item");
+    let collapsibleHeader = document.getElementById(id);
     let arrow = document.getElementById(id + "-arrow");
     if (!element.classList.contains("active")) {
       if (element.classList.contains("closed")) {
         element.classList.replace("closed", "active");
+        collapsibleHeader.classList.replace("closed", "active");
       } else {
         element.classList.add("active");
+        collapsibleHeader.classList.add("active");
       }
       element.style.height = element.scrollHeight + "px";
       arrow.src = UpArrow;
     } else {
       element.classList.replace("active", "closed");
+      collapsibleHeader.classList.replace("active", "closed");
       element.style.height = "0";
       arrow.src = DownArrow;
     }
@@ -65,7 +69,7 @@ export const About = () => {
           <h1>EMPATHETIC.</h1>
           <p className="b1-light" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
 
-          <div id="scroll-down" onClick={() => scrollToCaseStudies()}>
+          <div className="scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
               <span id="scroll-title" className="b4">
                 CURIOUS YET?
               </span>

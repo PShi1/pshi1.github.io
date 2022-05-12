@@ -19,10 +19,10 @@ export const Footer = () => {
       <div className="center-column">
         <h2 className="large-text"> LET'S CREATE SOMETHING AMAZING TOGETHER. </h2>
         <div className="image-container">
-          <img id="mail-icon" src={MailIcon} alt="email" onClick={copyEmail}/>
-          <img id="mail-icon-dark" src={MailIconDark} alt="email" onClick={copyEmail}/>
-          <img id="linkedin-icon" src={LinkedinIcon} alt="linkedin" onClick={redirectLinkedin}/>
-          <img id="linkedin-icon-dark" src={LinkedinIconDark} alt="email" onClick={redirectLinkedin}/>
+          <img className="footer-icon" id="mail-icon" src={MailIcon} alt="email" onClick={copyEmail}/>
+          <img className="footer-icon" id="mail-icon-dark" src={MailIconDark} alt="email" onClick={copyEmail}/>
+          <img className="footer-icon" id="linkedin-icon" src={LinkedinIcon} alt="linkedin" onClick={redirectLinkedin}/>
+          <img className="footer-icon" id="linkedin-icon-dark" src={LinkedinIconDark} alt="email" onClick={redirectLinkedin}/>
         </div>
         <p className="medium-text"> designed & coded with ❤️ and lots of ☕️ </p>
         <p className="small-text"> Emma Li © 2022 All Rights Reserved </p>

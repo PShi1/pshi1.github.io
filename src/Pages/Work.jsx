@@ -222,13 +222,9 @@ export const Work = () => {
    */
   const fadeInOnScroll = () => {
     let elements1 = document.getElementsByClassName("appear-on-scroll-1");
-    let elements2 = document.getElementsByClassName("appear-on-scroll-2");
-    elements2 = Array.from(elements2);
-    elements2 = shuffleArray(elements2);
     let firstCard = document.getElementById("access-card");
     let scroll = window.scrollY;
     let innerHeight = window.innerHeight;
-    let delay = 0;
 
     window.addEventListener("scroll", () => {
       scroll = window.scrollY;
@@ -288,14 +284,13 @@ export const Work = () => {
         <div className="header-outer-div">
           <div className="row">
             <div className="header-area">
-              <h1 className="intro-fade">HEY, I'M EMMA.</h1>
+              <h1 className="intro-fade">Hey there! I'm Emma -</h1>
             </div>
           </div>
 
           <div>
             <div className="intro-fade">
-              <p className="b1-light">A coffee-infused <strong className="yellow-font-colour">Product Designer</strong> based in <strong className="yellow-font-colour">Vancouver.</strong> 🍁</p>
-              <p className="b1-light">Currently building digital products @ Moken Agency to empower founders to achieve their wildest dreams. </p>
+              <p className="b1-light">A coffee-infused <u>Product Designer</u> based in Vancouver 🍁, currently building digital products @ Moken Agency.</p>
             </div>
           </div>
 
@@ -306,32 +301,32 @@ export const Work = () => {
             </div>
           </div>
 
-          <div className="margin-bottom-80px intro-fade" id="scroll-down" onClick={() => scrollToCaseStudies()}>
-            <span id="scroll-title" className="b4">
-              EXPLORE SELECTED CASE STUDIES
+          <div className="margin-bottom-80px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+            <span id="scroll-title" className="manrope-24px-300weight">
+              Explore Selected Case Studies
             </span>
           </div>
         </div>
 
         <div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">
-          <div className="tag-container active" id="all-tag" onClick={() => handleTagClick("all-tag")}>
-            <p className="cs-body"/>
+          <div className="tag-container active invert" id="all-tag" onClick={() => handleTagClick("all-tag")}>
+            <p className="cs-body invert"/>
           </div>
 
-          <div className="tag-container" id="web-tag" onClick={() => handleTagClick("web-tag")}>
-            <p className="cs-body"/>
+          <div className="tag-container invert" id="web-tag" onClick={() => handleTagClick("web-tag")}>
+            <p className="cs-body invert"/>
           </div>
 
-          <div className="tag-container" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
-            <p className="cs-body"/>
+          <div className="tag-container invert" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
+            <p className="cs-body invert"/>
           </div>
 
-          <div className="tag-container" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
-            <p className="cs-body"/>
+          <div className="tag-container invert" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
+            <p className="cs-body invert"/>
           </div>
 
-          <div className="tag-container" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
-            <p className="cs-body"/>
+          <div className="tag-container invert" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
+            <p className="cs-body invert"/>
           </div>
         </div>
 

@@ -1,13 +1,19 @@
 @import 'index';
 
 .work-page {
+  cursor: none;
+
   .header-outer-div {
     width: $default-margin-width;
     margin: auto;
-    padding-top: 4vh;
+    padding-top: 10vh;
 
     p {
       margin: 0;
+    }
+
+    u {
+      text-decoration-thickness: 1px;
     }
   }
 
@@ -91,7 +97,7 @@
   .cards-div {
     display: none;
     position: relative;
-    cursor: pointer;
+    cursor: none;
     margin-bottom: 2vw;
     width: 32%;
 
@@ -101,7 +107,7 @@
     }
 
     .first-active {
-      opacity: 1;
+      opacity: 0.8;
       position: absolute;
       transition: all 0.25s ease-in-out;
       top: 0;
@@ -123,7 +129,7 @@
     }
 
     .first-inactive {
-      opacity: 1;
+      opacity: 0.8;
       transition: all 0.25s ease-in-out;
       transform: translateY(-10px);
     }
@@ -197,23 +203,23 @@
   }
 
   #all-tag p:before, #all-tag p:after{
-    content: "ALL";
+    content: "All";
   }
 
   #web-tag p:before, #web-tag p:after{
-    content: "WEB";
+    content: "Web";
   }
 
   #mobile-tag p:before, #mobile-tag p:after{
-    content: "MOBILE";
+    content: "Mobile";
   }
 
   #prototyping-tag p:before, #prototyping-tag p:after{
-    content: "PROTOTYPING";
+    content: "Prototyping";
   }
 
   #design-system-tag p:before, #design-system-tag p:after{
-    content: "DESIGN SYSTEM";
+    content: "Design System";
   }
 
   #access-card, #aprio-card {
@@ -272,6 +278,33 @@
     to {transform: translateY(0); opacity: 100%;}
   }
   // End appear on scroll
+
+  // Start cursor testing - https://codepen.io/StephenScaff/pen/Jjdveyw
+  #cursor-dot,
+  #cursor-dot-outline {
+    z-index: 9999999;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  }
+
+  #cursor-dot {
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    background-color: rgba(var(--color-cursor), 1);
+  }
+
+  #cursor-dot-outline {
+    width: var(--cursor-outline-size);
+    height: var(--cursor-outline-size);
+    background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
+  }
+  // End cursor testing
 }
 
 @media screen and (max-width: $mobile-view-max-width){
