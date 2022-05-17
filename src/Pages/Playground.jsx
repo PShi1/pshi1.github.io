@@ -1,5 +1,8 @@
 import React, {useEffect} from 'react';
 import "../Stylesheets/Playground.scss"
+import {
+  setPageToDarkMode,
+} from "../App";
 
 export const Playground = () => {
   useEffect(() => {
@@ -13,6 +16,8 @@ export const Playground = () => {
     if (document.getElementById("about-menu-item").classList.contains("active")) {
       document.getElementById("about-menu-item").classList.remove("active");
     }
+
+    setPageToDarkMode();
   }, []);
 
     return (

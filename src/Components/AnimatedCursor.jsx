@@ -1,10 +1,17 @@
 import React from "react";
 
+export const cursorDefaultColor = "250, 250, 250";
+export const cursorInnerDefaultOpacity = 1;
+export const cursorOuterDefaultOpacity = 0.4;
+export const cursorLightModeColor = "0, 0, 0";
+export const cursorLightModeInnerOpacity = 1;
+export const cursorLightModeOuterOpacity = 0.2;
+
 export function AnimatedCursor({
-                          color = "250, 250, 250",
-                          outerAlpha = 0.4,
-                          innerSize = 15,
-                          outerSize = 15,
+                          color = cursorDefaultColor,
+                          outerAlpha = cursorOuterDefaultOpacity,
+                          innerSize = 0.75,
+                          outerSize = 0.75,
                           outerScale = 4,
                           innerScale = 1,
                         }) {
@@ -148,8 +155,8 @@ export function AnimatedCursor({
       zIndex: 9999999,
       position: 'fixed',
       borderRadius: '50%',
-      width: innerSize,
-      height: innerSize,
+      width: innerSize + "vw",
+      height: innerSize + "vw",
       pointerEvents: 'none',
       backgroundColor: `rgba(${color}, 1)`,
       transition: 'opacity 0.15s ease-in-out, transform 0.25s ease-in-out',
@@ -160,8 +167,8 @@ export function AnimatedCursor({
       position: 'fixed',
       borderRadius: '50%',
       pointerEvents: 'none',
-      width: outerSize,
-      height: outerSize,
+      width: outerSize + "vw",
+      height: outerSize + "vw",
       backgroundColor: `rgba(${color}, ${outerAlpha})`,
       transition: 'opacity 0.15s ease-in-out, transform 0.15s ease-in-out',
       mixBlendMode: 'normal',
@@ -170,8 +177,8 @@ export function AnimatedCursor({
 
   return (
     <React.Fragment>
-      <div ref={cursorOuterRef} style={styles.cursorOuter} />
-      <div ref={cursorInnerRef} style={styles.cursorInner} />
+      <div ref={cursorOuterRef} style={styles.cursorOuter} id="outer-cursor"/>
+      <div ref={cursorInnerRef} style={styles.cursorInner} id="inner-cursor"/>
     </React.Fragment>
   )
 }

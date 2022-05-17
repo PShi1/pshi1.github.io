@@ -22,19 +22,13 @@ import AccessFinalImage from '../Assets/AccessPageImages/AccessIcons.png';
 import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.svg';
 import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpec1.svg';
 import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpec2.svg';
+import {setPageToLightMode} from "../App";
 
 export const Access = () => {
   useEffect(() => {
-    // window.scrollTo(0,0);
+    window.scrollTo(0,0);
 
-    // Change header and footer to light mode if needed
-    if (!document.getElementById("nav-wrapper").classList.contains("light-mode")) {
-      document.getElementById("nav-wrapper").classList.add("light-mode");
-    }
-
-    if (!document.getElementById("footer").classList.contains("light-mode")) {
-      document.getElementById("footer").classList.add("light-mode");
-    }
+    setPageToLightMode();
 
     // Highlights
       highlight();

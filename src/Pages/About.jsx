@@ -5,19 +5,13 @@ import Selfie from '../Assets/Selfie.png'
 import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
+import {
+  setPageToDarkMode
+} from "../App";
 
 export const About = () => {
   useEffect(() => {
     window.scrollTo(0,0);
-
-    // Reset filters
-    if (document.getElementById("nav-wrapper").classList.contains("light-mode")) {
-      document.getElementById("nav-wrapper").classList.remove("light-mode");
-    }
-
-    if (document.getElementById("footer").classList.contains("light-mode")) {
-      document.getElementById("footer").classList.remove("light-mode");
-    }
 
     // Mark current header link as active
     if (!document.getElementById("about-menu-item").classList.contains("active")) {
@@ -29,6 +23,8 @@ export const About = () => {
     if (document.getElementById("work-menu-item").classList.contains("active")) {
       document.getElementById("work-menu-item").classList.remove("active");
     }
+
+    setPageToDarkMode();
   }, []);
 
   const scrollToCaseStudies = () => {

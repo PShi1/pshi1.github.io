@@ -20,12 +20,14 @@ import ConfidentCarl from '../Assets/ConfidentCarl.png';
 import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
 import DownArrowWhite from '../Assets/downArrowSmallWhite.gif';
+import {
+  setPageToLightMode,
+} from "../App";
 
 /**
  * FinWell page component
  */
 export const FinWell = () => {
-
   /**
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
@@ -35,6 +37,8 @@ export const FinWell = () => {
       fadeInIntro();
       removeDownArrow();
     })
+
+    setPageToLightMode();
   }, []);
 
   /**
@@ -95,7 +99,7 @@ export const FinWell = () => {
         <div className="right-column">
           <img className="right-float" id="samsung-phones" src={SamsungImage} alt="samsung phones"/>
         </div>
-        <img className="down-arrow" id="down-arrow-second" src={DownArrowWhite} alt=""/>
+        {/*<img className="down-arrow" id="down-arrow-second" src={DownArrowWhite} alt=""/>*/}
       </div>
 
       <div className="overview">

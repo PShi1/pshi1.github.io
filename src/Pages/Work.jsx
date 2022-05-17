@@ -1,17 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import '../Stylesheets/Work.scss';
-import AccessCard from "../Assets/WorkPageImages/AccessCard.svg";
-import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.svg';
+import AccessCard from "../Assets/WorkPageImages/AccessCard.png";
+import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.png';
 import SponsorCircleCard from '../Assets/WorkPageImages/SponsorCircleCard.png';
 import SponsorCircleCardActive from '../Assets/WorkPageImages/SponsorCircleCardActive.png'
-import KnowbieCard from '../Assets/WorkPageImages/KnowbieCard.svg';
-import KnowbieCardActive from '../Assets/WorkPageImages/KnowbieCardActive.svg'
-import AprioCard from '../Assets/WorkPageImages/AprioCard.svg';
-import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.svg'
-import PivotCard from '../Assets/WorkPageImages/PivotCard.svg';
-import PivotCardActive from '../Assets/WorkPageImages/PivotCardActive.svg'
-import FinWellCard from '../Assets/WorkPageImages/FinWellCard.svg';
-import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.svg';
+import KnowbieCard from '../Assets/WorkPageImages/KnowbieCard.png';
+import KnowbieCardActive from '../Assets/WorkPageImages/KnowbieCardActive.png'
+import AprioCard from '../Assets/WorkPageImages/AprioCard.png';
+import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.png'
+import PivotCard from '../Assets/WorkPageImages/PivotCard.png';
+import PivotCardActive from '../Assets/WorkPageImages/PivotCardActive.png'
+import FinWellCard from '../Assets/WorkPageImages/FinWellCard.png';
+import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.png';
+import {
+  setPageToDarkMode,
+} from "../App";
 
 /**
  * Page component for the main page
@@ -143,14 +146,6 @@ export const Work = () => {
   useEffect(() => {
     window.scrollTo(0,0);
 
-    if (document.getElementById("nav-wrapper").classList.contains("light-mode")) {
-      document.getElementById("nav-wrapper").classList.remove("light-mode");
-    }
-
-    if (document.getElementById("footer").classList.contains("light-mode")) {
-      document.getElementById("footer").classList.remove("light-mode");
-    }
-
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
       let toRotate = "[\"a life long learner.\", \"an engaging story teller.\", \"a driven entrepreneur.\",\n" +
@@ -166,6 +161,7 @@ export const Work = () => {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 
+    // End of Typewriter
     fadeInIntro();
     fadeInOnScroll();
 
@@ -180,8 +176,10 @@ export const Work = () => {
     if (document.getElementById("about-menu-item").classList.contains("active")) {
       document.getElementById("about-menu-item").classList.remove("active");
     }
+
+    setPageToDarkMode();
   }, []);
-  // End of Typewriter
+
 
   const scrollToCaseStudies = () => {
     let element = document.getElementById("case-study-tags-container");
