@@ -4,7 +4,7 @@
   background-color: $main-background-colour-dark;
   width: $default-margin-width;
   margin: auto;
-  padding-top: 14vh;
+  padding-top: 16vh;
   padding-bottom: 10vh;
 
   .intro {
@@ -15,7 +15,6 @@
     .columns {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 6vw;
 
       .left-column {
         width: 65%;
@@ -42,7 +41,7 @@
 
   .more-about-me {
     display: flex;
-    padding-top: 20vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
 
     .left-column {
@@ -61,6 +60,23 @@
       display: inline-block;
     }
   }
+
+  // Start appear on scroll
+  .appear-on-scroll{
+    opacity: 0;
+    animation-duration: 1.5s;
+  }
+
+  .appear-on-scroll.play-animation {
+    animation-name: appearOnScroll;
+    opacity: 100%;
+  }
+
+  @keyframes appearOnScroll {
+    from {transform: translateY(2vw); opacity: 0;}
+    to {transform: translateY(0); opacity: 100%;}
+  }
+  // End appear on scroll
 
   .collapsibles-region {
     .collapsible-header {

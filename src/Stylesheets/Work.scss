@@ -6,7 +6,7 @@
   .header-outer-div {
     width: $default-margin-width;
     margin: auto;
-    padding-top: 10vh;
+    padding-top: 16vh;
 
     p {
       margin: 0;
@@ -17,8 +17,6 @@
     }
   }
 
-  //width: $default-margin-width;
-  padding: 30px 0 0 0;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -40,13 +38,16 @@
       display: block;
       float: left;
       padding-bottom: 15px;
+
+      h1 {
+        margin-top: 0;
+      }
     }
   }
 
   .typewriter-wrapper-div {
     display: block;
     margin-top: 8vh;
-    margin-bottom: 6vh;
 
     .typewriter-prefix {
       display: inline-block;
@@ -140,7 +141,7 @@
     width: $default-margin-width;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 6vw;
+    padding-top: 7vw;
     justify-content: space-between;
     perspective: 1000px;
 
@@ -154,6 +155,10 @@
         line-height: 150%;
       }
     }
+  }
+
+  .underline {
+    text-underline-offset: 0.4vw;
   }
 
   // Start button test - https://codepen.io/Anon_satyam/pen/JjXLoNJ
@@ -239,28 +244,6 @@
     z-index: 100;
   }
   // End button test
-
-  // Start intro fade in
-  .intro-fade {
-    position: relative;
-    left: 0;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    opacity: 0;
-  }
-
-  .intro-fade.active {
-    opacity: 100%;
-    animation-name: fade-in;
-  }
-
-  @keyframes fade-in {
-    from {transform: translateY(-1vw);
-      opacity: 0;}
-    to {transform: translateY(0%);
-      opacity: 100%;}
-  }
-  // End intro fade in
 
   // Start appear on scroll
   .appear-on-scroll-1, .appear-on-scroll-2{

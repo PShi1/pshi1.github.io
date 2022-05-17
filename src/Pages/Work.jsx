@@ -13,6 +13,7 @@ import PivotCardActive from '../Assets/WorkPageImages/PivotCardActive.png'
 import FinWellCard from '../Assets/WorkPageImages/FinWellCard.png';
 import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.png';
 import {
+  fadeInIntro,
   setPageToDarkMode,
 } from "../App";
 
@@ -202,20 +203,6 @@ export const Work = () => {
   }
 
   /**
-   * Fades in the intro part
-   */
-  const fadeInIntro = () => {
-    let elements = document.getElementsByClassName("intro-fade");
-    let delay = 0;
-    for (const element of elements) {
-      setTimeout(function() {
-        element.classList.add("active");
-      }, delay);
-      delay += 700;
-    }
-  }
-
-  /**
    * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen
    */
   const fadeInOnScroll = () => {
@@ -282,24 +269,24 @@ export const Work = () => {
         <div className="header-outer-div">
           <div className="row">
             <div className="header-area">
-              <h1 className="intro-fade">Hey there! I'm Emma -</h1>
+              <h1 className="intro-fade">Hey there! I'm Emma --</h1>
             </div>
           </div>
 
           <div>
             <div className="intro-fade">
-              <p className="b0">A coffee-infused <u>Product Designer</u> based in Vancouver 🍁, currently building digital products @ Moken Agency.</p>
+              <p className="b0">A coffee-infused <u className="underline">Product Designer</u> based in Vancouver 🍁, currently building digital products @ Moken Agency.</p>
             </div>
           </div>
 
-          <div className="typewriter-wrapper-div">
+          <div className="typewriter-wrapper-div margin-bottom-160px">
             <div className="intro-fade">
               <p className="typewriter-prefix b0">I'm also</p>
               <div className="typewrite"/>
             </div>
           </div>
 
-          <div className="margin-bottom-80px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+          <div className="margin-bottom-60px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
               Explore Selected Case Studies
             </span>

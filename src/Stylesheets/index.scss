@@ -95,8 +95,8 @@ h1 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
-  font-size: 5vw;
-  line-height: 150%;
+  font-size: 6vw;
+  line-height: 110%;
   color: $off-white;
 }
 
@@ -284,6 +284,29 @@ h3 {
 }
 
 // 4. Shared Components
+
+// Start intro fade in
+.intro-fade {
+  position: relative;
+  left: 0;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+.intro-fade.active {
+  opacity: 100%;
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+  from {transform: translateY(-1vw);
+    opacity: 0;}
+  to {transform: translateY(0%);
+    opacity: 100%;}
+}
+// End intro fade in
+
 // Start of explore selected case studies line - https://codepen.io/pavelderschleifer/pen/jrXpgq
 #wrapper {
   display: table;

@@ -50,4 +50,18 @@ export const setPageToDarkMode = () => {
   document.getElementById("outer-cursor").style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorOuterDefaultOpacity})`;
 }
 
+/**
+ * Fades in the intro part
+ */
+export const fadeInIntro = () => {
+  let elements = document.getElementsByClassName("intro-fade");
+  let delay = 0;
+  for (const element of elements) {
+    setTimeout(function() {
+      element.classList.add("active");
+    }, delay);
+    delay += 700;
+  }
+}
+
 export default App;
