@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import '../Stylesheets/Work.scss';
 import AccessCard from "../Assets/WorkPageImages/AccessCard.svg";
 import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.svg';
-import SponsorCircleCard from '../Assets/WorkPageImages/SponsorCircleCard.svg';
-import SponsorCircleCardActive from '../Assets/WorkPageImages/SponsorCircleCardActive.svg'
+import SponsorCircleCard from '../Assets/WorkPageImages/SponsorCircleCard.png';
+import SponsorCircleCardActive from '../Assets/WorkPageImages/SponsorCircleCardActive.png'
 import KnowbieCard from '../Assets/WorkPageImages/KnowbieCard.svg';
 import KnowbieCardActive from '../Assets/WorkPageImages/KnowbieCardActive.svg'
 import AprioCard from '../Assets/WorkPageImages/AprioCard.svg';
@@ -122,7 +122,7 @@ export const Work = () => {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap b1-light colour-gradient">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap b0 colour-gradient">'+this.txt+'</span>';
 
     let that = this;
 
@@ -290,13 +290,13 @@ export const Work = () => {
 
           <div>
             <div className="intro-fade">
-              <p className="b1-light">A coffee-infused <u>Product Designer</u> based in Vancouver 🍁, currently building digital products @ Moken Agency.</p>
+              <p className="b0">A coffee-infused <u>Product Designer</u> based in Vancouver 🍁, currently building digital products @ Moken Agency.</p>
             </div>
           </div>
 
           <div className="typewriter-wrapper-div">
             <div className="intro-fade">
-              <p className="typewriter-prefix b1-light">I'm also</p>
+              <p className="typewriter-prefix b0">I'm also</p>
               <div className="typewrite"/>
             </div>
           </div>

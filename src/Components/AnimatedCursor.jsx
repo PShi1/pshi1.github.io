@@ -87,36 +87,30 @@ export function AnimatedCursor({
     )
 
     const mouseoverCallback = (l) => {
-      console.log(l.target)
       setIsActive(true)
-      if (l?.target?.className?.includes("invert-target")) {
+      if (l?.target?.className?.includes("invert-target") && cursorInnerRef.current.style.mixBlendMode !== "difference") {
         cursorInnerRef.current.style.mixBlendMode = "difference";
         cursorOuterRef.current.style.mixBlendMode = "difference";
       }
-      console.log("Adding mouseover")
     };
 
     const clickCallback = () => {
       setIsActive(true);
       setIsActiveClickable(false);
-      console.log("Adding click")
     }
 
     const mousedownCallback = () => {
       setIsActiveClickable(true);
-      console.log("Adding mousedown")
     }
 
     const mouseupCallback = () => {
       setIsActive(true)
-      console.log("Adding mouse up")
     }
 
     const mouseoutCallback = (l) => {
-      console.log("Adding mouse out")
       setIsActive(false)
       setIsActiveClickable(false)
-      if (l?.target?.className?.includes("invert-target")) {
+      if (l?.target?.className?.includes("invert-target") && cursorInnerRef.current.style.mixBlendMode !== "normal") {
         cursorInnerRef.current.style.mixBlendMode = "normal";
         cursorOuterRef.current.style.mixBlendMode = "normal";
       }

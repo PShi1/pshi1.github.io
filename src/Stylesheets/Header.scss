@@ -7,6 +7,58 @@
   width: 100%;
   position: fixed;
 
+  .logo {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+
+    a {
+      height: max-content;
+    }
+
+    img {
+      width: fit-content;
+    }
+  }
+
+  .logo1 {
+    transform: rotateY(0deg) rotateX(0deg) translateZ(-2.75vw);
+    transform-style: preserve-3d;
+    transition: transform 0.25s ease-in-out;
+    position: relative;
+    height: 4.05vw;
+    width: 4.05vw;
+    left: 0;
+    z-index: 99;
+  }
+
+  .logo2 {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(-90deg) translateZ(-2.5vw);
+    transition: transform 0.2s ease-in-out;
+    height: 4.05vw;
+    width: 4.05vw;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo:hover{
+    .logo1 {
+      transform: translateZ(0vw) rotateY(0deg) translateY(1.7vw) rotateX(90deg);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .logo2 {
+      transform: translateZ(-2.5vw) rotateY(0deg) rotateX(0deg);
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+
   .navbar {
     position: initial;
     top: 0;
@@ -17,25 +69,15 @@
     z-index: 10;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-
-    .logo {
-      float: left;
-      height: fit-content;
-      margin: 0.4vw;
-
-      a {
-        img {
-          width: fit-content;
-        }
-      }
-    }
+    margin: 1vw auto;
 
     .menu {
       display: inline-block;
       float: right;
       list-style: none;
+      margin-top: 0;
       margin-right: 0.56px;
+      margin-bottom: 0;
       text-align: right;
       transition: transform 0.5s ease-out;
       -webkit-transition: transform 0.5s ease-out;

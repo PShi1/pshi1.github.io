@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../Assets/Logo.svg";
+import LogoActive from '../Assets/LogoActive.svg';
 import {Link} from "react-router-dom";
 import '../Stylesheets/Header.scss';
 
@@ -8,8 +9,9 @@ export const Header = () => {
     <div className="nav-wrapper" id="nav-wrapper">
       <nav className="navbar">
         <div className="logo">
-          <a href="/">
-            <img src={Logo} alt="logo" width="80px" height="80px" align="center"/>
+          <a href="/" className="invert-target">
+            <img className="logo1" src={Logo} alt="logo" width="80px" height="80px" align="center"/>
+            <img className="logo2" src={LogoActive} alt="logo" width="80px" height="80px" align="center"/>
           </a>
         </div>
         <ul className="menu">

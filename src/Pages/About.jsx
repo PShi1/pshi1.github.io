@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import '../Stylesheets/About.scss';
+import Stars from '../Assets/AboutPageImages/Stars.svg';
 import Selfie from '../Assets/Selfie.png'
 import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
@@ -64,15 +65,22 @@ export const About = () => {
     <div className="background">
       <div className="about-page">
         <div className="intro">
-          <h1>PASSIONATE.</h1>
-          <h1>CREATIVE.</h1>
-          <h1>EMPATHETIC.</h1>
-          <p className="b1-light" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
+          <div className="columns">
+            <div className="left-column">
+              <h1>Passionate.</h1>
+              <h1>Creative.</h1>
+              <h1>Empathetic.</h1>
+              <p className="b1-light" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
+            </div>
 
-          <div className="scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
-              <span id="scroll-title" className="b4">
-                CURIOUS YET?
-              </span>
+            <div className="right-column">
+              <img src={Stars} alt=""/>
+            </div>
+          </div>
+          <div className="margin-bottom-80px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+            <span id="scroll-title" className="manrope-24px-300weight">
+              Curious Yet?
+            </span>
           </div>
         </div>
 
@@ -82,29 +90,29 @@ export const About = () => {
           </div>
           <div className="right-column">
             <p className="b3">
-              I’m currently a <strong className="yellow-font-colour">Product Designer at Moken Agency</strong>, leading the entire design process of various tech products.
-              In my career, I’m fortunate to have <strong className="yellow-font-colour">experienced product agencies and in house, working with both enterprise and
-              consumer-facing companies</strong> alike. My expertise at the moment lies in <strong className="yellow-font-colour">zero-to-one projects</strong> involving a high degree of
+              I’m currently a <strong className="off-white-strong-font-style">Product Designer at Moken Agency</strong>, leading the entire design process of various tech products.
+              In my career, I’m fortunate to have <strong className="off-white-strong-font-style">experienced product agencies and in house, working with both enterprise and
+              consumer-facing companies</strong> alike. My expertise at the moment lies in <strong className="off-white-strong-font-style">zero-to-one projects</strong> involving a high degree of
               product thinking and visual design.
             </p>
 
             <p className="b3">
               My design journey started a long time ago, back when I was colour coding my school notes and creating custom graphics for my high school PowerPoint presentations.
-              I graduated with a <strong className="yellow-font-colour">Bachelor of Business Administration from the University of Toronto.</strong> Immediately after graduation, I decided business was not the right path for me and set out
+              I graduated with a <strong className="off-white-strong-font-style">Bachelor of Business Administration from the University of Toronto.</strong> Immediately after graduation, I decided business was not the right path for me and set out
               to find something I was genuinely passionate about.
             </p>
 
             <p className="b3">
               Visual storytelling mixed with my naturally curious personality eventually became more than just a passion
-              when I discovered the field of design: the industry that allows me to <strong className="yellow-font-colour"> collaborate with talented individuals
+              when I discovered the field of design: the industry that allows me to <strong className="off-white-strong-font-style"> collaborate with talented individuals
               to continuously grow and learn new skill sets,</strong> from how to write lines of code to thinking from new and unique perspectives.
             </p>
           </div>
         </div>
 
-        <div className="collapsibles-region">
+        <div className="collapsibles-region margin-bottom-60px">
           <div className="collapsible-header" id="bit-more-about-me" onClick={(e) => handleCollapsible(e)}>
-            <h2>BIT MORE ABOUT ME 😊</h2>
+            <h2>Bit More About Me 😄</h2>
             <img src={DownArrow} alt="" id="bit-more-about-me-arrow"/>
           </div>
           <div className="collapsible-item" id="bit-more-about-me-item">
@@ -139,9 +147,9 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="collapsibles-region">
+        <div className="collapsibles-region margin-bottom-60px">
           <div className="collapsible-header" id="after-hours" onClick={(e) => handleCollapsible(e)}>
-            <h2>AFTER HOURS 🌙</h2>
+            <h2>After Hours 🌙</h2>
             <img src={DownArrow} alt="" id="after-hours-arrow"/>
           </div>
           <div className="collapsible-item" id="after-hours-item">
@@ -154,9 +162,9 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="collapsibles-region">
+        <div className="collapsibles-region margin-bottom-60px">
           <div className="collapsible-header" id="on-my-bookshelf" onClick={(e) => handleCollapsible(e)}>
-            <h2>ON MY BOOKSHELF 📚</h2>
+            <h2>On My Bookshelf 📚</h2>
             <img src={DownArrow} alt="" id="on-my-bookshelf-arrow"/>
           </div>
           <div className="collapsible-item" id="on-my-bookshelf-item">
@@ -166,36 +174,36 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="collapsibles-region">
+        <div className="collapsibles-region margin-bottom-60px">
           <div className="collapsible-header" id="for-me-design-is" onClick={(e) => handleCollapsible(e)}>
-            <h2>FOR ME, DESIGN IS 🎨</h2>
+            <h2>For Me, Design Is 🎨</h2>
             <img src={DownArrow} alt="" id="for-me-design-is-arrow"/>
           </div>
           <div className="collapsible-item" id="for-me-design-is-item">
             <div className="third-columns" id="first-column">
               <p className="b2">Advocating for the user</p>
               <p className="b4">It’s important to design with the end users in mind, and to always exercise
-                <strong className="yellow-font-colour"> compassion and empathy</strong>  when thinking about the problem from their reality.</p>
+                <strong className="off-white-strong-font-style"> compassion and empathy</strong>  when thinking about the problem from their reality.</p>
             </div>
 
             <div className="third-columns" id="second-column">
               <p className="b2">Never perfect</p>
               <p className="b4">Design does not exist in isolation; it is a reflection of the larger society.
-                <strong className="yellow-font-colour"> As society changes, so should design. </strong> Designers should continue learning and iterating their designs
+                <strong className="off-white-strong-font-style"> As society changes, so should design. </strong> Designers should continue learning and iterating their designs
                 rapidly to keep up with the everchanging world.</p>
             </div>
 
             <div className="third-columns" id="third-column">
               <p className="b2">Function over form</p>
               <p className="b4">Designers should only add elements that will bring value and always be seeking to
-                achieve <strong className="yellow-font-colour">design purity</strong> through reduction and restraint. </p>
+                achieve <strong className="off-white-strong-font-style">design purity</strong> through reduction and restraint. </p>
             </div>
           </div>
         </div>
 
         <div className="collapsibles-region">
           <div className="collapsible-header" id="design-resources" onClick={(e) => handleCollapsible(e)}>
-            <h2>DESIGN RESOURCES 🖌️</h2>
+            <h2>Design Resources 🖌️</h2>
             <img src={DownArrow} alt="" id="design-resources-arrow"/>
           </div>
           <div className="collapsible-item" id="design-resources-item">
@@ -229,8 +237,8 @@ export const About = () => {
         </div>
 
         <div className="outro">
-          <h2>THIS DOESN'T HAVE TO BE THE END ✌️</h2>
-          <p className="b1-light">Reach me at <strong className="yellow-font-colour">uxemmali@gmail.com</strong> for
+          <p className="b1-light">This Doesn't Have To Be The End ✌️</p>
+          <p className="b1-light">Reach me at uxemmali@gmail.com for
             any comments, feedback, or outrageous ideas. </p>
         </div>
       </div>

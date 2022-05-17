@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari');
 @import url('https://fonts.googleapis.com/css2?family=Manrope');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
 
@@ -68,6 +69,7 @@ $off-black: #101010;
 $lilac: #DDD3FC;
 $background-color: #FCF9FF;
 $light-blue: #BACBFF;
+$grey-999999: #999999;
 
 $main-background-colour-dark: $black;
 
@@ -102,7 +104,7 @@ h2 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1.25vw;
   line-height: 150%;
   color: $off-white;
 }
@@ -116,11 +118,20 @@ h3 {
   color: $off-white;
 }
 
+.b0 {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8vw;
+  line-height: 150%;
+  color: $off-white;
+}
+
 .b1-light {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
-  font-size: 2vw;
+  font-size: 1.35vw;
   line-height: 150%;
   color: $off-white;
 }
@@ -129,7 +140,7 @@ h3 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.65vw;
+  font-size: 1.25vw;
   line-height: 150%;
   color: $off-white;
 }
@@ -138,18 +149,18 @@ h3 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.25vw;
+  font-size: 0.9375vw;
   line-height: 200%;
-  color: $off-white;
+  color: $grey-999999;
 }
 
 .b4 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.4vw;
-  line-height: 150%;
-  color: $off-white;
+  font-size: 0.9375vw;
+  line-height: 200%;
+  color: $grey-999999;
 }
 
 .b5 {
@@ -174,7 +185,7 @@ h3 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 300;
-  font-size: 0.9375vw;
+  font-size: 1.1vw; // Scaled up
   line-height: 150%;
   color: $off-white;
 }
@@ -241,6 +252,12 @@ h3 {
 .yellow-font-colour {
   color: #F5D6A2;
   font-weight: 300;
+  font-style: normal;
+}
+
+.off-white-strong-font-style {
+  color: $off-white;
+  font-weight: 500;
   font-style: normal;
 }
 

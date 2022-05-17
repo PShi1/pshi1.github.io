@@ -12,14 +12,37 @@
       margin: 0;
     }
 
-    #subtitle-text {
-      margin-bottom: 7vh;
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 6vw;
+
+      .left-column {
+        width: 65%;
+        display: inline-block;
+      }
+
+      .right-column {
+        width: 35%;
+        display: inline-flex;
+        justify-content: center;
+
+        img {
+          width: 50%;
+          height: 80%;
+        }
+      }
     }
+
+    #subtitle-text {
+      margin-bottom: 0;
+    }
+
   }
 
   .more-about-me {
     display: flex;
-    padding-top: 12vh;
+    padding-top: 20vh;
     padding-bottom: 10vh;
 
     .left-column {
