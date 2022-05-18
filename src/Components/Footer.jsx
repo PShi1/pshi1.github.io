@@ -77,7 +77,7 @@ export const Footer = () => {
 
   return (
     <div className="footer" id="footer">
-      <div className="center-column margin-bottom-60px">
+      <div className="center-column margin-bottom-40px">
         <div className="left-column">
           <p className="large-text margin-bottom-24px"> Let's connect for </p>
           <div className="typewrite-footer"/>

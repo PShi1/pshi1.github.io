@@ -9,17 +9,43 @@ import {
   cursorLightModeOuterOpacity, cursorOuterDefaultOpacity
 } from "./Components/AnimatedCursor";
 import {ProgressBar} from "./Components/ProgressBar";
+import {useEffect} from "react";
+import ArrowUpBlack from './Assets/ArrowUpBlack.svg';
+import ArrowUpWhite from './Assets/arrow-up.svg';
 
 function App() {
+  useEffect(() => {
+    window.addEventListener("scroll", showScrollToTopButton);
+  }, [])
+
   return (
     <div>
       <AnimatedCursor/>
       <Header/>
       <RoutesComponent/>
       <Footer/>
+      <a id="back-to-top" onClick={() => {scrollToTop()}}><img id="back-to-top-arrow" src={ArrowUpBlack}/> </a>
       <ProgressBar/>
     </div>
   );
+}
+
+// Increase this to make it appear when further up on the page, and decrease to make it appear lower on the page
+const ScrollToTopHeightOffset = 1.5;
+
+const showScrollToTopButton = () => {
+  let el = document.getElementById("back-to-top");
+  if (window.scrollY > window.innerHeight / ScrollToTopHeightOffset) {
+    if (!el?.classList?.contains("active")) {
+      if (el.classList.contains("hidden")) {
+        el.classList.replace("hidden", "active");
+      } else {
+        el.classList.add("active");
+      }
+    }
+  } else if (window.scrollY < window.innerHeight / ScrollToTopHeightOffset && el.classList.contains("active")) {
+    el.classList.replace("active", "hidden")
+  }
 }
 
 export const setPageToLightMode = () => {
@@ -33,8 +59,24 @@ export const setPageToLightMode = () => {
   }
 
   // Set cursor colors
-  document.getElementById("inner-cursor").style.backgroundColor = `rgba(${cursorLightModeColor + "," + cursorLightModeInnerOpacity})`;
-  document.getElementById("outer-cursor").style.backgroundColor = `rgba(${cursorLightModeColor + "," + cursorLightModeOuterOpacity})`;
+  let innerCursor = document.getElementById("inner-cursor");
+  let outerCursor = document.getElementById("outer-cursor");
+  if (innerCursor) {
+    innerCursor.style.backgroundColor = `rgba(${cursorLightModeColor + "," + cursorLightModeInnerOpacity})`;
+  }
+  if (outerCursor) {
+    outerCursor.style.backgroundColor = `rgba(${cursorLightModeColor + "," + cursorLightModeOuterOpacity})`;
+  }
+
+  // Set scroll to top color and arrow colour
+  let backToTop = document.getElementById("back-to-top");
+  if (backToTop) {
+    backToTop.style.backgroundColor = "rgb(0, 0, 0)";
+  }
+  let backToTopArrow = document.getElementById("back-to-top-arrow");
+  if (backToTopArrow) {
+    backToTopArrow.src = ArrowUpWhite;
+  }
 }
 
 export const setPageToDarkMode = () => {
@@ -48,8 +90,24 @@ export const setPageToDarkMode = () => {
   }
 
   // Set cursor colors
-  document.getElementById("inner-cursor").style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorInnerDefaultOpacity})`;
-  document.getElementById("outer-cursor").style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorOuterDefaultOpacity})`;
+  let innerCursor = document.getElementById("inner-cursor");
+  let outerCursor = document.getElementById("outer-cursor");
+  if (innerCursor) {
+    innerCursor.style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorInnerDefaultOpacity})`;
+  }
+  if (outerCursor) {
+    outerCursor.style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorOuterDefaultOpacity})`;
+  }
+
+  // Set scroll to top color and arrow colour
+  let backToTop = document.getElementById("back-to-top");
+  if (backToTop) {
+    backToTop.style.backgroundColor = "rgb(250, 250, 250)";
+  }
+  let backToTopArrow = document.getElementById("back-to-top-arrow");
+  if (backToTopArrow) {
+    backToTopArrow.src = ArrowUpBlack;
+  }
 }
 
 /**
@@ -106,6 +164,14 @@ export const hideScrollBar = () => {
   } catch (e) {
     console.error(e);
   }
+}
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
 }
 
 export default App;
