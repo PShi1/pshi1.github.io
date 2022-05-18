@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import "../Stylesheets/Playground.scss"
 import {
+  hideScrollBar,
   setPageToDarkMode,
 } from "../App";
 
@@ -19,6 +20,7 @@ export const Playground = () => {
 
     setPageToDarkMode();
     document.title = "Emma Li | Play";
+    hideScrollBar();
   }, []);
 
     return (

@@ -13,7 +13,7 @@ import PivotCardActive from '../Assets/WorkPageImages/PivotCardActive.png'
 import FinWellCard from '../Assets/WorkPageImages/FinWellCard.png';
 import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.png';
 import {
-  fadeInIntro,
+  fadeInIntro, hideScrollBar,
   setPageToDarkMode,
 } from "../App";
 
@@ -66,6 +66,7 @@ export const Work = () => {
 
     setPageToDarkMode();
     document.title = "Emma Li's Portfolio";
+    hideScrollBar();
   }, []);
 
   useEffect(() => {
@@ -181,9 +182,6 @@ export const Work = () => {
       that.tick();
     }, delta);
   };
-
-
-
 
   const scrollToCaseStudies = () => {
     let element = document.getElementById("case-study-tags-container");

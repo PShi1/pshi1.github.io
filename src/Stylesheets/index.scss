@@ -18,6 +18,10 @@ html, body {
   cursor: none;
 }
 
+body {
+  overscroll-behavior: none;
+}
+
 // Bottom Margins, currently only used for access
 .margin-bottom-12px {
   margin-bottom: (12vw * $scaling-value) !important;

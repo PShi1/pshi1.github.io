@@ -8,6 +8,7 @@ import {
   cursorLightModeInnerOpacity,
   cursorLightModeOuterOpacity, cursorOuterDefaultOpacity
 } from "./Components/AnimatedCursor";
+import {ProgressBar} from "./Components/ProgressBar";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header/>
       <RoutesComponent/>
       <Footer/>
+      <ProgressBar/>
     </div>
   );
 }
@@ -61,6 +63,48 @@ export const fadeInIntro = () => {
       element.classList.add("active");
     }, delay);
     delay += 700;
+  }
+}
+
+export const setupScrollBar = (color) => {
+  let el = document.getElementById("progress-bar");
+  if (el) {
+    el.style.display = "initial";
+    el.style.backgroundColor = color;
+  }
+  let elContainer = document.getElementById("progress-container");
+  if (elContainer) {
+    elContainer.style.display = "table";
+  }
+
+  // Set up Progress Bar
+  window.addEventListener("scroll", calculateAndSetupScrollAmount);
+}
+
+const calculateAndSetupScrollAmount = () => {
+  let wintop = window.scrollY;
+  let docheight = document.body.scrollHeight;
+  let winheight = window.innerHeight;
+  let totalScroll = (wintop / (docheight - winheight)) * 100;
+  let el = document.getElementById("progress-bar");
+  if (el) {
+    el.style.width = totalScroll + "%";
+  }
+}
+
+export const hideScrollBar = () => {
+  let bar = document.getElementById("progress-bar");
+  if (bar) {
+    bar.style.display = "none";
+  }
+  let container = document.getElementById("progress-container")
+  if (container) {
+    container.style.display = "none";
+  }
+  try {
+    window.removeEventListener("scroll", calculateAndSetupScrollAmount);
+  } catch (e) {
+    console.error(e);
   }
 }
 

@@ -21,7 +21,7 @@ import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
 import DownArrowWhite from '../Assets/downArrowSmallWhite.gif';
 import {
-  setPageToLightMode,
+  setPageToLightMode, setupScrollBar,
 } from "../App";
 
 /**
@@ -35,11 +35,12 @@ export const FinWell = () => {
     window.addEventListener('load', () => {
       fadeInOnScroll();
       fadeInIntro();
-      removeDownArrow();
+      // removeDownArrow();
     })
 
     setPageToLightMode();
     document.title = "Emma Li | FinWell";
+    setupScrollBar("#F0C933");
   }, []);
 
   /**
@@ -57,19 +58,19 @@ export const FinWell = () => {
     }
   }
 
-  const removeDownArrow = () => {
-    let element = document.getElementById("down-arrow-second");
-    let scroll = window.scrollY;
-    let innerHeight = window.innerHeight;
-    window.addEventListener("scroll", () => {
-      scroll = window.scrollY;
-
-      let pos = element.offsetTop;
-      if ((scroll + innerHeight) / 1.3 >= pos) {
-        element.classList.add("active");
-      }
-    })
-  }
+  // const removeDownArrow = () => {
+  //   let element = document.getElementById("down-arrow-second");
+  //   let scroll = window.scrollY;
+  //   let innerHeight = window.innerHeight;
+  //   window.addEventListener("scroll", () => {
+  //     scroll = window.scrollY;
+  //
+  //     let pos = element.offsetTop;
+  //     if ((scroll + innerHeight) / 1.3 >= pos) {
+  //       element.classList.add("active");
+  //     }
+  //   })
+  // }
 
   /**
    * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen

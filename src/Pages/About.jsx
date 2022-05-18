@@ -6,7 +6,7 @@ import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
 import {
-  fadeInIntro,
+  fadeInIntro, hideScrollBar,
   setPageToDarkMode
 } from "../App";
 
@@ -28,6 +28,7 @@ export const About = () => {
     setPageToDarkMode();
     fadeInIntro();
     fadeInOnScroll();
+    hideScrollBar();
 
     document.title = "Emma Li | About";
   }, []);

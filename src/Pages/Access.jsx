@@ -22,7 +22,7 @@ import AccessFinalImage from '../Assets/AccessPageImages/AccessIcons.png';
 import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.svg';
 import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpec1.svg';
 import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpec2.svg';
-import {setPageToLightMode} from "../App";
+import {setPageToLightMode, setupScrollBar} from "../App";
 
 export const Access = () => {
   useEffect(() => {
@@ -30,6 +30,7 @@ export const Access = () => {
 
     setPageToLightMode();
     document.title = "Emma Li | Access";
+    setupScrollBar("#98B1FF");
 
     // Highlights
     highlight();
