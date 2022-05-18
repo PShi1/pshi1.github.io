@@ -24,7 +24,7 @@ export const Work = () => {
   const tags = ["all-tag", "web-tag", "mobile-tag", "prototyping-tag", "design-system-tag"];
   const [currentTag, setCurrentTag] = useState("all-tag");
   const allCards = ["access-card", "sponsorcircle-card", "knowbie-card", "aprio-card", "pivot-card", "finwell-card"];
-  const webCards = ["access-card", "sponsorcircle-card", "knowbie-card", "aprio-card", "pivot-card"];
+  const webCards = ["access-card", "sponsorcircle-card", "aprio-card", "pivot-card"];
   const mobileCards = ["sponsorcircle-card", "knowbie-card", "finwell-card"];
   const prototypingCards = ["knowbie-card", "pivot-card", "finwell-card"];
   const designSystemCards = ["access-card", "pivot-card", "finwell-card"];
@@ -86,27 +86,8 @@ export const Work = () => {
           el.classList.add("active");
         }
       }
-      document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
-      document.getElementById("knowbie-card").style.marginLeft = "1%";
-      document.getElementById("knowbie-card").style.marginRight = "0%";
       cardsArrayUsed = allCards;
     } else {
-      if (currentTag === "mobile-tag" || currentTag === "prototyping-tag") {
-        document.getElementById("knowbie-card").style.marginRight = "1%";
-        if (currentTag === "mobile-tag") {
-          document.getElementById("sponsorcircle-card").style.marginLeft = "0%";
-          document.getElementById("knowbie-card").style.marginLeft = "1%";
-
-        } else {
-          document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
-          document.getElementById("knowbie-card").style.marginLeft = "0%";
-        }
-      } else {
-        document.getElementById("knowbie-card").style.marginRight = "0%";
-        document.getElementById("knowbie-card").style.marginLeft = "1%";
-        document.getElementById("sponsorcircle-card").style.marginLeft = "1%";
-      }
-
       if (currentTag === "web-tag") {
         cardsArrayUsed = webCards;
       } else if (currentTag === "mobile-tag") {
@@ -276,7 +257,7 @@ export const Work = () => {
 
           <div>
             <div className="intro-fade">
-              <p className="b0">A coffee-infused <u className="underline">Product Designer</u> based in Vancouver 🍁, currently building digital products @ Moken Agency.</p>
+              <p className="b0">A coffee-infused <u className="underline">Product Designer</u> based in Vancouver 🍁 currently building digital products @ Moken Agency.</p>
             </div>
           </div>
 
@@ -317,35 +298,38 @@ export const Work = () => {
         </div>
 
         <div id="case-studies-container">
-          <a className="cards-div active appear-on-scroll-2" href="/access" id="access-card">
-            <img className="first-active" src={AccessCard} alt=""/>
-            <img className="first-inactive" src={AccessCardActive} alt=""/>
-          </a>
+          <div className="minus-margin-sides">
+            <a className="cards-div active appear-on-scroll-2" href="/access" id="access-card">
+              <img className="first-active" src={AccessCard} alt=""/>
+              <img className="first-inactive" src={AccessCardActive} alt=""/>
+            </a>
 
-          <a className="cards-div active appear-on-scroll-2" href="/sponsorcircle" id="sponsorcircle-card">
-            <img className="first-active" src={SponsorCircleCard} alt=""/>
-            <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
-          </a>
+            <a className="cards-div active appear-on-scroll-2" href="/sponsorcircle" id="sponsorcircle-card">
+              <img className="first-active" src={SponsorCircleCard} alt=""/>
+              <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
+            </a>
 
-          <a className="cards-div active appear-on-scroll-2" href="/knowbie" id="knowbie-card">
-            <img className="first-active" src={KnowbieCard} alt=""/>
-            <img className="first-inactive" src={KnowbieCardActive} alt=""/>
-          </a>
+            <a className="cards-div active appear-on-scroll-2" href="/knowbie" id="knowbie-card">
+              <img className="first-active" src={KnowbieCard} alt=""/>
+              <img className="first-inactive" src={KnowbieCardActive} alt=""/>
+            </a>
 
-          <a className="cards-div active appear-on-scroll-2" href="/aprio" id="aprio-card">
-            <img className="first-active" src={AprioCard} alt=""/>
-            <img className="first-inactive" src={AprioCardActive} alt=""/>
-          </a>
+            <a className="cards-div active appear-on-scroll-2" href="/aprio" id="aprio-card">
+              <img className="first-active" src={AprioCard} alt=""/>
+              <img className="first-inactive" src={AprioCardActive} alt=""/>
+            </a>
 
-          <a className="cards-div active appear-on-scroll-2" href="/pivot" id="pivot-card">
-            <img className="first-active" src={PivotCard} alt=""/>
-            <img className="first-inactive" src={PivotCardActive} alt=""/>
-          </a>
+            <a className="cards-div active appear-on-scroll-2" href="/pivot" id="pivot-card">
+              <img className="first-active" src={PivotCard} alt=""/>
+              <img className="first-inactive" src={PivotCardActive} alt=""/>
+            </a>
 
-          <a className="cards-div active appear-on-scroll-2" href="/finwell" id="finwell-card">
-            <img className="first-active" src={FinWellCard} alt=""/>
-            <img className="first-inactive" src={FinWellCardActive} alt=""/>
-          </a>
+            <a className="cards-div active appear-on-scroll-2" href="/finwell" id="finwell-card">
+              <img className="first-active" src={FinWellCard} alt=""/>
+              <img className="first-inactive" src={FinWellCardActive} alt=""/>
+            </a>
+          </div>
+
 
         </div>
       </div>

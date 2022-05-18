@@ -89,6 +89,11 @@
     width: $default-margin-width;
     margin-left: auto;
     margin-right: auto;
+
+    .minus-margin-sides {
+      margin-left: -1%;
+      margin-right: -1%;
+    }
   }
 
   .cards-div.active {
@@ -100,7 +105,7 @@
     position: relative;
     cursor: none;
     margin-bottom: 2vw;
-    width: 32%;
+    width: 31.33%;
 
     img {
       display: block;
@@ -108,7 +113,7 @@
     }
 
     .first-active {
-      opacity: 0.8;
+      opacity: 1;
       position: absolute;
       transition: all 0.25s ease-in-out;
       top: 0;
@@ -130,7 +135,7 @@
     }
 
     .first-inactive {
-      opacity: 0.8;
+      opacity: 0.85;
       transition: all 0.25s ease-in-out;
       transform: translateY(-10px);
     }
@@ -227,17 +232,9 @@
     content: "Design System";
   }
 
-  #access-card, #aprio-card {
-    margin-right: 1%;
-  }
-
-  #sponsorcircle-card, #pivot-card {
+  #access-card, #sponsorcircle-card, #aprio-card, #pivot-card, #knowbie-card, #finwell-card {
     margin-left: 1%;
     margin-right: 1%;
-  }
-
-  #knowbie-card, #finwell-card {
-    margin-left: 1%;
   }
 
   #access-card, #sponsorcircle-card, #knowbie-card {
