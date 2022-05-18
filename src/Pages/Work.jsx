@@ -31,6 +31,44 @@ export const Work = () => {
   const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0,0);
+
+    let elements = document.getElementsByClassName('typewrite');
+    for (let i = 0; i < elements.length; i++) {
+      let toRotate = "[\"a life long learner.\", \"an engaging story teller.\", \"a driven entrepreneur.\",\n" +
+        "              \"a curious researcher.\", \"an imaginative problem solver.\", \"a technology enthusiast.\", \"an accessibility advocate.\"]";
+      let period = "2000"
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    let css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+
+    // End of Typewriter
+    fadeInIntro();
+    fadeInOnScroll();
+
+    // Set header active state
+    // Mark current header link as active
+    if (!document.getElementById("work-menu-item").classList.contains("active")) {
+      document.getElementById("work-menu-item").classList.add("active");
+    }
+    if (document.getElementById("play-menu-item").classList.contains("active")) {
+      document.getElementById("play-menu-item").classList.remove("active");
+    }
+    if (document.getElementById("about-menu-item").classList.contains("active")) {
+      document.getElementById("about-menu-item").classList.remove("active");
+    }
+
+    setPageToDarkMode();
+    document.title = "Emma Li's Portfolio";
+  }, []);
+
+  useEffect(() => {
     if (firstRender) return;
     for (const cardName of allCards) {
       let el = document.getElementById(cardName);
@@ -144,42 +182,7 @@ export const Work = () => {
     }, delta);
   };
 
-  useEffect(() => {
-    window.scrollTo(0,0);
 
-    let elements = document.getElementsByClassName('typewrite');
-    for (let i = 0; i < elements.length; i++) {
-      let toRotate = "[\"a life long learner.\", \"an engaging story teller.\", \"a driven entrepreneur.\",\n" +
-        "              \"a curious researcher.\", \"an imaginative problem solver.\", \"a technology enthusiast.\", \"an accessibility advocate.\"]";
-      let period = "2000"
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-    // INJECT CSS
-    let css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-
-    // End of Typewriter
-    fadeInIntro();
-    fadeInOnScroll();
-
-    // Set header active state
-    // Mark current header link as active
-    if (!document.getElementById("work-menu-item").classList.contains("active")) {
-      document.getElementById("work-menu-item").classList.add("active");
-    }
-    if (document.getElementById("play-menu-item").classList.contains("active")) {
-      document.getElementById("play-menu-item").classList.remove("active");
-    }
-    if (document.getElementById("about-menu-item").classList.contains("active")) {
-      document.getElementById("about-menu-item").classList.remove("active");
-    }
-
-    setPageToDarkMode();
-  }, []);
 
 
   const scrollToCaseStudies = () => {

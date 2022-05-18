@@ -18,6 +18,7 @@ export const Playground = () => {
     }
 
     setPageToDarkMode();
+    document.title = "Emma Li | Play";
   }, []);
 
     return (

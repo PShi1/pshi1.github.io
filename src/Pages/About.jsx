@@ -28,6 +28,8 @@ export const About = () => {
     setPageToDarkMode();
     fadeInIntro();
     fadeInOnScroll();
+
+    document.title = "Emma Li | About";
   }, []);
 
   const scrollToCaseStudies = () => {

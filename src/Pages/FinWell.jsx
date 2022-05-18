@@ -39,6 +39,7 @@ export const FinWell = () => {
     })
 
     setPageToLightMode();
+    document.title = "Emma Li | FinWell";
   }, []);
 
   /**

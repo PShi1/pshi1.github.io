@@ -29,9 +29,10 @@ export const Access = () => {
     window.scrollTo(0,0);
 
     setPageToLightMode();
+    document.title = "Emma Li | Access";
 
     // Highlights
-      highlight();
+    highlight();
   }, []);
 
   /**
