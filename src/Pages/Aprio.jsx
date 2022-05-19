@@ -18,7 +18,7 @@ import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
 export const Aprio = () => {
   useEffect(() => {
     window.scrollTo(0,0);
-    
+
     setPageToLightMode();
     document.title = "Emma Li | Aprio";
     setupScrollBar("#FF6D00");
@@ -261,7 +261,7 @@ export const Aprio = () => {
             for proper design, the importance of user research, and how to articulately present to stakeholders.</strong></p>
       </div>
 
-      <img className="margin-bottom-160px" id="access-final-image" src={AprioFinalImage} alt=""/>
+      <img className="margin-bottom-160px full-width-image" id="aprio-final-image" src={AprioFinalImage} alt=""/>
     </div>
   )
 }

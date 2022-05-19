@@ -68,6 +68,14 @@ body {
   margin-bottom: (80vw * $scaling-value) !important;
 }
 
+.margin-bottom-100px {
+  margin-bottom: (100vw * $scaling-value) !important;
+}
+
+.margin-bottom-120px {
+  margin-bottom: (120vw * $scaling-value) !important;
+}
+
 .margin-bottom-160px {
   margin-bottom: (160vw * $scaling-value) !important;
 }
@@ -253,6 +261,10 @@ h3 {
   font-size: 1.7vw;
   line-height: 200%;
   color: $black;
+}
+
+.no-bold {
+  font-weight: 300 !important;
 }
 // End of only for case studies
 

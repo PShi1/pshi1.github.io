@@ -6,7 +6,7 @@
   .header-outer-div {
     width: $default-margin-width;
     margin: auto;
-    padding-top: 16vh;
+    padding-top: 12vw;
 
     p {
       margin: 0;
@@ -31,13 +31,11 @@
 
   .row {
     display: flex;
-    margin-bottom: 20px;
 
     .header-area {
       box-sizing: border-box;
       display: block;
       float: left;
-      padding-bottom: 15px;
 
       h1 {
         margin-top: 0;
@@ -47,7 +45,7 @@
 
   .typewriter-wrapper-div {
     display: block;
-    margin-top: 8vh;
+    margin-top: 4vw;
 
     .typewriter-prefix {
       display: inline-block;
@@ -84,7 +82,7 @@
   }
 
   #case-studies-container {
-    padding-top: 6vh;
+    padding-top: 5vw;
     display: block;
     width: $default-margin-width;
     margin-left: auto;

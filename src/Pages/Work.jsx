@@ -262,7 +262,7 @@ export const Work = () => {
             </div>
           </div>
 
-          <div className="typewriter-wrapper-div margin-bottom-160px">
+          <div className="typewriter-wrapper-div margin-bottom-120px">
             <div className="intro-fade">
               <p className="typewriter-prefix b0">I'm also</p>
               <div className="typewrite"/>

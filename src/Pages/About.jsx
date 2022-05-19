@@ -87,7 +87,7 @@ export const About = () => {
     <div className="background">
       <div className="about-page">
         <div className="intro">
-          <div className="columns margin-bottom-160px">
+          <div className="columns margin-bottom-80px">
             <div className="left-column">
               <h1 className="intro-fade">Passionate.</h1>
               <h1 className="intro-fade">Creative.</h1>
