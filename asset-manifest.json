@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.17c2f156.css",
-    "main.js": "/static/js/main.3badd5a3.js",
+    "main.css": "/static/css/main.68d7c7e0.css",
+    "main.js": "/static/js/main.cba0dc76.js",
     "static/js/787.d538d4ce.chunk.js": "/static/js/787.d538d4ce.chunk.js",
     "static/media/Patterns.svg": "/static/media/Patterns.8f4e7830157142e876be79243b51139f.svg",
     "static/media/AccessHeader.svg": "/static/media/AccessHeader.43bf78723c8378f57b99701c480f467a.svg",
@@ -13,7 +13,6 @@
     "static/media/iPhone2.svg": "/static/media/iPhone2.701095c3d21c7f62a327b43dd5db85d4.svg",
     "static/media/DesignSystem.svg": "/static/media/DesignSystem.66801b34cb0f110236d3db09c5cd529a.svg",
     "static/media/iPhone4.svg": "/static/media/iPhone4.f78280439a419dd975cc92113c2065e7.svg",
-    "static/media/NewDesignSpec1.svg": "/static/media/NewDesignSpec1.a542ed89087ac3efa47d3ec533e2bfc3.svg",
     "static/media/AprioHeaderImage.png": "/static/media/AprioHeaderImage.89e1daa82addac8413fc.png",
     "static/media/EmpathyMap1.png": "/static/media/EmpathyMap1.874cadb5a0c934ef3bd6.png",
     "static/media/Books.png": "/static/media/Books.81657d170fff8b9f5357.png",
@@ -21,7 +20,6 @@
     "static/media/ConfidentCarl.png": "/static/media/ConfidentCarl.972ef3208b6b3f49b5e4.png",
     "static/media/AnxiousAnnie.png": "/static/media/AnxiousAnnie.8a0f2623a59f57ec8b60.png",
     "static/media/AffinityMap.svg": "/static/media/AffinityMap.ed0416a6d23e76a6c3fdbfed7d582d96.svg",
-    "static/media/OldDesignSpecs.svg": "/static/media/OldDesignSpecs.69d080b3ffec8405856c75576a5f634f.svg",
     "static/media/KnowbieCard.png": "/static/media/KnowbieCard.acbc9b37b0375e073fb7.png",
     "static/media/FinWellCard.png": "/static/media/FinWellCard.b11feadc0c14ef921001.png",
     "static/media/TextFields.png": "/static/media/TextFields.3a5db7bbf10a9e5eae6e.png",
@@ -36,6 +34,7 @@
     "static/media/AccessCardActive.png": "/static/media/AccessCardActive.fa633a83c587a905ac70.png",
     "static/media/SponsorCircleCard.png": "/static/media/SponsorCircleCard.5aac69c3de2b82603fbc.png",
     "static/media/AprioCard.png": "/static/media/AprioCard.c0375f27d7ef7fd73571.png",
+    "static/media/NewDesignSpec1.png": "/static/media/NewDesignSpec1.2997fce44afa5633b9a5.png",
     "static/media/downArrowSmallWhite.gif": "/static/media/downArrowSmallWhite.1279ffc2f9bae97c3b67.gif",
     "static/media/PivotCardActive.png": "/static/media/PivotCardActive.8ebf07c506479d026d74.png",
     "static/media/ClientProfiles.png": "/static/media/ClientProfiles.f2ae4225b4d9b9289645.png",
@@ -49,6 +48,7 @@
     "static/media/AprioCardActive.png": "/static/media/AprioCardActive.884fb9538b29118ae27c.png",
     "static/media/CompetitiveAnalysis.svg": "/static/media/CompetitiveAnalysis.c97e5f8829f530b0a012e247d40fdeb6.svg",
     "static/media/Iconography.svg": "/static/media/Iconography.306e6af28809a74b86bdaf761191639c.svg",
+    "static/media/OldDesignSpecs.png": "/static/media/OldDesignSpecs.7962eaba84babe791898.png",
     "static/media/AprioProcess.png": "/static/media/AprioProcess.58ce2846d8d08db256e4.png",
     "static/media/Stars.svg": "/static/media/Stars.32d9df1b7bd767d120b0ddaaf9d118bb.svg",
     "static/media/FileOrganization1.svg": "/static/media/FileOrganization1.6b82ddb2fb1020cacc2be631c363f7d9.svg",
@@ -87,12 +87,12 @@
     "static/media/arrow-up.svg": "/static/media/arrow-up.1fa6a4ee472c8931f9cb3b927a4613ff.svg",
     "static/media/ArrowUpBlack.svg": "/static/media/ArrowUpBlack.f480ff839dc021e5997c331f932d3575.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.20aa239a83d25166fc6e10e689493036.svg",
-    "main.17c2f156.css.map": "/static/css/main.17c2f156.css.map",
-    "main.3badd5a3.js.map": "/static/js/main.3badd5a3.js.map",
+    "main.68d7c7e0.css.map": "/static/css/main.68d7c7e0.css.map",
+    "main.cba0dc76.js.map": "/static/js/main.cba0dc76.js.map",
     "787.d538d4ce.chunk.js.map": "/static/js/787.d538d4ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17c2f156.css",
-    "static/js/main.3badd5a3.js"
+    "static/css/main.68d7c7e0.css",
+    "static/js/main.cba0dc76.js"
   ]
 }
