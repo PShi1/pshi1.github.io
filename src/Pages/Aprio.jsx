@@ -17,6 +17,8 @@ import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
 
 export const Aprio = () => {
   useEffect(() => {
+    window.scrollTo(0,0);
+    
     setPageToLightMode();
     document.title = "Emma Li | Aprio";
     setupScrollBar("#FF6D00");
