@@ -22,6 +22,19 @@ body {
   overscroll-behavior: none;
 }
 
+.aprio-page, .knowbie-page, .pivot-page, .sponsor-circle-page, .playground-page {
+  h2 {
+    margin: auto;
+    text-align: center;
+  }
+
+  height: 55vh;
+  background-color: black;
+  padding-top: 20vh;
+  width: $default-margin-width;
+  margin: auto;
+}
+
 // Bottom Margins, currently only used for access
 .margin-bottom-12px {
   margin-bottom: (12vw * $scaling-value) !important;

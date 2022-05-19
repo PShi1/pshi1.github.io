@@ -21,7 +21,7 @@ import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
 import DownArrowWhite from '../Assets/downArrowSmallWhite.gif';
 import {
-  setPageToLightMode, setupScrollBar,
+  setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,
 } from "../App";
 
 /**
@@ -32,6 +32,8 @@ export const FinWell = () => {
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
+    window.scrollTo(0,0);
+
     window.addEventListener('load', () => {
       fadeInOnScroll();
       fadeInIntro();
@@ -41,6 +43,7 @@ export const FinWell = () => {
     setPageToLightMode();
     document.title = "Emma Li | FinWell";
     setupScrollBar("#F0C933");
+    turnAllMenuStatesOff();
   }, []);
 
   /**
@@ -93,7 +96,7 @@ export const FinWell = () => {
 
   return (
     <div className="finwell-page">
-      <div className="intro-wrapper foreground">
+      <div className="intro-wrapper foreground margin-bottom-60px">
         <div className="left-column">
           <img id="finwell-logo" className="left-float" src={FinWellImage} alt="finwell logo"/>
           <p id="finwell-description" className="left-float">Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time.</p>

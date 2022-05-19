@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import "../Stylesheets/Playground.scss"
 import {
   hideScrollBar,
   setPageToDarkMode,
@@ -25,8 +24,9 @@ export const Playground = () => {
 
     return (
       <div className="background">
-        <div className="playground-wrapper">
-          <h1>Life is not all about work.</h1>
+        <div className="playground-page">
+          <h2>Life is not all about work.</h2>
+          <h2>There's currently nothing here for Playground... WIP!</h2>
         </div>
       </div>
     )

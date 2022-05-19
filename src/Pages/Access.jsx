@@ -22,7 +22,7 @@ import AccessFinalImage from '../Assets/AccessPageImages/AccessIcons.png';
 import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.svg';
 import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpec1.svg';
 import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpec2.svg';
-import {setPageToLightMode, setupScrollBar} from "../App";
+import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../App";
 
 export const Access = () => {
   useEffect(() => {
@@ -34,6 +34,8 @@ export const Access = () => {
 
     // Highlights
     highlight();
+
+    turnAllMenuStatesOff();
   }, []);
 
   /**

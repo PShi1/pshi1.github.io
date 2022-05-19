@@ -16,6 +16,7 @@ import {
   fadeInIntro, hideScrollBar,
   setPageToDarkMode,
 } from "../App";
+import {Link} from "react-router-dom";
 
 /**
  * Page component for the main page
@@ -299,35 +300,35 @@ export const Work = () => {
 
         <div id="case-studies-container">
           <div className="minus-margin-sides">
-            <a className="cards-div active appear-on-scroll-2" href="/access" id="access-card">
+            <Link className="cards-div active appear-on-scroll-2" to="/access" id="access-card">
               <img className="first-active" src={AccessCard} alt=""/>
               <img className="first-inactive" src={AccessCardActive} alt=""/>
-            </a>
+            </Link>
 
-            <a className="cards-div active appear-on-scroll-2" href="/sponsorcircle" id="sponsorcircle-card">
+            <Link className="cards-div active appear-on-scroll-2" to="/sponsorcircle" id="sponsorcircle-card">
               <img className="first-active" src={SponsorCircleCard} alt=""/>
               <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
-            </a>
+            </Link>
 
-            <a className="cards-div active appear-on-scroll-2" href="/knowbie" id="knowbie-card">
+            <Link className="cards-div active appear-on-scroll-2" to="/knowbie" id="knowbie-card">
               <img className="first-active" src={KnowbieCard} alt=""/>
               <img className="first-inactive" src={KnowbieCardActive} alt=""/>
-            </a>
+            </Link>
 
-            <a className="cards-div active appear-on-scroll-2" href="/aprio" id="aprio-card">
+            <Link className="cards-div active appear-on-scroll-2" to="/aprio" id="aprio-card">
               <img className="first-active" src={AprioCard} alt=""/>
               <img className="first-inactive" src={AprioCardActive} alt=""/>
-            </a>
+            </Link>
 
-            <a className="cards-div active appear-on-scroll-2" href="/pivot" id="pivot-card">
+            <Link className="cards-div active appear-on-scroll-2" to="/pivot" id="pivot-card">
               <img className="first-active" src={PivotCard} alt=""/>
               <img className="first-inactive" src={PivotCardActive} alt=""/>
-            </a>
+            </Link>
 
-            <a className="cards-div active appear-on-scroll-2" href="/finwell" id="finwell-card">
+            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
               <img className="first-active" src={FinWellCard} alt=""/>
               <img className="first-inactive" src={FinWellCardActive} alt=""/>
-            </a>
+            </Link>
           </div>
 
 
