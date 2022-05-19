@@ -1,0 +1,141 @@
+@import "index";
+
+.aprio-page {
+  background-color: $off-white;
+
+  .overview, .process, .design-mockups, .reflection {
+    width: $default-margin-width;
+    margin: auto;
+  }
+
+  .full-width-image {
+    width: 100%;
+  }
+
+  .process {
+    .left-column {
+      width: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-right: 0;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .right-column {
+      width: 50%;
+      float: right;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 5%;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .north-star-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .spacing-div {
+        display: flex;
+      }
+
+      .left-column, .center-column, .right-column {
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .left-column {
+        padding-right: 2.5%;
+      }
+
+      .center-column {
+        padding: 0 2.5%;
+      }
+
+      .right-column {
+        padding-left: 2.5%;
+      }
+    }
+  }
+
+  .impact {
+    background-color: $black;
+    padding-top: 1.56vw;
+    margin-top: 2.07vw;
+    padding-bottom: 3.12vw;
+
+    .impact-inner {
+      width: $default-margin-width;
+      margin: 3.125vw auto auto auto;
+    }
+
+    p, .cs-body {
+      color: $white;
+    }
+
+    .cs-title {
+      margin-top: 0;
+    }
+
+    .impact-left, .impact-right {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .impact-left {
+      width: 63%;
+    }
+
+    .impact-right {
+      width: 37%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.9375vw;
+      }
+    }
+
+    .impact-number {
+      font-family: $inter-font-family;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.4vw;
+      line-height: 150%;
+      display: inline-block;
+      padding-right: 0.2vw;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .highlight{
+    width: max-content;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, $off-white 50%, $light-aprio-orange 50%);
+    background-position: 0 0;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-weight: initial;
+  }
+
+  .highlight.active{
+    animation-name: highlight;
+  }
+
+  @keyframes highlight {
+    from {background-position: 0 0;}
+    to {background-position: -100% 0;}
+  }
+}

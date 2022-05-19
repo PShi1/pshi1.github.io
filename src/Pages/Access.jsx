@@ -30,7 +30,7 @@ export const Access = () => {
 
     setPageToLightMode();
     document.title = "Emma Li | Access";
-    setupScrollBar("#98B1FF");
+    setupScrollBar("#1E48CE");
 
     // Highlights
     highlight();
@@ -74,27 +74,26 @@ export const Access = () => {
 
       <div className="overview">
         <h3 className="cs-title margin-bottom-80px">Overview</h3>
-        <h2 className="cs-manrope margin-bottom-80px">i led a team to build and maintain a design system for an entire ecosystem
+        <h2 className="cs-manrope margin-bottom-80px">I led a team to build and maintain a design system for an entire ecosystem
           of software products.</h2>
 
         <h3 className="cs-subtitle margin-bottom-16px">Context</h3>
-        <p className="cs-body margin-bottom-40px"><div className="highlight">The Access team at Moken Agency was in the process of designing and launching a suite of tools designed to
-          digitize the agency experience and help various user</div><div className="highlight"> groups in the startup ecosystem.</div> The business roadmap had
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">The Access team at Moken Agency was in the process of designing and launching a suite of tools designed to
+          digitize the agency experience and help various user groups in the startup ecosystem.</strong> The business roadmap had
           a planned two digital products launching in 2021 and six more in the backlog. With the sheer amount of designs
-          we were creating every day, the inconsistencies between components was becoming more and more apparent. <div className="highlight">We decided we needed to create a</div><div className="highlight"> company wide
-            design system to support the scalability and consistency of our designs.</div></p>
+          we were creating every day, the inconsistencies between components was becoming more and more apparent. <strong className="highlight">We decided we needed to create a company wide
+            design system to support the scalability and consistency of our designs.</strong></p>
 
         <h3 className="cs-subtitle margin-bottom-16px">What did I do?</h3>
         <ul>
-          <li className="cs-body">I <div className="highlight">defined our design system's preliminary structure, language, and process.</div></li>
-          <li className="cs-body">I <div className="highlight">designed and launched the first published version of the design system.</div> This is the bedrock of the design system that is still being used today company wide at Moken Agency.</li>
+          <li className="cs-body">I <strong className="highlight">defined our design system's preliminary structure, language, and process.</strong></li>
+          <li className="cs-body">I <strong className="highlight">designed and launched the first published version of the design system.</strong> This is the bedrock of the design system that is still being used today company wide at Moken Agency.</li>
           <li className="cs-body margin-bottom-40px">I also also tested with several different groups of end users to
-            make sure the <div className="highlight">design system benefit not only the design team, but everyone that would be</div>
-            <div className="highlight"> using it.</div></li>
+            make sure the <strong className="highlight">design system benefit not only the design team, but everyone that would be using it.</strong></li>
         </ul>
 
         <h3 className="cs-subtitle margin-bottom-16px">Project Timeline</h3>
-        <p className="cs-body margin-bottom-40px">The process to establish the first version of the design system and process took place over <div className="highlight">6 months in 2021.</div></p>
+        <p className="cs-body margin-bottom-40px">The process to establish the first version of the design system and process took place over <strong className="highlight">6 months in 2021.</strong></p>
 
         <h3 className="cs-subtitle margin-bottom-16px">Project Type</h3>
         <p className="cs-body margin-bottom-40px">Collaborative (sub-team of 3), Web,  User Research, Design System</p>
@@ -145,23 +144,23 @@ export const Access = () => {
         <h3 className="cs-subtitle margin-bottom-12px">Stakeholder Buy In</h3>
 
         <p className="cs-body">
-          In order to ensure the success of this project, <div className="highlight">it was important to get stakeholders on board</div> before we start
+          In order to ensure the success of this project, <strong className="highlight">it was important to get stakeholders on board</strong> before we start
           building our design system. We did this in many ways:
         </p>
 
         <ul className="margin-bottom-80px">
           <li className="cs-body">
-            <div className="highlight">Organized a company wide meeting with all stakeholders</div> present where we presented the
+            <strong className="highlight">Organized a company wide meeting with all stakeholders</strong> present where we presented the
             long-term benefits of adopting a design system and how it was going to individually address all of their pain points.
           </li>
           <li className="cs-body">
-            <div className="highlight">Involve engineering early on</div> in monthly meetings to get their input
+            <strong className="highlight">Involve engineering early on</strong> in monthly meetings to get their input
             and make sure they feel included as well as understood in the process.
           </li>
         </ul>
 
         <h3 className="cs-subtitle margin-bottom-12px">Our North Star</h3>
-        <p className="cs-body margin-bottom-36px"><div className="highlight">Guiding principles we kept in mind all throughout the process.</div></p>
+        <p className="cs-body margin-bottom-36px"><strong className="highlight">Guiding principles we kept in mind all throughout the process.</strong></p>
 
         <div className="north-star-row margin-bottom-80px">
           <div className="spacing-div margin-bottom-80px">
@@ -187,8 +186,8 @@ export const Access = () => {
           <h3 className="cs-subtitle-2 margin-bottom-12px">Preliminary Research</h3>
           <p className="cs-body">This was the first design system any of us had ever built, so we relied on research and following the
             examples of some of the most recognized design systems out there such as Shopify’s <a className="cs-body" href="https://polaris.shopify.com/">Polaris</a>,
-            IBM’s <a className="cs-body" href="https://carbondesignsystem.com/">Carbon</a>, or Saleforce’s <a className="cs-body" href="https://www.salesforce.com/ca/campaign/lightning/">Lightning</a>. We <div className="highlight">took note of all the common practices and methods for
-              how the systems were</div> <div className="highlight">organized and brainstormed on how those examples could serve our purposes best.</div></p>
+            IBM’s <a className="cs-body" href="https://carbondesignsystem.com/">Carbon</a>, or Saleforce’s <a className="cs-body" href="https://www.salesforce.com/ca/campaign/lightning/">Lightning</a>. We <strong className="highlight">took note of all the common practices and methods for
+              how the systems were organized and brainstormed on how those examples could serve our purposes best.</strong></p>
         </div>
       </div>
 
@@ -199,7 +198,7 @@ export const Access = () => {
           <div className="left-column-42 right-padding-28px">
             <p className="cs-subtitle margin-bottom-12px">Foundation</p>
             <p className="cs-body">
-              These are the <div className="highlight">fundamental visual elements that can't be</div> <div className="highlight"> broken down into smaller elements</div> and serve as the foundation for the existance of all other components.
+              These are the <strong className="highlight">fundamental visual elements that can't be broken down into smaller elements</strong> and serve as the foundation for the existance of all other components.
             </p>
           </div>
           <div className="right-column-58">
@@ -210,7 +209,7 @@ export const Access = () => {
         <div className="row-42-58 margin-bottom-80px">
           <div className="left-column-42 right-padding-28px">
             <p className="cs-body">
-              We unified the way our icons look by <div className="highlight"> making sure the icons take </div><div className="highlight"> up the same space in a grid and have the same weight. </div> We also determined a new icon naming convention.
+              We unified the way our icons look by <strong className="highlight"> making sure the icons take up the same space in a grid and have the same weight. </strong> We also determined a new icon naming convention.
             </p>
           </div>
           <div className="right-column-58">
@@ -223,7 +222,7 @@ export const Access = () => {
           <div className="left-column-42 right-padding-28px">
             <p className="cs-subtitle margin-bottom-12px">Components</p>
             <p className="cs-body">
-              These are the <div className="highlight"> relatively simple UI elements that are reused </div><div className="highlight"> from design to design. </div> We placed these on individual artboards and made sure that:
+              These are the <strong className="highlight"> relatively simple UI elements that are reused from design to design. </strong> We placed these on individual artboards and made sure that:
             </p>
 
             <ul>
@@ -241,8 +240,7 @@ export const Access = () => {
         <div className="row-42-58 margin-bottom-80px">
           <div className="left-column-42 right-padding-28px">
             <p className="cs-body">
-              I <div className="highlight"> unified the way components are categorized and named so that </div>
-              <div className="highlight"> each component can be easily found in the assets panel </div> and it’s easy to switch to the variant you are looking for.
+              I <strong className="highlight"> unified the way components are categorized and named so that each component can be easily found in the assets panel </strong> and it’s easy to switch to the variant you are looking for.
             </p>
           </div>
           <div className="right-column-58">
@@ -253,8 +251,8 @@ export const Access = () => {
         <div className="row-42-58 margin-bottom-80px">
           <div className="left-column-42 right-padding-28px">
             <h3 className="cs-subtitle margin-bottom-12px">Patterns</h3>
-            <p className="cs-body">These are <div className="highlight">common layouts that get reused in many different </div><div className="highlight"> designs with
-              slight variations to the components. </div> We created these making sure that:</p>
+            <p className="cs-body">These are <strong className="highlight">common layouts that get reused in many different designs with
+              slight variations to the components. </strong> We created these making sure that:</p>
             <ul>
               <li className="cs-body">Each pattern is made up of components already in the design system</li>
               <li className="cs-body">Each pattern is optimized for reusability</li>
@@ -272,28 +270,28 @@ export const Access = () => {
         <img className="margin-bottom-80px" id="creation-flowchart" src={FlowChart} alt=""/>
 
        <p className="cs-body">
-          With the new process in place, <div className="highlight"> everyone on the team was on the same page and new designers joining the
-         team noted how much less daunting the design system </div> <div className="highlight">was</div>.
+          With the new process in place, <strong className="highlight"> everyone on the team was on the same page and new designers joining the
+         team noted how much less daunting the design system was</strong>.
         </p>
       </div>
 
       <div className="iteration margin-bottom-80px">
         <h2 className="cs-title margin-bottom-80px"><strong className="blue-text">03 </strong>- Iteration</h2>
         <p className="cs-body margin-bottom-40px">
-          From the beginning, we wanted to <div className="highlight"> involve other parallel teams as early on as possible </div> since
+          From the beginning, we wanted to <strong className="highlight"> involve other parallel teams as early on as possible </strong> since
           the design system had to be optimized for everyone in order to be considered a success. To achieve
-          this, <div className="highlight">I conducted team and individual interviews with the engineering, product, and marketing teams </div> in order to see how we can improve our current design handoffs and what they thought about our current design system process.
+          this, <strong className="highlight">I conducted team and individual interviews with the engineering, product, and marketing teams </strong> in order to see how we can improve our current design handoffs and what they thought about our current design system process.
         </p>
         <p className="cs-subtitle margin-bottom-12px">What I learned:</p>
         <ul className="margin-bottom-24px">
-          <li className="cs-body">The biggest pain point for engineering was <div className="highlight"> figuring out how screens were connected and the different states of the components used in each design.</div></li>
-          <li className="cs-body">The biggest pain point for marketing was <div className="highlight">figuring out which assets in the design system were meant for them and how to made edits to the components </div> <div className="highlight">when turning them into variants. </div></li>
-          <li className="cs-body">The biggest pain point for product was <div className="highlight">finding what they were looking for in a fast and efficient manner, especially when checking in on progress on specific </div><div className="highlight"> tasks. </div></li>
-          <li className="cs-body">The teams <div className="highlight"> enjoyed the new process and the constant updates in the #designsystem slack channel made them feel included and involved. </div></li>
+          <li className="cs-body">The biggest pain point for engineering was <strong className="highlight"> figuring out how screens were connected and the different states of the components used in each design.</strong></li>
+          <li className="cs-body">The biggest pain point for marketing was <strong className="highlight">figuring out which assets in the design system were meant for them and how to made edits to the components when turning them into variants. </strong></li>
+          <li className="cs-body">The biggest pain point for product was <strong className="highlight">finding what they were looking for in a fast and efficient manner, especially when checking in on progress on specific tasks.</strong></li>
+          <li className="cs-body">The teams <strong className="highlight"> enjoyed the new process and the constant updates in the #designsystem slack channel made them feel included and involved. </strong></li>
         </ul>
 
         <p className="cs-body margin-bottom-40px">
-          <div className="highlight"> We spent some time iterating through different versions of the design specs before arriving at the final version, which got very positive reviews from the </div><div className="highlight">engineers on review. </div>
+          <strong className="highlight"> We spent some time iterating through different versions of the design specs before arriving at the final version, which got very positive reviews from the engineers on review. </strong>
         </p>
 
         <p className="cs-subtitle margin-bottom-40px">Old Design Specs</p>
@@ -311,8 +309,8 @@ export const Access = () => {
           <div className="left-column-42 right-padding-28px">
             <h3 className="cs-subtitle margin-bottom-12px">File Organization</h3>
             <p className="cs-body">
-              <div className="highlight"> To improve lookup for product owners and managers, I came up </div>
-              <div className="highlight"> with a new system to use covers to organize new Figma files </div> so it was easy to tell what the file was about from one glance.
+              <strong className="highlight"> To improve lookup for product owners and managers, I came up </strong>
+              <strong className="highlight"> with a new system to use covers to organize new Figma files </strong> so it was easy to tell what the file was about from one glance.
             </p>
           </div>
           <div className="right-column-58">
@@ -323,9 +321,8 @@ export const Access = () => {
         <div className="row-42-58 margin-bottom-80px">
           <div className="left-column-42 right-padding-28px">
             <p className="cs-body">
-              Also, to organize the enormous file containing our design system, I started off <div className="highlight"> organizing the artboards in the three </div>
-              <div className="highlight"> categories identified above and added additional pages </div> for work spaces and other visual elements such as illustrations. This way
-              <div className="highlight"> parallel teams like marketing would be able to easily find the </div> <div className="highlight"> assets they are looking for. </div>
+              Also, to organize the enormous file containing our design system, I started off <strong className="highlight"> organizing the artboards in the three categories identified above and added additional pages </strong> for work spaces and other visual elements such as illustrations. This way
+              <strong className="highlight"> parallel teams like marketing would be able to easily find the assets they are looking for. </strong>
             </p>
           </div>
           <div className="right-column-58">
@@ -335,9 +332,8 @@ export const Access = () => {
 
         <h3 className="cs-subtitle margin-bottom-12px">Onboarding</h3>
         <p className="cs-body margin-bottom-40px">
-          I came up with a way to <div className="highlight"> onboard new designers by creating a guide in Confluence introducing the design system along with the established process. </div> I also
-          went the extra step of including a page in the Figma file to introduce new users to the system and <div className="highlight"> highlighted answers to common questions so even new members </div>
-          <div className="highlight"> to the other teams would be able to pick up using the design system quickly! </div>
+          I came up with a way to <strong className="highlight"> onboard new designers by creating a guide in Confluence introducing the design system along with the established process. </strong> I also
+          went the extra step of including a page in the Figma file to introduce new users to the system and <strong className="highlight"> highlighted answers to common questions so even new members to the other teams would be able to pick up using the design system quickly! </strong>
         </p>
         <img className="margin-bottom-40px" id="onboarding" src={Onboarding} alt=""/>
       </div>
@@ -377,10 +373,10 @@ export const Access = () => {
       <div className="reflection margin-bottom-80px">
         <h2 className="cs-title margin-bottom-80px"><strong className="blue-text">06 </strong>- Reflection</h2>
         <p className="cs-subtitle margin-bottom-12px">It takes two (and a lot more) to tango</p>
-        <p className="cs-body margin-bottom-40px">Creating and maintaining a design system is a <div className="highlight"> constant back and forth conversation </div> between all the users involved. Open communication and feedback should involve the input of everyone to
+        <p className="cs-body margin-bottom-40px">Creating and maintaining a design system is a <strong className="highlight"> constant back and forth conversation </strong> between all the users involved. Open communication and feedback should involve the input of everyone to
           ensure that it it serving its overall purpose. </p>
         <p className="cs-subtitle margin-bottom-12px">Rome wasn't built in one day</p>
-        <p className="cs-body"><div className="highlight">Design system are constantly evolving and changing with every new design and idea. </div> We’re proud of creating the first version and foundation of the system but the process helped me realize
+        <p className="cs-body"><strong className="highlight">Design system are constantly evolving and changing with every new design and idea. </strong> We’re proud of creating the first version and foundation of the system but the process helped me realize
           what a constant work in progress a design system is and should be.</p>
       </div>
 

@@ -184,7 +184,6 @@
   }
 
   .highlight{
-    display: inline-block;
     width: max-content;
     background-size: 200% auto;
     background-image: linear-gradient(to right, $off-white 50%, $light-blue 50%);
@@ -193,6 +192,7 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    font-weight: initial;
   }
 
   .highlight.active{

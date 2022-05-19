@@ -22,7 +22,7 @@ body {
   overscroll-behavior: none;
 }
 
-.aprio-page, .knowbie-page, .pivot-page, .sponsor-circle-page, .playground-page {
+.knowbie-page, .pivot-page, .sponsor-circle-page, .playground-page {
   h2 {
     margin: auto;
     text-align: center;
@@ -87,6 +87,8 @@ $lilac: #DDD3FC;
 $background-color: #FCF9FF;
 $light-blue: #BACBFF;
 $grey-999999: #999999;
+$light-aprio-orange: #FFDFC7;
+$aprio-orange: #FF6D00;
 
 $main-background-colour-dark: $black;
 
@@ -250,13 +252,16 @@ h3 {
   font-weight: 300;
   font-size: 1.7vw;
   line-height: 200%;
-  text-transform: uppercase;
   color: $black;
 }
 // End of only for case studies
 
 .blue-text {
   color: $finwell-blue;
+}
+
+.orange-text {
+  color: $aprio-orange;
 }
 
 .colour-gradient {

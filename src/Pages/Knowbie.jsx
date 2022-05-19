@@ -5,7 +5,7 @@ import "../Stylesheets/index.scss"
 export const Knowbie = () => {
   useEffect(() => {
     document.title = "Emma Li | Knowbie";
-    setupScrollBar("#D3D3E1");
+    setupScrollBar("#B4B5DC");
     turnAllMenuStatesOff();
   }, []);
 

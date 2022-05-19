@@ -23,3 +23,6 @@ yarn-error.log*
 src/.idea
 src/node_modules
 src/.gitignore
+
+# build stuff
+/build

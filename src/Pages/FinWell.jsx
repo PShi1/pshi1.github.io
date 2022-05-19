@@ -42,7 +42,7 @@ export const FinWell = () => {
 
     setPageToLightMode();
     document.title = "Emma Li | FinWell";
-    setupScrollBar("#F0C933");
+    setupScrollBar("#F0CA36");
     turnAllMenuStatesOff();
   }, []);
 

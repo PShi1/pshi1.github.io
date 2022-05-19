@@ -5,7 +5,7 @@ import "../Stylesheets/index.scss"
 export const SponsorCircle = () => {
   useEffect(() => {
     document.title = "Emma Li | SponsorCircle";
-    setupScrollBar("#FFCCE2");
+    setupScrollBar("#CA3273");
     turnAllMenuStatesOff();
   }, []);
 
