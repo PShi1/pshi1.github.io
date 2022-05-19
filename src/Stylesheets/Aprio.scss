@@ -2,6 +2,13 @@
 
 .aprio-page {
   background-color: $off-white;
+  animation-name: temp;
+  animation-duration: 3s;
+
+  @keyframes temp {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
 
   .overview, .process, .design-mockups, .reflection {
     width: $default-margin-width;

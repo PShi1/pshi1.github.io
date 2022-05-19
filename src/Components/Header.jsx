@@ -26,16 +26,16 @@ export const Header = () => {
           <li className="menu-item" id="work-menu-item"><Link to="/">
             <h3>Work</h3>
           </Link></li>
-          <li className="menu-item" id="play-menu-item"><Link to="/playground">
-            <h3>Play</h3>
-          </Link></li>
+          {/*<li className="menu-item" id="play-menu-item"><Link to="/playground">*/}
+          {/*  <h3>Play</h3>*/}
+          {/*</Link></li>*/}
           <li className="menu-item" id="about-menu-item"><Link to="/about">
             <h3>About</h3>
           </Link></li>
 
-          <li className="menu-item"><Link to="/">
+          <li className="menu-item"><a href="https://drive.google.com/file/d/1Os3AgCdpkwbxlT7rmx8QqjDRnoXxm1tj/view" target="_blank">
             <h3>Resume</h3>
-          </Link></li>
+          </a></li>
         </ul>
       </nav>
     </div>

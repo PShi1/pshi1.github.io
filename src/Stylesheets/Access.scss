@@ -2,6 +2,17 @@
 
 .access-page {
   background-color: $off-white;
+  animation-name: temp;
+  animation-duration: 3s;
+
+  @keyframes temp {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  .access-header-wrapper {
+    height: 90vh;
+  }
 
   // Since this page is white background, must alter all text to be black text
   h1, h2, h3, p, ul {

@@ -24,7 +24,7 @@ import {Link} from "react-router-dom";
 export const Work = () => {
   const tags = ["all-tag", "web-tag", "mobile-tag", "prototyping-tag", "design-system-tag"];
   const [currentTag, setCurrentTag] = useState("all-tag");
-  const allCards = ["access-card", "sponsorcircle-card", "knowbie-card", "aprio-card", "pivot-card", "finwell-card"];
+  const allCards = ["access-card", "aprio-card"];
   const webCards = ["access-card", "sponsorcircle-card", "aprio-card", "pivot-card"];
   const mobileCards = ["sponsorcircle-card", "knowbie-card", "finwell-card"];
   const prototypingCards = ["knowbie-card", "pivot-card", "finwell-card"];
@@ -58,9 +58,9 @@ export const Work = () => {
     if (!document.getElementById("work-menu-item").classList.contains("active")) {
       document.getElementById("work-menu-item").classList.add("active");
     }
-    if (document.getElementById("play-menu-item").classList.contains("active")) {
-      document.getElementById("play-menu-item").classList.remove("active");
-    }
+    // if (document.getElementById("play-menu-item").classList.contains("active")) {
+    //   document.getElementById("play-menu-item").classList.remove("active");
+    // }
     if (document.getElementById("about-menu-item").classList.contains("active")) {
       document.getElementById("about-menu-item").classList.remove("active");
     }
@@ -166,7 +166,7 @@ export const Work = () => {
   };
 
   const scrollToCaseStudies = () => {
-    let element = document.getElementById("case-study-tags-container");
+    let element = document.getElementById("case-studies-container");
     if (element) {
       element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
@@ -206,11 +206,11 @@ export const Work = () => {
     })
 
     let accessCard = document.getElementById("access-card");
-    let sponsorcircleCard = document.getElementById("sponsorcircle-card");
-    let knowbieCard = document.getElementById("knowbie-card");
+    // let sponsorcircleCard = document.getElementById("sponsorcircle-card");
+    // let knowbieCard = document.getElementById("knowbie-card");
     let aprioCard = document.getElementById("aprio-card");
-    let pivotCard = document.getElementById("pivot-card");
-    let finwellCard = document.getElementById("finwell-card");
+    // let pivotCard = document.getElementById("pivot-card");
+    // let finwellCard = document.getElementById("finwell-card");
 
     window.addEventListener("scroll", () => {
       scroll = window.scrollY;
@@ -220,17 +220,17 @@ export const Work = () => {
         setFirstRender(false);
         setTimeout(function() {
           accessCard.classList.add("play-animation");
-          aprioCard.classList.add("play-animation");
         }, 300);
 
         setTimeout(function() {
-          knowbieCard.classList.add("play-animation");
-          finwellCard.classList.add("play-animation");
-        }, 400);
+          // knowbieCard.classList.add("play-animation");
+          aprioCard.classList.add("play-animation");
+          }, 400);
 
         setTimeout(function() {
-          sponsorcircleCard.classList.add("play-animation");
-          pivotCard.classList.add("play-animation");
+          // finwellCard.classList.add("play-animation");
+          // sponsorcircleCard.classList.add("play-animation");
+          // pivotCard.classList.add("play-animation");
         }, 700);
       }
     })
@@ -276,27 +276,27 @@ export const Work = () => {
           </div>
         </div>
 
-        <div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">
-          <div className="tag-container active invert" id="all-tag" onClick={() => handleTagClick("all-tag")}>
-            <p className="cs-body invert-target"/>
-          </div>
+        {/*<div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">*/}
+        {/*  <div className="tag-container active invert" id="all-tag" onClick={() => handleTagClick("all-tag")}>*/}
+        {/*    <p className="cs-body invert-target"/>*/}
+        {/*  </div>*/}
 
-          <div className="tag-container invert" id="web-tag" onClick={() => handleTagClick("web-tag")}>
-            <p className="cs-body invert-target"/>
-          </div>
+        {/*  <div className="tag-container invert" id="web-tag" onClick={() => handleTagClick("web-tag")}>*/}
+        {/*    <p className="cs-body invert-target"/>*/}
+        {/*  </div>*/}
 
-          <div className="tag-container invert" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
-            <p className="cs-body invert-target"/>
-          </div>
+        {/*  <div className="tag-container invert" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>*/}
+        {/*    <p className="cs-body invert-target"/>*/}
+        {/*  </div>*/}
 
-          <div className="tag-container invert" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>
-            <p className="cs-body invert-target"/>
-          </div>
+        {/*  <div className="tag-container invert" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>*/}
+        {/*    <p className="cs-body invert-target"/>*/}
+        {/*  </div>*/}
 
-          <div className="tag-container invert" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
-            <p className="cs-body invert-target"/>
-          </div>
-        </div>
+        {/*  <div className="tag-container invert" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>*/}
+        {/*    <p className="cs-body invert-target"/>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         <div id="case-studies-container">
           <div className="minus-margin-sides">
@@ -305,30 +305,30 @@ export const Work = () => {
               <img className="first-inactive" src={AccessCardActive} alt=""/>
             </Link>
 
-            <Link className="cards-div active appear-on-scroll-2" to="/sponsorcircle" id="sponsorcircle-card">
-              <img className="first-active" src={SponsorCircleCard} alt=""/>
-              <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>
-            </Link>
+            {/*<Link className="cards-div active appear-on-scroll-2" to="/sponsorcircle" id="sponsorcircle-card">*/}
+            {/*  <img className="first-active" src={SponsorCircleCard} alt=""/>*/}
+            {/*  <img className="first-inactive" src={SponsorCircleCardActive} alt=""/>*/}
+            {/*</Link>*/}
 
-            <Link className="cards-div active appear-on-scroll-2" to="/knowbie" id="knowbie-card">
-              <img className="first-active" src={KnowbieCard} alt=""/>
-              <img className="first-inactive" src={KnowbieCardActive} alt=""/>
-            </Link>
+            {/*<Link className="cards-div active appear-on-scroll-2" to="/knowbie" id="knowbie-card">*/}
+            {/*  <img className="first-active" src={KnowbieCard} alt=""/>*/}
+            {/*  <img className="first-inactive" src={KnowbieCardActive} alt=""/>*/}
+            {/*</Link>*/}
 
             <Link className="cards-div active appear-on-scroll-2" to="/aprio" id="aprio-card">
               <img className="first-active" src={AprioCard} alt=""/>
               <img className="first-inactive" src={AprioCardActive} alt=""/>
             </Link>
 
-            <Link className="cards-div active appear-on-scroll-2" to="/pivot" id="pivot-card">
-              <img className="first-active" src={PivotCard} alt=""/>
-              <img className="first-inactive" src={PivotCardActive} alt=""/>
-            </Link>
+            {/*<Link className="cards-div active appear-on-scroll-2" to="/pivot" id="pivot-card">*/}
+            {/*  <img className="first-active" src={PivotCard} alt=""/>*/}
+            {/*  <img className="first-inactive" src={PivotCardActive} alt=""/>*/}
+            {/*</Link>*/}
 
-            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
-              <img className="first-active" src={FinWellCard} alt=""/>
-              <img className="first-inactive" src={FinWellCardActive} alt=""/>
-            </Link>
+            {/*<Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">*/}
+            {/*  <img className="first-active" src={FinWellCard} alt=""/>*/}
+            {/*  <img className="first-inactive" src={FinWellCardActive} alt=""/>*/}
+            {/*</Link>*/}
           </div>
 
 

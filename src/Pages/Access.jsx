@@ -70,7 +70,9 @@ export const Access = () => {
 
   return (
     <div className="access-page">
-      <img className="access-header margin-bottom-80px" src={AccessHeader} alt=""/>
+      <div className="access-header-wrapper">
+        <img className="access-header margin-bottom-80px" src={AccessHeader} alt=""/>
+      </div>
 
       <div className="overview">
         <h3 className="cs-title margin-bottom-80px">Overview</h3>
