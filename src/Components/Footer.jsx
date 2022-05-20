@@ -8,6 +8,7 @@ import MailLight from '../Assets/FooterImages/MailLight.svg';
 import LinkedinLight from '../Assets/FooterImages/LinkedinLight.svg';
 import MailLightActive from "../Assets/FooterImages/MailLightActive.svg";
 import LinkedinActiveLight from '../Assets/FooterImages/LinkedinLightActive.svg';
+import {copyEmail} from "../App";
 
 export const Footer = () => {
   useEffect(() => {
@@ -30,10 +31,6 @@ export const Footer = () => {
 
   const redirectLinkedin = () => {
     window.open("https://www.linkedin.com/in/emmalili/", "_blank");
-  }
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText("uxemmali@gmail.com");
   }
 
   let TxtType = function(el, toRotate, period) {
@@ -94,11 +91,12 @@ export const Footer = () => {
               <img className="footer-icon logo2" id="linkedin-icon-light" src={LinkedinActiveLight} alt="linkedin" onClick={redirectLinkedin}/>
             </div>
             <div className="logo">
-              <img className="footer-icon logo1 invert-target" id="mail-icon" src={Mail} alt="email" onClick={copyEmail}/>
-              <img className="footer-icon logo2 invert-target" id="mail-icon" src={MailActive} alt="email" onClick={copyEmail}/>
-              <img className="footer-icon logo1" id="mail-icon-light" src={MailLight} alt="email" onClick={copyEmail}/>
-              <img className="footer-icon logo2" id="mail-icon-light" src={MailLightActive} alt="email" onClick={copyEmail}/>
+              <img className="footer-icon logo1 invert-target" id="mail-icon" src={Mail} alt="email" onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo2 invert-target" id="mail-icon" src={MailActive} alt="email" onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo1" id="mail-icon-light" src={MailLight} alt="email" onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo2" id="mail-icon-light" src={MailLightActive} alt="email" onClick={() => copyEmail("footer")}/>
             </div>
+            <p className="cs-body" id="email-copied">Copied!</p>
 
           </div>
         </div>

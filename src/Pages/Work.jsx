@@ -258,11 +258,13 @@ export const Work = () => {
 
           <div>
             <div className="intro-fade">
-              <p className="b0">A coffee-infused <u className="underline">Product Designer</u> based in Vancouver 🍁 currently building digital products @ Moken Agency.</p>
+              <p className="b0 margin-bottom-40px">A coffee-infused <u className="underline">Product Designer</u> based in
+                Vancouver 🍁 currently building digital products @ Moken Agency.</p>
+              <p className="b0 margin-bottom-40px"><i>Currently a work in progress.</i></p>
             </div>
           </div>
 
-          <div className="typewriter-wrapper-div margin-bottom-120px">
+          <div className="typewriter-wrapper-div margin-bottom-40px">
             <div className="intro-fade">
               <p className="typewriter-prefix b0">I'm also</p>
               <div className="typewrite"/>

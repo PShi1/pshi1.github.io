@@ -51,6 +51,7 @@
 
     .image-container {
       display: flex;
+      position: relative;
     }
 
     .left-column {
@@ -155,6 +156,10 @@
     background: linear-gradient(358.88deg, #343061 2.34%, #6E4B74 23.35%, #C27193 42.85%, #EE988E 62.32%, #F5BB95 79.57%, #F5D6A2 97.16%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  #email-copied {
+    color: $black !important;
   }
 }
 

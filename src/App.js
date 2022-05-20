@@ -186,4 +186,21 @@ export const turnAllMenuStatesOff = () => {
   }
 }
 
+export const copyEmail = (type) => {
+  navigator.clipboard.writeText("uxemmali@gmail.com");
+  let el;
+  if (type === "footer") {
+    el = document.getElementById("email-copied");
+  } else if (type === "about") {
+    el = document.getElementById("about-email-copied");
+  }
+  if (el) {
+    el.style.opacity = "1";
+    setTimeout(() => {
+      el.style.opacity = "0";
+    }, 2000);
+  }
+
+}
+
 export default App;

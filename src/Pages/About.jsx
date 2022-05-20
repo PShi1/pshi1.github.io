@@ -6,6 +6,7 @@ import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
 import {
+  copyEmail,
   fadeInIntro, hideScrollBar,
   setPageToDarkMode
 } from "../App";
@@ -112,22 +113,24 @@ export const About = () => {
           </div>
           <div className="right-column">
             <p className="b3">
-              I’m currently a <strong className="off-white-strong-font-style">Product Designer at Moken Agency</strong>, leading the entire design process of various tech products.
-              In my career, I’m fortunate to have <strong className="off-white-strong-font-style">experienced product agencies and in house, working with both enterprise and
-              consumer-facing companies</strong> alike. My expertise at the moment lies in <strong className="off-white-strong-font-style">zero-to-one projects</strong> involving a high degree of
-              product thinking and visual design.
+              I’m currently a <strong className="off-white-strong-font-style underline">Product Designer at Moken Agency</strong>,
+              leading the entire design process of various tech products. In my career, I’m fortunate to have <strong className="off-white-strong-font-style">experienced
+              product agencies and in-house, working with both enterprise and consumer-facing companies alike</strong>. My expertise at the moment
+              lies in <strong className="off-white-strong-font-style">zero-to-one</strong> projects involving a high degree of product thinking
+              and visual design.
             </p>
 
             <p className="b3">
-              My design journey started a long time ago, back when I was colour coding my school notes and creating custom graphics for my high school PowerPoint presentations.
-              I graduated with a <strong className="off-white-strong-font-style">Bachelor of Business Administration from the University of Toronto.</strong> Immediately after graduation, I decided business was not the right path for me and set out
-              to find something I was genuinely passionate about.
+              My design journey started a long time ago, when I was colour coding my school notes and creating custom graphics for my
+              high school PowerPoint presentations. I graduated with a <strong className="off-white-strong-font-style">Bachelor of Business Administration from the University of Toronto</strong>.
+              Immediately after graduation, I decided business was not the right path for me and set out to find something I was genuinely passionate about.
             </p>
 
             <p className="b3">
-              Visual storytelling mixed with my naturally curious personality eventually became more than just a passion
-              when I discovered the field of design: the industry that allows me to <strong className="off-white-strong-font-style"> collaborate with talented individuals
-              to continuously grow and learn new skill sets,</strong> from how to write lines of code to thinking from new and unique perspectives.
+              Visual storytelling, mixed with my naturally curious personality, eventually became more than just a passion
+              when I discovered the field of design: the industry that allows me
+              to <strong className="off-white-strong-font-style">collaborate with talented individuals to continuously grow and learn new skill sets</strong>,
+              from how to write lines of code to thinking from new and unique perspectives.
             </p>
           </div>
         </div>
@@ -178,9 +181,9 @@ export const About = () => {
             <div className="collapsible-item" id="after-hours-item">
               <ul id="after-hours-ul">
                 <li className="b4">I run my own online store selling 3D phone cases, you can find my work <a className="b4 link" href="https://www.instagram.com/ttqq_handmade/?hl=en" target="_blank" rel="noreferrer">here.</a></li>
-                <li className="b4">I'm a huge fooding and my favourite dish is pho.</li>
+                <li className="b4">I'm a huge foodie, and my favourite dish is Pho.</li>
                 <li className="b4">I get a lot of enjoyment from video games like League or Overwatch.</li>
-                <li className="b4">Currently learning how to play the guitar, one YouTube tutorial at a time.</li>
+                <li className="b4">I'm currently learning how to play the guitar, one YouTube tutorial at a time.</li>
               </ul>
             </div>
           </div>
@@ -205,21 +208,20 @@ export const About = () => {
             <div className="collapsible-item" id="for-me-design-is-item">
               <div className="third-columns" id="first-column">
                 <p className="b2">Advocating for the user</p>
-                <p className="b4">It’s important to design with the end users in mind, and to always exercise
-                  <strong className="off-white-strong-font-style"> compassion and empathy</strong>  when thinking about the problem from their reality.</p>
+                <p className="b4">When designing, it’s essential to keep the end-users in mind
+                  and always to exercise<strong className="off-white-strong-font-style"> compassion and empathy</strong> when thinking about the problem from their reality.</p>
               </div>
 
               <div className="third-columns" id="second-column">
                 <p className="b2">Never perfect</p>
-                <p className="b4">Design does not exist in isolation; it is a reflection of the larger society.
+                <p className="b4">Design does not exist in isolation; it reflects the larger society.
                   <strong className="off-white-strong-font-style"> As society changes, so should design. </strong> Designers should continue learning and iterating their designs
-                  rapidly to keep up with the everchanging world.</p>
+                  rapidly to keep up with the ever-changing world.</p>
               </div>
 
               <div className="third-columns" id="third-column">
                 <p className="b2">Function over form</p>
-                <p className="b4">Designers should only add elements that will bring value and always be seeking to
-                  achieve <strong className="off-white-strong-font-style">design purity</strong> through reduction and restraint. </p>
+                <p className="b4">Designers should only add elements that will bring value and always seek to achieve <strong className="off-white-strong-font-style">design purity</strong> through reduction and restraint. </p>
               </div>
             </div>
           </div>
@@ -262,8 +264,9 @@ export const About = () => {
 
         <div className="outro appear-on-scroll">
           <p className="b1-light">This Doesn't Have To Be The End ✌️</p>
-          <p className="b1-light">Reach me at uxemmali@gmail.com for
+          <p className="b1-light">Reach me at <u className="underline hover-cursor" onClick={() => copyEmail("about")}>uxemmali@gmail.com</u> for
             any comments, feedback, or outrageous ideas. </p>
+          <p className="cs-body" id="about-email-copied">Email copied!</p>
         </div>
       </div>
     </div>
