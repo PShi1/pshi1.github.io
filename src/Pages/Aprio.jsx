@@ -12,8 +12,9 @@ import Dashboard from '../Assets/AprioPageImages/Dashboard.png'
 import ClientProfiles from '../Assets/AprioPageImages/ClientProfiles.png';
 import ListOfUsers from '../Assets/AprioPageImages/ListOfUsers.png';
 import TaskPage from '../Assets/AprioPageImages/TaskPage.png';
-import PinkBox from '../Assets/AprioPageImages/PinkBox.png';
 import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
+import Video1 from '../Assets/AprioPageImages/Video1.mkv';
+import Video2 from '../Assets/AprioPageImages/Video2.mkv';
 
 export const Aprio = () => {
   useEffect(() => {
@@ -200,7 +201,7 @@ export const Aprio = () => {
           <li className="cs-body">Design consideration - I wanted to reference existing task assignment UX patterns used in popular tools such as
             Jira when designing this feature since that would be a familiar pattern with the Aprio user groups.</li>
         </ul>
-        <img src={PinkBox} alt="" className="full-width-image"/>
+        <video autoPlay muted loop={true} src={Video1} className="full-width-image"/>
 
         <p className="cs-subtitle margin-bottom-12px">User Flow: Global Search</p>
         <p className="cs-body">
@@ -210,7 +211,7 @@ export const Aprio = () => {
           <li className="cs-body"><strong className="highlight">I conducted user interviews to find out the most common items searched and how to best group search results.</strong></li>
           <li className="cs-body">Design consideration - search results are split into groups through tabs to speed up lookup time.</li>
         </ul>
-        <img src={PinkBox} alt="" className="full-width-image"/>
+        <video autoPlay muted loop={true} src={Video2} className="full-width-image"/>
       </div>
 
       <div className="impact margin-bottom-80px">
