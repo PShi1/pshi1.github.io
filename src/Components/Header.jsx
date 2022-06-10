@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Logo from "../Assets/HeaderImages/Logo.svg";
 import LogoActive from '../Assets/HeaderImages/LogoActive.svg';
 import LogoLight from '../Assets/HeaderImages/LogoLight.svg';
@@ -7,8 +7,38 @@ import {Link} from "react-router-dom";
 import '../Stylesheets/Header.scss';
 
 export const Header = () => {
+
+  useEffect(() => {
+    let lastScrollTop = window.scrollTop;
+
+    window.addEventListener("scroll", function(){
+      let st = document.documentElement.scrollTop;
+      let el = document.getElementById("nav-wrapper");
+      // Scroll is at the top
+      if (st < 30) {
+        if (!el.classList.contains("active")) {
+          el.classList.add("active");
+        }
+      }
+      // Scrolling down, hide navbar
+      else if (st > lastScrollTop){
+        console.log("Last scroll top: ", lastScrollTop);
+        if (el.classList.contains("active")) {
+          el.classList.remove("active");
+        }
+      }
+      // Scrolling up, show the navbar
+      else {
+        if (!el.classList.contains("active")) {
+          el.classList.add("active");
+        }
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    }, false);
+  }, [])
+
   return (
-    <div className="nav-wrapper" id="nav-wrapper">
+    <div className="nav-wrapper active" id="nav-wrapper">
       <nav className="navbar">
         <div className="logo">
           <a href="/" className="">
