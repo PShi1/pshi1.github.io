@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari');
 @import url('https://fonts.googleapis.com/css2?family=Manrope');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
@@ -80,6 +81,10 @@ body {
   margin-bottom: (160vw * $scaling-value) !important;
 }
 
+.margin-bottom-240px {
+  margin-bottom: (240vw * $scaling-value) !important;
+}
+
 // Right Paddings
 .right-padding-28px {
   padding-right: (28vw * $scaling-value) !important;
@@ -151,16 +156,16 @@ h3 {
   font-weight: 300;
   font-size: 1.8vw;
   line-height: 150%;
-  color: $off-white;
+  color: $grey-999999;
 }
 
 .b1-light {
   font-family: $manrope-font-family;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.35vw;
   line-height: 150%;
-  color: $off-white;
+  color: $grey-999999;
 }
 
 .b2 {
@@ -175,7 +180,7 @@ h3 {
 .b3 {
   font-family: $manrope-font-family;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9375vw;
   line-height: 200%;
   color: $grey-999999;
@@ -184,7 +189,7 @@ h3 {
 .b4 {
   font-family: $manrope-font-family;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9375vw;
   line-height: 200%;
   color: $grey-999999;
@@ -274,6 +279,10 @@ h3 {
 
 .orange-text {
   color: $aprio-orange;
+}
+
+.off-white-text {
+  color: $off-white;
 }
 
 .colour-gradient {

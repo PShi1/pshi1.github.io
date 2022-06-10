@@ -251,27 +251,22 @@ export const Work = () => {
       <div className="work-page">
         <div className="header-outer-div">
           <div className="row">
-            <div className="header-area">
-              <h1 className="intro-fade">Hey there! I'm Emma --</h1>
+            <div className="header-area intro-fade">
+              <h1>Hey there! I'm Emma --</h1>
+              <p className="b0">A coffee-infused ☕ <strong className="off-white-strong-font-style">Product Designer</strong> based in
+                Vancouver 🍁</p>
+              <p className="b0 margin-bottom-40px">Currently building 0-to-1 products @ <strong className="off-white-strong-font-style">Moken Agency</strong>.</p>
             </div>
           </div>
 
-          <div>
+          <div className="typewriter-wrapper-div margin-bottom-120px">
             <div className="intro-fade">
-              <p className="b0 margin-bottom-40px">A coffee-infused <u className="underline">Product Designer</u> based in
-                Vancouver 🍁 currently building digital products @ Moken Agency.</p>
-              <p className="b0 margin-bottom-40px"><i>Currently a work in progress.</i></p>
-            </div>
-          </div>
-
-          <div className="typewriter-wrapper-div margin-bottom-40px">
-            <div className="intro-fade">
-              <p className="typewriter-prefix b0">I'm also</p>
+              <p className="typewriter-prefix b0 off-white-text">I'm also</p>
               <div className="typewrite"/>
             </div>
           </div>
 
-          <div className="margin-bottom-60px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+          <div className="margin-bottom-240px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
               Explore Selected Case Studies
             </span>

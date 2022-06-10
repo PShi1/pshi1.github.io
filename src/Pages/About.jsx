@@ -88,17 +88,17 @@ export const About = () => {
     <div className="background">
       <div className="about-page">
         <div className="intro">
-          <div className="columns margin-bottom-80px">
+          <div className="columns margin-bottom-80px intro-fade">
             <div className="left-column">
-              <h1 className="intro-fade">Passionate.</h1>
-              <h1 className="intro-fade">Creative.</h1>
-              <h1 className="intro-fade">Empathetic.</h1>
-              <p className="b0 intro-fade" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
+              <h1>Passionate.</h1>
+              <h1>Creative.</h1>
+              <h1>Empathetic.</h1>
             </div>
 
-            <div className="right-column intro-fade">
+            <div className="right-column">
               <img src={Stars} alt=""/>
             </div>
+            <p className="b0 intro-fade" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
           </div>
           <div className="intro-fade scroll-down intro-fade" id="scroll-down" onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
@@ -263,8 +263,8 @@ export const About = () => {
         </div>
 
         <div className="outro appear-on-scroll">
-          <p className="b1-light">This Doesn't Have To Be The End ✌️</p>
-          <p className="b1-light">Reach me at <u className="underline hover-cursor" onClick={() => copyEmail("about")}>uxemmali@gmail.com</u> for
+          <h2>This Doesn't Have To Be The End ✌️</h2>
+          <p className="b1-light">Reach me at <strong className="hover-cursor off-white-strong-font-style" onClick={() => copyEmail("about")}>uxemmali@gmail.com</strong> for
             any comments, feedback, or outrageous ideas. </p>
           <p className="cs-body" id="about-email-copied">Email copied!</p>
         </div>

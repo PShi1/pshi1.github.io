@@ -22,7 +22,6 @@ export const Header = () => {
       }
       // Scrolling down, hide navbar
       else if (st > lastScrollTop){
-        console.log("Last scroll top: ", lastScrollTop);
         if (el.classList.contains("active")) {
           el.classList.remove("active");
         }
