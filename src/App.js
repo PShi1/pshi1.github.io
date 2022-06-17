@@ -3,10 +3,12 @@ import {Header} from "./Components/Header";
 import {RoutesComponent} from "./Components/RoutesComponent";
 import {Footer} from "./Components/Footer";
 import {
-  AnimatedCursor, cursorDefaultColor, cursorInnerDefaultOpacity,
+  cursorDefaultColor,
+  cursorInnerDefaultOpacity,
   cursorLightModeColor,
   cursorLightModeInnerOpacity,
-  cursorLightModeOuterOpacity, cursorOuterDefaultOpacity
+  cursorLightModeOuterOpacity,
+  cursorOuterDefaultOpacity
 } from "./Components/AnimatedCursor";
 import {ProgressBar} from "./Components/ProgressBar";
 import {useEffect} from "react";
@@ -20,7 +22,6 @@ function App() {
 
   return (
     <div>
-      <AnimatedCursor/>
       <Header/>
       <RoutesComponent/>
       <Footer/>

@@ -11,17 +11,19 @@
   }
 
   .access-header-wrapper {
-    height: 90vh;
+    height: fit-content;
   }
 
   // Since this page is white background, must alter all text to be black text
-  h1, h2, h3, p, ul {
+  h1, h2, h3, h4, p, ul {
     color: black;
     margin: 0;
   }
 
   .access-header {
-    width: 100%;
+    width: $default-small-margin-width;
+    margin: auto;
+    display: block;
   }
 
   .overview, .ideation, .creation, .iteration, .organization, .impact-inner, .reflection {
@@ -179,7 +181,10 @@
   }
 
   #access-final-image {
-    width: 100%;
+    width: $default-small-margin-width;
+    margin: auto;
+    display: block;
+    padding-bottom: 6.4vw;
   }
 
   // Attempting highlight

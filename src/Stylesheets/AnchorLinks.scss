@@ -1,0 +1,62 @@
+@import "index";
+
+.anchor-links-wrapper {
+  position: fixed;
+  width: 12.5%;
+  top: 25%;
+  padding: 2.5%;
+  z-index: 100000;
+
+  .group {
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+
+    h3 {
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 300;
+      margin-top: 0.6vw;
+      padding-left: 1vw;
+      margin-bottom: 0.6vw;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      display: none;
+    }
+  }
+
+  .group.active {
+    h3 {
+      font-weight: 700;
+    }
+
+    h4 {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      display: block;
+    }
+  }
+
+  .group:hover {
+    h3 {
+      font-weight: 700;
+    }
+  }
+
+  .subgroup.active, .subgroup:hover {
+    border-left: 2px solid black;
+    font-weight: 700;
+    transition: none;
+  }
+
+  .h3-group, .subgroup {
+    transition: color 0.25s ease-in-out;
+  }
+
+  .h3-group.invert, .subgroup.invert {
+    color: $off-white;
+    border-color: $off-white;
+    transition: color 0.25s ease-in-out;
+  }
+}

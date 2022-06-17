@@ -2,21 +2,11 @@ import React, {useEffect, useState} from 'react';
 import '../Stylesheets/Work.scss';
 import AccessCard from "../Assets/WorkPageImages/AccessCard.png";
 import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.png';
-import SponsorCircleCard from '../Assets/WorkPageImages/SponsorCircleCard.png';
-import SponsorCircleCardActive from '../Assets/WorkPageImages/SponsorCircleCardActive.png'
-import KnowbieCard from '../Assets/WorkPageImages/KnowbieCard.png';
-import KnowbieCardActive from '../Assets/WorkPageImages/KnowbieCardActive.png'
 import AprioCard from '../Assets/WorkPageImages/AprioCard.png';
 import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.png'
-import PivotCard from '../Assets/WorkPageImages/PivotCard.png';
-import PivotCardActive from '../Assets/WorkPageImages/PivotCardActive.png'
-import FinWellCard from '../Assets/WorkPageImages/FinWellCard.png';
-import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.png';
-import {
-  fadeInIntro, hideScrollBar,
-  setPageToDarkMode,
-} from "../App";
+import {fadeInIntro, hideScrollBar, setPageToDarkMode,} from "../App";
 import {Link} from "react-router-dom";
+import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 /**
  * Page component for the main page
@@ -248,6 +238,7 @@ export const Work = () => {
 
   return (
     <div className="background">
+      <AnimatedCursor/>
       <div className="work-page">
         <div className="header-outer-div">
           <div className="row">

@@ -19,10 +19,8 @@ import AnxiousAnnie from '../Assets/AnxiousAnnie.png';
 import ConfidentCarl from '../Assets/ConfidentCarl.png';
 import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
-import DownArrowWhite from '../Assets/downArrowSmallWhite.gif';
-import {
-  setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,
-} from "../App";
+import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../App";
+import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 /**
  * FinWell page component
@@ -32,7 +30,7 @@ export const FinWell = () => {
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 
     window.addEventListener('load', () => {
       fadeInOnScroll();
@@ -96,10 +94,12 @@ export const FinWell = () => {
 
   return (
     <div className="finwell-page">
+      <AnimatedCursor/>
       <div className="intro-wrapper foreground margin-bottom-60px">
         <div className="left-column">
           <img id="finwell-logo" className="left-float" src={FinWellImage} alt="finwell logo"/>
-          <p id="finwell-description" className="left-float">Using AI to build mindfulness and help control impulse spending by letting users reflect on their purchases over time.</p>
+          <p id="finwell-description" className="left-float">Using AI to build mindfulness and help control impulse
+            spending by letting users reflect on their purchases over time.</p>
         </div>
         <div className="right-column">
           <img className="right-float" id="samsung-phones" src={SamsungImage} alt="samsung phones"/>

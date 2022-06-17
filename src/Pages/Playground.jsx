@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
-import {
-  hideScrollBar,
-  setPageToDarkMode,
-} from "../App";
+import {hideScrollBar, setPageToDarkMode,} from "../App";
+import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 export const Playground = () => {
   useEffect(() => {
@@ -24,6 +22,7 @@ export const Playground = () => {
 
     return (
       <div className="background">
+        <AnimatedCursor/>
         <div className="playground-page">
           <h2>Life is not all about work.</h2>
           <h2>There's currently nothing here for Playground... WIP!</h2>
