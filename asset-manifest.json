@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ca030b9.css",
+    "main.css": "/static/css/main.c5bce5e5.css",
     "main.js": "/static/js/main.dadd5edd.js",
     "static/js/787.d538d4ce.chunk.js": "/static/js/787.d538d4ce.chunk.js",
     "static/media/Patterns.svg": "/static/media/Patterns.8f4e7830157142e876be79243b51139f.svg",
@@ -80,12 +80,12 @@
     "static/media/arrow-up.svg": "/static/media/arrow-up.1fa6a4ee472c8931f9cb3b927a4613ff.svg",
     "static/media/ArrowUpBlack.svg": "/static/media/ArrowUpBlack.f480ff839dc021e5997c331f932d3575.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.20aa239a83d25166fc6e10e689493036.svg",
-    "main.5ca030b9.css.map": "/static/css/main.5ca030b9.css.map",
+    "main.c5bce5e5.css.map": "/static/css/main.c5bce5e5.css.map",
     "main.dadd5edd.js.map": "/static/js/main.dadd5edd.js.map",
     "787.d538d4ce.chunk.js.map": "/static/js/787.d538d4ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ca030b9.css",
+    "static/css/main.c5bce5e5.css",
     "static/js/main.dadd5edd.js"
   ]
 }
