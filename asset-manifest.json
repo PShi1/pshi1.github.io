@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3b0dbf0.css",
-    "main.js": "/static/js/main.17799a5f.js",
+    "main.css": "/static/css/main.31c666dc.css",
+    "main.js": "/static/js/main.270ff608.js",
     "static/js/787.d538d4ce.chunk.js": "/static/js/787.d538d4ce.chunk.js",
     "static/media/Patterns.svg": "/static/media/Patterns.8f4e7830157142e876be79243b51139f.svg",
     "static/media/AccessHeader.svg": "/static/media/AccessHeader.43bf78723c8378f57b99701c480f467a.svg",
@@ -22,23 +22,15 @@
     "static/media/AnxiousAnnie.png": "/static/media/AnxiousAnnie.8a0f2623a59f57ec8b60.png",
     "static/media/AffinityMap.svg": "/static/media/AffinityMap.ed0416a6d23e76a6c3fdbfed7d582d96.svg",
     "static/media/Video2.mkv": "/static/media/Video2.415cd5e7c33b34d744e1.mkv",
-    "static/media/KnowbieCard.png": "/static/media/KnowbieCard.acbc9b37b0375e073fb7.png",
-    "static/media/FinWellCard.png": "/static/media/FinWellCard.b11feadc0c14ef921001.png",
     "static/media/TextFields.png": "/static/media/TextFields.3a5db7bbf10a9e5eae6e.png",
     "static/media/TeddyBear.svg": "/static/media/TeddyBear.b3c93ca47bd47ab68d4b61ca3563a4ce.svg",
     "static/media/AccessCard.png": "/static/media/AccessCard.8c683f7d77c2e26e9ce1.png",
     "static/media/AccessIcons.png": "/static/media/AccessIcons.ee83f247551eb03fe02c.png",
-    "static/media/KnowbieCardActive.png": "/static/media/KnowbieCardActive.0aa4c69092fc8cf6d55d.png",
     "static/media/NewDesignSpec2.svg": "/static/media/NewDesignSpec2.103f8188eed6802230fdf00ac2394052.svg",
-    "static/media/PivotCard.png": "/static/media/PivotCard.1ac1bac0d6cb5ce10ca1.png",
     "static/media/FlowChart.svg": "/static/media/FlowChart.3641b49434abe199f483b2f4b5dd3607.svg",
-    "static/media/FinWellCardActive.png": "/static/media/FinWellCardActive.81fa85badd7f59706456.png",
     "static/media/AccessCardActive.png": "/static/media/AccessCardActive.fa633a83c587a905ac70.png",
-    "static/media/SponsorCircleCard.png": "/static/media/SponsorCircleCard.5aac69c3de2b82603fbc.png",
     "static/media/AprioCard.png": "/static/media/AprioCard.c0375f27d7ef7fd73571.png",
     "static/media/NewDesignSpec1.png": "/static/media/NewDesignSpec1.2997fce44afa5633b9a5.png",
-    "static/media/downArrowSmallWhite.gif": "/static/media/downArrowSmallWhite.1279ffc2f9bae97c3b67.gif",
-    "static/media/PivotCardActive.png": "/static/media/PivotCardActive.8ebf07c506479d026d74.png",
     "static/media/ClientProfiles.png": "/static/media/ClientProfiles.f2ae4225b4d9b9289645.png",
     "static/media/Selfie.png": "/static/media/Selfie.659cb23386d1e37e377f.png",
     "static/media/TaskPage.png": "/static/media/TaskPage.db0f7869ed27f655d12a.png",
@@ -46,7 +38,6 @@
     "static/media/Onboarding.svg": "/static/media/Onboarding.da92ce19884063e887b5e7e9adc79253.svg",
     "static/media/Dashboard.png": "/static/media/Dashboard.c524014208c84225a850.png",
     "static/media/ListOfUsers.png": "/static/media/ListOfUsers.00e92d3905ae5c9a2753.png",
-    "static/media/SponsorCircleCardActive.png": "/static/media/SponsorCircleCardActive.754931330045d55c49be.png",
     "static/media/AprioCardActive.png": "/static/media/AprioCardActive.884fb9538b29118ae27c.png",
     "static/media/CompetitiveAnalysis.svg": "/static/media/CompetitiveAnalysis.c97e5f8829f530b0a012e247d40fdeb6.svg",
     "static/media/Iconography.svg": "/static/media/Iconography.306e6af28809a74b86bdaf761191639c.svg",
@@ -89,12 +80,12 @@
     "static/media/arrow-up.svg": "/static/media/arrow-up.1fa6a4ee472c8931f9cb3b927a4613ff.svg",
     "static/media/ArrowUpBlack.svg": "/static/media/ArrowUpBlack.f480ff839dc021e5997c331f932d3575.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.20aa239a83d25166fc6e10e689493036.svg",
-    "main.b3b0dbf0.css.map": "/static/css/main.b3b0dbf0.css.map",
-    "main.17799a5f.js.map": "/static/js/main.17799a5f.js.map",
+    "main.31c666dc.css.map": "/static/css/main.31c666dc.css.map",
+    "main.270ff608.js.map": "/static/js/main.270ff608.js.map",
     "787.d538d4ce.chunk.js.map": "/static/js/787.d538d4ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3b0dbf0.css",
-    "static/js/main.17799a5f.js"
+    "static/css/main.31c666dc.css",
+    "static/js/main.270ff608.js"
   ]
 }
