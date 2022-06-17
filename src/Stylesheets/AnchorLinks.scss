@@ -3,10 +3,12 @@
 .anchor-links-wrapper {
   position: fixed;
   width: 12.5%;
-  top: 20%;
-  padding: 2.5%;
+  top: 22.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   z-index: 100000;
   pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
 
   .group {
     margin-top: 0.8vw;
@@ -16,6 +18,7 @@
 
     h3 {
       font-weight: 300;
+      color: black;
     }
 
     h4 {
@@ -26,6 +29,7 @@
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
       display: none;
+      color: black;
     }
   }
 
@@ -55,6 +59,8 @@
 
   .h3-group, .subgroup {
     transition: color 0.25s ease-in-out;
+    width: fit-content;
+
   }
 
   .h3-group.invert, .subgroup.invert {
@@ -62,4 +68,9 @@
     border-color: $off-white;
     transition: color 0.25s ease-in-out;
   }
+}
+
+.anchor-links-wrapper.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }

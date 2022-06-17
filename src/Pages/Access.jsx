@@ -52,7 +52,6 @@ export const Access = () => {
   const setImpactAreaToHaveReversedCursorColours = () => {
     let el = document.getElementById("impact-area");
     el.addEventListener("mouseover", () => {
-      console.log("Mouse enter");
       // Set cursor colors
       let innerCursor = document.getElementById("inner-cursor");
       let outerCursor = document.getElementById("outer-cursor");
@@ -109,10 +108,10 @@ export const Access = () => {
   return (
     <div className="access-page">
       <div className="access-header-wrapper margin-bottom-80px anchor-area">
-        <img className="access-header" src={AccessHeader} alt=""/>
+        <img className="access-header" src={AccessHeader} alt="" id="header-image"/>
       </div>
 
-      <AnchorLinks/>
+      <AnchorLinks callerType="access"/>
       <div className="overview anchor-area" id="overview-area" key="overview-group">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>
         <h2 className="cs-manrope margin-bottom-80px">I led a team to build and maintain a design system for an entire
@@ -544,7 +543,7 @@ export const Access = () => {
           progress a design system is and should be.</p>
       </div>
 
-      <img className="anchor-area" id="access-final-image" src={AccessFinalImage} alt=""/>
+      <img className="anchor-area" id="final-image" src={AccessFinalImage} alt=""/>
     </div>
   )
 }

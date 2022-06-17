@@ -21,9 +21,7 @@
   }
 
   .access-header {
-    width: $default-small-margin-width;
-    margin: auto;
-    display: block;
+    width: 100%;
   }
 
   .overview, .ideation, .creation, .iteration, .organization, .impact-inner, .reflection {
@@ -181,10 +179,9 @@
     }
   }
 
-  #access-final-image {
-    width: $default-small-margin-width;
-    margin: auto;
-    display: block;
+  #final-image {
+    width: 100%;
+
     padding-bottom: 6.4vw;
   }
 
