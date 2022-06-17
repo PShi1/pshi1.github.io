@@ -51,7 +51,7 @@ export const Access = () => {
    */
   const setImpactAreaToHaveReversedCursorColours = () => {
     let el = document.getElementById("impact-area");
-    el.addEventListener("mousemove", () => {
+    el.addEventListener("mouseover", () => {
       console.log("Mouse enter");
       // Set cursor colors
       let innerCursor = document.getElementById("inner-cursor");
@@ -63,7 +63,7 @@ export const Access = () => {
         outerCursor.style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorLightModeOuterOpacity})`;
       }
 
-      el.addEventListener("mouseout", () => {
+      el.addEventListener("mouseleave", () => {
         let innerCursor = document.getElementById("inner-cursor");
         let outerCursor = document.getElementById("outer-cursor");
         if (innerCursor) {
