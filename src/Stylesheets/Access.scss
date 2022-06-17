@@ -12,6 +12,8 @@
 
   .access-header-wrapper {
     height: fit-content;
+    z-index: 100100;
+    position: relative;
   }
 
   // Since this page is white background, must alter all text to be black text
@@ -181,8 +183,9 @@
 
   #final-image {
     width: 100%;
-
     padding-bottom: 6.4vw;
+    z-index: 100100;
+    position: relative;
   }
 
   // Attempting highlight
