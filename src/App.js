@@ -3,6 +3,7 @@ import {Header} from "./Components/Header";
 import {RoutesComponent} from "./Components/RoutesComponent";
 import {Footer} from "./Components/Footer";
 import {
+  AnimatedCursor,
   cursorDefaultColor,
   cursorInnerDefaultOpacity,
   cursorLightModeColor,
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div>
+      <AnimatedCursor/>
       <Header/>
       <RoutesComponent/>
       <Footer/>

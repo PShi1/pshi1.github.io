@@ -15,7 +15,6 @@ import TaskPage from '../Assets/AprioPageImages/TaskPage.png';
 import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
 import Video1 from '../Assets/AprioPageImages/Video1.mkv';
 import Video2 from '../Assets/AprioPageImages/Video2.mkv';
-import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 export const Aprio = () => {
   useEffect(() => {
@@ -60,7 +59,6 @@ export const Aprio = () => {
 
   return (
     <div className="aprio-page">
-      <AnimatedCursor/>
       <img className="full-width-image margin-bottom-80px" src={AprioHeaderImage} alt=""/>
 
       <div className="overview">

@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {setupScrollBar, turnAllMenuStatesOff} from "../App";
 import "../Stylesheets/index.scss"
-import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 export const Pivot = () => {
   useEffect(() => {
@@ -12,7 +11,6 @@ export const Pivot = () => {
 
   return (
     <div className="background">
-      <AnimatedCursor/>
       <div className="pivot-page">
         <h2>There's currently nothing here for Pivot... WIP!</h2>
       </div>

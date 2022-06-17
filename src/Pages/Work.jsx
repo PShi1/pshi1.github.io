@@ -6,7 +6,6 @@ import AprioCard from '../Assets/WorkPageImages/AprioCard.png';
 import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.png'
 import {fadeInIntro, hideScrollBar, setPageToDarkMode,} from "../App";
 import {Link} from "react-router-dom";
-import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 /**
  * Page component for the main page
@@ -238,7 +237,6 @@ export const Work = () => {
 
   return (
     <div className="background">
-      <AnimatedCursor/>
       <div className="work-page">
         <div className="header-outer-div">
           <div className="row">

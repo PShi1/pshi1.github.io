@@ -3,13 +3,16 @@
 .anchor-links-wrapper {
   position: fixed;
   width: 12.5%;
-  top: 25%;
+  top: 20%;
   padding: 2.5%;
   z-index: 100000;
+  pointer-events: none;
 
   .group {
     margin-top: 0.8vw;
     margin-bottom: 0.8vw;
+    pointer-events: all;
+    width: fit-content;
 
     h3 {
       font-weight: 300;

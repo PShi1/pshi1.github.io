@@ -24,13 +24,17 @@ import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpec1.png';
 import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpec2.svg';
 import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../App";
 import AnchorLinks from "../Components/AnchorLinks";
-import {AnimatedCursor} from "../Components/AnimatedCursor";
+import {
+  cursorDefaultColor,
+  cursorLightModeColor,
+  cursorLightModeInnerOpacity,
+  cursorLightModeOuterOpacity
+} from "../Components/AnimatedCursor";
 
 export const Access = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    setPageToLightMode();
     document.title = "Emma Li | Access";
     setupScrollBar("#1E48CE");
 
@@ -38,7 +42,39 @@ export const Access = () => {
     highlight();
 
     turnAllMenuStatesOff();
+    setPageToLightMode();
+    setImpactAreaToHaveReversedCursorColours();
   }, []);
+
+  /**
+   * This is done so that when the cursor hovers over the impact area (black area), the cursor is still viewable
+   */
+  const setImpactAreaToHaveReversedCursorColours = () => {
+    let el = document.getElementById("impact-area");
+    el.addEventListener("mousemove", () => {
+      console.log("Mouse enter");
+      // Set cursor colors
+      let innerCursor = document.getElementById("inner-cursor");
+      let outerCursor = document.getElementById("outer-cursor");
+      if (innerCursor) {
+        innerCursor.style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorLightModeInnerOpacity})`;
+      }
+      if (outerCursor) {
+        outerCursor.style.backgroundColor = `rgba(${cursorDefaultColor + "," + cursorLightModeOuterOpacity})`;
+      }
+
+      el.addEventListener("mouseout", () => {
+        let innerCursor = document.getElementById("inner-cursor");
+        let outerCursor = document.getElementById("outer-cursor");
+        if (innerCursor) {
+          innerCursor.style.backgroundColor = `rgba(${cursorLightModeColor + "," + cursorLightModeInnerOpacity})`;
+        }
+        if (outerCursor) {
+          outerCursor.style.backgroundColor = `rgba(${cursorLightModeColor + "," + cursorLightModeOuterOpacity})`;
+        }
+      })
+    }, false)
+  }
 
   /**
    * Highlights words that are preset, when they're visible on the screen
@@ -72,7 +108,6 @@ export const Access = () => {
 
   return (
     <div className="access-page">
-      <AnimatedCursor/>
       <div className="access-header-wrapper margin-bottom-80px anchor-area">
         <img className="access-header" src={AccessHeader} alt=""/>
       </div>

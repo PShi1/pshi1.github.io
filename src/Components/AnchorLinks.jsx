@@ -170,7 +170,7 @@ const AnchorLinks = () => {
       <div className="group" id="ideation-area-anchor">
         <h3 className="h3-group" onClick={() => {
           findAndGoToLinkedTitle("ideation-title")
-        }}>01 - Ideation</h3>
+        }}><strong className="blue-text">01</strong> - Ideation</h3>
         <h4 id="what-are-users-experiencing-title-anchor" className="subgroup active" onClick={() => {
           findAndGoToLinkedTitle("what-are-users-experiencing-title")
         }}>What Are Users Experiencing?</h4>
@@ -185,7 +185,7 @@ const AnchorLinks = () => {
       <div className="group" id="creation-area-anchor">
         <h3 className="h3-group" onClick={() => {
           findAndGoToLinkedTitle("creation-title")
-        }}>02 - Creation</h3>
+        }}><strong className="blue-text">02</strong> - Creation</h3>
         <h4 id="foundation-title-anchor" className="subgroup" onClick={() => {
           findAndGoToLinkedTitle("foundation-title")
         }}>Foundation</h4>
@@ -200,7 +200,7 @@ const AnchorLinks = () => {
       <div className="group" id="iteration-area-anchor">
         <h3 className="h3-group" onClick={() => {
           findAndGoToLinkedTitle("iteration-title")
-        }}>03 - Iteration</h3>
+        }}><strong className="blue-text">03</strong> - Iteration</h3>
         <h4 id="what-i-learned-title-anchor" className="subgroup" onClick={() => {
           findAndGoToLinkedTitle("what-i-learned-title")
         }}>What I Learned</h4>
@@ -212,7 +212,7 @@ const AnchorLinks = () => {
       <div className="group" id="organization-area-anchor">
         <h3 className="h3-group" onClick={() => {
           findAndGoToLinkedTitle("organization-title")
-        }}>04 - Organization</h3>
+        }}><strong className="blue-text">04</strong> - Organization</h3>
         <h4 id="file-organization-title-anchor" className="subgroup" onClick={() => {
           findAndGoToLinkedTitle("file-organization-title")
         }}>File Organization</h4>
@@ -224,7 +224,7 @@ const AnchorLinks = () => {
       <div className="group" id="impact-area-anchor">
         <h3 className="h3-group" onClick={() => {
           findAndGoToLinkedTitle("impact-title")
-        }}>05 - Impact</h3>
+        }}><strong className="blue-text">05</strong> - Impact</h3>
         <h4 id="next-steps-title-anchor" className="subgroup" onClick={() => {
           findAndGoToLinkedTitle("next-steps-title")
         }}>Next Steps</h4>
@@ -233,7 +233,7 @@ const AnchorLinks = () => {
       <div className="group" id="reflection-area-anchor">
         <h3 className="h3-group" onClick={() => {
           findAndGoToLinkedTitle("reflection-title")
-        }}>06 - Reflection</h3>
+        }}><strong className="blue-text">06</strong> - Reflection</h3>
         <h4 id="it-takes-two-to-tango-title-anchor" className="subgroup" onClick={() => {
           findAndGoToLinkedTitle("it-takes-two-to-tango-title")
         }}>It Takes Two (And A Lot More) To Tango</h4>

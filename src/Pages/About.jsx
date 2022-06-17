@@ -6,7 +6,6 @@ import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
 import {copyEmail, fadeInIntro, hideScrollBar, setPageToDarkMode} from "../App";
-import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 export const About = () => {
   useEffect(() => {
@@ -83,7 +82,6 @@ export const About = () => {
 
   return (
     <div className="background">
-      <AnimatedCursor/>
       <div className="about-page">
         <div className="intro">
           <div className="columns margin-bottom-80px intro-fade">

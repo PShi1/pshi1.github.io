@@ -20,7 +20,6 @@ import ConfidentCarl from '../Assets/ConfidentCarl.png';
 import EmpathyMap1 from '../Assets/EmpathyMap1.png';
 import EmpathyMap2 from '../Assets/EmpathyMap2.png';
 import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../App";
-import {AnimatedCursor} from "../Components/AnimatedCursor";
 
 /**
  * FinWell page component
@@ -94,7 +93,6 @@ export const FinWell = () => {
 
   return (
     <div className="finwell-page">
-      <AnimatedCursor/>
       <div className="intro-wrapper foreground margin-bottom-60px">
         <div className="left-column">
           <img id="finwell-logo" className="left-float" src={FinWellImage} alt="finwell logo"/>
