@@ -35,6 +35,7 @@ export const Access = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
+    setPageToLightMode();
     document.title = "Emma Li | Access";
     setupScrollBar("#1E48CE");
 
@@ -42,7 +43,6 @@ export const Access = () => {
     highlight();
 
     turnAllMenuStatesOff();
-    setPageToLightMode();
     setImpactAreaToHaveReversedCursorColours();
   }, []);
 

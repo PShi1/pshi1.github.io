@@ -44,7 +44,7 @@ const AnchorLinks = () => {
       for (let i = 0; i < h3group.length; i++) {
         let el = h3group[i];
 
-        if (window.scrollY + el.offsetTop + offset * 2.25 >= impactTop && window.scrollY + el.offsetTop + offset * 2.25 <= impactBottom) {
+        if (window.scrollY + el.offsetTop + offset * 1.5 >= impactTop && window.scrollY + el.offsetTop + offset * 1.5 <= impactBottom) {
           if (!el.classList.contains("invert")) {
             el.classList.add("invert");
           }
@@ -57,7 +57,7 @@ const AnchorLinks = () => {
 
       for (let i = 0; i < h4group.length; i++) {
         let el = h4group[i];
-        if (window.scrollY + el.offsetTop + offset * 2.25 >= impactTop && window.scrollY + el.offsetTop + offset * 2.25 <= impactBottom) {
+        if (window.scrollY + el.offsetTop + offset * 1.5 >= impactTop && window.scrollY + el.offsetTop + offset * 1.5 <= impactBottom) {
           if (!el.classList.contains("invert")) {
             el.classList.add("invert");
           }
