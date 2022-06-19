@@ -8,18 +8,18 @@ export const cursorLightModeInnerOpacity = 1;
 export const cursorLightModeOuterOpacity = 0.2;
 
 export function AnimatedCursor({
-                          color = cursorDefaultColor,
-                          outerAlpha = cursorOuterDefaultOpacity,
-                          innerSize = 0.75,
-                          outerSize = 0.75,
-                          outerScale = 4,
-                          innerScale = 1,
-                        }) {
+                                 color = cursorDefaultColor,
+                                 outerAlpha = cursorOuterDefaultOpacity,
+                                 innerSize = 0.6,
+                                 outerSize = 0.6,
+                                 outerScale = 4,
+                                 innerScale = 1,
+                               }) {
   const cursorOuterRef = React.useRef()
   const cursorInnerRef = React.useRef()
   const requestRef = React.useRef()
   const previousTimeRef = React.useRef()
-  const [coords, setCoords] = React.useState({ x: 0, y: 0 })
+  const [coords, setCoords] = React.useState({x: 0, y: 0})
   const [isVisible, setIsVisible] = React.useState(true)
   const [isActive, setIsActive] = React.useState(false)
   const [isActiveClickable, setIsActiveClickable] = React.useState(false)
