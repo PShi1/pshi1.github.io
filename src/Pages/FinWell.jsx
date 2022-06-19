@@ -16,7 +16,7 @@ import ConfidentCarl from '../Assets/FinWellPageImages/ConfidentCarl.svg';
 import AnxiousAnnieEmpathyMap from '../Assets/FinWellPageImages/AnxiousAnnieEmpathyMap.svg';
 import ConfidentCarlEmpathyMap from '../Assets/FinWellPageImages/ConfidentCarlEmpathyMap.svg';
 import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../App";
-import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.png';
+import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.svg';
 import ParentChildSign from '../Assets/FinWellPageImages/ParentChildSign.svg';
 import Survey from '../Assets/FinWellPageImages/Survey.svg';
 import UserInterviews from '../Assets/FinWellPageImages/UserInterviews.svg'
@@ -24,7 +24,15 @@ import Ideation from '../Assets/FinWellPageImages/Ideation.svg';
 import GuerillaTesting from '../Assets/FinWellPageImages/GuerillaTesting.svg';
 import UserStories from '../Assets/FinWellPageImages/UserStories.svg';
 import InformationArchitecture from '../Assets/FinWellPageImages/InformationArchitecture.svg';
-import StyleGuide from '../Assets/FinWellPageImages/StyleGuide.svg';
+import StyleGuide0 from '../Assets/FinWellPageImages/StyleGuide0.svg';
+import StyleGuide1 from '../Assets/FinWellPageImages/StyleGuide1.svg';
+import StyleGuide2 from '../Assets/FinWellPageImages/StyleGuide2.svg';
+import StyleGuide3 from '../Assets/FinWellPageImages/StyleGuide3.svg';
+import StyleGuide4 from '../Assets/FinWellPageImages/StyleGuide4.svg';
+import StyleGuide5 from '../Assets/FinWellPageImages/StyleGuide5.svg';
+import StyleGuide6 from '../Assets/FinWellPageImages/StyleGuide6.svg';
+import StyleGuide7 from '../Assets/FinWellPageImages/StyleGuide7.svg';
+import StyleGuide8 from '../Assets/FinWellPageImages/StyleGuide8.svg';
 import AnchorLinks from "../Components/AnchorLinks";
 import FinalImage from '../Assets/FinWellPageImages/FinalImage.svg';
 
@@ -525,7 +533,17 @@ export const FinWell = () => {
           FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong> Creating
           it
           also made me reflect on why I chose the visual elements I did and what they represent.</p>
-        <img src={StyleGuide} alt="" className="image margin-bottom-80px"/>
+        <div className="style-guide-container margin-bottom-80px">
+          <img src={StyleGuide0} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide1} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide2} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide3} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide4} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide5} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide6} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide7} alt="" className="image style-guide-image"/>
+          <img src={StyleGuide8} alt="" className="image style-guide-image"/>
+        </div>
       </div>
 
       <div className="test-and-iterate anchor-area" id="test-and-iterate-area">

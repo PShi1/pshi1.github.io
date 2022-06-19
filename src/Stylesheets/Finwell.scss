@@ -318,4 +318,16 @@ $medium-margin-width: 70%;
       background-position: -100% 0;
     }
   }
+
+  .style-guide-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-scrolling: auto;
+    padding-bottom: 8px;
+  }
+
+  .style-guide-image {
+    border-left: 5px solid black;
+  }
 }
