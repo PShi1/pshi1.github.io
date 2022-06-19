@@ -29,14 +29,6 @@ const AnchorLinks = ({callerType}) => {
     let impactRegion = document.getElementById("impact-area");
 
     window.addEventListener("scroll", () => {
-      // This is hardcoded
-      let impactTop = Number.MAX_SAFE_INTEGER;
-      let impactBottom = Number.MIN_SAFE_INTEGER;
-      if (impactRegion) {
-        impactTop = impactRegion.offsetTop;
-        impactBottom = impactTop + impactRegion.offsetHeight;
-      }
-
       let header = document.getElementById("nav-wrapper");
       let headerHeight = 0;
       if (header) {
@@ -45,29 +37,39 @@ const AnchorLinks = ({callerType}) => {
       // 11 is to offset the 10 from below
       let offset = headerHeight + 11;
 
-      for (let i = 0; i < h3group.length; i++) {
-        let el = h3group[i];
+      // This is hardcoded
+      if (impactRegion) {
+        let impactTop = Number.MAX_SAFE_INTEGER;
+        let impactBottom = Number.MIN_SAFE_INTEGER;
+        if (impactRegion) {
+          impactTop = impactRegion.offsetTop;
+          impactBottom = impactTop + impactRegion.offsetHeight;
+        }
 
-        if (window.scrollY + el.offsetTop + offset * 1.85 >= impactTop && window.scrollY + el.offsetTop + offset * 1.85 <= impactBottom) {
-          if (!el.classList.contains("invert")) {
-            el.classList.add("invert");
-          }
-        } else {
-          if (el.classList.contains("invert")) {
-            el.classList.remove("invert");
+        for (let i = 0; i < h3group.length; i++) {
+          let el = h3group[i];
+
+          if (window.scrollY + el.offsetTop + offset * 1.85 >= impactTop && window.scrollY + el.offsetTop + offset * 1.85 <= impactBottom) {
+            if (!el.classList.contains("invert")) {
+              el.classList.add("invert");
+            }
+          } else {
+            if (el.classList.contains("invert")) {
+              el.classList.remove("invert");
+            }
           }
         }
-      }
 
-      for (let i = 0; i < h4group.length; i++) {
-        let el = h4group[i];
-        if (window.scrollY + el.offsetTop + offset * 1.85 >= impactTop && window.scrollY + el.offsetTop + offset * 1.85 <= impactBottom) {
-          if (!el.classList.contains("invert")) {
-            el.classList.add("invert");
-          }
-        } else {
-          if (el.classList.contains("invert")) {
-            el.classList.remove("invert");
+        for (let i = 0; i < h4group.length; i++) {
+          let el = h4group[i];
+          if (window.scrollY + el.offsetTop + offset * 1.85 >= impactTop && window.scrollY + el.offsetTop + offset * 1.85 <= impactBottom) {
+            if (!el.classList.contains("invert")) {
+              el.classList.add("invert");
+            }
+          } else {
+            if (el.classList.contains("invert")) {
+              el.classList.remove("invert");
+            }
           }
         }
       }
@@ -100,18 +102,15 @@ const AnchorLinks = ({callerType}) => {
 
         if (finalImageDiv && bottomY >= topOfBottomBoxY) {
           if (!anchorDiv.classList.contains("hidden")) {
-            console.log("Bottom Image Hidden")
             anchorDiv.classList.add("hidden");
           }
         } else if (headerImageDiv && topY <= BottomOfTopBoxY) {
           if (!anchorDiv.classList.contains("hidden")) {
             anchorDiv.classList.add("hidden");
-            console.log("Top Image Hidden")
           }
         } else {
           if (anchorDiv.classList.contains("hidden")) {
             anchorDiv.classList.remove("hidden");
-            console.log("Removing Hidden")
           }
         }
       }
@@ -361,6 +360,143 @@ const AnchorLinks = ({callerType}) => {
           <h4 id="next-steps-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("next-steps-title")
           }}>Next Steps</h4>
+        </div>
+      </div>
+    );
+  } else if (callerType === "finwell") {
+    return (
+      <div className="anchor-links-wrapper hidden" id="anchor-links-wrapper">
+        <div className="anchor-links-background"/>
+        <div className="group" id="overview-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("overview-title")
+          }}>Overview</h3>
+          <h4 id="context-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("context-title")
+          }}>Context</h4>
+          <h4 id="what-did-i-do-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("what-did-i-do-title")
+          }}>What Did I Do?</h4>
+          <h4 id="project-timeline-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("project-timeline-title")
+          }}>Project Timeline</h4>
+          <h4 id="project-type-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("project-type-title")
+          }}>Project Type</h4>
+          <h4 id="project-tools-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("project-tools-title")
+          }}>Project Tools</h4>
+        </div>
+
+        <div className="group" id="process-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("process-title")
+          }}><strong className="yellow-text">01</strong> - Process</h3>
+        </div>
+
+        <div className="group" id="final-solution-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("final-solution-title")
+          }}><strong className="yellow-text">02</strong> - Final Solution</h3>
+          <h4 id="intelligent-budgeting-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("intelligent-budgeting-title")
+          }}>Intelligent Budgeting</h4>
+          <h4 id="purchase-tracking-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("purchase-tracking-title")
+          }}>Purchase Tracking</h4>
+          <h4 id="actionable-insights-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("actionable-insights-title")
+          }}>Actionable Insights</h4>
+        </div>
+
+        <div className="group" id="discovery-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("discovery-title")
+          }}><strong className="yellow-text">03</strong> - Discovery</h3>
+          <h4 id="secondary-research-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("secondary-research-title")
+          }}>Secondary Research</h4>
+          <h4 id="competitive-analysis-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("competitive-analysis-title")
+          }}>Competitive Analysis</h4>
+          <h4 id="primary-research-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("primary-research-title")
+          }}>Primary Research</h4>
+          <h4 id="user-interviews-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("user-interviews-title")
+          }}>User Interviews</h4>
+          <h4 id="affinity-map-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("affinity-map-title")
+          }}>Affinity Map</h4>
+          <h4 id="user-personas-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("user-personas-title")
+          }}>User Personas</h4>
+          <h4 id="empathy-maps-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("empathy-maps-title")
+          }}>Empathy Maps</h4>
+          <h4 id="problem-statement-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("problem-statement-title")
+          }}>Problem Statement</h4>
+        </div>
+
+        <div className="group" id="design-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("design-title")
+          }}><strong className="yellow-text">04</strong> - Design</h3>
+          <h4 id="ideation-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("ideation-title")
+          }}>Ideation</h4>
+          <h4 id="guerilla-testing-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("guerilla-testing-title")
+          }}>Guerilla Testing</h4>
+          <h4 id="testing-feedback-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("testing-feedback-title")
+          }}>Testing Feedback</h4>
+          <h4 id="user-stories-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("user-stories-title")
+          }}>User Stories</h4>
+          <h4 id="information-architecture-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("information-architecture-title")
+          }}>Information Architecture</h4>
+          <h4 id="user-flows-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("user-flows-title")
+          }}>User Flows</h4>
+          <h4 id="sketching-wireframes-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("sketching-wireframes-title")
+          }}>Sketching / Wireframes</h4>
+          <h4 id="style-guide-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("style-guide-title")
+          }}>Style Guide</h4>
+        </div>
+
+        <div className="group" id="test-and-iterate-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("test-and-iterate-title")
+          }}><strong className="yellow-text">05</strong> - Test & Iterate</h3>
+          <h4 id="interactive-prototypes-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("interactive-prototypes-title")
+          }}>Interactive Prototypes</h4>
+          <h4 id="usability-testing-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("usability-testing-title")
+          }}>Usability Testing</h4>
+          <h4 id="iterations-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("iterations-title")
+          }}>Iterations</h4>
+        </div>
+
+        <div className="group" id="reflection-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("reflection-title")
+          }}><strong className="yellow-text">06</strong> - Reflection</h3>
+          <h4 id="concept-feedback-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("concept-feedback-title")
+          }}>Concept Feedback</h4>
+          <h4 id="what-did-i-learn-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("what-did-i-learn-title")
+          }}>What Did I Learn?</h4>
+          <h4 id="future-considerations-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("future-considerations-title")
+          }}>Future Considerations</h4>
         </div>
       </div>
     );

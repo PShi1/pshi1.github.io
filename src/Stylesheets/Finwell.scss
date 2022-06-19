@@ -19,6 +19,10 @@ $medium-margin-width: 70%;
     padding-top: 6vw;
   }
 
+  #header-image {
+    width: 100%;
+  }
+
   .appear-on-scroll {
     opacity: 0;
     animation-duration: 1.5s;
@@ -54,7 +58,7 @@ $medium-margin-width: 70%;
     }
   }
 
-  .overview, .process, .discovery, .design {
+  .overview, .process, .discovery, .design, .test-and-iterate, .reflection {
     margin-left: auto;
     margin-right: auto;
     width: $smaller-margin-width;

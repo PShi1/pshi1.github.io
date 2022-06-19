@@ -25,6 +25,8 @@ import GuerillaTesting from '../Assets/FinWellPageImages/GuerillaTesting.svg';
 import UserStories from '../Assets/FinWellPageImages/UserStories.svg';
 import InformationArchitecture from '../Assets/FinWellPageImages/InformationArchitecture.svg';
 import StyleGuide from '../Assets/FinWellPageImages/StyleGuide.svg';
+import AnchorLinks from "../Components/AnchorLinks";
+import FinalImage from '../Assets/FinWellPageImages/FinalImage.svg';
 
 /**
  * FinWell page component
@@ -114,6 +116,7 @@ export const FinWell = () => {
 
   return (
     <div className="finwell-page">
+      <AnchorLinks callerType="finwell"/>
       <div className="intro-wrapper margin-bottom-80px">
         <img src={FinWellHeaderImage} alt="" className="finwell-header" id="header-image"/>
       </div>
@@ -148,7 +151,7 @@ export const FinWell = () => {
           <li className="cs-body">I interviewed 8 end-users to gather insights to <strong className="highlight">create
             an affinity & empathy map.</strong></li>
           <li className="cs-body"><strong className="highlight">I designed high-fidelity screens</strong> and <strong
-            className="highlight">created interactive prototypes</strong>
+            className="highlight"> created interactive prototypes</strong>
             of the critical user flows.
           </li>
           <li className="cs-body"><strong
@@ -232,7 +235,7 @@ export const FinWell = () => {
 
             </div>
             <div className="right-column">
-              <h1 className="solution-title">Intelligent Budgeting</h1>
+              <h1 className="solution-title sub-anchor-area" id="intelligent-budgeting-title">Intelligent Budgeting</h1>
               <h2 className="solution-subtitle">A financial tool that adapts to you.</h2>
               <p className="solution-text">A budget that adjusts based on spending habits which allows you to make adjustments to fit your life stage or life style.</p>
               <img src={iPhone2} alt=""/>
@@ -247,7 +250,7 @@ export const FinWell = () => {
               <img src={iPhone3} alt=""/>
             </div>
             <div className="right-column">
-              <h1 className="solution-title">Purchase Tracking</h1>
+              <h1 className="solution-title sub-anchor-area" id="purchase-tracking-title">Purchase Tracking</h1>
               <h2 className="solution-subtitle">Track your thoughts and feelings towards a purchase over time.</h2>
               <p className="solution-text">FinWell helps you track how you feel about certain purchases over time to increase mindfulness and ensure
                 you’re purchasing things that give the most value. </p>
@@ -259,7 +262,7 @@ export const FinWell = () => {
         <div className="appear-on-scroll" id="actionable-insights-container">
           <div className="actionable-insights">
             <div className="left-column">
-              <h1 className="solution-title">Actionable Insights</h1>
+              <h1 className="solution-title sub-anchor-area" id="actionable-insights-title">Actionable Insights</h1>
               <h2 className="solution-subtitle">Reflect and adapt to build better financial habits.</h2>
               <p className="solution-text">FinWell's AI produces actionable insights for reflection and let's you know any areas for improvements.</p>
             </div>
@@ -277,8 +280,8 @@ export const FinWell = () => {
       </div>
 
       <div className="discovery margin-bottom-80px anchor-area" id="discovery-area">
-        <h3 className="cs-title margin-bottom-80px" id="discovery-title"><strong className="yellow-text">03</strong> -
-          Discovery</h3>
+        <h2 className="cs-title margin-bottom-80px" id="discovery-title"><strong className="yellow-text">03</strong> -
+          Discovery</h2>
         <h2 className="cs-manrope margin-bottom-80px">I started the project with a vague idea that I wanted to pursue a
           problem related to my financial background and help people be better at managing their finances. Initially, I
           wanted to create an educational app to teach basic financial lessons but later pivoted to <strong
@@ -323,7 +326,8 @@ export const FinWell = () => {
           most impacted by this problem.
         </h2>
 
-        <h4 className="cs-subtitle margin-bottom-12px" id="competitive-analysis-title">Competitive Analysis</h4>
+        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="competitive-analysis-title">Competitive
+          Analysis</h4>
         <p className="cs-body margin-bottom-12px">I wanted to create a product that offered more than current solutions
           already on the
           market. <strong
@@ -461,8 +465,8 @@ export const FinWell = () => {
       </div>
 
       <div className="design anchor-area" id="design-area">
-        <h3 className="cs-title margin-bottom-40px" id="design-title"><strong className="yellow-text">04</strong> -
-          Design</h3>
+        <h2 className="cs-title margin-bottom-40px" id="design-title"><strong className="yellow-text">04</strong> -
+          Design</h2>
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="ideation-title">Ideation</h3>
         <p className="cs-body margin-bottom-80px">I wanted to ensure I covered as many areas as possible when
           brainstorming, so I took time to do various exercises to think outside the box, such as mind mapping and
@@ -523,6 +527,64 @@ export const FinWell = () => {
           also made me reflect on why I chose the visual elements I did and what they represent.</p>
         <img src={StyleGuide} alt="" className="image margin-bottom-80px"/>
       </div>
+
+      <div className="test-and-iterate anchor-area" id="test-and-iterate-area">
+        <h2 className="cs-title margin-bottom-80px" id="test-and-iterate-title"><strong
+          className="yellow-text">05</strong> - Test & Iterate</h2>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="interactive-prototypes-title">Interactive
+          Prototypes</h3>
+        <p className="cs-body margin-bottom-24px"><strong className="highlight">Next, I proceeded to sketch out the most
+          critical user flows and turn the sketches into low-fidelity wireframes.</strong></p>
+
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="usability-testing-title">Usability
+          Testing</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">After gathering the feedback from 10
+          different target users, I decided to proceed with solution #4 as the primary solution while incorporating
+          budgeting elements of solution #1 to retain users of the app.</strong> Most users were interested in solution
+          #4 since it was something they hadn’t seen before, and many saw it as something they would use. Participants
+          also expressed interest in solution #1. Still, they noted that there were many existing options in the market,
+          and it would have to have some innovative features to be competitive. As for solutions #2 and #3, participants
+          raised concerns about how it would be challenging to personalize the content based on the different users and
+          how the app would have difficulty sustaining a long-term user base while providing value.</p>
+
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="iterations-title">Iterations</h3>
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">Next, I proceeded to sketch out the most
+          critical user flows and turn the sketches into low-fidelity wireframes.</strong></p>
+        <div className="margin-bottom-80px"/>
+      </div>
+
+      <div className="reflection margin-bottom-160px anchor-area" id="reflection-area" key="reflection-group">
+        <h2 className="cs-title margin-bottom-80px" id="reflection-title"><strong className="yellow-text">06 </strong>-
+          Reflection</h2>
+
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="concept-feedback-title">Concept Feedback</h3>
+        <p className="cs-body">Throughout the process of creating AMP, I had the pleasure and opportunity to talk to
+          employees at all different levels within Aprio. <strong className="highlight">This helped me confirm the
+            importance of validating user assumptions because through the conversations, I realized that higher-level
+            employees such as directors or managers often miss the mark or are completely incorrect in identifying what
+            the problems lower-level employees such as associates struggle with.</strong></p>
+
+        <h3 className="cs-subtitle margin-bottom-24px sub-anchor-area" id="what-did-i-learn-title">What Did I
+          Learn?</h3>
+        <p className="cs-subtitle-2 margin-bottom-12px">It Takes Two (And A Lot More) To Tango</p>
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">Creating and maintaining a design system
+          is a constant back and forth conversation between all the users involved.</strong> Open communication and
+          feedback should involve the input of everyone to ensure that it is serving its overall purpose.</p>
+        <p className="cs-subtitle-2 margin-bottom-12px">Rome Wasn't Built in One Day</p>
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">Design systems are constantly evolving
+          and changing with every new design and idea.</strong> We’re proud of creating the system’s foundation, and the
+          long process helped me realize what a constant work in progress a design system is and should be.</p>
+
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="future-considerations-title">Future
+          Considerations</h3>
+        <p className="cs-body">Throughout the process of creating AMP, I had the pleasure and opportunity to talk to
+          employees at all different levels within Aprio. <strong className="highlight">This helped me confirm the
+            importance of validating user assumptions because through the conversations, I realized that higher-level
+            employees such as directors or managers often miss the mark or are completely incorrect in identifying what
+            the problems lower-level employees such as associates struggle with.</strong></p>
+      </div>
+
+      <img src={FinalImage} alt="" className="image margin-bottom-160px" id="final-image"/>
     </div>
   )
 }

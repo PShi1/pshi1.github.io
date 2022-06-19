@@ -159,7 +159,7 @@ export const Work = () => {
   };
 
   const scrollToCaseStudies = () => {
-    let element = document.getElementById("case-studies-container");
+    let element = document.getElementById("case-study-tags-container");
     if (element) {
       element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
