@@ -95,7 +95,8 @@ export const About = () => {
             <div className="right-column">
               <img src={Stars} alt=""/>
             </div>
-            <p className="b0 intro-fade" id="subtitle-text">Or at least <strong className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
+            <p className="b0 intro-fade off-white-text" id="subtitle-text">Or at least <strong
+              className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
           </div>
           <div className="intro-fade scroll-down intro-fade" id="scroll-down" onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
