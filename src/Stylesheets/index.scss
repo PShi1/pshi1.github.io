@@ -96,16 +96,17 @@ $white: #ffffff;
 $access-blue: #0B22B8;
 $black: #000000;
 $off-black: #101010;
+$blackv2: #0A0A0A;
 $lilac: #DDD3FC;
 $background-color: #FCF9FF;
 $light-blue: #BACBFF;
-$grey-999999: #999999;
+$grey-9c9c9c: #9C9C9C;
 $light-aprio-orange: #FFDFC7;
 $aprio-orange: #FF6D00;
 $light-finwell-yellow: #FFE78E;
 $finwell-yellow: #F0CA36;
 
-$main-background-colour-dark: $black;
+$main-background-colour-dark: $blackv2;
 
 .background {
   background-color: $main-background-colour-dark;
@@ -167,7 +168,7 @@ h4 {
   font-weight: 300;
   font-size: 1.8vw;
   line-height: 150%;
-  color: $grey-999999;
+  color: $grey-9c9c9c;
 }
 
 .b1-light {
@@ -176,7 +177,7 @@ h4 {
   font-weight: 400;
   font-size: 1.35vw;
   line-height: 150%;
-  color: $grey-999999;
+  color: $grey-9c9c9c;
 }
 
 .b2 {
@@ -194,7 +195,7 @@ h4 {
   font-weight: 400;
   font-size: 0.9375vw;
   line-height: 200%;
-  color: $grey-999999;
+  color: $grey-9c9c9c;
 }
 
 .b4 {
@@ -203,7 +204,7 @@ h4 {
   font-weight: 400;
   font-size: 0.9375vw;
   line-height: 200%;
-  color: $grey-999999;
+  color: $grey-9c9c9c;
 }
 
 .b5 {
