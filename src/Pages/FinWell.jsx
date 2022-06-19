@@ -35,11 +35,14 @@ import StyleGuide7 from '../Assets/FinWellPageImages/StyleGuide7.svg';
 import StyleGuide8 from '../Assets/FinWellPageImages/StyleGuide8.svg';
 import AnchorLinks from "../Components/AnchorLinks";
 import FinalImage from '../Assets/FinWellPageImages/FinalImage.svg';
+import {Gallery} from "../Components/Gallery";
 
 /**
  * FinWell page component
  */
 export const FinWell = () => {
+  const images = [StyleGuide0, StyleGuide1, StyleGuide2, StyleGuide3, StyleGuide4, StyleGuide5, StyleGuide6, StyleGuide7, StyleGuide8];
+
   /**
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
@@ -529,21 +532,9 @@ export const FinWell = () => {
         <div className="margin-bottom-80px"/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">I created a style guide to narrow
-          FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong> Creating
-          it
-          also made me reflect on why I chose the visual elements I did and what they represent.</p>
-        <div className="style-guide-container margin-bottom-80px">
-          <img src={StyleGuide0} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide1} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide2} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide3} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide4} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide5} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide6} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide7} alt="" className="image style-guide-image"/>
-          <img src={StyleGuide8} alt="" className="image style-guide-image"/>
-        </div>
+        <p className="cs-body margin-bottom-24px"><strong className="highlight">I created a style guide to narrow
+          FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong></p>
+        <Gallery images={images}/>
       </div>
 
       <div className="test-and-iterate anchor-area" id="test-and-iterate-area">
