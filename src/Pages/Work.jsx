@@ -245,7 +245,7 @@ export const Work = () => {
         <div className="header-outer-div">
           <div className="row">
             <div className="header-area intro-fade">
-              <h1>Hey there! I'm Emma --</h1>
+              <h1>Hey there! -- I'm Emma</h1>
             </div>
           </div>
 
@@ -254,7 +254,7 @@ export const Work = () => {
               <p className="b0">A coffee-infused ☕ <strong className="off-white-strong-font-style">Product
                 Designer</strong> based in
                 Vancouver 🍁</p>
-              <p className="b0 margin-bottom-80px">Currently building 0-to-1 products @ <strong
+              <p className="b0 margin-bottom-80px">Currently building 0 -> 1 products @ <strong
                 className="off-white-strong-font-style">Moken Agency</strong>.</p>
               <p className="typewriter-prefix b0 off-white-text">I'm also</p>
               <div className="typewrite"/>
