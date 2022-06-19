@@ -25,4 +25,7 @@ src/node_modules
 src/.gitignore
 
 # build stuff
-/build
+/build*
+/build/asset-manifest.json
+/build/index.html
+/build/static*

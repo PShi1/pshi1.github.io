@@ -4,6 +4,8 @@ import AccessCard from "../Assets/WorkPageImages/AccessCard.png";
 import AccessCardActive from '../Assets/WorkPageImages/AccessCardActive.png';
 import AprioCard from '../Assets/WorkPageImages/AprioCard.png';
 import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.png'
+import FinWellCard from '../Assets/WorkPageImages/FinWellCard.png';
+import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.png';
 import {fadeInIntro, hideScrollBar, setPageToDarkMode,} from "../App";
 import {Link} from "react-router-dom";
 
@@ -13,7 +15,7 @@ import {Link} from "react-router-dom";
 export const Work = () => {
   const tags = ["all-tag", "web-tag", "mobile-tag", "prototyping-tag", "design-system-tag"];
   const [currentTag, setCurrentTag] = useState("all-tag");
-  const allCards = ["access-card", "aprio-card"];
+  const allCards = ["access-card", "aprio-card", "finwell-card"];
   const webCards = ["access-card", "sponsorcircle-card", "aprio-card", "pivot-card"];
   const mobileCards = ["sponsorcircle-card", "knowbie-card", "finwell-card"];
   const prototypingCards = ["knowbie-card", "pivot-card", "finwell-card"];
@@ -104,10 +106,12 @@ export const Work = () => {
       cardsArrayUsed = shuffleArray(cardsArrayUsed);
       for (const cardName of cardsArrayUsed) {
         let el = document.getElementById(cardName);
-        if (!el.classList.contains("active")) {
+        if (el && !el.classList.contains("active")) {
           el.classList.add("active");
         }
-        setTimeout(() => {el.classList.add("play-animation")}, delay);
+        setTimeout(() => {
+          el?.classList?.add("play-animation")
+        }, delay);
         delay += 100;
 
       }
@@ -199,7 +203,7 @@ export const Work = () => {
     // let knowbieCard = document.getElementById("knowbie-card");
     let aprioCard = document.getElementById("aprio-card");
     // let pivotCard = document.getElementById("pivot-card");
-    // let finwellCard = document.getElementById("finwell-card");
+    let finwellCard = document.getElementById("finwell-card");
 
     window.addEventListener("scroll", () => {
       scroll = window.scrollY;
@@ -217,7 +221,7 @@ export const Work = () => {
           }, 400);
 
         setTimeout(function() {
-          // finwellCard.classList.add("play-animation");
+          finwellCard.classList.add("play-animation");
           // sponsorcircleCard.classList.add("play-animation");
           // pivotCard.classList.add("play-animation");
         }, 700);
@@ -247,42 +251,46 @@ export const Work = () => {
 
           <div className="typewriter-wrapper-div margin-bottom-120px">
             <div className="intro-fade">
-              <p className="b0">A coffee-infused ☕ <strong className="off-white-strong-font-style">Product Designer</strong> based in
+              <p className="b0">A coffee-infused ☕ <strong className="off-white-strong-font-style">Product
+                Designer</strong> based in
                 Vancouver 🍁</p>
-              <p className="b0 margin-bottom-80px">Currently building 0-to-1 products @ <strong className="off-white-strong-font-style">Moken Agency</strong>.</p>
+              <p className="b0 margin-bottom-80px">Currently building 0-to-1 products @ <strong
+                className="off-white-strong-font-style">Moken Agency</strong>.</p>
               <p className="typewriter-prefix b0 off-white-text">I'm also</p>
               <div className="typewrite"/>
             </div>
           </div>
 
-          <div className="margin-bottom-240px intro-fade scroll-down" id="scroll-down" onClick={() => scrollToCaseStudies()}>
+          <div className="margin-bottom-240px intro-fade scroll-down" id="scroll-down"
+               onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
               Explore Selected Case Studies
             </span>
           </div>
         </div>
 
-        {/*<div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">*/}
-        {/*  <div className="tag-container active invert" id="all-tag" onClick={() => handleTagClick("all-tag")}>*/}
-        {/*    <p className="cs-body invert-target"/>*/}
-        {/*  </div>*/}
+        <div className="case-study-tags-container appear-on-scroll-1" id="case-study-tags-container">
+          <div className="tag-container active invert" id="all-tag" onClick={() => handleTagClick("all-tag")}>
+            <p className="cs-body invert-target"/>
+          </div>
 
-        {/*  <div className="tag-container invert" id="web-tag" onClick={() => handleTagClick("web-tag")}>*/}
-        {/*    <p className="cs-body invert-target"/>*/}
-        {/*  </div>*/}
+          <div className="tag-container invert" id="web-tag" onClick={() => handleTagClick("web-tag")}>
+            <p className="cs-body invert-target"/>
+          </div>
 
-        {/*  <div className="tag-container invert" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>*/}
-        {/*    <p className="cs-body invert-target"/>*/}
-        {/*  </div>*/}
+          <div className="tag-container invert" id="mobile-tag" onClick={() => handleTagClick("mobile-tag")}>
+            <p className="cs-body invert-target"/>
+          </div>
 
-        {/*  <div className="tag-container invert" id="design-system-tag" onClick={() => handleTagClick("design-system-tag")}>*/}
-        {/*    <p className="cs-body invert-target"/>*/}
-        {/*  </div>*/}
+          <div className="tag-container invert" id="design-system-tag"
+               onClick={() => handleTagClick("design-system-tag")}>
+            <p className="cs-body invert-target"/>
+          </div>
 
-        {/*  <div className="tag-container invert" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>*/}
-        {/*    <p className="cs-body invert-target"/>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+          <div className="tag-container invert" id="prototyping-tag" onClick={() => handleTagClick("prototyping-tag")}>
+            <p className="cs-body invert-target"/>
+          </div>
+        </div>
 
         <div id="case-studies-container">
           <div className="minus-margin-sides">
@@ -311,10 +319,10 @@ export const Work = () => {
             {/*  <img className="first-inactive" src={PivotCardActive} alt=""/>*/}
             {/*</Link>*/}
 
-            {/*<Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">*/}
-            {/*  <img className="first-active" src={FinWellCard} alt=""/>*/}
-            {/*  <img className="first-inactive" src={FinWellCardActive} alt=""/>*/}
-            {/*</Link>*/}
+            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
+              <img className="first-active" src={FinWellCard} alt=""/>
+              <img className="first-inactive" src={FinWellCardActive} alt=""/>
+            </Link>
           </div>
 
 
