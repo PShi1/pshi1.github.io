@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import '../Stylesheets/About.scss';
 import Stars from '../Assets/AboutPageImages/Stars.svg';
-import Selfie from '../Assets/Selfie.png'
+import Selfie1 from '../Assets/AboutPageImages/Selfie1.svg';
+import Selfie2 from '../Assets/AboutPageImages/Selfie2.svg';
 import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
@@ -104,46 +105,61 @@ export const About = () => {
         </div>
 
         <div className="more-about-me appear-on-scroll" id="more-about-me">
-          <div className="left-column">
-            <img src={Selfie} alt=""/>
-          </div>
-          <div className="right-column">
+          <div className="row">
+            <img src={Selfie1} alt="" id="selfie-1"/>
             <p className="b3">
-              I’m currently a <strong className="off-white-strong-font-style underline">Product Designer at Moken Agency</strong>,
-              leading the entire design process of various tech products. In my career, I’m fortunate to have <strong className="off-white-strong-font-style">experienced
-              product agencies and in-house, working with both enterprise and consumer-facing companies alike</strong>. My expertise at the moment
-              lies in <strong className="off-white-strong-font-style">zero-to-one</strong> projects involving a high degree of product thinking
+              I’m currently a <strong className="off-white-strong-font-style underline">Product Designer at Moken
+              Agency</strong>,
+              leading the entire design process of various tech products. In my career, I’m fortunate to have <strong
+              className="off-white-strong-font-style">experienced
+              product agencies and in-house, working with both enterprise and consumer-facing companies alike</strong>.
+              My expertise at the moment
+              lies in <strong className="off-white-strong-font-style">zero-to-one projects</strong> involving a high
+              degree of product thinking
               and visual design.
             </p>
+          </div>
 
-            <p className="b3">
-              My design journey started a long time ago, when I was colour coding my school notes and creating custom graphics for my
-              high school PowerPoint presentations. I graduated with a <strong className="off-white-strong-font-style">Bachelor of Business Administration from the University of Toronto</strong>.
-              Immediately after graduation, I decided business was not the right path for me and set out to find something I was genuinely passionate about.
-            </p>
+          <div className="row">
+            <div className="row-inner">
+              <p className="b3">
+                My design journey started a long time ago, when I was colour coding my school notes and creating custom
+                graphics for my
+                high school PowerPoint presentations. I graduated with a <strong
+                className="off-white-strong-font-style">Bachelor
+                of Business Administration from the University of Toronto</strong>.
+                Immediately after graduation, I decided business was not the right path for me and set out to find
+                something
+                I was genuinely passionate about.
+              </p>
 
-            <p className="b3">
-              Visual storytelling, mixed with my naturally curious personality, eventually became more than just a passion
-              when I discovered the field of design: the industry that allows me
-              to <strong className="off-white-strong-font-style">collaborate with talented individuals to continuously grow and learn new skill sets</strong>,
-              from how to write lines of code to thinking from new and unique perspectives.
-            </p>
+              <p className="b3">
+                Visual storytelling, mixed with my naturally curious personality, eventually became more than just a
+                passion
+                when I discovered the field of design: the industry that allows me
+                to <strong className="off-white-strong-font-style">collaborate with talented individuals to continuously
+                grow and learn new skill sets</strong>,
+                from how to write lines of code to thinking from new and unique perspectives.
+              </p>
+            </div>
+            <img src={Selfie2} alt="" id="selfie-2"/>
           </div>
         </div>
 
         <div className="all-collapsibles-region appear-on-scroll">
           <div className="collapsibles-region margin-bottom-60px">
             <div className="collapsible-header" id="bit-more-about-me" onClick={(e) => handleCollapsible(e)}>
-              <h2>Bit More About Me 😄</h2>
+              <h2>Bit more about me 😄</h2>
               <img src={DownArrow} alt="" id="bit-more-about-me-arrow"/>
             </div>
             <div className="collapsible-item" id="bit-more-about-me-item">
               <div className="third-columns">
-                <p className="b2">My personality:</p>
+                <p className="b2">Interests:</p>
                 <ul>
-                  <li><a className="b4 link" href="https://www.16personalities.com/intj-personality" target="_blank" rel="noreferrer">INTJ</a></li>
-                  <li><a className="b4 link" href="https://secure.plum.io/en/p/pbIb8cEDth1dJ9exafW4FQ" target="_blank" rel="noreferrer">Plum Profile</a></li>
-                  <li><a className="b4 link" href="https://www.enneagraminstitute.com/type-3" target="_blank" rel="noreferrer">Enneagram 3</a></li>
+                  <li><p className="b4">Entrepreneurship</p></li>
+                  <li><p className="b4">Building communities</p></li>
+                  <li><p className="b4">Education</p></li>
+                  <li><p className="b4">Diversity & inclusion</p></li>
                 </ul>
               </div>
 
@@ -171,7 +187,7 @@ export const About = () => {
 
           <div className="collapsibles-region margin-bottom-60px">
             <div className="collapsible-header" id="after-hours" onClick={(e) => handleCollapsible(e)}>
-              <h2>After Hours 🌙</h2>
+              <h2>After hours 🌙</h2>
               <img src={DownArrow} alt="" id="after-hours-arrow"/>
             </div>
             <div className="collapsible-item" id="after-hours-item">
@@ -186,7 +202,7 @@ export const About = () => {
 
           <div className="collapsibles-region margin-bottom-60px">
             <div className="collapsible-header" id="on-my-bookshelf" onClick={(e) => handleCollapsible(e)}>
-              <h2>On My Bookshelf 📚</h2>
+              <h2>On my bookshelf 📚</h2>
               <img src={DownArrow} alt="" id="on-my-bookshelf-arrow"/>
             </div>
             <div className="collapsible-item" id="on-my-bookshelf-item">
@@ -198,7 +214,7 @@ export const About = () => {
 
           <div className="collapsibles-region margin-bottom-60px">
             <div className="collapsible-header" id="for-me-design-is" onClick={(e) => handleCollapsible(e)}>
-              <h2>For Me, Design Is 🎨</h2>
+              <h2>For me, design is 🎨</h2>
               <img src={DownArrow} alt="" id="for-me-design-is-arrow"/>
             </div>
             <div className="collapsible-item" id="for-me-design-is-item">
@@ -224,7 +240,7 @@ export const About = () => {
 
           <div className="collapsibles-region">
             <div className="collapsible-header" id="design-resources" onClick={(e) => handleCollapsible(e)}>
-              <h2>Design Resources 🖌️</h2>
+              <h2>Design resources 🖌️</h2>
               <img src={DownArrow} alt="" id="design-resources-arrow"/>
             </div>
             <div className="collapsible-item" id="design-resources-item">
@@ -259,8 +275,9 @@ export const About = () => {
         </div>
 
         <div className="outro appear-on-scroll">
-          <h2>This Doesn't Have To Be The End ✌️</h2>
-          <p className="b1-light">Reach me at <strong className="hover-cursor off-white-strong-font-style" onClick={() => copyEmail("about")}>uxemmali@gmail.com</strong> for
+          <h2>This doesn't have to be the end ✌️</h2>
+          <p className="b1-light">Reach me at <strong className="hover-cursor off-white-strong-font-style"
+                                                      onClick={() => copyEmail("about")}>uxemmali@gmail.com</strong> for
             any comments, feedback, or outrageous ideas. </p>
           <p className="cs-body" id="about-email-copied">Email copied!</p>
         </div>
