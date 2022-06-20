@@ -3,6 +3,9 @@
 .gallery {
   position: relative;
 
+  .gallery-image {
+    width: 100%;
+  }
 
   .images-container {
     display: flex;

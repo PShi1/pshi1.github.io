@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import '../Stylesheets/Finwell.scss';
+import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.png';
 import iPhone1 from '../Assets/iPhone1.svg'
 import iPhone2 from '../Assets/iPhone2.svg'
 import iPhone3 from '../Assets/iPhone3.svg'
@@ -11,17 +12,17 @@ import StressedEmoji from '../Assets/StressedEmoji.svg';
 import Books from '../Assets/FinWellPageImages/Books.svg';
 import CompetitiveAnalysis from '../Assets/FinWellPageImages/CompetitiveAnalysis.png';
 import AffinityMap from '../Assets/FinWellPageImages/AffinityMap.svg';
-import AnxiousAnnie from '../Assets/FinWellPageImages/AnxiousAnnie.svg';
-import ConfidentCarl from '../Assets/FinWellPageImages/ConfidentCarl.svg';
-import AnxiousAnnieEmpathyMap from '../Assets/FinWellPageImages/AnxiousAnnieEmpathyMap.svg';
-import ConfidentCarlEmpathyMap from '../Assets/FinWellPageImages/ConfidentCarlEmpathyMap.svg';
+import AnxiousAnnie from '../Assets/FinWellPageImages/AnxiousAnnie.png';
+import ConfidentCarl from '../Assets/FinWellPageImages/ConfidentCarl.png';
+import AnxiousAnnieEmpathyMap from '../Assets/FinWellPageImages/AnxiousAnnieEmpathyMap.png';
+import ConfidentCarlEmpathyMap from '../Assets/FinWellPageImages/ConfidentCarlEmpathyMap.png';
 import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../App";
-import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.svg';
 import ParentChildSign from '../Assets/FinWellPageImages/ParentChildSign.svg';
 import Survey from '../Assets/FinWellPageImages/Survey.svg';
 import UserInterviews from '../Assets/FinWellPageImages/UserInterviews.svg'
 import Ideation from '../Assets/FinWellPageImages/Ideation.svg';
-import GuerillaTesting from '../Assets/FinWellPageImages/GuerillaTesting.svg';
+import GuerillaTesting1 from '../Assets/FinWellPageImages/GuerillaTesting1.png';
+import GuerillaTesting2 from '../Assets/FinWellPageImages/GuerillaTesting2.png';
 import UserStories from '../Assets/FinWellPageImages/UserStories.svg';
 import InformationArchitecture from '../Assets/FinWellPageImages/InformationArchitecture.svg';
 import StyleGuide0 from '../Assets/FinWellPageImages/StyleGuide0.svg';
@@ -41,7 +42,10 @@ import {Gallery} from "../Components/Gallery";
  * FinWell page component
  */
 export const FinWell = () => {
-  const images = [StyleGuide0, StyleGuide1, StyleGuide2, StyleGuide3, StyleGuide4, StyleGuide5, StyleGuide6, StyleGuide7, StyleGuide8];
+  const styleGuideImages = [StyleGuide0, StyleGuide1, StyleGuide2, StyleGuide3, StyleGuide4, StyleGuide5, StyleGuide6, StyleGuide7, StyleGuide8];
+  const empathyMapImages = [AnxiousAnnieEmpathyMap, ConfidentCarlEmpathyMap];
+  const userPersonasImages = [AnxiousAnnie, ConfidentCarl];
+  const guerillaTestingImages = [GuerillaTesting1, GuerillaTesting2];
 
   /**
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
@@ -49,10 +53,7 @@ export const FinWell = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    window.addEventListener('load', () => {
-      fadeInOnScroll();
-      fadeInIntro();
-    })
+    fadeInOnScroll();
 
     setPageToLightMode();
     document.title = "Emma Li | FinWell";
@@ -60,21 +61,6 @@ export const FinWell = () => {
     turnAllMenuStatesOff();
     highlight();
   }, []);
-
-  /**
-   * Fades in the finwell intro part, by adding active class to all elements needed
-   */
-  const fadeInIntro = () => {
-    let leftElements = document.getElementsByClassName("left-float");
-    for (const element of leftElements) {
-      element.classList.add("active");
-    }
-
-    let rightElements = document.getElementsByClassName("right-float");
-    for (const element of rightElements) {
-      element.classList.add("active");
-    }
-  }
 
   /**
    * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen
@@ -312,19 +298,19 @@ export const FinWell = () => {
         <div className="secondary-research-row margin-bottom-80px">
           <div className="spacing-div margin-bottom-80px">
             <div className="left-column">
-              <img src={StressedEmoji} alt=""/>
+              <img className="emoji" src={StressedEmoji} alt=""/>
               <h4 className="cs-subtitle-2">63%</h4>
               <p className="cs-body">of Millennials feel anxious when thinking about their financial situation. (TIAA
                 Institute)</p>
             </div>
             <div className="center-column">
-              <img src={ParentChildSign} alt=""/>
+              <img className="emoji" src={ParentChildSign} alt=""/>
               <h4 className="cs-subtitle-2">60%</h4>
               <p className="cs-body">of parents report giving their kids financial help in the past year. (Pew Research
                 Center)</p>
             </div>
             <div className="right-column">
-              <img src={Books} alt=""/>
+              <img className="emoji" src={Books} alt=""/>
               <h4 className="cs-subtitle-2">Only 24%</h4>
               <p className="cs-body">of Millennials demonstrate the ability to understand basic financial concepts.
                 (GFLEC)</p>
@@ -365,7 +351,8 @@ export const FinWell = () => {
         </ul>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="primary-research-title">Primary Research</h3>
-        <p><strong className="highlight">I sent out a Google Forms screener survey to my network and anonymously online
+        <p className="cs-body"><strong className="highlight">I sent out a Google Forms screener survey to my network and
+          anonymously online
           on Reddit to:</strong></p>
 
         <ul>
@@ -435,12 +422,10 @@ export const FinWell = () => {
             I created the following personas/empathy maps to understand better the two distinct groups and their
             different pain points and motivations.
           </strong></p>
-        <img className="image margin-bottom-40px" src={AnxiousAnnie} alt=""/>
-        <img className="image margin-bottom-40px" src={ConfidentCarl} alt=""/>
+        <Gallery className="margin-bottom-80px" images={userPersonasImages} uniquePrefix={"user-personas"}/>
 
         <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="empathy-maps-title">Empathy Maps</h4>
-        <img src={AnxiousAnnieEmpathyMap} alt="" className="image margin-bottom-40px"/>
-        <img src={ConfidentCarlEmpathyMap} alt="" className="image margin-bottom-40px"/>
+        <Gallery className="margin-bottom-80px" images={empathyMapImages} uniquePrefix={"empathy-maps"}/>
 
         <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="problem-statement-title">Problem
           Statement</h4>
@@ -495,7 +480,7 @@ export const FinWell = () => {
           and asking for feedback on the app's usefulness in solving their pain points. Here are some of the example
           wireframes used to present solution #1 and #2:
         </p>
-        <img src={GuerillaTesting} alt="" className="image margin-bottom-80px"/>
+        <Gallery className="margin-bottom-80px" images={guerillaTestingImages} uniquePrefix={"guerilla-testing"}/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="testing-feedback-title">Testing Feedback</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">After gathering the feedback from 10
@@ -534,7 +519,7 @@ export const FinWell = () => {
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide</h3>
         <p className="cs-body margin-bottom-24px"><strong className="highlight">I created a style guide to narrow
           FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong></p>
-        <Gallery images={images}/>
+        <Gallery className="margin-bottom-80px" images={styleGuideImages} uniquePrefix={"style-guide"}/>
       </div>
 
       <div className="test-and-iterate anchor-area" id="test-and-iterate-area">

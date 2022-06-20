@@ -1,13 +1,10 @@
 @import 'index';
 
-$smaller-margin-width: 60%;
-$medium-margin-width: 70%;
-
 .finwell-page {
   margin: auto;
-  display: flex;
-  flex-direction: column;
   background-color: $off-white;
+  animation-name: temp;
+  animation-duration: 3s;
 
   h1, h2, h3 {
     color: black;
@@ -15,7 +12,8 @@ $medium-margin-width: 70%;
 
   .intro-wrapper {
     height: fit-content;
-    z-index: 100200;
+    z-index: 100100;
+    position: relative;
     padding-top: 6vw;
   }
 
@@ -61,7 +59,7 @@ $medium-margin-width: 70%;
   .overview, .process, .discovery, .design, .test-and-iterate, .reflection {
     margin-left: auto;
     margin-right: auto;
-    width: $smaller-margin-width;
+    width: $default-small-margin-width;
   }
 
   .process {
@@ -240,7 +238,7 @@ $medium-margin-width: 70%;
       }
     }
 
-    img {
+    .emoji {
       display: block;
       width: 5vw;
     }

@@ -5,12 +5,12 @@ import RightArrow from '../Assets/RightArrow.svg';
 import CircleUnfilled from '../Assets/CircleUnfilled.svg';
 import CircleFilled from '../Assets/CircleFilled.svg';
 
-export const Gallery = ({images}) => {
+export const Gallery = ({className, images, uniquePrefix}) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleCircleClick = (index) => {
     for (let i = 0; i < images.length; i++) {
-      let el = document.getElementById("circle" + i);
+      let el = document.getElementById(uniquePrefix + "-circle" + i);
       if (i !== index) {
         if (el) {
           el.src = CircleUnfilled;
@@ -22,7 +22,7 @@ export const Gallery = ({images}) => {
       }
     }
     setActiveIndex(index);
-    let container = document.getElementById("images-container");
+    let container = document.getElementById(uniquePrefix + "-images-container");
     if (container) {
       container.scrollLeft = container.clientWidth * index;
     }
@@ -36,12 +36,12 @@ export const Gallery = ({images}) => {
 
     let nextIndex = (activeIndex + 1) % images.length;
     handleCircleClick(nextIndex);
-    let container = document.getElementById("images-container");
+    let container = document.getElementById(uniquePrefix + "-images-container");
     if (container) {
       if (resetToBeginning) {
         container.scrollLeft = 0;
       } else {
-        container.scrollLeft += container.clientWidth;
+        container.scrollLeft = container.clientWidth * nextIndex;
       }
     }
   }
@@ -54,22 +54,23 @@ export const Gallery = ({images}) => {
 
     let nextIndex = (activeIndex - 1 + images.length) % images.length;
     handleCircleClick(nextIndex);
-    let container = document.getElementById("images-container");
+    let container = document.getElementById(uniquePrefix + "-images-container");
     if (container) {
       if (resetToEnd) {
         container.scrollLeft = container.scrollWidth;
       } else {
-        container.scrollLeft -= container.clientWidth;
+        container.scrollLeft = container.clientWidth * nextIndex;
       }
     }
   }
 
   return (
-    <div className="gallery">
-      <div className="images-container" id="images-container">
+    <div className={"gallery " + className}>
+      <div className="images-container" id={uniquePrefix + "-images-container"}>
         {images.map((image, index) => {
           return (
-            <img src={images[index]} id={"gallery-image" + index} className="gallery-image" alt=""/>
+            <img src={images[index]} id={uniquePrefix + "-gallery-image" + index} className="gallery-image" alt=""
+                 key={uniquePrefix + "-gallery-image" + index}/>
           )
         })}
       </div>
@@ -78,15 +79,16 @@ export const Gallery = ({images}) => {
         {images.map((image, index) => {
           if (index === 0) {
             return (
-              <img src={CircleFilled} className="gallery-circle clickable" id={"circle" + index} key={"circle" + index}
+              <img src={CircleFilled} className="gallery-circle clickable" id={uniquePrefix + "-circle" + index}
+                   key={uniquePrefix + "-circle" + index}
                    alt="" onClick={() => {
                 handleCircleClick(index);
               }}/>
             )
           } else {
             return (
-              <img src={CircleUnfilled} className="gallery-circle clickable" id={"circle" + index}
-                   key={"circle" + index}
+              <img src={CircleUnfilled} className="gallery-circle clickable" id={uniquePrefix + "-circle" + index}
+                   key={uniquePrefix + "-circle" + index}
                    alt="" onClick={() => {
                 handleCircleClick(index);
               }}/>
