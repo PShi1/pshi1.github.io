@@ -36,7 +36,11 @@ body {
   margin: auto;
 }
 
-// Bottom Margins, currently only used for access
+// Bottom Margins
+.margin-bottom-0px {
+  margin-bottom: 0 !important;
+}
+
 .margin-bottom-12px {
   margin-bottom: (12vw * $scaling-value) !important;
 }
@@ -117,14 +121,6 @@ $base-font-family: Manjari, Manrope, Verdana, sans-serif;
 $manrope-font-family: Manrope, sans-serif;
 $major-mono-display-font-family: Major Mono Display, sans-serif;
 $inter-font-family: Inter, sans-serif;
-
-.body-font {
-  font-family: $base-font-family;
-  font-size: max(1.5vw, 24px);
-  line-height: max(2.25vw, 36px);
-  font-style: normal;
-  font-weight: normal;
-}
 
 h1 {
   font-family: $manrope-font-family;
@@ -266,7 +262,7 @@ h4 {
   font-family: $manrope-font-family;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.85vw;
+  font-size: 0.90vw;
   line-height: 200%;
   color: $black;
 }
@@ -277,6 +273,15 @@ h4 {
   font-weight: 300;
   font-size: 1.7vw;
   line-height: 200%;
+  color: $black;
+}
+
+.cs-manrope-150-line-height {
+  font-family: $manrope-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3vw;
+  line-height: 150%;
   color: $black;
 }
 
@@ -300,6 +305,10 @@ h4 {
 
 .off-white-text {
   color: $off-white;
+}
+
+.grey-text {
+  color: $grey-9c9c9c;
 }
 
 .colour-gradient {
@@ -652,6 +661,7 @@ h4 {
   height: 2vw;
   border-radius: 50%;
   opacity: 0;
+  z-index: 3;
 
   display: flex;
   place-items: center;
@@ -687,23 +697,49 @@ h4 {
 }
 
 @keyframes animate-back-to-top-appear {
-  from {opacity: 0; transform: translateY(5vh)}
-  to {opacity: 1; transform: translateY(0)}
+  from {
+    opacity: 0;
+    transform: translateY(5vh)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
 }
 
 @keyframes animate-back-to-top-hide {
-  from {opacity: 1; transform: translateY(0)}
-  to {opacity: 0; transform: translateY(5vh)}
+  from {
+    opacity: 1;
+    transform: translateY(0)
+  }
+  to {
+    opacity: 0;
+    transform: translateY(5vh)
+  }
 }
+
 // End of back to top
+
+// Anchor Links
+.anchor-links-wrapper {
+  .h3-group {
+    font-size: 1vw;
+  }
+
+  .subgroup {
+    font-size: 0.85vw;
+  }
+}
+
+// End of Anchor Links
 
 // Boiler Plate
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

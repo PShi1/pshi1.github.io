@@ -5,9 +5,9 @@ import iPhone1 from '../Assets/iPhone1.svg'
 import iPhone2 from '../Assets/iPhone2.svg'
 import iPhone3 from '../Assets/iPhone3.svg'
 import iPhone4 from '../Assets/iPhone4.svg'
-import IntelligentBudgetingBubbles from '../Assets/IntelligentBudgetingBubbles.svg';
-import PurchaseTrackingBubbles from '../Assets/PurchaseTrackingBubbles.svg';
-import ActionableInsightsBubbles from '../Assets/ActionableInsightsBubbles.svg';
+import IntelligentBudgetingBubbles from '../Assets/FinWellPageImages/IntelligentBudgetingBubbles.svg';
+import PurchaseTrackingBubbles from '../Assets/FinWellPageImages/PurchaseTrackingBubbles.svg';
+import ActionableInsightsBubbles from '../Assets/FinWellPageImages/ActionableInsightsBubbles.svg';
 import StressedEmoji from '../Assets/StressedEmoji.svg';
 import Books from '../Assets/FinWellPageImages/Books.svg';
 import CompetitiveAnalysis from '../Assets/FinWellPageImages/CompetitiveAnalysis.png';
@@ -37,6 +37,11 @@ import StyleGuide8 from '../Assets/FinWellPageImages/StyleGuide8.svg';
 import AnchorLinks from "../Components/AnchorLinks";
 import FinalImage from '../Assets/FinWellPageImages/FinalImage.svg';
 import {Gallery} from "../Components/Gallery";
+import SketchingWireframes from "../Assets/FinWellPageImages/SketchingWireframes.svg";
+import UserFlows1 from '../Assets/FinWellPageImages/UserFlows1.png';
+import UserFlows2 from '../Assets/FinWellPageImages/UserFlows2.png';
+import UserFlows3 from '../Assets/FinWellPageImages/UserFlows3.png';
+import UserFlows4 from '../Assets/FinWellPageImages/UserFlows4.png';
 
 /**
  * FinWell page component
@@ -46,12 +51,13 @@ export const FinWell = () => {
   const empathyMapImages = [AnxiousAnnieEmpathyMap, ConfidentCarlEmpathyMap];
   const userPersonasImages = [AnxiousAnnie, ConfidentCarl];
   const guerillaTestingImages = [GuerillaTesting1, GuerillaTesting2];
+  const userFlowsImages = [UserFlows1, UserFlows2, UserFlows3, UserFlows4];
 
   /**
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 
     fadeInOnScroll();
 
@@ -120,13 +126,14 @@ export const FinWell = () => {
 
       <div className="overview anchor-area" id="overview-area">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>
-        <h2 className="cs-manrope margin-bottom-80px">FinWell is an app that <strong className="highlight">
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">FinWell is an app that <strong
+          className="highlight">
           helps increase money mindfulness and
           prevent overspending
         </strong> by letting users track how they feel about their purchases over time.</h2>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="context-title">Context</h3>
-        <p className="cs-body margin-bottom-40px">There is an evident lack of financial education in this modern age,
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="context-title">Context</h3>
+        <p className="cs-body margin-bottom-80px">There is an evident lack of financial education in this modern age,
           which leads to many people not knowing how to manage their finances and a general lack of financial guidance.
           One prominent example of this is the frequent purchase of items that collectively go over budget and later
           cause guilt and regret, also known as impulsive spending. <strong className="highlight">FinWell leverages AI
@@ -136,11 +143,10 @@ export const FinWell = () => {
             purchase. This encourages users to be more mindful and deliberate when making financial decisions to ensure
             their purchases retain their value as time goes by.</strong></p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="what-did-i-do-title">What Did I Do?</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">FinWell is a solo course project I did
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="what-did-i-do-title">What Did I Do?</h3>
+        <p className="cs-body margin-bottom-0px"><strong className="highlight">FinWell is a solo course project I did
           as part of my UX/UI program.</strong> Some of my specific work on this project include:</p>
-        <ul className="margin-bottom-40px">
-
+        <ul className="margin-bottom-80px">
 
           <li className="cs-body">I brainstormed possible solutions and <strong className="highlight">conducted guerilla
             tests with sketch prototypes</strong> to test my hypothesis.
@@ -157,17 +163,17 @@ export const FinWell = () => {
           </li>
         </ul>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">4 weeks (May 2021)</strong>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="project-timeline-title">Project Timeline</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">4 weeks (May 2021)</strong>
         </p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-type-title">Project Type</h3>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="project-type-title">Project Type</h3>
         <p className="cs-body"><strong className="highlight">Sole Designer, Course Project, Full Case Study,
           Mobile</strong></p>
-        <p className="cs-body margin-bottom-40px">User Research, Brainstorming, Solution Validation, Sketching,
+        <p className="cs-body margin-bottom-80px">User Research, Brainstorming, Solution Validation, Sketching,
           Wireframing, Usability Testing, Prototyping, Branding</p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-tools-title">Project Tools</h3>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="project-tools-title">Project Tools</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Google Forms, Miro, LucidSpark,
           Adobe Illustrator, Protopie</strong></p>
       </div>
@@ -220,10 +226,11 @@ export const FinWell = () => {
         </div>
       </div>
 
-      <div className="designed-solution margin-bottom-80px anchor-area" id="final-solution-area">
+      <div className="designed-solution margin-bottom-240px anchor-area" id="final-solution-area">
         <h2 className="cs-title margin-bottom-80px" id="final-solution-title"><strong
           className="yellow-text">02</strong> -
           Final Solution</h2>
+
         <img id="intelligent-budgeting-bubbles" src={IntelligentBudgetingBubbles} alt=""/>
         <div className="appear-on-scroll">
           <div className="intelligent-budgeting">
@@ -232,9 +239,10 @@ export const FinWell = () => {
 
             </div>
             <div className="right-column">
-              <h1 className="solution-title sub-anchor-area" id="intelligent-budgeting-title">Intelligent Budgeting</h1>
+              <h1 className="solution-title" id="intelligent-budgeting-title">Intelligent Budgeting</h1>
               <h2 className="solution-subtitle">A financial tool that adapts to you.</h2>
-              <p className="solution-text">A budget that adjusts based on spending habits which allows you to make adjustments to fit your life stage or life style.</p>
+              <p className="solution-text">A budget that adjusts based on spending habits which allows you to make
+                adjustments to fit your life stage or life style.</p>
               <img src={iPhone2} alt=""/>
             </div>
           </div>
@@ -247,9 +255,10 @@ export const FinWell = () => {
               <img src={iPhone3} alt=""/>
             </div>
             <div className="right-column">
-              <h1 className="solution-title sub-anchor-area" id="purchase-tracking-title">Purchase Tracking</h1>
+              <h1 className="solution-title" id="purchase-tracking-title">Purchase Tracking</h1>
               <h2 className="solution-subtitle">Track your thoughts and feelings towards a purchase over time.</h2>
-              <p className="solution-text">FinWell helps you track how you feel about certain purchases over time to increase mindfulness and ensure
+              <p className="solution-text">FinWell helps you track how you feel about certain purchases over time to
+                increase mindfulness and ensure
                 you’re purchasing things that give the most value. </p>
             </div>
           </div>
@@ -259,9 +268,10 @@ export const FinWell = () => {
         <div className="appear-on-scroll" id="actionable-insights-container">
           <div className="actionable-insights">
             <div className="left-column">
-              <h1 className="solution-title sub-anchor-area" id="actionable-insights-title">Actionable Insights</h1>
+              <h1 className="solution-title" id="actionable-insights-title">Actionable Insights</h1>
               <h2 className="solution-subtitle">Reflect and adapt to build better financial habits.</h2>
-              <p className="solution-text">FinWell's AI produces actionable insights for reflection and let's you know any areas for improvements.</p>
+              <p className="solution-text">FinWell's AI produces actionable insights for reflection and let's you know
+                any areas for improvements.</p>
             </div>
             <div className="right-column">
               <img src={iPhone4} alt=""/>
@@ -270,8 +280,8 @@ export const FinWell = () => {
         </div>
 
         <div className="link-to-prototype-container">
-          <div className="secondary-button">
-            <p>Link to Prototype</p>
+          <div className="prototype-button clickable">
+            <p className="cs-body"/>
           </div>
         </div>
       </div>
@@ -279,15 +289,16 @@ export const FinWell = () => {
       <div className="discovery margin-bottom-80px anchor-area" id="discovery-area">
         <h2 className="cs-title margin-bottom-80px" id="discovery-title"><strong className="yellow-text">03</strong> -
           Discovery</h2>
-        <h2 className="cs-manrope margin-bottom-80px">I started the project with a vague idea that I wanted to pursue a
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">I started the project with a vague idea that I
+          wanted to pursue a
           problem related to my financial background and help people be better at managing their finances. Initially, I
           wanted to create an educational app to teach basic financial lessons but later pivoted to <strong
             className="highlight">
             focusing on young adults and an app targeting overspending.
           </strong></h2>
-        <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="secondary-research-title">Secondary
+        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="secondary-research-title">Secondary
           Research</h4>
-        <p className="body-font margin-bottom-40px">Through reviewing literary papers and other secondary sources
+        <p className="cs-body margin-bottom-80px">Through reviewing literary papers and other secondary sources
           online, I learned that with student and credit debt rising, the average person’s ability to budget and save is
           diminishing from year to year. <strong className="highlight">
             This is especially prevalent in young adults since there is minimal exposure to financial literacy through
@@ -298,34 +309,41 @@ export const FinWell = () => {
         <div className="secondary-research-row margin-bottom-80px">
           <div className="spacing-div margin-bottom-80px">
             <div className="left-column">
-              <img className="emoji" src={StressedEmoji} alt=""/>
-              <h4 className="cs-subtitle-2">63%</h4>
-              <p className="cs-body">of Millennials feel anxious when thinking about their financial situation. (TIAA
-                Institute)</p>
+              <img className="emoji margin-bottom-12px" src={StressedEmoji} alt=""/>
+              <h4 className="large-number-font">63%</h4>
+              <p className="cs-body">of Millennials feel anxious when thinking about their financial situation. <strong
+                className="grey-text no-bold">(</strong><u
+                className="grey-text">TIAA
+                Institute</u><strong className="grey-text no-bold">)</strong></p>
             </div>
             <div className="center-column">
-              <img className="emoji" src={ParentChildSign} alt=""/>
-              <h4 className="cs-subtitle-2">60%</h4>
-              <p className="cs-body">of parents report giving their kids financial help in the past year. (Pew Research
-                Center)</p>
+              <img className="emoji margin-bottom-12px" src={ParentChildSign} alt=""/>
+              <h4 className="large-number-font">60%</h4>
+              <p className="cs-body">of parents report giving their kids financial help in the past year. <strong
+                className="grey-text no-bold">(</strong><u
+                className="grey-text">Pew Research
+                Center</u><strong className="grey-text no-bold">)</strong></p>
             </div>
             <div className="right-column">
-              <img className="emoji" src={Books} alt=""/>
-              <h4 className="cs-subtitle-2">Only 24%</h4>
+              <img className="emoji margin-bottom-12px" src={Books} alt=""/>
+              <h4 className="large-number-font">Only 24%</h4>
               <p className="cs-body">of Millennials demonstrate the ability to understand basic financial concepts.
-                (GFLEC)</p>
+                <strong
+                  className="grey-text no-bold">(</strong><u
+                  className="grey-text">GFLEC</u><strong className="grey-text no-bold">)</strong></p>
             </div>
           </div>
         </div>
 
-        <h2 className="cs-manrope margin-bottom-80px">The secondary research results motivated me to focus my solution
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">The secondary research results motivated me to
+          focus my solution
           on the user group of <strong className="highlight">young adults (18-30 years old)</strong> since they are the
           most impacted by this problem.
         </h2>
 
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="competitive-analysis-title">Competitive
           Analysis</h4>
-        <p className="cs-body margin-bottom-12px">I wanted to create a product that offered more than current solutions
+        <p className="cs-body margin-bottom-40px">I wanted to create a product that offered more than current solutions
           already on the
           market. <strong
             className="highlight">
@@ -334,10 +352,10 @@ export const FinWell = () => {
             and features.
           </strong></p>
 
-        <img id="competitive-analysis-image" src={CompetitiveAnalysis} alt=""/>
+        <img className="margin-bottom-40px" id="competitive-analysis-image" src={CompetitiveAnalysis} alt=""/>
 
-        <p className="cs-subtitle-2">Main Takeaways:</p>
-        <ul>
+        <p className="cs-subtitle-2 margin-bottom-0px">Main Takeaways:</p>
+        <ul className="margin-bottom-80px">
           <li className="cs-body">Upon closely examining the negative app store reviews for these products, I
             discovered that many of the products struggle with simplifying financial concepts and making their
             functionality intuitive. <strong className="highlight">Many users reported these products as challenging
@@ -351,11 +369,12 @@ export const FinWell = () => {
         </ul>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="primary-research-title">Primary Research</h3>
-        <p className="cs-body"><strong className="highlight">I sent out a Google Forms screener survey to my network and
+        <p className="cs-body margin-bottom-0px"><strong className="highlight">I sent out a Google Forms screener survey
+          to my network and
           anonymously online
           on Reddit to:</strong></p>
 
-        <ul>
+        <ul className="margin-bottom-40px">
           <li className="cs-body">Validate the assumption that this was a problem most prevalent amongst young adults
             (18-30 years old)
           </li>
@@ -365,22 +384,22 @@ export const FinWell = () => {
           </li>
         </ul>
 
-        <img className="image margin-bottom-40px" src={Survey} alt=""/>
+        <img className="image margin-bottom-60px" src={Survey} alt=""/>
 
         <div className="secondary-research-row margin-bottom-60px">
           <div className="spacing-div margin-bottom-80px">
             <div className="left-column">
-              <h4 className="cs-subtitle-2">60%</h4>
+              <h4 className="large-number-font margin-bottom-0px">60%</h4>
               <p className="cs-body">of respondents rated their own financial literacy a 3 or lower on a scale of
                 1-5.</p>
             </div>
             <div className="center-column">
-              <h4 className="cs-subtitle-2">55%</h4>
+              <h4 className="large-number-font margin-bottom-0px">55%</h4>
               <p className="cs-body">of respondents said that impulsive purchases made up the majority of their expenses
                 outside of the necessities.</p>
             </div>
             <div className="right-column">
-              <h4 className="cs-subtitle-2">85%</h4>
+              <h4 className="large-number-font margin-bottom-0px">85%</h4>
               <p className="cs-body">of respondents can recall "overspending" on a purchase in the last month due to an
                 emotional trigger.</p>
             </div>
@@ -388,8 +407,9 @@ export const FinWell = () => {
         </div>
 
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-interviews-title">User Interviews</h4>
-        <p className="cs-body">Out of the respondents to the screener survey, <strong className="highlight">I chose 8
-          respondents in-depth for follow-up interviews.</strong> These
+        <p className="cs-body margin-bottom-0px">Out of the respondents to the screener survey, <strong
+          className="highlight">I chose 8
+          respondents for in-depth follow-up interviews.</strong> These
           respondents were chosen based on four criteria:</p>
         <ul className="margin-bottom-40px">
           <li className="cs-body">Fell into the target age group of 18 - 30 years old
@@ -403,19 +423,20 @@ export const FinWell = () => {
           <li className="cs-body">Self-identified as having lower financial literacy
           </li>
         </ul>
-        <p className="cs-body margin-bottom-24px"><strong className="highlight">These interviews were conducted with the
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">These interviews were conducted with the
           goal to talk more in-depth about the motivations behind some of their financial decisions and why it was so
           hard to build better financial habits.</strong></p>
         <img src={UserInterviews} alt="" className="margin-bottom-80px image"/>
 
-        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="affinity-map-title">Affinity Map</h4>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">Afterwards, I organized my interview
+        <h4 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="affinity-map-title">Affinity Map</h4>
+        <p className="cs-body margin-bottom-60px"><strong className="highlight">Afterwards, I organized my interview
           notes into sticky notes and did affinity mapping in Miro to discover shared insights.</strong></p>
 
-        <img className="image" src={AffinityMap} alt=""/>
+        <img className="image margin-bottom-40px" src={AffinityMap} alt=""/>
 
-        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-personas-title">User Personas</h4>
-        <p className="cs-body">Based on the previous research, I discovered that the large user group of young adults
+        <h4 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="user-personas-title">User Personas</h4>
+        <p className="cs-body margin-bottom-40px">Based on the previous research, I discovered that the large user group
+          of young adults
           can be further
           broken
           down. <strong className="highlight">
@@ -455,15 +476,16 @@ export const FinWell = () => {
           </li>
         </ul>
 
-        <p className="cs-manrope margin-bottom-80px"><strong className="highlight">How might we help young adults (18-30
+        <p className="cs-manrope-150-line-height margin-bottom-80px"><strong className="highlight">How might we help
+          young adults (18-30
           years old) better control their impulsive spending habits and build better long-term financial
           habits?</strong></p>
       </div>
 
       <div className="design anchor-area" id="design-area">
-        <h2 className="cs-title margin-bottom-40px" id="design-title"><strong className="yellow-text">04</strong> -
+        <h2 className="cs-title margin-bottom-80px" id="design-title"><strong className="yellow-text">04</strong> -
           Design</h2>
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="ideation-title">Ideation</h3>
+        <h3 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="ideation-title">Ideation</h3>
         <p className="cs-body margin-bottom-80px">I wanted to ensure I covered as many areas as possible when
           brainstorming, so I took time to do various exercises to think outside the box, such as mind mapping and
           storyboarding. <strong className="highlight">I often referred back to the synthesized user research to make
@@ -472,7 +494,7 @@ export const FinWell = () => {
 
         <img className="image margin-bottom-80px" src={Ideation} alt=""/>
 
-        <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="guerilla-testing-title">Guerilla Testing</h3>
+        <h3 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="guerilla-testing-title">Guerilla Testing</h3>
         <p className="cs-body margin-bottom-40px"><strong className="highlight">Instead of arbitrarily choosing a
           solution out of the 4, I conducted some basic guerilla testing by approaching users in the target group at a
           coffee shop, presenting the different concepts to them, and gathering user feedback on all 4.</strong> I did
@@ -492,13 +514,21 @@ export const FinWell = () => {
           raised concerns about how it would be challenging to personalize the content based on the different users and
           how the app would have difficulty sustaining a long-term user base while providing value.</p>
 
-        <p className="cs-manrope margin-bottom-80px">The app will be a budgeting app with the added functionality of
+        <p className="cs-manrope-150-line-height margin-bottom-80px">The app will be a budgeting app with the added
+          functionality of
           allowing users to track how they feel about purchases and providing useful insights over time.</p>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-stories-title">User Stories</h3>
-        <p className="cs-body margin-bottom-24px"><strong className="highlight">I created user stories based on the
-          chosen solution and user pain points gathered from research.</strong></p>
-        <img src={UserStories} alt="" className="image margin-bottom-80px"/>
+        <div className="user-stories-container">
+          <div className="left-column">
+            <p className="cs-body margin-bottom-24px"><strong className="highlight">I created user stories based on the
+              chosen solution and user pain points gathered from research.</strong></p>
+          </div>
+          <div className="right-column">
+            <img src={UserStories} alt="" className="image margin-bottom-80px"/>
+          </div>
+        </div>
+
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="information-architecture-title">Information
           Architecture</h3>
@@ -507,19 +537,22 @@ export const FinWell = () => {
             navigation and UX patterns.</strong></p>
         <img src={InformationArchitecture} alt="" className="image margin-bottom-80px"/>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flows-title">User Flows</h3>
-        <div className="margin-bottom-80px"/>
-
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="sketching-wireframes-title">Sketching /
           Wireframes</h3>
         <p className="cs-body margin-bottom-24px"><strong className="highlight">Next, I proceeded to sketch out the most
-          critical user flows and turn the sketches into low-fidelity wireframes.</strong></p>
-        <div className="margin-bottom-80px"/>
+          critical user flows and turn the sketches into low-fidelity wireframes.</strong> I focused on keeping the
+          end-users in mind while designing by keeping elements simple to understand and using graphs/iconography
+          wherever possible.</p>
+        <img className="image margin-bottom-80px" src={SketchingWireframes} alt=""/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide</h3>
         <p className="cs-body margin-bottom-24px"><strong className="highlight">I created a style guide to narrow
-          FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong></p>
+          FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong> Creating
+          it also made me reflect on why I chose the visual elements I did and what they represent.</p>
         <Gallery className="margin-bottom-80px" images={styleGuideImages} uniquePrefix={"style-guide"}/>
+
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flows-title">User Flows</h3>
+        <Gallery className="margin-bottom-80px" images={userFlowsImages} uniquePrefix={"user-flows"}/>
       </div>
 
       <div className="test-and-iterate anchor-area" id="test-and-iterate-area">

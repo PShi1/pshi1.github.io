@@ -265,12 +265,6 @@ const AnchorLinks = ({callerType}) => {
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("reflection-title")
           }}><strong className="blue-text">06</strong> - Reflection</h3>
-          {/*<h4 id="it-takes-two-to-tango-title-anchor" className="subgroup" onClick={() => {*/}
-          {/*  findAndGoToLinkedTitle("it-takes-two-to-tango-title")*/}
-          {/*}}>It Takes Two (And A Lot More) To Tango</h4>*/}
-          {/*<h4 id="rome-wasn't-built-in-one-day-title-anchor" className="subgroup" onClick={() => {*/}
-          {/*  findAndGoToLinkedTitle("rome-wasn't-built-in-one-day-title")*/}
-          {/*}}>Rome Wasn't Built In One Day</h4>*/}
         </div>
       </div>
     );
@@ -398,15 +392,6 @@ const AnchorLinks = ({callerType}) => {
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("final-solution-title")
           }}><strong className="yellow-text">02</strong> - Final Solution</h3>
-          <h4 id="intelligent-budgeting-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("intelligent-budgeting-title")
-          }}>Intelligent Budgeting</h4>
-          <h4 id="purchase-tracking-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("purchase-tracking-title")
-          }}>Purchase Tracking</h4>
-          <h4 id="actionable-insights-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("actionable-insights-title")
-          }}>Actionable Insights</h4>
         </div>
 
         <div className="group" id="discovery-area-anchor">
@@ -458,15 +443,15 @@ const AnchorLinks = ({callerType}) => {
           <h4 id="information-architecture-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("information-architecture-title")
           }}>Information Architecture</h4>
-          <h4 id="user-flows-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("user-flows-title")
-          }}>User Flows</h4>
           <h4 id="sketching-wireframes-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("sketching-wireframes-title")
           }}>Sketching / Wireframes</h4>
           <h4 id="style-guide-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("style-guide-title")
           }}>Style Guide</h4>
+          <h4 id="user-flows-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("user-flows-title")
+          }}>User Flows</h4>
         </div>
 
         <div className="group" id="test-and-iterate-area-anchor">
