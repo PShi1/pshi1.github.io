@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import '../Stylesheets/Finwell.scss';
-import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.png';
+import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.svg';
 import iPhone1 from '../Assets/iPhone1.svg'
 import iPhone2 from '../Assets/iPhone2.svg'
 import iPhone3 from '../Assets/iPhone3.svg'
@@ -42,6 +42,7 @@ import UserFlows1 from '../Assets/FinWellPageImages/UserFlows1.png';
 import UserFlows2 from '../Assets/FinWellPageImages/UserFlows2.png';
 import UserFlows3 from '../Assets/FinWellPageImages/UserFlows3.png';
 import UserFlows4 from '../Assets/FinWellPageImages/UserFlows4.png';
+import {RedirectLinks} from "../Components/RedirectLinks";
 
 /**
  * FinWell page component
@@ -57,7 +58,7 @@ export const FinWell = () => {
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     fadeInOnScroll();
 
@@ -132,7 +133,7 @@ export const FinWell = () => {
           prevent overspending
         </strong> by letting users track how they feel about their purchases over time.</h2>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="context-title">Context</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Context</h3>
         <p className="cs-body margin-bottom-80px">There is an evident lack of financial education in this modern age,
           which leads to many people not knowing how to manage their finances and a general lack of financial guidance.
           One prominent example of this is the frequent purchase of items that collectively go over budget and later
@@ -143,7 +144,7 @@ export const FinWell = () => {
             purchase. This encourages users to be more mindful and deliberate when making financial decisions to ensure
             their purchases retain their value as time goes by.</strong></p>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="what-did-i-do-title">What Did I Do?</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="what-did-i-do-title">What Did I Do?</h3>
         <p className="cs-body margin-bottom-0px"><strong className="highlight">FinWell is a solo course project I did
           as part of my UX/UI program.</strong> Some of my specific work on this project include:</p>
         <ul className="margin-bottom-80px">
@@ -163,17 +164,17 @@ export const FinWell = () => {
           </li>
         </ul>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="project-timeline-title">Project Timeline</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-timeline-title">Project Timeline</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">4 weeks (May 2021)</strong>
         </p>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="project-type-title">Project Type</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-type-title">Project Type</h3>
         <p className="cs-body"><strong className="highlight">Sole Designer, Course Project, Full Case Study,
           Mobile</strong></p>
         <p className="cs-body margin-bottom-80px">User Research, Brainstorming, Solution Validation, Sketching,
           Wireframing, Usability Testing, Prototyping, Branding</p>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="project-tools-title">Project Tools</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-tools-title">Project Tools</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Google Forms, Miro, LucidSpark,
           Adobe Illustrator, Protopie</strong></p>
       </div>
@@ -612,6 +613,9 @@ export const FinWell = () => {
       </div>
 
       <img src={FinalImage} alt="" className="image margin-bottom-160px" id="final-image"/>
+
+      <RedirectLinks currentPage="finwell" prevCaseStudy="access" prevCaseStudyText="Access" nextCaseStudy="aprio"
+                     nextCaseStudyText="Aprio"/>
     </div>
   )
 }

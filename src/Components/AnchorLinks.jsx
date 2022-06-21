@@ -5,7 +5,6 @@ const AnchorLinks = ({callerType}) => {
   let anchorAreaGroups = [];
   let subAnchorAreaGroups = [];
 
-
   useEffect(() => {
     // Anchor areas will be defined as component wrappers in case study pages.
     // Ex. 01 - Ideation, 02 - Creation etc. from Access
@@ -175,27 +174,12 @@ const AnchorLinks = ({callerType}) => {
   // Just need to change up what is returned based on the page we're on, ie. the titles and subtitles
   if (callerType === "access") {
     return (
-      <div className="anchor-links-wrapper hidden" id="anchor-links-wrapper">
+      <div className="anchor-links-wrapper hidden access-colours" id="anchor-links-wrapper">
         <div className="anchor-links-background"/>
         <div className="group" id="overview-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("overview-title")
           }}>Overview</h3>
-          <h4 id="context-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("context-title")
-          }}>Context</h4>
-          <h4 id="what-did-i-do-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("what-did-i-do-title")
-          }}>What Did I Do?</h4>
-          <h4 id="project-timeline-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-timeline-title")
-          }}>Project Timeline</h4>
-          <h4 id="project-type-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-type-title")
-          }}>Project Type</h4>
-          <h4 id="project-tools-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-tools-title")
-          }}>Project Tools</h4>
         </div>
 
         <div className="group" id="ideation-area-anchor">
@@ -270,30 +254,12 @@ const AnchorLinks = ({callerType}) => {
     );
   } else if (callerType === "aprio") {
     return (
-      <div className="anchor-links-wrapper hidden" id="anchor-links-wrapper">
+      <div className="anchor-links-wrapper hidden aprio-colours" id="anchor-links-wrapper">
         <div className="anchor-links-background"/>
         <div className="group" id="overview-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("overview-title")
           }}>Overview</h3>
-          <h4 id="context-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("context-title")
-          }}>Context</h4>
-          <h4 id="what-did-i-do-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("what-did-i-do-title")
-          }}>What Did I Do?</h4>
-          <h4 id="project-timeline-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-timeline-title")
-          }}>Project Timeline</h4>
-          <h4 id="project-type-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-type-title")
-          }}>Project Type</h4>
-          <h4 id="project-tools-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-tools-title")
-          }}>Project Tools</h4>
-          <h4 id="privacy-disclaimer-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("privacy-disclaimer-title")
-          }}>Privacy Disclaimer</h4>
         </div>
 
         <div className="group" id="process-area-anchor">
@@ -359,27 +325,12 @@ const AnchorLinks = ({callerType}) => {
     );
   } else if (callerType === "finwell") {
     return (
-      <div className="anchor-links-wrapper hidden" id="anchor-links-wrapper">
+      <div className="anchor-links-wrapper hidden finwell-colours" id="anchor-links-wrapper">
         <div className="anchor-links-background"/>
         <div className="group" id="overview-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("overview-title")
           }}>Overview</h3>
-          <h4 id="context-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("context-title")
-          }}>Context</h4>
-          <h4 id="what-did-i-do-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("what-did-i-do-title")
-          }}>What Did I Do?</h4>
-          <h4 id="project-timeline-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-timeline-title")
-          }}>Project Timeline</h4>
-          <h4 id="project-type-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-type-title")
-          }}>Project Type</h4>
-          <h4 id="project-tools-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("project-tools-title")
-          }}>Project Tools</h4>
         </div>
 
         <div className="group" id="process-area-anchor">

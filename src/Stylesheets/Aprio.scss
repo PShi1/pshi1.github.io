@@ -11,7 +11,7 @@
   }
 
   .overview, .process, .design-mockups, .reflection {
-    width: $default-margin-width;
+    width: $default-case-study-margin;
     margin: auto;
   }
 
@@ -22,7 +22,7 @@
   }
 
   #header-image {
-    height: fit-content;
+    height: 47vw;
     z-index: 100100;
     position: relative;
     padding-top: 6vw;

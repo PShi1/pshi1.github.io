@@ -3,6 +3,7 @@ import '../Stylesheets/About.scss';
 import Stars from '../Assets/AboutPageImages/Stars.svg';
 import Selfie1 from '../Assets/AboutPageImages/Selfie1.svg';
 import Selfie2 from '../Assets/AboutPageImages/Selfie2.svg';
+import Selfie3 from '../Assets/AboutPageImages/Selfie3.svg';
 import DownArrow from '../Assets/arrow-down.svg';
 import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
@@ -106,44 +107,50 @@ export const About = () => {
         </div>
 
         <div className="more-about-me appear-on-scroll" id="more-about-me">
-          <div className="row">
+          <div className="row margin-bottom-60px">
+            <div className="row-inner">
+              <p className="b2">Nice to meet you, I'm Emma 👋</p>
+              <p className="b3">
+                I’m currently a <strong className="off-white-strong-font-style underline">Product Designer at Moken
+                Agency</strong>,
+                leading the entire design process for multiple clients and internal products. In my career, I’m
+                fortunate
+                to have <strong
+                className="off-white-strong-font-style">experience working in an agency and an in-house design team,
+                designing for
+                both enterprise and consumer-facing companies</strong>.
+                My expertise at the moment
+                lies in <strong className="off-white-strong-font-style">0 -> 1 projects involving a high
+                degree of product thinking
+                and visual design.</strong>
+              </p>
+            </div>
+
             <img src={Selfie1} alt="" id="selfie-1"/>
+          </div>
+
+          <div className="row margin-bottom-60px">
+            <img src={Selfie2} alt="" id="selfie-2"/>
             <p className="b3">
-              I’m currently a <strong className="off-white-strong-font-style underline">Product Designer at Moken
-              Agency</strong>,
-              leading the entire design process of various tech products. In my career, I’m fortunate to have <strong
-              className="off-white-strong-font-style">experienced
-              product agencies and in-house, working with both enterprise and consumer-facing companies alike</strong>.
-              My expertise at the moment
-              lies in <strong className="off-white-strong-font-style">zero-to-one projects</strong> involving a high
-              degree of product thinking
-              and visual design.
+              My design journey started long ago when I was colour coding my school notes and creating custom graphics
+              for my high school PowerPoint presentations. I graduated with a <strong
+              className="off-white-strong-font-style">Bachelor
+              of Business Administration from the University of Toronto</strong>.
+              Immediately after graduation, I decided business was not the right path for me
+              and decided to find something I was genuinely passionate about.
             </p>
           </div>
 
           <div className="row">
-            <div className="row-inner">
-              <p className="b3">
-                My design journey started a long time ago, when I was colour coding my school notes and creating custom
-                graphics for my
-                high school PowerPoint presentations. I graduated with a <strong
-                className="off-white-strong-font-style">Bachelor
-                of Business Administration from the University of Toronto</strong>.
-                Immediately after graduation, I decided business was not the right path for me and set out to find
-                something
-                I was genuinely passionate about.
-              </p>
-
-              <p className="b3">
-                Visual storytelling, mixed with my naturally curious personality, eventually became more than just a
-                passion
-                when I discovered the field of design: the industry that allows me
-                to <strong className="off-white-strong-font-style">collaborate with talented individuals to continuously
-                grow and learn new skill sets</strong>,
-                from how to write lines of code to thinking from new and unique perspectives.
-              </p>
-            </div>
-            <img src={Selfie2} alt="" id="selfie-2"/>
+            <p className="b3">
+              My naturally curious personality, combined with my love of storytelling, eventually became more than just
+              a passion when I discovered UX: the industry that allows me to <strong
+              className="off-white-strong-font-style">collaborate with talented individuals to
+              continuously grow and learn new skill sets,</strong> from how to write lines of code to thinking from
+              unique
+              perspectives.
+            </p>
+            <img src={Selfie3} alt="" id="selfie-3"/>
           </div>
         </div>
 
@@ -159,7 +166,7 @@ export const About = () => {
                 <ul>
                   <li><p className="b4">Entrepreneurship</p></li>
                   <li><p className="b4">Building communities</p></li>
-                  <li><p className="b4">Education</p></li>
+                  <li><p className="b4">Service design</p></li>
                   <li><p className="b4">Diversity & inclusion</p></li>
                 </ul>
               </div>
@@ -277,8 +284,8 @@ export const About = () => {
 
         <div className="outro appear-on-scroll">
           <h2>This doesn't have to be the end ✌️</h2>
-          <p className="b1-light">Reach me at <strong className="hover-cursor off-white-strong-font-style"
-                                                      onClick={() => copyEmail("about")}>uxemmali@gmail.com</strong> for
+          <p className="b4">Reach me at <strong className="hover-cursor off-white-strong-font-style"
+                                                onClick={() => copyEmail("about")}>uxemmali@gmail.com</strong> for
             any comments, feedback, or outrageous ideas. </p>
           <p className="cs-body" id="about-email-copied">Email copied!</p>
         </div>

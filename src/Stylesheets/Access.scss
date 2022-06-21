@@ -11,7 +11,7 @@
   }
 
   .access-header-wrapper {
-    height: fit-content;
+    height: 47vw;
     z-index: 100100;
     position: relative;
     padding-top: 6vw;
@@ -28,7 +28,7 @@
   }
 
   .overview, .ideation, .creation, .iteration, .organization, .impact-inner, .reflection {
-    width: $default-small-margin-width;
+    width: $default-case-study-margin;
     margin: auto;
   }
 

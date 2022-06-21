@@ -19,7 +19,7 @@
       font-family: $manrope-font-family;
       font-style: normal;
       font-weight: 400;
-      font-size: 1.8vw;
+      font-size: 1.5vw;
       line-height: 150%;
       color: $off-white;
       margin-top: 0;
@@ -28,12 +28,19 @@
 
     .medium-text {
       font-family: $manrope-font-family;
-      font-size: 1.1vw;
+      font-size: 0.9vw;
       line-height: 150%;
       font-weight: 300;
       margin-top: 0;
       margin-bottom: 0.2vw;
       color: $off-white;
+
+      a {
+        color: $off-white;
+        cursor: none;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
     }
 
     .small-text {
@@ -65,11 +72,11 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      justify-content: flex-start;
+      justify-content: center;
     }
   }
 
-  #linkedin-icon-light, #mail-icon-light {
+  #linkedin-icon-light, #mail-icon-light, #instagram-icon-light {
     display: none;
   }
 
@@ -105,7 +112,7 @@
   .logo2 {
     position: absolute;
     transform-style: preserve-3d;
-    transform: rotateX(88deg) translateZ(1.35vw);
+    transform: rotateX(89deg) translateZ(1.36vw);
     transition: transform 0.2s ease-in-out;
     height: 3.0vw;
     width: 3.0vw;
@@ -138,17 +145,22 @@
 
   .large-text, .medium-text, .small-text {
     color: $black;
+
+    a {
+      color: $black;
+      cursor: none;
+    }
   }
 
   .center-column {
     border-top: 1px solid $black;
   }
 
-  #linkedin-icon-light, #mail-icon-light {
+  #linkedin-icon-light, #mail-icon-light, #instagram-icon-light {
     display: block;
   }
 
-  #linkedin-icon, #mail-icon {
+  #linkedin-icon, #mail-icon, #instagram-icon {
     display: none;
   }
 

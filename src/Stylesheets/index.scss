@@ -10,7 +10,7 @@
 $default-margin-width: 65%;
 $default-mobile-margin-width: 95%;
 $mobile-view-max-width: 600px;
-$default-small-margin-width: 65%;
+$default-case-study-margin: 55%;
 
 // Change this value to adjust margin amounts for below
 $scaling-value: 0.04;
@@ -370,7 +370,7 @@ h4 {
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
   margin-top: -0.7vw;
-  margin-left: 11.5vw;
+  margin-left: 7.23vw;
 }
 
 // Start intro fade in
@@ -732,6 +732,145 @@ h4 {
 }
 
 // End of Anchor Links
+
+// Start of Redirect Links
+.redirect-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 4vw;
+
+  .looking-for-more {
+    align-content: center;
+    color: $blackv2;
+    font-size: 1.3vw;
+    font-family: $manrope-font-family;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .single-redirects {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+
+    p {
+      padding-left: 1vw;
+      padding-right: 1vw;
+    }
+  }
+
+  .reversed-arrow {
+    transform: rotateY(180deg);
+  }
+
+  .left, .right {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .left:hover {
+    transform: translateX(-10%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .right:hover {
+    transform: translateX(10%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .arrow {
+    width: 40%;
+
+  }
+
+  .multiple-redirects {
+    display: flex;
+    justify-content: center;
+  }
+
+  .redirect-font {
+    font-family: $manrope-font-family;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3vw;
+    line-height: 150%;
+  }
+
+  .spacing {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+
+  .underline-effect {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  .constant-underline {
+    border-bottom: 1px solid;
+  }
+
+  .finwell-yellow-underline {
+    border-color: $finwell-yellow !important;
+  }
+
+  .access-blue-underline {
+    border-color: $access-blue !important;
+  }
+
+  .aprio-orange-underline {
+    border-color: $aprio-orange !important;
+  }
+
+  .underline-effect:hover {
+    /* border-bottom: 1px solid rgb(28, 121, 184); */
+    //color: rgb(28, 121, 184);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+
+  /* Animated Bottom Line */
+  .underline-effect:before, .underline-effect:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    background: $black;
+  }
+
+  .underline-effect:before {
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .underline-effect:after {
+    background: $black;
+    right: 0;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .underline-effect:hover:before {
+    background: $black;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .underline-effect:hover:after {
+    background: transparent;
+    width: 100%;
+    /* transition: 0s; */
+  }
+}
+
+// End of Redirect Links
 
 // Boiler Plate
 

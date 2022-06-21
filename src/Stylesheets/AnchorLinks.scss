@@ -1,8 +1,26 @@
 @import "index";
 
+.access-colours {
+  h3, h4 {
+    border-color: $access-blue !important;
+  }
+}
+
+.aprio-colours {
+  h3, h4 {
+    border-color: $aprio-orange !important;
+  }
+}
+
+.finwell-colours {
+  h3, h4 {
+    border-color: $finwell-yellow !important;
+  }
+}
+
 .anchor-links-wrapper {
   position: fixed;
-  width: 13.5%;
+  width: 17%;
   top: 22.5%;
   padding-left: 2%;
   padding-right: 2%;
@@ -22,7 +40,7 @@
     }
 
     h4 {
-      font-weight: 300;
+      font-weight: 200;
       margin-top: 0.6vw;
       padding-left: 1vw;
       margin-bottom: 0.6vw;
@@ -52,8 +70,8 @@
   }
 
   .subgroup.active, .subgroup:hover {
-    border-left: 2px solid black;
-    font-weight: 700;
+    border-left: 3px solid black;
+    font-weight: 600;
     transition: none;
   }
 

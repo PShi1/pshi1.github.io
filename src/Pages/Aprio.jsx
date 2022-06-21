@@ -22,6 +22,7 @@ import {
   cursorLightModeInnerOpacity,
   cursorLightModeOuterOpacity
 } from "../Components/AnimatedCursor";
+import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Aprio = () => {
   useEffect(() => {
@@ -105,8 +106,8 @@ export const Aprio = () => {
         <h2 className="cs-manrope margin-bottom-80px">I led the ideation and design of a brand new client management
           portal for a top 50 US accounting firm.</h2>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="context-title">Context</h3>
-        <p className="cs-body margin-bottom-40px">Aprio is a top private accounting firm headquartered in Atlanta with a
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="context-title">Context</h3>
+        <p className="cs-body margin-bottom-80px">Aprio is a top private accounting firm headquartered in Atlanta with a
           massive problem. <strong className="highlight">It was exponentially growing in size and revenue every quarter,
             but its employees were stuck using external software
             that was decades old. It was slow, inefficient, and heavily outdated.</strong> My employer at the time,
@@ -117,11 +118,11 @@ export const Aprio = () => {
             launch
             the firm into the future.</strong></p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="what-did-i-do-title">What Did I Do?</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="what-did-i-do-title">What Did I Do?</h3>
         <p className="cs-body">This was my most challenging project to date, but it also allowed me to work on something
           extraordinarily impactful and grow tremendously as a product designer. Some of my greatest achievements on the
           Aprio project are:</p>
-        <ul>
+        <ul className="margin-bottom-80px">
           <li className="cs-body"><strong className="highlight">I outlined a detailed design process to follow for
             building this software from the ground up.</strong></li>
           <li className="cs-body">I combined Aprio’s current branding with their need to constantly innovate to <strong
@@ -134,21 +135,21 @@ export const Aprio = () => {
           </li>
         </ul>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">3 months (Q1 2022 -> Q2 2022)</strong>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-timeline-title">Project Timeline</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">3 months (Q1 2022 -> Q2 2022)</strong>
         </p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-type-title">Project Type</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
         <p className="cs-body"><strong className="highlight">Sole Designer, Client Project, Partial (Confidential) Case
           Study, Web</strong></p>
-        <p className="cs-body margin-bottom-40px">User Research, Usability Testing, Prototyping, Branding, Design
+        <p className="cs-body margin-bottom-80px">User Research, Usability Testing, Prototyping, Branding, Design
           System</p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-tools-title">Project Tools</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">Figma, Miro, Jira, Confluence, Optimal
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Miro, Jira, Confluence, Optimal
           Workshop, Userback, Maze</strong></p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="privacy-disclaimer-title">Privacy
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="privacy-disclaimer-title">Privacy
           Disclaimer</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">To protect Aprio’s extremely classified
           information, I am not allowed to display the entirety of my work.</strong> Specific
@@ -199,8 +200,8 @@ export const Aprio = () => {
           </div>
         </p>
 
-        <div className="north-star-row margin-bottom-80px">
-          <div className="spacing-div margin-bottom-80px">
+        <div className="north-star-row margin-bottom-40px">
+          <div className="spacing-div">
             <div className="left-column">
               <img src={Target} alt=""/>
               <h4 className="cs-subtitle-2">Design for Target Audience</h4>
@@ -398,6 +399,9 @@ export const Aprio = () => {
 
       <img className="margin-bottom-160px full-width-image anchor-area" id="final-image" src={AprioFinalImage}
            alt=""/>
+
+      <RedirectLinks currentPage="aprio" prevCaseStudy="finwell" prevCaseStudyText="FinWell" nextCaseStudy="access"
+                     nextCaseStudyText="Access"/>
     </div>
   )
 }

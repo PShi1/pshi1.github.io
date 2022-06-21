@@ -38,7 +38,7 @@ export const Header = () => {
 
   return (
     <div className="nav-wrapper active" id="nav-wrapper">
-      <nav className="navbar">
+      <nav className="navbar" id="navbar-inner">
         <div className="logo">
           <a href="/" className="">
             <div className="invert-target">
@@ -46,8 +46,10 @@ export const Header = () => {
               <img className="logo2" id="logo" src={LogoActive} alt="logo" width="80px" height="80px" align="center"/>
             </div>
             <div className="">
-              <img className="logo1" id="logo-light" src={LogoLight} alt="logo" width="80px" height="80px" align="center"/>
-              <img className="logo2" id="logo-light" src={LogoLightActive} alt="logo" width="80px" height="80px" align="center"/>
+              <img className="logo1" id="logo-light" src={LogoLight} alt="logo" width="80px" height="80px"
+                   align="center"/>
+              <img className="logo2" id="logo-light" src={LogoLightActive} alt="logo" width="80px" height="80px"
+                   align="center"/>
             </div>
           </a>
         </div>

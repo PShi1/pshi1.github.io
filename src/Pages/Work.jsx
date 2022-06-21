@@ -15,15 +15,15 @@ import {Link} from "react-router-dom";
 export const Work = () => {
   const tags = ["all-tag", "web-tag", "mobile-tag", "prototyping-tag", "design-system-tag"];
   const [currentTag, setCurrentTag] = useState("all-tag");
-  const allCards = ["access-card", "aprio-card", "finwell-card"];
+  const allCards = ["finwell-card", "access-card", "aprio-card"];
   const webCards = ["access-card", "sponsorcircle-card", "aprio-card", "pivot-card"];
-  const mobileCards = ["sponsorcircle-card", "knowbie-card", "finwell-card"];
-  const prototypingCards = ["knowbie-card", "pivot-card", "finwell-card"];
-  const designSystemCards = ["access-card", "pivot-card", "finwell-card"];
+  const mobileCards = ["finwell-card", "sponsorcircle-card", "knowbie-card"];
+  const prototypingCards = ["finwell-card", "access-card", "knowbie-card", "pivot-card"];
+  const designSystemCards = ["access-card", "pivot-card"];
   const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
@@ -211,17 +211,17 @@ export const Work = () => {
       let pos = firstCard.offsetTop;
       if (scroll + innerHeight / 1.1 >= pos) {
         setFirstRender(false);
-        setTimeout(function() {
-          accessCard.classList.add("play-animation");
+        setTimeout(function () {
+          finwellCard.classList.add("play-animation");
         }, 300);
 
-        setTimeout(function() {
+        setTimeout(function () {
           // knowbieCard.classList.add("play-animation");
-          aprioCard.classList.add("play-animation");
-          }, 400);
+          accessCard.classList.add("play-animation");
+        }, 400);
 
-        setTimeout(function() {
-          finwellCard.classList.add("play-animation");
+        setTimeout(function () {
+          aprioCard.classList.add("play-animation");
           // sponsorcircleCard.classList.add("play-animation");
           // pivotCard.classList.add("play-animation");
         }, 700);
@@ -245,7 +245,7 @@ export const Work = () => {
         <div className="header-outer-div">
           <div className="row">
             <div className="header-area intro-fade">
-              <h1>Hey there! -- I'm Emma</h1>
+              <h1>Hey there! -- I'm Emma.</h1>
             </div>
           </div>
 
@@ -253,9 +253,10 @@ export const Work = () => {
             <div className="intro-fade">
               <p className="b0">A coffee-infused ☕ <strong className="off-white-strong-font-style">Product
                 Designer</strong> based in
-                Vancouver 🍁</p>
-              <p className="b0 margin-bottom-80px">Currently building 0 -> 1 products @ <strong
-                className="off-white-strong-font-style">Moken Agency</strong>.</p>
+                <strong className="off-white-strong-font-style"> Vancouver.</strong> 🍁</p>
+              <p className="b0 margin-bottom-80px"><strong
+                className="off-white-strong-font-style">Currently building 0 -> 1 products </strong>@ Moken Agency.
+              </p>
               <p className="typewriter-prefix b0 off-white-text">I'm also</p>
               <div className="typewrite"/>
             </div>
@@ -294,6 +295,11 @@ export const Work = () => {
 
         <div id="case-studies-container">
           <div className="minus-margin-sides">
+            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
+              <img className="first-active" src={FinWellCard} alt=""/>
+              <img className="first-inactive" src={FinWellCardActive} alt=""/>
+            </Link>
+
             <Link className="cards-div active appear-on-scroll-2" to="/access" id="access-card">
               <img className="first-active" src={AccessCard} alt=""/>
               <img className="first-inactive" src={AccessCardActive} alt=""/>
@@ -318,11 +324,6 @@ export const Work = () => {
             {/*  <img className="first-active" src={PivotCard} alt=""/>*/}
             {/*  <img className="first-inactive" src={PivotCardActive} alt=""/>*/}
             {/*</Link>*/}
-
-            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
-              <img className="first-active" src={FinWellCard} alt=""/>
-              <img className="first-inactive" src={FinWellCardActive} alt=""/>
-            </Link>
           </div>
 
 

@@ -8,6 +8,10 @@ import MailLight from '../Assets/FooterImages/MailLight.svg';
 import LinkedinLight from '../Assets/FooterImages/LinkedinLight.svg';
 import MailLightActive from "../Assets/FooterImages/MailLightActive.svg";
 import LinkedinActiveLight from '../Assets/FooterImages/LinkedinLightActive.svg';
+import InstagramLight from '../Assets/FooterImages/Instagram.svg';
+import InstagramLightActive from '../Assets/FooterImages/InstagramActive.svg';
+import Instagram from '../Assets/FooterImages/InstagramLight.svg';
+import InstagramActive from '../Assets/FooterImages/InstagramLightActive.svg';
 import {copyEmail} from "../App";
 
 export const Footer = () => {
@@ -33,7 +37,11 @@ export const Footer = () => {
     window.open("https://www.linkedin.com/in/emmalili/", "_blank");
   }
 
-  let TxtType = function(el, toRotate, period) {
+  const redirectInstagram = () => {
+    window.open("https://www.instagram.com/emmalili_/", "_blank");
+  }
+
+  let TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -74,27 +82,48 @@ export const Footer = () => {
 
   return (
     <div className="footer" id="footer">
-      <div className="center-column margin-bottom-40px">
+      <div className="center-column margin-bottom-40px" id="footer-center-column">
         <div className="left-column">
           <p className="large-text margin-bottom-24px"> Let's connect for </p>
           <div className="typewrite-footer"/>
-          <p className="medium-text"> Designed & coded with ❤️ and lots of ☕️ </p>
-          <p className="small-text"> Emma Li © 2022 All Rights Reserved </p>
+          <p className="medium-text"> Designed with lots of ❤️ and ☕ / Coded with the help of <a className="clickable"
+                                                                                                 href={"https://www.linkedin.com/in/ptrshi/"}
+                                                                                                 target={"_blank"}>Peter
+            Shi</a></p>
         </div>
 
         <div className="right-column">
           <div className="image-container">
             <div className="logo">
-              <img className="footer-icon logo1 invert-target" id="linkedin-icon" src={Linkedin} alt="linkedin" onClick={redirectLinkedin}/>
-              <img className="footer-icon logo2 invert-target" id="linkedin-icon" src={LinkedinActive} alt="linkedin" onClick={redirectLinkedin}/>
-              <img className="footer-icon logo1" id="linkedin-icon-light" src={LinkedinLight} alt="linkedin" onClick={redirectLinkedin}/>
-              <img className="footer-icon logo2" id="linkedin-icon-light" src={LinkedinActiveLight} alt="linkedin" onClick={redirectLinkedin}/>
+              <img className="footer-icon logo1 invert-target" id="linkedin-icon" src={Linkedin} alt="linkedin"
+                   onClick={redirectLinkedin}/>
+              <img className="footer-icon logo2 invert-target" id="linkedin-icon" src={LinkedinActive} alt="linkedin"
+                   onClick={redirectLinkedin}/>
+              <img className="footer-icon logo1" id="linkedin-icon-light" src={LinkedinLight} alt="linkedin"
+                   onClick={redirectLinkedin}/>
+              <img className="footer-icon logo2" id="linkedin-icon-light" src={LinkedinActiveLight} alt="linkedin"
+                   onClick={redirectLinkedin}/>
             </div>
             <div className="logo">
-              <img className="footer-icon logo1 invert-target" id="mail-icon" src={Mail} alt="email" onClick={() => copyEmail("footer")}/>
-              <img className="footer-icon logo2 invert-target" id="mail-icon" src={MailActive} alt="email" onClick={() => copyEmail("footer")}/>
-              <img className="footer-icon logo1" id="mail-icon-light" src={MailLight} alt="email" onClick={() => copyEmail("footer")}/>
-              <img className="footer-icon logo2" id="mail-icon-light" src={MailLightActive} alt="email" onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo1 invert-target" id="instagram-icon" src={Instagram} alt="instagram"
+                   onClick={redirectInstagram}/>
+              <img className="footer-icon logo2 invert-target" id="instagram-icon" src={InstagramActive}
+                   alt="instagram"
+                   onClick={redirectInstagram}/>
+              <img className="footer-icon logo1" id="instagram-icon-light" src={InstagramLight} alt="instagram"
+                   onClick={redirectInstagram}/>
+              <img className="footer-icon logo2" id="instagram-icon-light" src={InstagramLightActive} alt="instagram"
+                   onClick={redirectInstagram}/>
+            </div>
+            <div className="logo">
+              <img className="footer-icon logo1 invert-target" id="mail-icon" src={Mail} alt="email"
+                   onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo2 invert-target" id="mail-icon" src={MailActive} alt="email"
+                   onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo1" id="mail-icon-light" src={MailLight} alt="email"
+                   onClick={() => copyEmail("footer")}/>
+              <img className="footer-icon logo2" id="mail-icon-light" src={MailLightActive} alt="email"
+                   onClick={() => copyEmail("footer")}/>
             </div>
             <p className="cs-body" id="email-copied">Copied!</p>
 

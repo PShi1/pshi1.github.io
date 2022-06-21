@@ -30,6 +30,7 @@ import {
   cursorLightModeInnerOpacity,
   cursorLightModeOuterOpacity
 } from "../Components/AnimatedCursor";
+import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Access = () => {
   useEffect(() => {
@@ -118,8 +119,8 @@ export const Access = () => {
           ecosystem
           of software products.</h2>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="context-title">Context</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">The design team at Moken Agency was
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="context-title">Context</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">The design team at Moken Agency was
           designing
           and launching a suite of tools designed to digitize the agency experience and help various user groups in
           the
@@ -134,8 +135,8 @@ export const Access = () => {
             to
             support the scalability and consistency of our designs.</strong></p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="what-did-i-do-title">What Did I Do?</h3>
-        <ul className="margin-bottom-40px">
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="my-contributions-title">My Contributions</h3>
+        <ul className="margin-bottom-80px">
           <li className="cs-body"><strong className="highlight">I led the entire design system project as a product
             designer.</strong></li>
           <li className="cs-body"><strong className="highlight">I defined our design system's preliminary structure,
@@ -151,15 +152,15 @@ export const Access = () => {
             using it.</strong></li>
         </ul>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">6 months (Q2 2021 -> Q4 2021)</strong>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-timeline-title">Project Timeline</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">6 months (Q2 2021 -> Q4 2021)</strong>
         </p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-type-title">Project Type</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
         <p className="cs-body">Collaborative (sub-team of 6), Work Project, Full Case Study, Web</p>
-        <p className="cs-body margin-bottom-40px">User Research, Usability Testing, Prototyping, Design System</p>
+        <p className="cs-body margin-bottom-80px">User Research, Usability Testing, Prototyping, Design System</p>
 
-        <h3 className="cs-subtitle margin-bottom-16px sub-anchor-area" id="project-tools-title">Project Tools</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Jira, Confluence,
           Slack</strong></p>
       </div>
@@ -544,6 +545,9 @@ export const Access = () => {
       </div>
 
       <img className="anchor-area" id="final-image" src={AccessFinalImage} alt=""/>
+
+      <RedirectLinks currentPage="access" prevCaseStudy="aprio" prevCaseStudyText="Aprio" nextCaseStudy="finwell"
+                     nextCaseStudyText="FinWell"/>
     </div>
   )
 }
