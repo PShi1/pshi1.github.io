@@ -80,16 +80,6 @@ export const setPageToLightMode = () => {
   if (backToTopArrow) {
     backToTopArrow.src = ArrowUpWhite;
   }
-
-  let header = document.getElementById("navbar-inner");
-  if (header) {
-    header.style.width = "55%";
-  }
-
-  let footer = document.getElementById("footer-center-column");
-  if (footer) {
-    footer.style.width = "55%";
-  }
 }
 
 export const setPageToDarkMode = () => {
@@ -120,16 +110,6 @@ export const setPageToDarkMode = () => {
   let backToTopArrow = document.getElementById("back-to-top-arrow");
   if (backToTopArrow) {
     backToTopArrow.src = ArrowUpBlack;
-  }
-
-  let header = document.getElementById("navbar-inner");
-  if (header) {
-    header.style.width = "65%";
-  }
-
-  let footer = document.getElementById("footer-center-column");
-  if (footer) {
-    footer.style.width = "65%";
   }
 }
 

@@ -195,6 +195,9 @@ const AnchorLinks = ({callerType}) => {
           <h4 id="our-north-star-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("our-north-star-title")
           }}>Our North Star</h4>
+          <h4 id="preliminary-research-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("preliminary-research-title")
+          }}>Preliminary Research</h4>
         </div>
 
         <div className="group" id="creation-area-anchor">
@@ -210,15 +213,21 @@ const AnchorLinks = ({callerType}) => {
           <h4 id="patterns-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("patterns-title")
           }}>Patterns</h4>
+          <h4 id="process-documentation-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("process-documentation-title")
+          }}>Process Documentation</h4>
         </div>
 
         <div className="group" id="iteration-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("iteration-title")
           }}><strong className="blue-text">03</strong> - Iteration</h3>
-          <h4 id="what-i-learned-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("what-i-learned-title")
-          }}>What I Learned</h4>
+          <h4 id="user-feedback-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("user-feedback-title")
+          }}>User Feedback</h4>
+          <h4 id="gathered-insights-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("gathered-insights-title")
+          }}>Gathered Insights</h4>
           <h4 id="iterations-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("iterations-title")
           }}>Iterations</h4>
@@ -231,24 +240,27 @@ const AnchorLinks = ({callerType}) => {
           <h4 id="file-organization-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("file-organization-title")
           }}>File Organization</h4>
-          <h4 id="onboarding-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("onboarding-title")
-          }}>Onboarding</h4>
+          <h4 id="improved-onboarding-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("improved-onboarding-title")
+          }}>Improved Onboarding</h4>
         </div>
 
         <div className="group" id="impact-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("impact-title")
           }}><strong className="blue-text">05</strong> - Impact</h3>
-          <h4 id="next-steps-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("next-steps-title")
-          }}>Next Steps</h4>
         </div>
 
         <div className="group" id="reflection-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("reflection-title")
           }}><strong className="blue-text">06</strong> - Reflection</h3>
+          <h4 id="what-did-i-learn-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("what-did-i-learn-title")
+          }}>What Did I Learn?</h4>
+          <h4 id="next-steps-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("next-steps-title")
+          }}>Next Steps</h4>
         </div>
       </div>
     );
@@ -311,12 +323,9 @@ const AnchorLinks = ({callerType}) => {
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("reflection-title")
           }}><strong className="orange-text">04</strong> - Reflection</h3>
-          <h4 id="always-validate-user-assumptions-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("always-validate-user-assumptions-title")
-          }}>Always Validate User Assumptions</h4>
-          <h4 id="advocate-for-ux-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("advocate-for-ux-title")
-          }}>Advocate for UX</h4>
+          <h4 id="what-did-i-learn-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("what-did-i-learn-title")
+          }}>What Did I Learn?</h4>
           <h4 id="next-steps-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("next-steps-title")
           }}>Next Steps</h4>
@@ -409,15 +418,15 @@ const AnchorLinks = ({callerType}) => {
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("test-and-iterate-title")
           }}><strong className="yellow-text">05</strong> - Test & Iterate</h3>
-          <h4 id="interactive-prototypes-title-anchor" className="subgroup" onClick={() => {
-            findAndGoToLinkedTitle("interactive-prototypes-title")
-          }}>Interactive Prototypes</h4>
           <h4 id="usability-testing-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("usability-testing-title")
           }}>Usability Testing</h4>
           <h4 id="iterations-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("iterations-title")
           }}>Iterations</h4>
+          <h4 id="final-prototype-title-anchor" className="subgroup" onClick={() => {
+            findAndGoToLinkedTitle("final-prototype-title")
+          }}>Final Prototype</h4>
         </div>
 
         <div className="group" id="reflection-area-anchor">

@@ -94,7 +94,7 @@
   }
 
   .designed-solution {
-    width: $default-margin-width;
+    width: $default-case-study-margin;
     margin: auto;
 
     .solution-title {
@@ -187,7 +187,7 @@
 
       .right-column {
         width: 60%;
-        padding-top: 11vw;
+        padding-top: 8vw;
         display: inline-block;
         box-sizing: border-box;
       }
@@ -292,7 +292,7 @@
     }
 
     .prototype-button p:before, .prototype-button p:after {
-      content: "Jump to Prototype";
+      content: "Skip to Prototype";
     }
   }
 
@@ -428,12 +428,17 @@
 
   .large-number-font {
     font-family: $manrope-font-family;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     line-height: 200%;
     font-style: normal;
     font-weight: 700;
     color: black;
     margin-bottom: 0;
     margin-top: 0;
+  }
+
+  .figma-embed-wrapper {
+    width: 100%;
+    height: 40vw;
   }
 }

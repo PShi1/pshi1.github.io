@@ -36,6 +36,11 @@ body {
   margin: auto;
 }
 
+// Top Margins
+.margin-top-0px {
+  margin-top: 0 !important;
+}
+
 // Bottom Margins
 .margin-bottom-0px {
   margin-bottom: 0 !important;
@@ -353,6 +358,9 @@ h4 {
 }
 
 // 4. Shared Components
+*::-webkit-scrollbar {
+  width: 0;
+}
 
 #email-copied {
   color: $white !important;
@@ -745,10 +753,9 @@ h4 {
     color: $blackv2;
     font-size: 1.3vw;
     font-family: $manrope-font-family;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
   }
 
   .single-redirects {
@@ -798,6 +805,8 @@ h4 {
     font-weight: 300;
     font-size: 1.3vw;
     line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .spacing {
@@ -815,18 +824,6 @@ h4 {
 
   .constant-underline {
     border-bottom: 1px solid;
-  }
-
-  .finwell-yellow-underline {
-    border-color: $finwell-yellow !important;
-  }
-
-  .access-blue-underline {
-    border-color: $access-blue !important;
-  }
-
-  .aprio-orange-underline {
-    border-color: $aprio-orange !important;
   }
 
   .underline-effect:hover {

@@ -113,9 +113,11 @@ export const Access = () => {
       </div>
 
       <AnchorLinks callerType="access"/>
-      <div className="overview anchor-area" id="overview-area" key="overview-group">
+      <div className="overview anchor-area margin-bottom-160px" id="overview-area" key="overview-group">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>
-        <h2 className="cs-manrope margin-bottom-80px">I led a team to build and maintain a design system for an entire
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">I led a small team to <strong
+          className="highlight">build and
+          maintain an agency-wide design system</strong> for an entire
           ecosystem
           of software products.</h2>
 
@@ -137,7 +139,8 @@ export const Access = () => {
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="my-contributions-title">My Contributions</h3>
         <ul className="margin-bottom-80px">
-          <li className="cs-body"><strong className="highlight">I led the entire design system project as a product
+          <li className="cs-body"><strong className="highlight">I spearheaded the entire design system project as the
+            lead product
             designer.</strong></li>
           <li className="cs-body"><strong className="highlight">I defined our design system's preliminary structure,
             language, and process.</strong></li>
@@ -153,19 +156,20 @@ export const Access = () => {
         </ul>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">6 months (Q2 2021 -> Q4 2021)</strong>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">3 months (Q2 2021 -> Q3 2021)</strong>
         </p>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
-        <p className="cs-body">Collaborative (sub-team of 6), Work Project, Full Case Study, Web</p>
-        <p className="cs-body margin-bottom-80px">User Research, Usability Testing, Prototyping, Design System</p>
+        <p className="cs-body"><strong className="highlight">Collaborative (sub-team of 3), Work Project, Full Case
+          Study, Web</strong></p>
+        <p className="cs-body margin-bottom-80px">User Research, Prototyping, Usability Testing, Design System</p>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Jira, Confluence,
           Slack</strong></p>
       </div>
 
-      <div className="ideation margin-bottom-80px anchor-area" id="ideation-area" key="ideation-group">
+      <div className="ideation margin-bottom-160px anchor-area" id="ideation-area" key="ideation-group">
         <h2 className="cs-title margin-bottom-80px" id="ideation-title"><strong className="blue-text">01 </strong>-
           Ideation</h2>
         <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-are-users-experiencing-title">What Are
@@ -206,8 +210,8 @@ export const Access = () => {
           </div>
         </div>
 
-        <h3 className="cs-manrope margin-bottom-80px">We needed to create a design system that would bring structure
-          and organization to the entire design process.</h3>
+        <h3 className="cs-manrope-150-line-height margin-bottom-80px">We needed to create a design system that would
+          bring <strong className="highlight">structure and organization</strong> to the entire design process.</h3>
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="stakeholder-buy-in-title">Stakeholder Buy
           In</h3>
 
@@ -235,28 +239,29 @@ export const Access = () => {
         <div className="north-star-row margin-bottom-80px">
           <div className="spacing-div margin-bottom-80px">
             <div className="left-column">
-              <img src={Documentation} alt=""/>
-              <h4 className="cs-subtitle-2">Documentation</h4>
+              <img className="margin-bottom-24px" src={Documentation} alt=""/>
+              <h4 className="cs-subtitle-2 margin-bottom-24px">Documentation</h4>
               <p className="cs-body">We should create as much documentation as possible so that other users
                 like <strong className="highlight">developers and new team members can quickly get on the same
                   page.</strong></p>
             </div>
             <div className="center-column">
-              <img src={Eyes} alt=""/>
-              <h4 className="cs-subtitle-2">Consistency</h4>
+              <img className="margin-bottom-24px" src={Eyes} alt=""/>
+              <h4 className="cs-subtitle-2 margin-bottom-24px">Consistency</h4>
               <p className="cs-body">The new design system should be <strong className="highlight">the single source
                 of truth</strong> for all components and design elements.</p>
             </div>
             <div className="right-column">
-              <img src={Cog} alt=""/>
-              <h4 className="cs-subtitle-2">Process</h4>
+              <img className="margin-bottom-24px" src={Cog} alt=""/>
+              <h4 className="cs-subtitle-2 margin-bottom-24px">Process</h4>
               <p className="cs-body">We should take the time to create a workflow and process so that <strong
                 className="highlight">the design system is scalable into the future regardless of project or team
                 size.</strong></p>
             </div>
           </div>
 
-          <h3 className="cs-subtitle-2 margin-bottom-12px">Preliminary Research</h3>
+          <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="preliminary-research-title">Preliminary
+            Research</h3>
           <p className="cs-body">This was the first design system any of us had ever built, so we relied on research
             and followed the
             examples of some of the most recognized design systems such as Shopify’s <a className="cs-body"
@@ -269,10 +274,11 @@ export const Access = () => {
         </div>
       </div>
 
-      <div className="creation margin-bottom-80px anchor-area" id="creation-area" key="creation-group">
+      <div className="creation margin-bottom-160px anchor-area" id="creation-area" key="creation-group">
         <h2 className="cs-title margin-bottom-80px" id="creation-title"><strong className="blue-text">02 </strong>-
           Creation</h2>
-        <h3 className="cs-manrope margin-bottom-80px">We started by breaking down the existing design elements into
+        <h3 className="cs-manrope-150-line-height margin-bottom-80px">We started by breaking down the existing design
+          elements into
           three categories.</h3>
         <div className="row-42-58">
           <div className="left-column-42 right-padding-28px">
@@ -352,8 +358,11 @@ export const Access = () => {
           </div>
         </div>
 
-        <h2 className="cs-manrope margin-bottom-80px">
-          Once we had organized the existing chaos, we knew we needed to document a standard process for adding to and
+        <h3 className="cs-subtitle margin-bottom-24px sub-anchor-area" id="process-documentation-title">Process
+          Documentation</h3>
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">
+          Once we had organized the existing chaos, we knew we needed to <strong className="highlight">document a
+          standard process</strong> for adding to and
           maintaining the design system in the future.
         </h2>
         <img className="margin-bottom-80px" id="creation-flowchart" src={FlowChart} alt=""/>
@@ -364,10 +373,11 @@ export const Access = () => {
         </p>
       </div>
 
-      <div className="iteration margin-bottom-80px anchor-area" id="iteration-area" key="iteration-group">
+      <div className="iteration margin-bottom-160px anchor-area" id="iteration-area" key="iteration-group">
         <h2 className="cs-title margin-bottom-80px" id="iteration-title"><strong className="blue-text">03 </strong>-
           Iteration</h2>
-        <p className="cs-body margin-bottom-40px">
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-feedback-title">User Feedback</h3>
+        <p className="cs-body margin-bottom-80px">
           From the beginning, <strong className="highlight"> we wanted to involve other parallel teams as early on as
           possible</strong> since
           the design system had to be optimized for everyone to be considered a success. To achieve this, <strong
@@ -376,8 +386,8 @@ export const Access = () => {
           how we can improve
           our current design handoffs and what they thought about our current design system process.
         </p>
-        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="what-i-learned-title">What I Learned</p>
-        <ul className="margin-bottom-24px">
+        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="gathered-insights-title">Gathered Insights</p>
+        <ul className="margin-bottom-80px">
           <li className="cs-body"><strong className="highlight">The greatest pain point for the development team was
             figuring out how the screens were connected and the behaviour of the different components used in each
             design.</strong></li>
@@ -464,7 +474,8 @@ export const Access = () => {
           </div>
         </div>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="onboarding-title">Onboarding</h3>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="improved-onboarding-title">Improved
+          Onboarding</h3>
         <p className="cs-body margin-bottom-40px">
           <strong className="highlight">I came up with a way to onboard new team members by creating a guide in
             Confluence introducing the
@@ -516,18 +527,15 @@ export const Access = () => {
             company-wide review meeting; the response was astoundingly positive to all of our work and results. The
             work we started
             will continue to serve as the foundation for the future versions of the Moken Agency design system.</p>
-          <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="next-steps-title">Next Steps</p>
-          <p className="cs-body margin-bottom-80px">We’re planning to continue conducting monthly design system
-            meetings with all the
-            stakeholders to ensure the system is evolving at the same rate we are and so we can continue to find room
-            for improvement.</p>
         </div>
       </div>
 
-      <div className="reflection margin-bottom-160px anchor-area" id="reflection-area" key="reflection-group">
+      <div className="reflection margin-bottom-80px anchor-area" id="reflection-area" key="reflection-group">
         <h2 className="cs-title margin-bottom-80px" id="reflection-title"><strong className="blue-text">06 </strong>-
           Reflection</h2>
-        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="it-takes-two-to-tango-title">It Takes Two (And
+        <p className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-did-i-learn-title">What Did I Learn?</p>
+
+        <p className="cs-subtitle-2 margin-bottom-12px" id="it-takes-two-to-tango-title">It Takes Two (And
           A Lot More) To
           Tango</p>
         <p className="cs-body margin-bottom-40px"><strong className="highlight">Creating and maintaining a design
@@ -535,13 +543,20 @@ export const Access = () => {
           and forth conversation between all the users involved.</strong> Open communication and feedback should
           involve the input of everyone
           to ensure that it is serving its overall purpose. </p>
-        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="rome-wasn't-built-in-one-day-title">Rome
+        <p className="cs-subtitle-2 margin-bottom-12px" id="rome-wasn't-built-in-one-day-title">Rome
           Wasn't Built In One
           Day</p>
-        <p className="cs-body"><strong className="highlight">Design systems are constantly evolving and changing with
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">Design systems are constantly evolving
+          and changing with
           every new design and idea.</strong> We’re
           proud of creating the system’s foundation, and the long process helped me realize what a constant work in
           progress a design system is and should be.</p>
+
+        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="next-steps-title">Next Steps</p>
+        <p className="cs-body margin-bottom-80px">We’re planning to continue conducting monthly design system
+          meetings with all the
+          stakeholders to ensure the system is evolving at the same rate we are and so we can continue to find room
+          for improvement.</p>
       </div>
 
       <img className="anchor-area" id="final-image" src={AccessFinalImage} alt=""/>

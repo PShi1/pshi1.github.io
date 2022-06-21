@@ -17,7 +17,7 @@ export const RedirectLinks = ({prevCaseStudy, prevCaseStudyText, nextCaseStudy, 
       {/*    <img src={RightArrowRedirectLink} alt="" className="proper-arrow arrow"/>*/}
       {/*  </div>*/}
       {/*</div>*/}
-      <h3 className="looking-for-more">Looking for more?</h3>
+      <h3 className="looking-for-more margin-bottom-24px">Looking for more? 🤔</h3>
 
       <div className="multiple-redirects">
         <p onClick={() => window.location.assign("/#/")} className="redirect-font underline-effect clickable">All</p>
@@ -26,19 +26,19 @@ export const RedirectLinks = ({prevCaseStudy, prevCaseStudyText, nextCaseStudy, 
 
         {currentPage === "access" ?
           <p onClick={() => window.location.assign("/#/access")}
-             className="redirect-font constant-underline access-blue-underline">Access</p>
+             className="redirect-font constant-underline">Access</p>
           :
           <p onClick={() => window.location.assign("/#/access")}
-             className="redirect-font underline-effect clickable access-blue-underline">Access</p>}
+             className="redirect-font underline-effect clickable">Access</p>}
 
         <p className="redirect-font spacing">/</p>
 
         {currentPage === "finwell" ?
           <p onClick={() => window.location.assign("/#/finwell")}
-             className="redirect-font constant-underline finwell-yellow-underline">FinWell</p>
+             className="redirect-font constant-underline">FinWell</p>
           :
           <p onClick={() => window.location.assign("/#/finwell")}
-             className="redirect-font underline-effect clickable finwell-yellow-underline">FinWell</p>}
+             className="redirect-font underline-effect clickable">FinWell</p>}
 
         {/*{currentPage === "sponsorcircle" ? <></> :*/}
         {/*  <p className="redirect-font spacing">/</p>}*/}
@@ -50,10 +50,10 @@ export const RedirectLinks = ({prevCaseStudy, prevCaseStudyText, nextCaseStudy, 
 
         {currentPage === "aprio" ?
           <p onClick={() => window.location.assign("/#/aprio")}
-             className="redirect-font constant-underline aprio-orange-underline">Aprio</p>
+             className="redirect-font constant-underline">Aprio</p>
           :
           <p onClick={() => window.location.assign("/#/aprio")}
-             className="redirect-font underline-effect clickable aprio-orange-underline">Aprio</p>}
+             className="redirect-font underline-effect clickable">Aprio</p>}
       </div>
 
     </div>

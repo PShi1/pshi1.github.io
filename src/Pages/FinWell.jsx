@@ -43,6 +43,8 @@ import UserFlows2 from '../Assets/FinWellPageImages/UserFlows2.png';
 import UserFlows3 from '../Assets/FinWellPageImages/UserFlows3.png';
 import UserFlows4 from '../Assets/FinWellPageImages/UserFlows4.png';
 import {RedirectLinks} from "../Components/RedirectLinks";
+import Iterations1 from '../Assets/FinWellPageImages/Iterations1.png';
+import Iterations2 from '../Assets/FinWellPageImages/Iterations2.png';
 
 /**
  * FinWell page component
@@ -53,6 +55,7 @@ export const FinWell = () => {
   const userPersonasImages = [AnxiousAnnie, ConfidentCarl];
   const guerillaTestingImages = [GuerillaTesting1, GuerillaTesting2];
   const userFlowsImages = [UserFlows1, UserFlows2, UserFlows3, UserFlows4];
+  const iterationsImages = [Iterations1, Iterations2];
 
   /**
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
@@ -118,6 +121,13 @@ export const FinWell = () => {
     })
   }
 
+  const redirectToPrototype = () => {
+    let el = document.getElementById("final-prototype-title");
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   return (
     <div className="finwell-page">
       <AnchorLinks callerType="finwell"/>
@@ -125,7 +135,7 @@ export const FinWell = () => {
         <img src={FinWellHeaderImage} alt="" className="finwell-header" id="header-image"/>
       </div>
 
-      <div className="overview anchor-area" id="overview-area">
+      <div className="overview margin-bottom-160px anchor-area" id="overview-area">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">FinWell is an app that <strong
           className="highlight">
@@ -147,7 +157,7 @@ export const FinWell = () => {
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="what-did-i-do-title">What Did I Do?</h3>
         <p className="cs-body margin-bottom-0px"><strong className="highlight">FinWell is a solo course project I did
           as part of my UX/UI program.</strong> Some of my specific work on this project include:</p>
-        <ul className="margin-bottom-80px">
+        <ul className="margin-bottom-80px margin-top-0px">
 
           <li className="cs-body">I brainstormed possible solutions and <strong className="highlight">conducted guerilla
             tests with sketch prototypes</strong> to test my hypothesis.
@@ -165,21 +175,23 @@ export const FinWell = () => {
         </ul>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">4 weeks (May 2021)</strong>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">6 weeks (Q2 2021)</strong>
         </p>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-type-title">Project Type</h3>
-        <p className="cs-body"><strong className="highlight">Sole Designer, Course Project, Full Case Study,
+        <p className="cs-body margin-bottom-0px"><strong className="highlight">Sole Designer/Researcher, Course Project,
+          Full Case Study,
           Mobile</strong></p>
-        <p className="cs-body margin-bottom-80px">User Research, Brainstorming, Solution Validation, Sketching,
-          Wireframing, Usability Testing, Prototyping, Branding</p>
+        <p className="cs-body margin-bottom-80px margin-top-0px">User Research, Brainstorming, Solution Validation,
+          Sketching,
+          Wireframing, Style Guide, Prototyping, Usability Testing</p>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-tools-title">Project Tools</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Google Forms, Miro, LucidSpark,
-          Adobe Illustrator, Protopie</strong></p>
+          Adobe Illustrator</strong></p>
       </div>
 
-      <div className="process margin-bottom-80px anchor-area" id="process-area">
+      <div className="process margin-bottom-160px anchor-area" id="process-area">
         <h2 className="cs-title margin-bottom-80px" id="process-title"><strong className="yellow-text">01</strong> -
           Process</h2>
         <div className="column">
@@ -281,13 +293,15 @@ export const FinWell = () => {
         </div>
 
         <div className="link-to-prototype-container">
-          <div className="prototype-button clickable">
+          <div className="prototype-button clickable" onClick={() => {
+            redirectToPrototype()
+          }}>
             <p className="cs-body"/>
           </div>
         </div>
       </div>
 
-      <div className="discovery margin-bottom-80px anchor-area" id="discovery-area">
+      <div className="discovery margin-bottom-120px anchor-area" id="discovery-area">
         <h2 className="cs-title margin-bottom-80px" id="discovery-title"><strong className="yellow-text">03</strong> -
           Discovery</h2>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">I started the project with a vague idea that I
@@ -299,7 +313,8 @@ export const FinWell = () => {
           </strong></h2>
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="secondary-research-title">Secondary
           Research</h4>
-        <p className="cs-body margin-bottom-80px">Through reviewing literary papers and other secondary sources
+        <p className="cs-body margin-bottom-80px margin-top-0px">Through reviewing literary papers and other secondary
+          sources
           online, I learned that with student and credit debt rising, the average person’s ability to budget and save is
           diminishing from year to year. <strong className="highlight">
             This is especially prevalent in young adults since there is minimal exposure to financial literacy through
@@ -307,31 +322,40 @@ export const FinWell = () => {
           </strong>
         </p>
 
-        <div className="secondary-research-row margin-bottom-80px">
-          <div className="spacing-div margin-bottom-80px">
+        <div className="secondary-research-row margin-bottom-40px">
+          <div className="margin-bottom-12px">
             <div className="left-column">
               <img className="emoji margin-bottom-12px" src={StressedEmoji} alt=""/>
-              <h4 className="large-number-font">63%</h4>
-              <p className="cs-body">of Millennials feel anxious when thinking about their financial situation. <strong
-                className="grey-text no-bold">(</strong><u
-                className="grey-text">TIAA
-                Institute</u><strong className="grey-text no-bold">)</strong></p>
+              <h4 className="large-number-font margin-bottom-12px">63%</h4>
+              <p className="cs-body margin-top-0px">of Millennials feel anxious when thinking about their financial
+                situation. <strong
+                  className="grey-text no-bold">(</strong><u onClick={() => {
+                  window.open('https://gflec.org/wp-content/uploads/2020/08/Millennials-and-Money-Technical-Report-August2020.pdf?x38887')
+                }}
+                                                             className="grey-text clickable">TIAA
+                  Institute</u><strong className="grey-text no-bold">)</strong></p>
             </div>
             <div className="center-column">
               <img className="emoji margin-bottom-12px" src={ParentChildSign} alt=""/>
-              <h4 className="large-number-font">60%</h4>
-              <p className="cs-body">of parents report giving their kids financial help in the past year. <strong
-                className="grey-text no-bold">(</strong><u
-                className="grey-text">Pew Research
-                Center</u><strong className="grey-text no-bold">)</strong></p>
+              <h4 className="large-number-font margin-bottom-12px">60%</h4>
+              <p className="cs-body margin-top-0px">of parents report giving their kids financial help in the past
+                year. <strong
+                  className="grey-text no-bold">(</strong><u
+                  className="grey-text clickable" onClick={() => {
+                  window.open('https://www.pewresearch.org/social-trends/2019/10/23/majority-of-americans-say-parents-are-doing-too-much-for-their-young-adult-children/')
+                }}>Pew Research
+                  Center</u><strong className="grey-text no-bold">)</strong></p>
             </div>
             <div className="right-column">
               <img className="emoji margin-bottom-12px" src={Books} alt=""/>
-              <h4 className="large-number-font">Only 24%</h4>
-              <p className="cs-body">of Millennials demonstrate the ability to understand basic financial concepts.
+              <h4 className="large-number-font margin-bottom-12px">Only 24%</h4>
+              <p className="cs-body margin-top-0px">of Millennials demonstrate the ability to understand basic financial
+                concepts.
                 <strong
                   className="grey-text no-bold">(</strong><u
-                  className="grey-text">GFLEC</u><strong className="grey-text no-bold">)</strong></p>
+                  className="grey-text clickable" onClick={() => {
+                  window.open('https://gflec.org/wp-content/uploads/2016/09/pwc-millenials-and-financial-literacy-3.pdf?x93521')
+                }}>GFLEC</u><strong className="grey-text no-bold">)</strong></p>
             </div>
           </div>
         </div>
@@ -344,7 +368,8 @@ export const FinWell = () => {
 
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="competitive-analysis-title">Competitive
           Analysis</h4>
-        <p className="cs-body margin-bottom-40px">I wanted to create a product that offered more than current solutions
+        <p className="cs-body margin-bottom-40px margin-top-0px">I wanted to create a product that offered more than
+          current solutions
           already on the
           market. <strong
             className="highlight">
@@ -370,12 +395,13 @@ export const FinWell = () => {
         </ul>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="primary-research-title">Primary Research</h3>
-        <p className="cs-body margin-bottom-0px"><strong className="highlight">I sent out a Google Forms screener survey
+        <p className="cs-body margin-bottom-0px margin-top-0px"><strong className="highlight">I sent out a Google Forms
+          screener survey
           to my network and
           anonymously online
           on Reddit to:</strong></p>
 
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body">Validate the assumption that this was a problem most prevalent amongst young adults
             (18-30 years old)
           </li>
@@ -387,32 +413,35 @@ export const FinWell = () => {
 
         <img className="image margin-bottom-60px" src={Survey} alt=""/>
 
-        <div className="secondary-research-row margin-bottom-60px">
-          <div className="spacing-div margin-bottom-80px">
+        <div className="secondary-research-row margin-bottom-40px">
+          <div className="margin-bottom-40px">
             <div className="left-column">
-              <h4 className="large-number-font margin-bottom-0px">60%</h4>
-              <p className="cs-body">of respondents rated their own financial literacy a 3 or lower on a scale of
+              <h4 className="large-number-font margin-bottom-12px">60%</h4>
+              <p className="cs-body margin-top-0px">of respondents rated their own financial literacy a 3 or lower on a
+                scale of
                 1-5.</p>
             </div>
             <div className="center-column">
-              <h4 className="large-number-font margin-bottom-0px">55%</h4>
-              <p className="cs-body">of respondents said that impulsive purchases made up the majority of their expenses
+              <h4 className="large-number-font margin-bottom-12px">55%</h4>
+              <p className="cs-body margin-top-0px">of respondents said that impulsive purchases made up the majority of
+                their expenses
                 outside of the necessities.</p>
             </div>
             <div className="right-column">
-              <h4 className="large-number-font margin-bottom-0px">85%</h4>
-              <p className="cs-body">of respondents can recall "overspending" on a purchase in the last month due to an
+              <h4 className="large-number-font margin-bottom-12px">85%</h4>
+              <p className="cs-body margin-top-0px">of respondents can recall "overspending" on a purchase in the last
+                month due to an
                 emotional trigger.</p>
             </div>
           </div>
         </div>
 
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-interviews-title">User Interviews</h4>
-        <p className="cs-body margin-bottom-0px">Out of the respondents to the screener survey, <strong
+        <p className="cs-body margin-bottom-0px margin-top-0px">Out of the respondents to the screener survey, <strong
           className="highlight">I chose 8
           respondents for in-depth follow-up interviews.</strong> These
           respondents were chosen based on four criteria:</p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body">Fell into the target age group of 18 - 30 years old
           </li>
           <li className="cs-body">Expressed interest in learning more about financial literacy and using financial tools
@@ -427,16 +456,18 @@ export const FinWell = () => {
         <p className="cs-body margin-bottom-40px"><strong className="highlight">These interviews were conducted with the
           goal to talk more in-depth about the motivations behind some of their financial decisions and why it was so
           hard to build better financial habits.</strong></p>
-        <img src={UserInterviews} alt="" className="margin-bottom-80px image"/>
+        <img src={UserInterviews} alt="" className="margin-bottom-40px image"/>
 
-        <h4 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="affinity-map-title">Affinity Map</h4>
-        <p className="cs-body margin-bottom-60px"><strong className="highlight">Afterwards, I organized my interview
+        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="affinity-map-title">Affinity Map</h4>
+        <p className="cs-body margin-bottom-60px margin-top-0px"><strong className="highlight">Afterwards, I organized
+          my interview
           notes into sticky notes and did affinity mapping in Miro to discover shared insights.</strong></p>
 
         <img className="image margin-bottom-40px" src={AffinityMap} alt=""/>
 
-        <h4 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="user-personas-title">User Personas</h4>
-        <p className="cs-body margin-bottom-40px">Based on the previous research, I discovered that the large user group
+        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-personas-title">User Personas</h4>
+        <p className="cs-body margin-bottom-40px margin-top-0px">Based on the previous research, I discovered that the
+          large user group
           of young adults
           can be further
           broken
@@ -449,12 +480,13 @@ export const FinWell = () => {
         <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="empathy-maps-title">Empathy Maps</h4>
         <Gallery className="margin-bottom-80px" images={empathyMapImages} uniquePrefix={"empathy-maps"}/>
 
-        <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="problem-statement-title">Problem
+        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="problem-statement-title">Problem
           Statement</h4>
-        <p className="cs-body margin-bottom-12px"><strong className="highlight">The main findings synthesized from
+        <p className="cs-body margin-bottom-0px margin-top-0px"><strong className="highlight">The main findings
+          synthesized from
           research include:
         </strong></p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-120px margin-top-0px">
           <li className="cs-body"><strong className="highlight">Budgeting and avoiding debt are the most prevalent
             financial topics that young adults struggle with.</strong>
           </li>
@@ -477,17 +509,19 @@ export const FinWell = () => {
           </li>
         </ul>
 
-        <p className="cs-manrope-150-line-height margin-bottom-80px"><strong className="highlight">How might we help
+        <p className="cs-manrope-150-line-height margin-bottom-40px"><strong className="highlight">How might we help
           young adults (18-30
           years old) better control their impulsive spending habits and build better long-term financial
           habits?</strong></p>
       </div>
 
-      <div className="design anchor-area" id="design-area">
-        <h2 className="cs-title margin-bottom-80px" id="design-title"><strong className="yellow-text">04</strong> -
+      <div className="design anchor-area margin-bottom-160px" id="design-area">
+        <h2 className="cs-title margin-bottom-100px margin-top-0px" id="design-title"><strong
+          className="yellow-text">04</strong> -
           Design</h2>
-        <h3 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="ideation-title">Ideation</h3>
-        <p className="cs-body margin-bottom-80px">I wanted to ensure I covered as many areas as possible when
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="ideation-title">Ideation</h3>
+        <p className="cs-body margin-bottom-80px margin-top-0px">I wanted to ensure I covered as many areas as possible
+          when
           brainstorming, so I took time to do various exercises to think outside the box, such as mind mapping and
           storyboarding. <strong className="highlight">I often referred back to the synthesized user research to make
             sure that every solution solves the problem statement and addresses at least one if not more of the pain
@@ -495,8 +529,9 @@ export const FinWell = () => {
 
         <img className="image margin-bottom-80px" src={Ideation} alt=""/>
 
-        <h3 className="cs-subtitle margin-bottom-0px sub-anchor-area" id="guerilla-testing-title">Guerilla Testing</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">Instead of arbitrarily choosing a
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="guerilla-testing-title">Guerilla Testing</h3>
+        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">Instead of arbitrarily
+          choosing a
           solution out of the 4, I conducted some basic guerilla testing by approaching users in the target group at a
           coffee shop, presenting the different concepts to them, and gathering user feedback on all 4.</strong> I did
           this by presenting them with minimalistic wireframes alongside a short explanation of the proposed features
@@ -506,7 +541,8 @@ export const FinWell = () => {
         <Gallery className="margin-bottom-80px" images={guerillaTestingImages} uniquePrefix={"guerilla-testing"}/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="testing-feedback-title">Testing Feedback</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">After gathering the feedback from 10
+        <p className="cs-body margin-bottom-80px margin-top-0px"><strong className="highlight">After gathering the
+          feedback from 10
           different target users, I decided to proceed with solution #4 as the primary solution while incorporating
           budgeting elements of solution #1 to retain users of the app.</strong> Most users were interested in solution
           #4 since it was something they hadn’t seen before, and many saw it as something they would use. Participants
@@ -520,7 +556,7 @@ export const FinWell = () => {
           allowing users to track how they feel about purchases and providing useful insights over time.</p>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-stories-title">User Stories</h3>
-        <div className="user-stories-container">
+        <div className="user-stories-container margin-top-0px">
           <div className="left-column">
             <p className="cs-body margin-bottom-24px"><strong className="highlight">I created user stories based on the
               chosen solution and user pain points gathered from research.</strong></p>
@@ -533,21 +569,24 @@ export const FinWell = () => {
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="information-architecture-title">Information
           Architecture</h3>
-        <p className="cs-body margin-bottom-24px">I wanted to organize the user stories in a way that made sense for
+        <p className="cs-body margin-bottom-24px margin-top-0px">I wanted to organize the user stories in a way that
+          made sense for
           users, so I <strong className="highlight">created this information architecture map based on familiar
             navigation and UX patterns.</strong></p>
         <img src={InformationArchitecture} alt="" className="image margin-bottom-80px"/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="sketching-wireframes-title">Sketching /
           Wireframes</h3>
-        <p className="cs-body margin-bottom-24px"><strong className="highlight">Next, I proceeded to sketch out the most
+        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">Next, I proceeded to
+          sketch out the most
           critical user flows and turn the sketches into low-fidelity wireframes.</strong> I focused on keeping the
           end-users in mind while designing by keeping elements simple to understand and using graphs/iconography
           wherever possible.</p>
         <img className="image margin-bottom-80px" src={SketchingWireframes} alt=""/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide</h3>
-        <p className="cs-body margin-bottom-24px"><strong className="highlight">I created a style guide to narrow
+        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">I created a style guide
+          to narrow
           FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong> Creating
           it also made me reflect on why I chose the visual elements I did and what they represent.</p>
         <Gallery className="margin-bottom-80px" images={styleGuideImages} uniquePrefix={"style-guide"}/>
@@ -556,60 +595,134 @@ export const FinWell = () => {
         <Gallery className="margin-bottom-80px" images={userFlowsImages} uniquePrefix={"user-flows"}/>
       </div>
 
-      <div className="test-and-iterate anchor-area" id="test-and-iterate-area">
-        <h2 className="cs-title margin-bottom-80px" id="test-and-iterate-title"><strong
+      <div className="test-and-iterate margin-bottom-160px anchor-area" id="test-and-iterate-area">
+        <h2 className="cs-title margin-bottom-120px" id="test-and-iterate-title"><strong
           className="yellow-text">05</strong> - Test & Iterate</h2>
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="interactive-prototypes-title">Interactive
-          Prototypes</h3>
-        <p className="cs-body margin-bottom-24px"><strong className="highlight">Next, I proceeded to sketch out the most
-          critical user flows and turn the sketches into low-fidelity wireframes.</strong></p>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="usability-testing-title">Usability
           Testing</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">After gathering the feedback from 10
-          different target users, I decided to proceed with solution #4 as the primary solution while incorporating
-          budgeting elements of solution #1 to retain users of the app.</strong> Most users were interested in solution
-          #4 since it was something they hadn’t seen before, and many saw it as something they would use. Participants
-          also expressed interest in solution #1. Still, they noted that there were many existing options in the market,
-          and it would have to have some innovative features to be competitive. As for solutions #2 and #3, participants
-          raised concerns about how it would be challenging to personalize the content based on the different users and
-          how the app would have difficulty sustaining a long-term user base while providing value.</p>
+        <p className="cs-body margin-bottom-40px margin-top-0px">While I had some research and heuristics to help guide
+          my
+          decision-making, I knew I needed to do testing with actual users to validate the solution. <strong
+            className="highlight">I ran 15 users
+            through a 30-minute extended usability test to test my solution using interactive prototypes on
+            Figma.</strong> Using a
+          series of tasks, I wanted to learn about their first impressions of the app, if they could navigate the app or
+          find the location of the features, and observe their reactions and task completion time.
+        </p>
+
+        <p className="cs-body margin-bottom-0px"><strong className="highlight">I started the sessions by asking the
+          testers a couple of questions to determine
+          their demographic and general spending habits to see how well they would fit into my target user
+          group.</strong> Questions included:</p>
+        <ul className="margin-top-0px margin-bottom-40px">
+          <li className="cs-body">How often have you bought something on an impulse?</li>
+          <li className="cs-body">Describe the last time you remember yourself in a scenario making an impulsive
+            purchase
+          </li>
+          <li className="cs-body">What are the main factors that influence your buying decisions?</li>
+        </ul>
+
+        <p className="cs-body margin-bottom-0px"><strong className="highlight">To test the design and functionality of
+          FinWell, I asked
+          testers to perform a series of tasks and observed how they performed and how long each task took
+          them.</strong> The testers were instructed to think aloud, and I would only step in and gently guide them when
+          they spent over 3 minutes stuck on a task. The tasks covered all of the main functionalities and included:</p>
+
+        <ul className="margin-top-0px margin-bottom-40px">
+          <li className="cs-body">Signing up for a new account and navigating to the home screen</li>
+          <li className="cs-body">Creating a new monthly budget for $3000
+          </li>
+          <li className="cs-body">Creating a goal for a new cell phone that costs $900</li>
+          <li className="cs-body">Creating a journal entry for the new MacBook they just purchased</li>
+          <li className="cs-body">Finding a past journal entry about a blue dress and deleting it</li>
+          <li className="cs-body">Viewing an insight on your spending habits and expanding it to view recommended
+            actions items
+          </li>
+        </ul>
+
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">After the tasks, I ended the testing
+          with a general qualitative feedback session, asking them questions about their opinion on the design,
+          functionality, and usability (rate out of 10).</strong></p>
+
+        <p className="cs-manrope-150-line-height margin-bottom-80px"><strong className="highlight">Subjectively, 11 out
+          of 12 participants
+          expressed that they enjoy the look and feel of the FinWell app. The average usability score was also high at
+          8.8/10.</strong></p>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="iterations-title">Iterations</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">Next, I proceeded to sketch out the most
+        <p className="cs-body margin-bottom-0px margin-top-0px">Some issues were noted and raised by multiple users;
+          these include: </p>
+        <ul className="margin-top-0px margin-bottom-0px">
+          <li className="cs-body">Sometimes it’s hard to figure out precisely what I’m supposed to be doing and why
+            (especially noticeable amongst users who had never used a similar app)
+          </li>
+          <li className="cs-body">The insights screen has way too much information, and I don’t know what is useful and
+            not
+          </li>
+        </ul>
+        <p className="cs-body margin-bottom-40px margin-top-0px">The following are the edits I decided to make to the
+          designs after
+          reviewing the sessions and overall feedback:</p>
+        <Gallery className="margin-bottom-80px" images={iterationsImages} uniquePrefix={"iterations"}/>
+
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="final-prototype-title">Final
+          Prototype</h3>
+        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">Next, I proceeded to
+          sketch out the most
           critical user flows and turn the sketches into low-fidelity wireframes.</strong></p>
-        <div className="margin-bottom-80px"/>
+        <div className="figma-embed-wrapper" id="prototype-container">
+          <iframe width="100%" height="100%"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FunLE9AKolaQI5LchZdZ30e%2FFinWell%3Fpage-id%3D72%253A0%26node-id%3D727%253A8448%26viewport%3D1682%252C7008%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D727%253A8448"
+                  allowFullScreen/>
+        </div>
       </div>
 
-      <div className="reflection margin-bottom-160px anchor-area" id="reflection-area" key="reflection-group">
+      <div className="reflection margin-bottom-80px anchor-area" id="reflection-area" key="reflection-group">
         <h2 className="cs-title margin-bottom-80px" id="reflection-title"><strong className="yellow-text">06 </strong>-
           Reflection</h2>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="concept-feedback-title">Concept Feedback</h3>
-        <p className="cs-body">Throughout the process of creating AMP, I had the pleasure and opportunity to talk to
-          employees at all different levels within Aprio. <strong className="highlight">This helped me confirm the
-            importance of validating user assumptions because through the conversations, I realized that higher-level
-            employees such as directors or managers often miss the mark or are completely incorrect in identifying what
-            the problems lower-level employees such as associates struggle with.</strong></p>
+        <p className="cs-body margin-bottom-0px margin-top-0px">I shared the finished prototype of FinWell with a
+          members of the online
+          design community
+          as well as other young adults in my network and received positive feedback. Here are a few quotes:</p>
+        <p className="cs-body margin-top-0px margin-bottom-0px">“It’s a great idea and something I haven’t seen on the
+          market yet.”
+        </p>
+        <p className="cs-body margin-top-0px margin-bottom-80px">“FinWell could be useful for me since it prompts me to
+          reflect on purchases and be
+          more mindful of what I’m spending money on.”
+        </p>
 
-        <h3 className="cs-subtitle margin-bottom-24px sub-anchor-area" id="what-did-i-learn-title">What Did I
+        <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-did-i-learn-title">What Did I
           Learn?</h3>
-        <p className="cs-subtitle-2 margin-bottom-12px">It Takes Two (And A Lot More) To Tango</p>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">Creating and maintaining a design system
-          is a constant back and forth conversation between all the users involved.</strong> Open communication and
-          feedback should involve the input of everyone to ensure that it is serving its overall purpose.</p>
-        <p className="cs-subtitle-2 margin-bottom-12px">Rome Wasn't Built in One Day</p>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">Design systems are constantly evolving
-          and changing with every new design and idea.</strong> We’re proud of creating the system’s foundation, and the
-          long process helped me realize what a constant work in progress a design system is and should be.</p>
+        <p className="cs-subtitle-2 margin-bottom-12px">Levelling Up</p>
+        <p className="cs-body margin-bottom-80px margin-top-0px"><strong className="highlight">On the technical side, I
+          got to learn and explore mobile interaction patterns and specific guidelines to keep in mind when designing
+          for mobile.</strong> Additionally, I got to spend a lot of time interviewing users through this project, and
+          it slowly
+          became a task I feel more comfortable doing. <strong className="highlight">The insights from these interviews
+            drove a lot of my design
+            decisions, and I wouldn’t have been able to reach the solution I did without them.</strong></p>
+
+        <p className="cs-subtitle-2 margin-bottom-12px">Dive Deep</p>
+        <p className="cs-body margin-bottom-80px margin-top-0px"><strong className="highlight">I learned the importance
+          of diving deep into your problem space before settling on a solution to design.</strong> If I had stopped
+          exploring different user research methods and just gone with my initial thoughts of helping people save money,
+          the final result would be much less effective.</p>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="future-considerations-title">Future
           Considerations</h3>
-        <p className="cs-body">Throughout the process of creating AMP, I had the pleasure and opportunity to talk to
-          employees at all different levels within Aprio. <strong className="highlight">This helped me confirm the
-            importance of validating user assumptions because through the conversations, I realized that higher-level
-            employees such as directors or managers often miss the mark or are completely incorrect in identifying what
-            the problems lower-level employees such as associates struggle with.</strong></p>
+        <p className="cs-body margin-bottom-0px margin-top-0px">Given more time, I would have loved to explore more
+          in-depth other
+          settings and personalization options FinWell can offer users to go the extra step in feeling like a customized
+          solution to their problems.</p>
+        <p className="cs-body margin-top-0px margin-bottom-40px">Additionally, I would have loved to do more research
+          and learn more
+          about the intricacies of UX writing in the
+          context of an AI tool. For example, while designing the insights screen, I wanted to brainstorm more insight
+          prompts and how to phrase them best to encourage users.</p>
       </div>
 
       <img src={FinalImage} alt="" className="image margin-bottom-160px" id="final-image"/>

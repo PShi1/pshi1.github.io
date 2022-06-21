@@ -262,7 +262,7 @@ export const Work = () => {
             </div>
           </div>
 
-          <div className="margin-bottom-240px intro-fade scroll-down" id="scroll-down"
+          <div className="margin-bottom-80px intro-fade scroll-down" id="scroll-down"
                onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
               Explore Selected Case Studies

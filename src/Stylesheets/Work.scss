@@ -4,6 +4,7 @@
   cursor: none;
   padding-bottom: 5.5vw;
 
+
   .header-outer-div {
     width: $default-margin-width;
     margin: auto;
@@ -189,11 +190,11 @@
     box-sizing: border-box;
   }
 
-  .tag-container p:before{
+  .tag-container p:before {
     color: #fff;
     background: #000;
     transform: rotateY(0deg) translateZ(1.367vw);
-    border: 2px solid $white;
+    border: 1px solid $white;
   }
 
   .tag-container p:after{

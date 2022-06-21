@@ -12,7 +12,7 @@ import Dashboard from '../Assets/AprioPageImages/Dashboard.png'
 import ClientProfiles from '../Assets/AprioPageImages/ClientProfiles.png';
 import ListOfUsers from '../Assets/AprioPageImages/ListOfUsers.png';
 import TaskPage from '../Assets/AprioPageImages/TaskPage.png';
-import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
+import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.svg';
 import Video1 from '../Assets/AprioPageImages/Video1.mkv';
 import Video2 from '../Assets/AprioPageImages/Video2.mkv';
 import AnchorLinks from "../Components/AnchorLinks";
@@ -42,7 +42,6 @@ export const Aprio = () => {
   const setImpactAreaToHaveReversedCursorColours = () => {
     let el = document.getElementById("impact-area");
     el.addEventListener("mouseover", () => {
-      console.log("Mouse enter");
       // Set cursor colors
       let innerCursor = document.getElementById("inner-cursor");
       let outerCursor = document.getElementById("outer-cursor");
@@ -103,22 +102,23 @@ export const Aprio = () => {
 
       <div className="overview anchor-area" id="overview-area">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>
-        <h2 className="cs-manrope margin-bottom-80px">I led the ideation and design of a brand new client management
-          portal for a top 50 US accounting firm.</h2>
+        <h2 className="cs-manrope margin-bottom-80px"><strong className="highlight">
+          I led the entire ideation and design process of a client management
+          portal
+        </strong> for a top 50 US accounting firm.</h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="context-title">Context</h3>
         <p className="cs-body margin-bottom-80px">Aprio is a top private accounting firm headquartered in Atlanta with a
           massive problem. <strong className="highlight">It was exponentially growing in size and revenue every quarter,
             but its employees were stuck using external software
-            that was decades old. It was slow, inefficient, and heavily outdated.</strong> My employer at the time,
-          Moken Agency, was hired
+            that was decades old. It was slow, inefficient, and heavily outdated.</strong> Moken Agency was hired
           to fix this problem and tasked me with creating their first internal software application. <strong
             className="highlight">The objective was to start
             the foundation of an entirely new software ecosystem that would digitize the accounting experience and help
             launch
             the firm into the future.</strong></p>
 
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="what-did-i-do-title">What Did I Do?</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="my-contributions-title">My Contributions</h3>
         <p className="cs-body">This was my most challenging project to date, but it also allowed me to work on something
           extraordinarily impactful and grow tremendously as a product designer. Some of my greatest achievements on the
           Aprio project are:</p>
@@ -136,14 +136,15 @@ export const Aprio = () => {
         </ul>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">3 months (Q1 2022 -> Q2 2022)</strong>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">4 months from design start to
+          development start (Q1 2022 -> Q2 2022)</strong>
         </p>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
-        <p className="cs-body"><strong className="highlight">Sole Designer, Client Project, Partial (Confidential) Case
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">Collaborative (sub-team of 2), Work
+          Project, Partial
+          (Confidential) Case
           Study, Web</strong></p>
-        <p className="cs-body margin-bottom-80px">User Research, Usability Testing, Prototyping, Branding, Design
-          System</p>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Miro, Jira, Confluence, Optimal
@@ -151,7 +152,7 @@ export const Aprio = () => {
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="privacy-disclaimer-title">Privacy
           Disclaimer</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">To protect Aprio’s extremely classified
+        <p className="cs-body margin-bottom-160px"><strong className="highlight">To protect Aprio’s extremely classified
           information, I am not allowed to display the entirety of my work.</strong> Specific
           details and photos in this case study have been simplified, altered, or omitted entirely. The data used in the
           mockups below are meant to be placeholders and are not accurate
@@ -159,11 +160,11 @@ export const Aprio = () => {
             learn more in-depth about my work for Aprio, feel free to contact me directly.</strong></p>
       </div>
 
-      <div className="process margin-bottom-80px anchor-area" id="process-area">
+      <div className="process margin-bottom-160px anchor-area" id="process-area">
         <h2 className="cs-title margin-bottom-80px" id="process-title"><strong className="orange-text">01 </strong>-
-          Process</h2>
+          Process & Ideation</h2>
         <img className="full-width-image" src={AprioProcess} alt=""/>
-        <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="introduction-title">Introduction</h3>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="introduction-title">Summary</h3>
 
         <p className="cs-body margin-bottom-80px"><strong className="highlight">My task was to create the MVP of their
           internal software. This project is called AMP (Aprio Management Portal).</strong> AMP
@@ -172,8 +173,9 @@ export const Aprio = () => {
           hub and consolidate many complex tasks currently performed by outdated external software. <strong
             className="highlight">In the end, I successfully designed and helped ship the
             first of many software that will later combine to form the Aprio ecosystem.</strong></p>
-        <h2 className="cs-manrope margin-bottom-80px">Once shipped, AMP would affect over 1,000 Aprio employees and over
-          10,000 Aprio clients all around the globe.</h2>
+        <h2 className="cs-manrope margin-bottom-80px">Once shipped, AMP would <strong className="highlight">affect over
+          1,000 Aprio employees and over
+          10,000 Aprio clients</strong> all around the globe.</h2>
 
         <div className="row margin-bottom-80px">
           <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-are-users-experiencing-title">What Are
@@ -232,10 +234,11 @@ export const Aprio = () => {
           className="orange-text">02 </strong>- Design Mockups</h2>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="dashboard-title">Dashboard</p>
-        <p className="cs-body"><strong className="highlight">The dashboard is a customized home screen depending on the
+        <p className="cs-body margin-bottom-0px"><strong className="highlight">The dashboard is a customized home screen
+          depending on the
           user’s role and responsibilities. Users can view their action items and an overview of their assigned clients
           and tasks.</strong></p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body">I conducted user interviews and usability testing with different user groups, from
             company directors to regular employees, to determine how to best design the dashboard to fit their specific
             needs.
@@ -244,14 +247,14 @@ export const Aprio = () => {
             all action items can be resolved straight from the dashboard, and simple component behaviours such as the
             first line item in a list are always being automatically expanded to save time.</strong></li>
         </ul>
-        <img className="full-width-image" src={Dashboard} alt=""/>
+        <img className="full-width-image margin-bottom-40px" src={Dashboard} alt=""/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="client-profiles-title">Client Profiles</p>
-        <p className="cs-body">
+        <p className="cs-body margin-bottom-0px">
           <strong className="highlight">The client profile is a page sorted into tabs with all the information collected
             about a specific client.</strong>
         </p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body"><strong className="highlight">I conducted company-wide card sorting to determine the
             most intuitive way to group sensitive information.</strong></li>
           <li className="cs-body">I consolidated and integrated multiple entity-relationship diagrams to determine what
@@ -259,14 +262,14 @@ export const Aprio = () => {
             Azure database.
           </li>
         </ul>
-        <img src={ClientProfiles} alt="" className="full-width-image"/>
+        <img src={ClientProfiles} alt="" className="full-width-image margin-bottom-40px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="list-of-users-title">List of Users</p>
-        <p className="cs-body">
+        <p className="cs-body margin-bottom-0px">
           <strong className="highlight">The list of users gives a view of all the company employees and their critical
             information.</strong>
         </p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body"><strong className="highlight">I conducted user interviews and testing to determine
             line items and order of importance for information architecture.</strong></li>
           <li className="cs-body">After testing with users, I added quality of life changes such as local time zone for
@@ -276,57 +279,57 @@ export const Aprio = () => {
             specific user.
           </li>
         </ul>
-        <img src={ListOfUsers} alt="" className="full-width-image"/>
+        <img src={ListOfUsers} alt="" className="full-width-image margin-bottom-40px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="task-page-title">Task Page</p>
-        <p className="cs-body">
+        <p className="cs-body margin-bottom-0px">
           <strong className="highlight">The task page is a detailed view of a specific task and all related data such as
             assignments and associated tasks.</strong>
         </p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body"><strong className="highlight">I conducted workshops and meetings to discuss the
             nomenclature and how to keep naming conventions consistent.</strong></li>
           <li className="cs-body">Design consideration - split-screen view allows users to reference and keep the most
             crucial information on the screen.
           </li>
         </ul>
-        <img src={TaskPage} alt="" className="full-width-image"/>
+        <img src={TaskPage} alt="" className="full-width-image margin-bottom-40px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flow-task-assignment-title">User Flow:
           Task Assignment</p>
-        <p className="cs-body">
+        <p className="cs-body margin-bottom-0px">
           <strong className="highlight">The following is an example user flow of the feature to allow managers to assign
             tasks to their team members.</strong>
         </p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body">Design consideration - I wanted to reference existing task assignment UX patterns used
             in popular tools such as
             Jira when designing this feature since that would be a familiar pattern with the Aprio user groups.
           </li>
         </ul>
-        <video autoPlay muted loop={true} src={Video1} className="full-width-image"/>
+        <video autoPlay muted loop={true} src={Video1} className="full-width-image margin-bottom-40px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flow-global-search-title">User Flow:
           Global Search</p>
-        <p className="cs-body">
+        <p className="cs-body margin-bottom-0px">
           <strong className="highlight">The following is an example user flow of the global search functionality
             featured in the top navigation bar.</strong>
         </p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-40px margin-top-0px">
           <li className="cs-body"><strong className="highlight">I conducted user interviews to find out the most common
             items searched and how to best group search results.</strong></li>
           <li className="cs-body">Design consideration - search results are split into groups through tabs to speed up
             lookup time.
           </li>
         </ul>
-        <video autoPlay muted loop={true} src={Video2} className="full-width-image"/>
+        <video autoPlay muted loop={true} src={Video2} className="full-width-image margin-bottom-40px"/>
       </div>
 
       <div className="impact margin-bottom-80px anchor-area" id="impact-area">
         <div className="impact-inner">
           <p className="cs-title margin-bottom-80px sub-anchor-area" id="impact-title"><strong
             className="orange-text">03</strong> - Impact</p>
-          <div className="margin-bottom-40px">
+          <div className="margin-bottom-12px">
             <div className="impact-left">
               <p className="cs-title margin-bottom-32px">Before</p>
               <ul>
@@ -336,7 +339,8 @@ export const Aprio = () => {
                 <li className="cs-body margin-bottom-24px"><p className="impact-number">6</p> different sources of
                   client information
                 </li>
-                <li className="cs-body margin-bottom-24px"><p className="impact-number">Countless</p> time spent on the
+                <li className="cs-body margin-bottom-12px"><p className="impact-number split">Countless</p> time spent
+                  on the
                   phone chasing information
                 </li>
               </ul>
@@ -349,7 +353,8 @@ export const Aprio = () => {
                 <li className="cs-body margin-bottom-24px"><p className="impact-number">1</p> single source of truth for
                   client information
                 </li>
-                <li className="cs-body margin-bottom-24px"><p className="impact-number">Significantly less</p> time
+                <li className="cs-body margin-bottom-12px"><p className="impact-number split">Significantly
+                  less</p> time
                   spent on the phone chasing information
                 </li>
               </ul>
@@ -370,7 +375,8 @@ export const Aprio = () => {
       <div className="reflection margin-bottom-80px anchor-area" id="reflection-area">
         <h2 className="cs-title margin-bottom-80px sub-anchor-area" id="reflection-title"><strong
           className="orange-text">04 </strong>- Reflection</h2>
-        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="always-validate-user-assumptions-title">Always
+        <p className="cs-subtitle margin-bottom-60px sub-anchor-area" id="what-did-i-learn-title">What Did I Learn?</p>
+        <p className="cs-subtitle-2 margin-bottom-0px" id="always-validate-user-assumptions-title">Always
           Validate User Assumptions</p>
         <p className="cs-body margin-bottom-40px">Throughout the process of creating AMP, I had the pleasure and
           opportunity to talk to employees at all different
@@ -379,8 +385,9 @@ export const Aprio = () => {
             realized that higher-level employees such as directors or managers often miss the mark or are entirely
             incorrect in identifying the problems lower-level
             employees such as associates struggle with.</strong></p>
-        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="advocate-for-ux-title">Advocate for UX</p>
-        <p className="cs-body">When working in an agency setting, you will often find yourself in a room filled with
+        <p className="cs-subtitle-2 margin-bottom-0px" id="advocate-for-ux-title">Advocate for UX</p>
+        <p className="cs-body margin-bottom-80px">When working in an agency setting, you will often find yourself in a
+          room filled with
           people who are very used to thinking about
           problems from the business or development perspective. It is vital in those situations to educate and inform
           them as to the rationale behind your design
@@ -388,7 +395,7 @@ export const Aprio = () => {
             project, I learned a lot about how to advocate
             for proper design, the importance of user research, and how to articulately present to
             stakeholders.</strong></p>
-        <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="next-steps-title">Next Steps</p>
+        <p className="cs-subtitle margin-bottom-0px sub-anchor-area" id="next-steps-title">Next Steps</p>
         <p className="cs-body margin-bottom-80px">I will continue testing and discovering bugs in the QA process and
           collaborate closely with the development
           team on the massive task of connecting to the Azure database by identifying what information we need and how
