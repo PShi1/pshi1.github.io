@@ -277,7 +277,7 @@ const AnchorLinks = ({callerType}) => {
         <div className="group" id="process-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("process-title")
-          }}><strong className="orange-text">01</strong> - Process</h3>
+          }}><strong className="orange-text">01</strong> - Process & Ideation</h3>
           <h4 id="introduction-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("introduction-title")
           }}>Introduction</h4>

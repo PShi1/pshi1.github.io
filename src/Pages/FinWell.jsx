@@ -154,25 +154,6 @@ export const FinWell = () => {
             purchase. This encourages users to be more mindful and deliberate when making financial decisions to ensure
             their purchases retain their value as time goes by.</strong></p>
 
-        <p className="cs-body margin-bottom-0px"><strong className="highlight">FinWell is a solo course project I did
-          as part of my UX/UI program.</strong> Some of my specific work on this project include:</p>
-        <ul className="margin-bottom-80px margin-top-0px">
-
-          <li className="cs-body">I brainstormed possible solutions and <strong className="highlight">conducted guerilla
-            tests with sketch prototypes</strong> to test my hypothesis.
-          </li>
-          <li className="cs-body">I interviewed 8 end-users to gather insights to <strong className="highlight">create
-            an affinity & empathy map.</strong></li>
-          <li className="cs-body"><strong className="highlight">I designed high-fidelity screens</strong> and <strong
-            className="highlight"> created interactive prototypes</strong>
-            of the critical user flows.
-          </li>
-          <li className="cs-body"><strong
-            className="highlight">I conducted usability tests</strong> with the prototypes and made iterations to my
-            designs.
-          </li>
-        </ul>
-
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-timeline-title">Project Timeline</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">6 weeks (Q2 2021)</strong>
         </p>
