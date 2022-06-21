@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cb855e1.css",
-    "main.js": "/static/js/main.0d56e55a.js",
+    "main.css": "/static/css/main.5d2ced35.css",
+    "main.js": "/static/js/main.f1556bd2.js",
     "static/js/787.d538d4ce.chunk.js": "/static/js/787.d538d4ce.chunk.js",
-    "static/media/FinalImage.svg": "/static/media/FinalImage.6fd59f921245bed85e87a2ff56614067.svg",
     "static/media/StyleGuide8.svg": "/static/media/StyleGuide8.7443423339fd99149d2c00e9acf8ee3e.svg",
     "static/media/SketchingWireframes.svg": "/static/media/SketchingWireframes.e85ba2f447d55baf9964dce39c36411e.svg",
     "static/media/FinWellHeaderImage.svg": "/static/media/FinWellHeaderImage.d52c8ef9edbd980c94aebf8dc7303ed4.svg",
     "static/media/Selfie2.svg": "/static/media/Selfie2.58b0cea4e26c03159b4915e766083ff3.svg",
+    "static/media/FinalImage.svg": "/static/media/FinalImage.64375a90c298828a4ab671db7e335a1a.svg",
     "static/media/ConfidentCarl.png": "/static/media/ConfidentCarl.4c1057e4b397641ccba8.png",
     "static/media/AnxiousAnnie.png": "/static/media/AnxiousAnnie.a50f78aa1db4061b8f96.png",
     "static/media/Patterns.svg": "/static/media/Patterns.8f4e7830157142e876be79243b51139f.svg",
@@ -27,6 +27,7 @@
     "static/media/StyleGuide7.svg": "/static/media/StyleGuide7.4d0a41b30ad28f0fb5291482218c79af.svg",
     "static/media/iPhone4.svg": "/static/media/iPhone4.f78280439a419dd975cc92113c2065e7.svg",
     "static/media/Selfie3.svg": "/static/media/Selfie3.6f07144911b285a9ef6255f3d7361c15.svg",
+    "static/media/AprioFinalImage.svg": "/static/media/AprioFinalImage.777f9336b0b5dceefee4a671edff25d7.svg",
     "static/media/StyleGuide2.svg": "/static/media/StyleGuide2.a97f642a231ab2e8e39058007d78eb8e.svg",
     "static/media/AprioHeaderImage.png": "/static/media/AprioHeaderImage.89e1daa82addac8413fc.png",
     "static/media/StyleGuide4.svg": "/static/media/StyleGuide4.bf96cf9944cab6b95f561f3bef15de7e.svg",
@@ -43,15 +44,17 @@
     "static/media/Survey.svg": "/static/media/Survey.8e5004c55f2d7fb1c99a8a16da5586ef.svg",
     "static/media/FinWellCard.png": "/static/media/FinWellCard.53d47b3178a0f24e5d0a.png",
     "static/media/TextFields.png": "/static/media/TextFields.3a5db7bbf10a9e5eae6e.png",
-    "static/media/AccessCardActive.png": "/static/media/AccessCardActive.6ecfe7efddaf30dcfed7.png",
-    "static/media/AccessCard.png": "/static/media/AccessCard.51c4b0f82ffa7d327126.png",
+    "static/media/AccessCard.png": "/static/media/AccessCard.6ecfe7efddaf30dcfed7.png",
+    "static/media/Iterations1.png": "/static/media/Iterations1.1f46f0079eeb8dfd7c01.png",
     "static/media/AccessIcons.png": "/static/media/AccessIcons.ee83f247551eb03fe02c.png",
     "static/media/NewDesignSpec2.svg": "/static/media/NewDesignSpec2.103f8188eed6802230fdf00ac2394052.svg",
     "static/media/FlowChart.svg": "/static/media/FlowChart.3641b49434abe199f483b2f4b5dd3607.svg",
     "static/media/FinWellCardActive.png": "/static/media/FinWellCardActive.5ed5ca82a04a30386c9f.png",
+    "static/media/AccessCardActive.png": "/static/media/AccessCardActive.c528e6f304fc00601b49.png",
     "static/media/GuerillaTesting1.png": "/static/media/GuerillaTesting1.eb5237ae67dcbfc676f4.png",
     "static/media/GuerillaTesting2.png": "/static/media/GuerillaTesting2.41c1ae85e28231a3e8b8.png",
     "static/media/Ideation.svg": "/static/media/Ideation.7420bec8cf8843af80207922ba46e5c3.svg",
+    "static/media/Iterations2.png": "/static/media/Iterations2.d143ea41bd2086aba280.png",
     "static/media/AprioCard.png": "/static/media/AprioCard.c09b52373606973256e4.png",
     "static/media/NewDesignSpec1.png": "/static/media/NewDesignSpec1.2997fce44afa5633b9a5.png",
     "static/media/ClientProfiles.png": "/static/media/ClientProfiles.f2ae4225b4d9b9289645.png",
@@ -112,12 +115,12 @@
     "static/media/arrow-down.svg": "/static/media/arrow-down.20aa239a83d25166fc6e10e689493036.svg",
     "static/media/CircleUnfilled.svg": "/static/media/CircleUnfilled.3edfdd8bde5166817996e80739faa68a.svg",
     "static/media/CircleFilled.svg": "/static/media/CircleFilled.f4b9588e38bb0220f5793671b31b123c.svg",
-    "main.1cb855e1.css.map": "/static/css/main.1cb855e1.css.map",
-    "main.0d56e55a.js.map": "/static/js/main.0d56e55a.js.map",
+    "main.5d2ced35.css.map": "/static/css/main.5d2ced35.css.map",
+    "main.f1556bd2.js.map": "/static/js/main.f1556bd2.js.map",
     "787.d538d4ce.chunk.js.map": "/static/js/787.d538d4ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cb855e1.css",
-    "static/js/main.0d56e55a.js"
+    "static/css/main.5d2ced35.css",
+    "static/js/main.f1556bd2.js"
   ]
 }
