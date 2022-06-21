@@ -133,9 +133,15 @@
     }
   }
 
-  @media screen and (max-width: 1600px){
+  @media screen and (max-width: 3000px) {
     .logo2 {
-      transform: rotateX(90deg) translateZ(1.35vw);
+      transform: rotateX(88deg) translateZ(1.35vw);
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+    .logo2 {
+      transform: rotateX(88.65deg) translateZ(1.35vw);
     }
   }
 }

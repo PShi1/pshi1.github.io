@@ -102,6 +102,16 @@ export const Aprio = () => {
 
       <div className="overview anchor-area" id="overview-area">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>
+
+        <h3 className="cs-subtitle-2 margin-bottom-16px" id="privacy-disclaimer-title">Privacy
+          Disclaimer</h3>
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">To protect Aprio’s extremely classified
+          information, I am not allowed to display the entirety of my work.</strong> Specific
+          details and photos in this case study have been simplified, altered, or omitted entirely. The data used in the
+          mockups below are meant to be placeholders and are not accurate
+          to the attributes and data used in the actual product. <strong className="highlight">If you would like to
+            learn more in-depth about my work for Aprio, feel free to contact me directly.</strong></p>
+
         <h2 className="cs-manrope margin-bottom-80px"><strong className="highlight">
           I led the entire ideation and design process of a client management
           portal
@@ -147,17 +157,8 @@ export const Aprio = () => {
           Study, Web</strong></p>
 
         <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">Figma, Miro, Jira, Confluence, Optimal
+        <p className="cs-body margin-bottom-160px"><strong className="highlight">Figma, Miro, Jira, Confluence, Optimal
           Workshop, Userback, Maze</strong></p>
-
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="privacy-disclaimer-title">Privacy
-          Disclaimer</h3>
-        <p className="cs-body margin-bottom-160px"><strong className="highlight">To protect Aprio’s extremely classified
-          information, I am not allowed to display the entirety of my work.</strong> Specific
-          details and photos in this case study have been simplified, altered, or omitted entirely. The data used in the
-          mockups below are meant to be placeholders and are not accurate
-          to the attributes and data used in the actual product. <strong className="highlight">If you would like to
-            learn more in-depth about my work for Aprio, feel free to contact me directly.</strong></p>
       </div>
 
       <div className="process margin-bottom-160px anchor-area" id="process-area">

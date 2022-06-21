@@ -154,7 +154,6 @@ export const FinWell = () => {
             purchase. This encourages users to be more mindful and deliberate when making financial decisions to ensure
             their purchases retain their value as time goes by.</strong></p>
 
-        <h3 className="cs-subtitle-2 margin-bottom-12px" id="what-did-i-do-title">What Did I Do?</h3>
         <p className="cs-body margin-bottom-0px"><strong className="highlight">FinWell is a solo course project I did
           as part of my UX/UI program.</strong> Some of my specific work on this project include:</p>
         <ul className="margin-bottom-80px margin-top-0px">
@@ -645,8 +644,8 @@ export const FinWell = () => {
           with a general qualitative feedback session, asking them questions about their opinion on the design,
           functionality, and usability (rate out of 10).</strong></p>
 
-        <p className="cs-manrope-150-line-height margin-bottom-80px"><strong className="highlight">Subjectively, 11 out
-          of 12 participants
+        <p className="cs-manrope-150-line-height margin-bottom-80px"><strong className="highlight">Subjectively, 14 out
+          of 15 participants
           expressed that they enjoy the look and feel of the FinWell app. The average usability score was also high at
           8.8/10.</strong></p>
 
@@ -661,16 +660,17 @@ export const FinWell = () => {
             not
           </li>
         </ul>
-        <p className="cs-body margin-bottom-40px margin-top-0px">The following are the edits I decided to make to the
+        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">
+          The following are the edits I decided to make to the
           designs after
-          reviewing the sessions and overall feedback:</p>
+          reviewing the sessions and overall feedback:
+        </strong></p>
         <Gallery className="margin-bottom-80px" images={iterationsImages} uniquePrefix={"iterations"}/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="final-prototype-title">Final
           Prototype</h3>
-        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">Next, I proceeded to
-          sketch out the most
-          critical user flows and turn the sketches into low-fidelity wireframes.</strong></p>
+        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">Try out the Figma
+          prototype yourself and go through the flow of reviewing a product you just purchased!</strong></p>
         <div className="figma-embed-wrapper" id="prototype-container">
           <iframe width="100%" height="100%"
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FunLE9AKolaQI5LchZdZ30e%2FFinWell%3Fpage-id%3D72%253A0%26node-id%3D727%253A8448%26viewport%3D1682%252C7008%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D727%253A8448"
