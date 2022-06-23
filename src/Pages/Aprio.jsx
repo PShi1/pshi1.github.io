@@ -12,7 +12,7 @@ import Dashboard from '../Assets/AprioPageImages/Dashboard.png'
 import ClientProfiles from '../Assets/AprioPageImages/ClientProfiles.png';
 import ListOfUsers from '../Assets/AprioPageImages/ListOfUsers.png';
 import TaskPage from '../Assets/AprioPageImages/TaskPage.png';
-import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.svg';
+import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
 import Video1 from '../Assets/AprioPageImages/Video1.mkv';
 import Video2 from '../Assets/AprioPageImages/Video2.mkv';
 import AnchorLinks from "../Components/AnchorLinks";

@@ -48,8 +48,18 @@
       width: 100%;
     }
 
-    #component-categorization, #file-organization-2 {
-      width: initial;
+    #file-organization-1 {
+      width: 70%;
+      margin: auto;
+    }
+
+    #file-organization-2 {
+      width: 35%;
+      margin: auto;
+    }
+
+    #component-categorization {
+      width: 35%;
       margin: auto;
     }
   }
