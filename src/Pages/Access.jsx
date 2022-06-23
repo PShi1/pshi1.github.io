@@ -106,10 +106,19 @@ export const Access = () => {
     })
   }
 
+  const scrollToOverview = () => {
+    let el = document.getElementById("overview-area");
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   return (
     <div className="access-page">
       <div className="access-header-wrapper margin-bottom-80px anchor-area">
-        <img className="access-header" src={AccessHeader} alt="" id="header-image"/>
+        <img className="access-header clickable" src={AccessHeader} alt="" id="header-image" onClick={() => {
+          scrollToOverview()
+        }}/>
       </div>
 
       <AnchorLinks callerType="access"/>

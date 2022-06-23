@@ -95,10 +95,21 @@ export const Aprio = () => {
     })
   }
 
+  const scrollToOverview = () => {
+    let el = document.getElementById("overview-area");
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   return (
     <div className="aprio-page">
       <AnchorLinks callerType="aprio"/>
-      <img className="full-width-image margin-bottom-80px anchor-area" src={AprioHeaderImage} alt="" id="header-image"/>
+      <img className="full-width-image margin-bottom-80px anchor-area clickable" src={AprioHeaderImage} alt=""
+           id="header-image"
+           onClick={() => {
+             scrollToOverview()
+           }}/>
 
       <div className="overview anchor-area" id="overview-area">
         <h3 className="cs-title margin-bottom-80px" id="overview-title">Overview</h3>

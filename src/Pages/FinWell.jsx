@@ -128,11 +128,20 @@ export const FinWell = () => {
     }
   }
 
+  const scrollToOverview = () => {
+    let el = document.getElementById("overview-area");
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   return (
     <div className="finwell-page">
       <AnchorLinks callerType="finwell"/>
       <div className="intro-wrapper margin-bottom-80px">
-        <img src={FinWellHeaderImage} alt="" className="finwell-header" id="header-image"/>
+        <img src={FinWellHeaderImage} alt="" className="finwell-header clickable" id="header-image" onClick={() => {
+          scrollToOverview()
+        }}/>
       </div>
 
       <div className="overview margin-bottom-160px anchor-area" id="overview-area">
