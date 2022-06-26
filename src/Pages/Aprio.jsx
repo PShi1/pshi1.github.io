@@ -12,7 +12,7 @@ import Dashboard from '../Assets/AprioPageImages/Dashboard.png'
 import ClientProfiles from '../Assets/AprioPageImages/ClientProfiles.png';
 import ListOfUsers from '../Assets/AprioPageImages/ListOfUsers.png';
 import TaskPage from '../Assets/AprioPageImages/TaskPage.png';
-import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.svg';
+import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
 import Video1 from '../Assets/AprioPageImages/Video1.mkv';
 import Video2 from '../Assets/AprioPageImages/Video2.mkv';
 import AnchorLinks from "../Components/AnchorLinks";
@@ -95,10 +95,21 @@ export const Aprio = () => {
     })
   }
 
+  const scrollToOverview = () => {
+    let el = document.getElementById("overview-area");
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   return (
     <div className="aprio-page">
       <AnchorLinks callerType="aprio"/>
-      <img className="full-width-image margin-bottom-80px anchor-area" src={AprioHeaderImage} alt="" id="header-image"/>
+      <img className="full-width-image margin-bottom-80px anchor-area clickable" src={AprioHeaderImage} alt=""
+           id="header-image"
+           onClick={() => {
+             scrollToOverview()
+           }}/>
 
       <div className="overview anchor-area" id="overview-area">
         <h3 className="cs-title mid-align-title margin-bottom-80px" id="overview-title">Overview</h3>

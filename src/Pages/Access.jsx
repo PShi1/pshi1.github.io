@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import AccessHeader from '../Assets/AccessPageImages/AccessHeader.svg';
+import AccessHeader from '../Assets/AccessPageImages/AccessHeader.png';
 import '../Stylesheets/Access.scss';
 import FemaleArtist from '../Assets/FemaleArtist.svg';
 import MaleArtist from '../Assets/MaleArtist.svg';
@@ -8,20 +8,20 @@ import EndUser from '../Assets/EndUser.svg';
 import Documentation from '../Assets/Documentation.svg';
 import Eyes from '../Assets/Eyes.svg';
 import Cog from '../Assets/Cog.svg';
-import DesignSystem from '../Assets/AccessPageImages/DesignSystem.svg';
-import Iconography from '../Assets/AccessPageImages/Iconography.svg';
+import DesignSystem from '../Assets/AccessPageImages/DesignSystem.png';
+import Iconography from '../Assets/AccessPageImages/Iconography.png';
 import Icons from '../Assets/AccessPageImages/Icons.svg';
 import TextFields from '../Assets/AccessPageImages/TextFields.png';
-import ComponentCategorization from '../Assets/AccessPageImages/ComponentCategorization.svg';
-import Patterns from '../Assets/AccessPageImages/Patterns.svg';
-import FlowChart from '../Assets/AccessPageImages/FlowChart.svg';
-import FileOrganization1 from '../Assets/AccessPageImages/FileOrganization1.svg';
-import FileOrganization2 from '../Assets/AccessPageImages/FileOrganization2.svg';
-import Onboarding from '../Assets/AccessPageImages/Onboarding.svg';
-import AccessFinalImage from '../Assets/AccessPageImages/AccessIcons.svg';
+import ComponentCategorization from '../Assets/AccessPageImages/ComponentCategorization.png';
+import Patterns from '../Assets/AccessPageImages/Patterns.png';
+import FlowChart from '../Assets/AccessPageImages/FlowChart.png';
+import FileOrganization1 from '../Assets/AccessPageImages/FileOrganization1.png';
+import FileOrganization2 from '../Assets/AccessPageImages/FileOrganization2.png';
+import Onboarding from '../Assets/AccessPageImages/Onboarding.png';
+import AccessFinalImage from '../Assets/AccessPageImages/AccessFinalImage.png';
 import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.png';
-import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpec1.png';
-import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpec2.svg';
+import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpecs.png';
+import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpecs2.png';
 import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../App";
 import AnchorLinks from "../Components/AnchorLinks";
 import {
@@ -106,13 +106,22 @@ export const Access = () => {
     })
   }
 
-  return (
-    <div className="access-page">
-      <div className="access-header-wrapper margin-bottom-80px anchor-area">
-        <img className="access-header" src={AccessHeader} alt="" id="header-image"/>
-      </div>
+  const scrollToOverview = () => {
+    let el = document.getElementById("overview-area");
+    if (el) {
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
 
-      <AnchorLinks callerType="access"/>
+  return (
+      <div className="access-page">
+        <div className="access-header-wrapper margin-bottom-80px anchor-area">
+          <img className="access-header clickable" src={AccessHeader} alt="" id="header-image" onClick={() => {
+            scrollToOverview()
+          }}/>
+        </div>
+
+        <AnchorLinks callerType="access"/>
       <div className="overview anchor-area margin-bottom-160px" id="overview-area" key="overview-group">
         <h3 className="cs-title mid-align-title margin-bottom-80px" id="overview-title">Overview</h3>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">I led a small team to build and
@@ -460,7 +469,7 @@ export const Access = () => {
             </p>
           </div>
           <div className="right-column-58">
-            <img src={FileOrganization1} alt=""/>
+            <img id="file-organization-1" src={FileOrganization1} alt=""/>
           </div>
         </div>
 
