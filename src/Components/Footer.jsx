@@ -19,7 +19,7 @@ export const Footer = () => {
     let elements = document.getElementsByClassName('typewrite-footer');
     for (let i = 0; i < elements.length; i++) {
       let toRotate = "[\"any opportunities!\", \"a coffee chat!\", \"an ambitious project!\",\n" +
-        "              \"any questions!\", \"some genuine feedback!\"]";
+          "              \"any questions!\", \"n\"]";
       let period = "2000"
       if (toRotate) {
         new TxtType(elements[i], JSON.parse(toRotate), period);
