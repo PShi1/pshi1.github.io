@@ -21,6 +21,7 @@ import AccessFinalImage from '../Assets/AccessPageImages/AccessFinalImage.png';
 import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.png';
 import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpecs.png';
 import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpecs2.png';
+import DesignConsiderations from '../Assets/AccessPageImages/DesignConsiderations.png';
 import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../App";
 import AnchorLinks from "../Components/AnchorLinks";
 import {
@@ -33,7 +34,7 @@ import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Access = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Access";
@@ -387,36 +388,26 @@ export const Access = () => {
 
         <div className="iteration margin-bottom-80px anchor-area" id="iteration-area" key="iteration-group">
           <h2 className="cs-title mid-align-title margin-bottom-40px" id="iteration-title"><strong
-            className="blue-text">03 </strong>-
+              className="blue-text">03 </strong>-
             Iteration</h2>
           <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-feedback-title">User Feedback</h3>
           <p className="cs-body margin-bottom-40px">
             From the beginning, we wanted to involve other parallel teams as early on as
             possible since
             the design system had to be optimized for everyone to be considered a success. To achieve this, <strong
-            className="highlight">I
+              className="highlight">I
             conducted team and individual interviews with the development, product, and marketing teams to discover
             how we could improve
             our current design handoffs and what their thoughts about our new design system/process. </strong>
           </p>
-          <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="design-considerations-title">Design
+          <p className="cs-subtitle margin-bottom-40px sub-anchor-area" id="design-considerations-title">Design
             Considerations</p>
-          <ul className="margin-bottom-40px">
-            <li className="cs-body"><strong className="highlight">The greatest pain point for the development team was
-              figuring out how the screens were connected and the behaviour of the different components used in each
-              design.</strong></li>
-            <li className="cs-body"><strong className="highlight">The greatest pain point for the marketing team was
-              figuring out which assets in the design system were meant for them and how to make edits to the components
-              to use them for marketing purposes.</strong></li>
-            <li className="cs-body"><strong className="highlight">The greatest pain point for the product team was
-              finding
-              what they were looking for in a fast and efficient manner, especially when checking in on progress on
-              specific tasks or designs.</strong></li>
-            <li className="cs-body">All the teams enjoyed the constant updates in the #designsystem slack channel, which
-              made them feel included.
-            </li>
-          </ul>
 
+          <img className="margin-bottom-40px image" src={DesignConsiderations} alt=""/>
+          <p className="cs-body margin-bottom-40px">All the teams enjoyed the constant updates in the #designsystem
+            slack channel, which
+            made them feel included.
+          </p>
           <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="iterations-for-developers-title">Iterations
             for
             Developers</p>
