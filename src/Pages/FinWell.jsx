@@ -67,7 +67,7 @@ export const FinWell = () => {
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     fadeInOnScroll();
 
@@ -600,46 +600,61 @@ export const FinWell = () => {
         <p className="cs-body margin-bottom-40px margin-top-0px">While I had some research and heuristics to help guide
           my
           decision-making, I knew I needed to do testing with actual users to validate the solution. <strong
-              className="highlight">I ran 12 users
+            className="highlight">I ran 12 users
             through a 30-minute extended usability test to test my solution using interactive prototypes on
             Figma.</strong> Using a
           series of tasks, I wanted to learn about their first impressions of the app, if they could navigate the app or
           find the location of the features, and observe their reactions and task completion time.
         </p>
 
-        <p className="cs-body margin-bottom-0px"><strong className="highlight">I started the sessions by asking the
-          testers a couple of questions to determine
-          their demographic and general spending habits to see how well they would fit into my target user
-          group.</strong> Questions included:</p>
-        <ul className="margin-top-0px margin-bottom-40px">
-          <li className="cs-body">How often have you bought something on an impulse?</li>
-          <li className="cs-body">Describe the last time you remember yourself in a scenario making an impulsive
-            purchase
-          </li>
-          <li className="cs-body">What are the main factors that influence your buying decisions?</li>
-        </ul>
+        <div className="collapsibles-region margin-bottom-60px">
+          <div className="collapsible-header" id="temp" onClick={(e) => handleCollapsible(e)}>
+            <h2 id="click-to-view-testing-process">Click to View Testing Process</h2>
+            <img src={DownArrow} alt="" id="temp-arrow"/>
+          </div>
+          <div className="collapsible-item" id="temp-item">
+            <p className="cs-body margin-bottom-0px"><strong className="highlight">I started the sessions by asking
+              the
+              testers a couple of questions to determine
+              their demographic and general spending habits to see how well they would fit into my target user
+              group.</strong> Questions included:</p>
+            <ul className="margin-top-0px margin-bottom-40px">
+              <li className="cs-body">How often have you bought something on an impulse?</li>
+              <li className="cs-body">Describe the last time you remember yourself in a scenario making an impulsive
+                purchase
+              </li>
+              <li className="cs-body">What are the main factors that influence your buying decisions?</li>
+            </ul>
 
-        <p className="cs-body margin-bottom-0px"><strong className="highlight">To test the design and functionality of
-          FinWell, I asked
-          testers to perform a series of tasks and observed how they performed and how long each task took
-          them.</strong> The testers were instructed to think aloud, and I would only step in and gently guide them when
-          they spent over 3 minutes stuck on a task. The tasks covered all of the main functionalities and included:</p>
+            <p className="cs-body margin-bottom-0px"><strong className="highlight">To test the design and
+              functionality of
+              FinWell, I asked
+              testers to perform a series of tasks and observed how they performed and how long each task took
+              them.</strong> The testers were instructed to think aloud, and I would only step in and gently guide
+              them
+              when
+              they spent over 3 minutes stuck on a task. The tasks covered all of the main functionalities and
+              included:
+            </p>
 
-        <ul className="margin-top-0px margin-bottom-40px">
-          <li className="cs-body">Signing up for a new account and navigating to the home screen</li>
-          <li className="cs-body">Creating a new monthly budget for $3000
-          </li>
-          <li className="cs-body">Creating a goal for a new cell phone that costs $900</li>
-          <li className="cs-body">Creating a journal entry for the new MacBook they just purchased</li>
-          <li className="cs-body">Finding a past journal entry about a blue dress and deleting it</li>
-          <li className="cs-body">Viewing an insight on your spending habits and expanding it to view recommended
-            actions items
-          </li>
-        </ul>
+            <ul className="margin-top-0px margin-bottom-40px">
+              <li className="cs-body">Signing up for a new account and navigating to the home screen</li>
+              <li className="cs-body">Creating a new monthly budget for $3000
+              </li>
+              <li className="cs-body">Creating a goal for a new cell phone that costs $900</li>
+              <li className="cs-body">Creating a journal entry for the new MacBook they just purchased</li>
+              <li className="cs-body">Finding a past journal entry about a blue dress and deleting it</li>
+              <li className="cs-body">Viewing an insight on your spending habits and expanding it to view recommended
+                actions items
+              </li>
+            </ul>
 
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">After the tasks, I ended the testing
-          with a general qualitative feedback session, asking them questions about their opinion on the design,
-          functionality, and usability (rate out of 10).</strong></p>
+            <p className="cs-body margin-bottom-24px"><strong className="highlight">After the tasks, I ended the
+              testing
+              with a general qualitative feedback session, asking them questions about their opinion on the design,
+              functionality, and usability (rate out of 10).</strong></p>
+          </div>
+        </div>
 
         <img className="image margin-bottom-80px" src={TestingResult1} alt=""/>
 

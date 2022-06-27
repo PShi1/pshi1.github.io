@@ -34,7 +34,7 @@ import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Access = () => {
   useEffect(() => {
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Access";

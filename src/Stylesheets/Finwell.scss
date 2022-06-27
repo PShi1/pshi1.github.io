@@ -486,6 +486,8 @@
   }
 
   .collapsibles-region {
+    border-bottom: 1px solid $blackv2;
+
     .collapsible-header {
       display: flex;
       justify-content: space-between;
@@ -559,14 +561,12 @@
       display: flex;
       height: 20vh;
       transition: height 0.65s ease-in-out;
-      border-bottom: 1px solid $blackv2;
     }
 
     .collapsible-item.closed {
       display: flex;
       height: 0;
       transition: height 0.65s ease-in-out;
-      border-bottom: 1px solid $blackv2;
     }
 
     #after-hours-ul {
