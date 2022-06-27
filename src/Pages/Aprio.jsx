@@ -26,7 +26,7 @@ import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Aprio = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+   // window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Aprio";
@@ -116,7 +116,7 @@ export const Aprio = () => {
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="privacy-disclaimer-title">Privacy
           Disclaimer</h3>
-        <p className="cs-body margin-bottom-80px"><strong className="highlight">To protect Aprio’s extremely
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">To protect Aprio’s extremely
           classified
           information, I am not allowed to display the entirety of my work.</strong> Specific
           details and photos in this case study have been simplified, altered, or omitted entirely. The data used in the
@@ -130,7 +130,7 @@ export const Aprio = () => {
           for a top 50 US accounting firm.</h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Problem</h3>
-        <p className="cs-body margin-bottom-40px"> Aprio is an elite accounting firm with
+        <p className="cs-body margin-bottom-80px"> Aprio is an elite accounting firm with
           a massive problem. It was exponentially growing in size and revenue every quarter,
           but its employees were stuck using external software
           that was decades old. It was slow, inefficient, and heavily outdated. <strong className="highlight"> My
@@ -139,7 +139,7 @@ export const Aprio = () => {
             into the future.</strong></p>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Solution</h3>
-        <p className="cs-body margin-bottom-80px"> The internal software, later named AMP (Aprio
+        <p className="cs-body margin-bottom-40px"> The internal software, later named AMP (Aprio
           Management Portal),
           allowed Aprio employees to see the data collected on their clients, manage task assignments, and change client
           information. Ultimately, <strong className="highlight"> I successfully designed and shipped a centralized
@@ -156,7 +156,7 @@ export const Aprio = () => {
           something
           impactful and grow tremendously as a product designer. With guidance and support from senior
           designers: </p>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-80px">
           <li className="cs-body"><strong className="highlight"> I developed a detailed design process and product
             roadmap for
             the preliminary releases of AMP. </strong></li>
@@ -183,9 +183,8 @@ export const Aprio = () => {
           </div>
           <div className="center-column margin-bottom-0px">
             <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
-            <p className="cs-body margin-bottom-0px margin-top-0px">Sole Designer, Work
-              Project, Partial
-              (Confidential) Case
+            <p className="cs-body margin-bottom-0px margin-top-0px">Sole Designer/Researcher, Work
+              Project, Partial Case
               Study, Web</p>
           </div>
           <div className="right-column margin-bottom-0px">
@@ -205,9 +204,9 @@ export const Aprio = () => {
 
       <div className="ideation margin-bottom-160px anchor-area" id="ideation-area">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="ideation-title"><strong
-          className="orange-text">02 </strong>-
+            className="orange-text">02 </strong>-
           Ideation</h2>
-        <div className="row margin-bottom-40px">
+        <div className="row margin-bottom-80px">
           <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-are-users-experiencing-title">What Are
             Users Experiencing?</h3>
           <div className="left-column">
@@ -285,7 +284,7 @@ export const Aprio = () => {
             first line item in a list to save time.
           </li>
         </ul>
-        <img className="full-width-image margin-bottom-40px" src={Dashboard} alt=""/>
+        <img className="full-width-image margin-bottom-80px" src={Dashboard} alt=""/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="client-profiles-title">Client Profiles</p>
         <p className="cs-body margin-bottom-0px">
@@ -299,7 +298,7 @@ export const Aprio = () => {
             information was essential to display.
           </li>
         </ul>
-        <img src={ClientProfiles} alt="" className="full-width-image margin-bottom-40px"/>
+        <img src={ClientProfiles} alt="" className="full-width-image margin-bottom-80px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="list-of-users-title">List of Users</p>
         <p className="cs-body margin-bottom-0px">
@@ -316,7 +315,7 @@ export const Aprio = () => {
             specific user.
           </li>
         </ul>
-        <img src={ListOfUsers} alt="" className="full-width-image margin-bottom-40px"/>
+        <img src={ListOfUsers} alt="" className="full-width-image margin-bottom-80px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="task-page-title">Task Page</p>
         <p className="cs-body margin-bottom-0px">
@@ -330,7 +329,7 @@ export const Aprio = () => {
             crucial information on the screen.
           </li>
         </ul>
-        <img src={TaskPage} alt="" className="full-width-image margin-bottom-40px"/>
+        <img src={TaskPage} alt="" className="full-width-image margin-bottom-80px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flow-task-assignment-title">User Flow:
           Task Assignment</p>
@@ -345,7 +344,7 @@ export const Aprio = () => {
             Jira and testing to make sure it was a pattern the users are familiar with.</strong>
           </li>
         </ul>
-        <video autoPlay muted loop={true} src={Video1} className="full-width-image margin-bottom-40px"/>
+        <video autoPlay muted loop={true} src={Video1} className="full-width-image margin-bottom-80px"/>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flow-global-search-title">User Flow:
           Global Search</p>
@@ -369,7 +368,7 @@ export const Aprio = () => {
             className="orange-text">04</strong> - Impact</p>
           <div className="margin-bottom-12px">
             <div className="impact-left">
-              <p className="cs-title margin-bottom-32px">Before AMP</p>
+              <p className="cs-title margin-bottom-40px">Before AMP</p>
               <ul>
                 <li className="cs-body margin-bottom-24px"><p className="impact-number">8</p> different software needed
                   to accomplish tasks
@@ -377,20 +376,20 @@ export const Aprio = () => {
                 <li className="cs-body margin-bottom-24px"><p className="impact-number">6</p> different sources of
                   client information
                 </li>
-                <li className="cs-body margin-bottom-12px"><p className="impact-number split">28 minutes</p> average
+                <li className="cs-body margin-bottom-40px"><p className="impact-number split">28 minutes</p> average
                   time to resolve a client support ticket
                 </li>
               </ul>
 
             </div>
             <div className="impact-right">
-              <p className="cs-title margin-bottom-32px">After AMP</p>
+              <p className="cs-title margin-bottom-40px">After AMP</p>
               <ul>
                 <li className="cs-body margin-bottom-24px"><p className="impact-number">1</p> unified Aprio portal</li>
                 <li className="cs-body margin-bottom-24px"><p className="impact-number">1</p> single source of truth for
                   client information
                 </li>
-                <li className="cs-body margin-bottom-12px"><p className="impact-number split">11 minutes</p> average
+                <li className="cs-body margin-bottom-40px"><p className="impact-number split">11 minutes</p> average
                   time to resolve a client support ticket
                 </li>
               </ul>
@@ -425,12 +424,12 @@ export const Aprio = () => {
           incorrect in identifying the struggles of lower-level
           employees such as associates.</p>
         <p className="cs-subtitle-2 margin-bottom-12px" id="advocate-for-ux-title">Advocate for UX</p>
-        <p className="cs-body margin-bottom-40px">During this project, I often found myself in a
+        <p className="cs-body margin-bottom-80px">During this project, I often found myself in a
           room with
           people very used to thinking about
           problems from a business perspective. In those situations, educating and defending the rationale behind your
           design decisions with facts and data is crucial to the project's success. <strong
-            className="highlight"> I learned a lot about how to advocate
+              className="highlight"> I learned a lot about how to advocate
             for a proper design process and how to articulately present to
             stakeholders.</strong></p>
         <p className="cs-subtitle margin-bottom-0px sub-anchor-area" id="next-steps-title">Next Steps</p>

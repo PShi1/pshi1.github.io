@@ -408,19 +408,19 @@ const AnchorLinks = ({callerType}) => {
           }}>Information Architecture</h4>
           <h4 id="sketching-wireframes-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("sketching-wireframes-title")
-          }}>Sketching / Wireframes</h4>
+          }}>Sketches / Wireframes</h4>
           <h4 id="style-guide-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("style-guide-title")
-          }}>Style Guide</h4>
+          }}>Style Guide / Design System</h4>
           <h4 id="user-flows-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("user-flows-title")
           }}>User Flows</h4>
         </div>
 
-        <div className="group" id="tests-and-iterations-area-anchor">
+        <div className="group" id="testing-and-iteration-area-anchor">
           <h3 className="h3-group" onClick={() => {
-            findAndGoToLinkedTitle("tests-and-iterations-title")
-          }}><strong className="yellow-text">05</strong> - Tests & Iterations</h3>
+            findAndGoToLinkedTitle("testing-and-iteration-title")
+          }}><strong className="yellow-text">05</strong> - Testing & Iteration</h3>
           <h4 id="first-usability-test-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("first-usability-test-title")
           }}>First Usability Test</h4>

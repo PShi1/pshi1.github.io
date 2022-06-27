@@ -67,7 +67,7 @@ export const FinWell = () => {
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
 
     fadeInOnScroll();
 
@@ -158,7 +158,7 @@ export const FinWell = () => {
       arrow.src = UpArrow;
       let h2 = document.getElementById("click-to-view-testing-process");
       if (h2) {
-        h2.innerText = "Click to Hide Testing Process";
+        h2.innerText = "Click to Hide Detailed Testing Process";
       }
     } else {
       element.classList.replace("active", "closed");
@@ -167,7 +167,7 @@ export const FinWell = () => {
       arrow.src = DownArrow;
       let h2 = document.getElementById("click-to-view-testing-process");
       if (h2) {
-        h2.innerText = "Click to View Testing Process";
+        h2.innerText = "Click to View Detailed Testing Process";
       }
     }
   }
@@ -182,21 +182,21 @@ export const FinWell = () => {
       </div>
 
       <div className="overview margin-bottom-160px anchor-area" id="overview-area">
-        <h3 className="cs-title margin-bottom-80px mid-align-title" id="overview-title">Overview</h3>
+        <h3 className="cs-title margin-bottom-40px mid-align-title" id="overview-title">Overview</h3>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">FinWell is an intelligent budgeting app that
           helps
           increase mindfulness and reduce overspending by prompting users to reflect on past purchases over time.
         </h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Problem</h3>
-        <p className="cs-body margin-bottom-40px">There is an evident lack of financial education in this modern age,
+        <p className="cs-body margin-bottom-80px">There is an evident lack of financial education in this modern age,
           which leads to many people not knowing how to manage their finances and a general lack of financial
           literacy. <strong className="highlight">One prominent example of this is the frequent purchase of items that
             collectively go over budget and later
             cause guilt and regret, also known as impulsive spending.</strong></p>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Solution</h3>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">FinWell is a
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">FinWell is a
           budgeting app that leverages AI to help young adults develop good financial habits by introducing them to
           simple financial concepts like budgeting and goal setting.</strong> It also lets users track their feelings
           about past
@@ -220,8 +220,7 @@ export const FinWell = () => {
           </div>
           <div className="right-column margin-bottom-0px">
             <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-tools-title">Project Tools</h3>
-            <p className="cs-body">Figma, Google Forms, Miro, LucidSpark,
-              Adobe Illustrator, Google Meet, Loom, Fireflies, Typeform</p>
+            <p className="cs-body">Figma, Google Forms, Miro, LucidSpark, Google Meet, Loom, Fireflies, Typeform</p>
           </div>
         </div>
       </div>
@@ -275,8 +274,9 @@ export const FinWell = () => {
           <div className="actionable-insights">
             <div className="left-column">
               <h1 className="solution-title" id="actionable-insights-title">Actionable Insights</h1>
-              <h2 className="solution-subtitle">Building better financial habits.</h2>
-              <p className="solution-text">FinWell produces actionable insights and let's you know
+              <h2 className="solution-subtitle">Build better financial habits.</h2>
+              <p className="solution-text">FinWell produces actionable insights based on identified patterns and
+                highlights
                 any areas for improvements.</p>
             </div>
             <div className="right-column">
@@ -295,7 +295,7 @@ export const FinWell = () => {
       </div>
 
       <div className="discovery margin-bottom-160px anchor-area" id="discovery-area">
-        <h2 className="cs-title mid-align-title margin-bottom-80px" id="discovery-title"><strong
+        <h2 className="cs-title mid-align-title margin-bottom-40px" id="discovery-title"><strong
             className="yellow-text">03</strong> -
           Discovery</h2>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">I knew I wanted to explore the personal finance
@@ -313,7 +313,7 @@ export const FinWell = () => {
             school.</strong> Here are some key economic statistics I uncovered through secondary research:
         </p>
 
-        <div className="secondary-research-row margin-bottom-80px">
+        <div className="secondary-research-row margin-bottom-40px">
           <div className="margin-bottom-12px">
             <div className="left-column">
               <img className="emoji margin-bottom-12px" src={StressedEmoji} alt=""/>
@@ -340,119 +340,118 @@ export const FinWell = () => {
             <div className="right-column">
               <img className="emoji margin-bottom-12px" src={Books} alt=""/>
               <h4 className="large-number-font margin-bottom-12px">Only 24%</h4>
-                <p className="cs-body margin-top-0px">of Millennials demonstrate the ability to understand basic
-                  financial
-                  concepts. <strong
+              <p className="cs-body margin-top-0px">of Millennials demonstrate the ability to understand basic
+                financial
+                concepts. <strong
                     className="grey-text no-bold">(</strong><u
                     className="grey-text clickable" onClick={() => {
-                    window.open('https://gflec.org/wp-content/uploads/2016/09/pwc-millenials-and-financial-literacy-3.pdf?x93521')
-                  }}>GFLEC
-                  </u><strong className="grey-text no-bold">)</strong></p>
-              </div>
+                  window.open('https://gflec.org/wp-content/uploads/2016/09/pwc-millenials-and-financial-literacy-3.pdf?x93521')
+                }}>GFLEC
+                </u><strong className="grey-text no-bold">)</strong></p>
             </div>
           </div>
+        </div>
 
-          <h2 className="cs-manrope-150-line-height margin-bottom-80px">The secondary research results motivated me to
-            focus my solution
-            on the user group of young adults (18-30 years old) who are the
-            ones struggling the most with this problem.
-          </h2>
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">The secondary research results motivated me to
+          focus my solution
+          on the user group of young adults (18-30 years old) who are the
+          ones struggling the most with this problem.
+        </h2>
 
-          <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="competitive-analysis-title">Competitive
-            Analysis</h4>
-          <p className="cs-body margin-bottom-40px margin-top-0px">
-            I analyzed existing personal finance/budgeting products and thoroughly reviewed their heuristics and
-            features to uncover any strengths/weaknesses.
-          </p>
+        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="competitive-analysis-title">Competitive
+          Analysis</h4>
+        <p className="cs-body margin-bottom-40px margin-top-0px">
+          I analyzed existing personal finance/budgeting products and thoroughly reviewed their heuristics and
+          features to uncover any strengths/weaknesses.
+        </p>
 
-          <img className="margin-bottom-40px" id="competitive-analysis-image" src={CompetitiveAnalysis} alt=""/>
+        <img className="margin-bottom-40px" id="competitive-analysis-image" src={CompetitiveAnalysis} alt=""/>
 
-          <p className="cs-subtitle-2 margin-bottom-0px">Main Takeaways:</p>
-          <ul className="margin-bottom-40px">
-            <li className="cs-body">Upon closely examining the negative app store reviews for these products, I
-              discovered that many products struggle with simplifying financial concepts and making their
-              functionality intuitive. <strong className="highlight">Many users reported these products as challenging
-                to use consistently day-to-day.</strong>
-            </li>
-            <li className="cs-body">Even though there were many similar products on the market to help manage your
-              money, many just settled for basic budgeting features. <strong className="highlight">Very few of them had
-                any additional innovation to solve the pain points of why people struggled so much with managing their
-                money in the first place.</strong>
-            </li>
-          </ul>
+        <p className="cs-subtitle-2 margin-bottom-0px">Main Takeaways:</p>
+        <ul className="margin-bottom-80px">
+          <li className="cs-body">Upon closely examining the negative app store reviews for these products, I
+            discovered that many products struggle with simplifying financial concepts and making their
+            functionality intuitive. <strong className="highlight">Many users reported these products as challenging
+              to use consistently day-to-day.</strong>
+          </li>
+          <li className="cs-body">Even though there were many similar products on the market to help manage your
+            money, many just settled for basic budgeting features. <strong className="highlight">Very few of them had
+              any additional innovation to solve the pain points of why people struggled so much with managing their
+              money in the first place.</strong>
+          </li>
+        </ul>
 
-          <h3 className="cs-subtitle margin-bottom-80px sub-anchor-area" id="primary-research-title">Primary
-            Research</h3>
-          <h2 className="cs-manrope-150-line-height margin-bottom-80px">I shared a
-            screener survey
-            through my network and an online Reddit thread to recruit users for further research. I received 58
-            responses (72% of them young adults).
-          </h2>
-          <p className="cs-body margin-bottom-0px margin-top-0px">
-            <ul className="margin-bottom-40px margin-top-0px">
-            </ul>
-          </p>
-
-          <img className="image margin-bottom-40px" src={Survey} alt=""/>
-
-          <div className="secondary-research-row margin-bottom-0px">
-            <div className="margin-bottom-40px">
-              <div className="left-column">
-                <h4 className="large-number-font margin-bottom-12px">60%</h4>
-                <p className="cs-body margin-top-0px">of respondents rated their own financial literacy a 3 or lower on
-                  a
-                  scale of
-                  1-5.</p>
-              </div>
-              <div className="center-column">
-                <h4 className="large-number-font margin-bottom-12px">55%</h4>
-                <p className="cs-body margin-top-0px">of respondents said that impulsive purchases made up the majority
-                  of
-                  their expenses
-                  outside of the necessities.</p>
-              </div>
-              <div className="right-column">
-                <h4 className="large-number-font margin-bottom-12px">85%</h4>
-                <p className="cs-body margin-top-0px">of respondents can recall "overspending" on a purchase in the last
-                  month due to an
-                  emotional trigger.</p>
-              </div>
-            </div>
-          </div>
-
-          <h4 className="cs-subtitle margin-bottom-80px sub-anchor-area" id="user-interviews-title">User Interviews</h4>
-          <p className="cs-body margin-bottom-0px margin-top-80px">
-            <h2 className="cs-manrope-150-line-height margin-top-160px margin-bottom-80px">I selected 8
-              survey
-              respondents for a follow-up virtual interview to dive deep
-              into
-              how they made purchasing decisions and uncover their pain points when it comes to saving money.
-            </h2>These
-            respondents were chosen based on 5 main criteria:
-          </p>
+        <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="primary-research-title">Screener Surveys</h3>
+        <h2 className="cs-manrope-150-line-height margin-bottom-40px">I shared a
+          screener survey
+          through my network and an online Reddit thread to recruit users for further research. I received 58
+          responses (72% of them young adults).
+        </h2>
+        <p className="cs-body margin-bottom-0px margin-top-0px">
           <ul className="margin-bottom-40px margin-top-0px">
-            <li className="cs-body">Fell into the target age group of 18 - 30 years old
-            </li>
-            <li className="cs-body">Responded "Yes" to giving a follow-up interview in their screener
-            </li>
-            <li className="cs-body">Expressed high interest in learning more about financial literacy or using
-              financial
-              tools
-            </li>
-            <li className="cs-body">Revealed money issues stemming from a lack of experience or good
-              financial habits
-            </li>
-            <li className="cs-body">Indicated that they were likely to splurge on a purchase if the opportunity came up
-            </li>
           </ul>
-        <img src={UserInterviews} alt="" className="margin-bottom-40px image"/>
+        </p>
+
+        <img className="image margin-bottom-40px" src={Survey} alt=""/>
+
+        <div className="secondary-research-row margin-bottom-0px">
+          <div className="margin-bottom-40px">
+            <div className="left-column">
+              <h4 className="large-number-font margin-bottom-12px">60%</h4>
+              <p className="cs-body margin-top-0px">of respondents rated their own financial literacy a 3 or lower on
+                a
+                scale of
+                1-5.</p>
+            </div>
+            <div className="center-column">
+              <h4 className="large-number-font margin-bottom-12px">55%</h4>
+              <p className="cs-body margin-top-0px">of respondents said that impulsive purchases made up the majority
+                of
+                their expenses
+                outside of the necessities.</p>
+            </div>
+            <div className="right-column">
+              <h4 className="large-number-font margin-bottom-12px">85%</h4>
+              <p className="cs-body margin-top-0px">of respondents can recall "overspending" on a purchase in the last
+                month due to an
+                emotional trigger.</p>
+            </div>
+          </div>
+        </div>
+
+        <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="user-interviews-title">User Interviews</h4>
+        <p className="cs-body margin-bottom-0px margin-top-80px">
+          <h2 className="cs-manrope-150-line-height margin-top-160px margin-bottom-80px">I selected 8
+            survey
+            respondents for a follow-up virtual interview to dive deep
+            into
+            how they made purchasing decisions and uncover their pain points when it comes to saving money.
+          </h2>These
+          respondents were chosen based on 5 main criteria:
+        </p>
+        <ul className="margin-bottom-40px margin-top-0px">
+          <li className="cs-body">Fell into the target age group of 18 - 30 years old
+          </li>
+          <li className="cs-body">Responded "Yes" to giving a follow-up interview in their screener
+          </li>
+          <li className="cs-body">Expressed high interest in learning more about financial literacy or using
+            financial
+            tools
+          </li>
+          <li className="cs-body">Revealed money issues stemming from a lack of experience or good
+            financial habits
+          </li>
+          <li className="cs-body">Indicated that they were likely to splurge on a purchase if the opportunity came up
+          </li>
+        </ul>
+        <img src={UserInterviews} alt="" className="margin-bottom-80px image"/>
 
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="affinity-map-title">Affinity Map</h4>
         <p className="cs-body margin-bottom-40px"><strong className="highlight">Afterwards, I organized
           my interview
           notes into sticky notes and did affinity mapping to discover shared insights.</strong></p>
 
-        <img className="image margin-bottom-40px" src={AffinityMap} alt=""/>
+        <img className="image margin-bottom-80px" src={AffinityMap} alt=""/>
 
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-personas-title">User Personas</h4>
         <p className="cs-body margin-bottom-40px margin-top-0px">I further broke down the large user group of young
@@ -461,11 +460,11 @@ export const FinWell = () => {
             maps to understand how their
             pain points and motivations differ.
           </strong></p>
-        <Gallery className="margin-bottom-40px" images={userPersonasImages} uniquePrefix={"user-personas"}/>
+        <Gallery className="margin-bottom-80px" images={userPersonasImages} uniquePrefix={"user-personas"}/>
 
-        <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="empathy-maps-title">Empathy Maps</h4>
-        <Gallery className="margin-bottom-40px" images={empathyMapImages} uniquePrefix={"empathy-maps"}/>
-        <h4 className="cs-subtitle margin-bottom-80px sub-anchor-area"
+        <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="empathy-maps-title">Empathy Maps</h4>
+        <Gallery className="margin-bottom-80px" images={empathyMapImages} uniquePrefix={"empathy-maps"}/>
+        <h4 className="cs-subtitle margin-bottom-40px sub-anchor-area"
             id="problem-statement-title">Problem
           Statement</h4>
         <p className="cs-manrope-150-line-height  margin-bottom-80px">How might we help young adults control their
@@ -485,7 +484,7 @@ export const FinWell = () => {
           came up with 4 unique solutions that addresses at least one if not more of the pain
           points uncovered during the discovery phase:</strong></p>
 
-        <img className="image margin-bottom-40px" src={Ideation} alt=""/>
+        <img className="image margin-bottom-80px" src={Ideation} alt=""/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="guerilla-testing-title">Guerilla
           Testing</h3>
@@ -497,11 +496,11 @@ export const FinWell = () => {
           them minimalistic wireframes, explained the proposed features, then asked for feedback the pros and cons of
           each solution.
         </p>
-        <Gallery className="margin-bottom-40px" images={guerillaTestingImages} uniquePrefix={"guerilla-testing"}/>
+        <Gallery className="margin-bottom-80px" images={guerillaTestingImages} uniquePrefix={"guerilla-testing"}/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="testing-feedback-title">Testing
           Feedback</h3>
-        <p className="cs-body margin-bottom-80px margin-top-0px"><strong className="highlight">After gathering the
+        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">After gathering the
           feedback from 10
           different target users, I decided to proceed with solution #4 as the primary solution while incorporating
           budgeting elements of solution #1 to retain users of the app.</strong> Most users were interested in
@@ -529,7 +528,7 @@ export const FinWell = () => {
               chosen solution and user pain points gathered from research.</strong></p>
           </div>
           <div className="right-column">
-            <img src={UserStories} alt="" className="image margin-bottom-40px"/>
+            <img src={UserStories} alt="" className="image margin-bottom-80px"/>
           </div>
         </div>
 
@@ -539,75 +538,45 @@ export const FinWell = () => {
           made sense for
           users, so I <strong className="highlight">created this information architecture map based on familiar
             navigation and UX patterns.</strong></p>
-        <img src={InformationArchitecture} alt="" className="image margin-bottom-40px"/>
+        <img src={InformationArchitecture} alt="" className="image margin-bottom-80px"/>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="sketching-wireframes-title">Sketching /
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="sketching-wireframes-title">Sketches /
           Wireframes</h3>
         <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">Next, I proceeded to
           sketch out the most
           critical user flows and turn the sketches into low-fidelity wireframes.</strong> I focused on keeping the
           end-users in mind while designing by keeping elements simple to understand and using graphs/iconography
           wherever possible.</p>
-        <img className="image margin-bottom-40px" src={SketchingWireframes} alt=""/>
-
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide</h3>
-        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">I created a style guide
-          to narrow
-          FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong> Creating
-          it also made me reflect on why I chose the visual elements I did and what they represent.</p>
-        <Gallery className="margin-bottom-40px" images={styleGuideImages} uniquePrefix={"style-guide"}/>
-
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flows-title">User Flows</h3>
-        <Gallery className="margin-bottom-40px" images={userFlowsImages} uniquePrefix={"user-flows"}/>
-      </div>
-
-      <div className="test-and-iterate margin-bottom-160px anchor-area" id="tests-and-iterations-area">
-        <h2 className="cs-title mid-align-title margin-bottom-40px" id="tests-and-iterations-title"><strong
-            className="yellow-text">05</strong> - Tests & Iterations</h2>
-
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="information-architecture-title">Information
-          Architecture</h3>
-        <p className="cs-body margin-bottom-24px margin-top-0px">I wanted to organize the user stories in a way that
-          made sense for
-          users, so I <strong className="highlight">created this information architecture map based on familiar
-            navigation and UX patterns.</strong></p>
-        <img src={InformationArchitecture} alt="" className="image margin-bottom-80px"/>
-
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="sketching-wireframes-title">Sketching /
-          Wireframes</h3>
-        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">Next, I proceeded to
-          sketch out the most
-          critical user flows and turn the sketches into low-fidelity wireframes.</strong> I focused on keeping the
-          end-users in mind while designing by keeping elements simple to understand and using graphs/iconography
-          wherever possible.</p>
         <img className="image margin-bottom-80px" src={SketchingWireframes} alt=""/>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide</h3>
-        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">I created a style guide
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="style-guide-title">Style Guide / Design
+          System</h3>
+        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">I created a style guide
           to narrow
           FinWell’s identity and kept its visual identity consistent throughout the different flows.</strong> Creating
           it also made me reflect on why I chose the visual elements I did and what they represent.</p>
         <Gallery className="margin-bottom-80px" images={styleGuideImages} uniquePrefix={"style-guide"}/>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-flows-title">User Flows</h3>
-        <Gallery className="margin-bottom-80px" images={userFlowsImages} uniquePrefix={"user-flows"}/>
+        <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="user-flows-title">User Flows</h3>
+        <Gallery className="margin-bottom-40px" images={userFlowsImages} uniquePrefix={"user-flows"}/>
+      </div>
 
-        <h2 className="cs-title mid-align-title margin-bottom-120px" id="test-and-iterate-title"><strong
-            className="yellow-text">05</strong> - Test & Iterate</h2>
+      <div className="test-and-iterate margin-bottom-160px anchor-area" id="testing-and-iteration-area">
+        <h2 className="cs-title mid-align-title margin-bottom-40px" id="test-and-iterate-title"><strong
+            className="yellow-text">05</strong> - Testing & Iteration</h2>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="first-usability-test-title">Usability
-          Testing Round One</h3>
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="first-usability-test-title">First Usability
+          Test</h3>
         <p className="cs-body margin-bottom-40px margin-top-0px">While I had some research and heuristics to help guide
           my
-          decision-making, I knew I needed to do testing with actual users to validate the solution. <strong
-            className="highlight">I ran 12 users
-            through a 30-minute extended usability test to test my solution using interactive prototypes on
-            Figma.</strong> Using a
-          series of tasks, I wanted to learn about their first impressions of the app, if they could navigate the app or
-          find the location of the features, and observe their reactions and task completion time.
+          decision-making, I knew I needed to do evaluative research with actual users to validate the solution. <strong
+              className="highlight">I ran 12 users
+            through a 30-minute unguided usability test using interactive prototypes on
+            Figma.</strong> For the testing goals, I wanted to learn their first impressions of the app/features,
+          how easily they can navigate the app, and observe their task completion time.
         </p>
 
-        <div className="collapsibles-region margin-bottom-60px">
+        <div className="collapsibles-region margin-bottom-80px">
           <div className="collapsible-header" id="temp" onClick={(e) => handleCollapsible(e)}>
             <h2 id="click-to-view-testing-process">Click to View Testing Process</h2>
             <img src={DownArrow} alt="" id="temp-arrow"/>
@@ -658,27 +627,21 @@ export const FinWell = () => {
 
         <img className="image margin-bottom-80px" src={TestingResult1} alt=""/>
 
-        <p className="cs-manrope-150-line-height margin-bottom-80px">Subjectively, 8 out
-          of 15 participants
-          expressed that they enjoy the look and feel of the FinWell app. The average usability score was 7/10.
-        </p>
-
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="iterations-title">Iterations</h3>
-        <img className="image margin-bottom-40px" src={Iteration1} alt=""/>
-        <img className="image margin-bottom-40px" src={Iteration2} alt=""/>
-        <img className="image margin-bottom-40px" src={Iteration3} alt=""/>
+        <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="iterations-title">Iterations</h3>
+        <img className="image margin-bottom-80px" src={Iteration1} alt=""/>
+        <img className="image margin-bottom-80px" src={Iteration2} alt=""/>
+        <img className="image margin-bottom-80px" src={Iteration3} alt=""/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="second-usability-test-title">Second
           Usability Test</h3>
-        <p className="cs-body margin-bottom-80px margin-top-0px"><strong
-            className="highlight">I wanted to test the impact of my iterations so I
-          conducted another round of user testing so I ran 10 new users
-          through the same 30-minute usability test.</strong>
+        <p className="cs-body margin-bottom-40px margin-top-0px"><strong
+            className="highlight">I wanted to test the impact of my iterations so I recruited
+          10 new users and conducted the the same 30-minute usability test.</strong>
         </p>
         <img className="image margin-bottom-80px" src={TestingResult2} alt=""/>
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="final-prototype-title">Final
           Prototype</h3>
-        <p className="cs-body margin-bottom-24px margin-top-0px"><strong className="highlight">Try out the Figma
+        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">Try out the Figma
           prototype yourself and go through the flow of reviewing a product you just purchased!</strong></p>
         <div className="figma-embed-wrapper" id="prototype-container">
           <iframe width="100%" height="100%"
@@ -703,7 +666,7 @@ export const FinWell = () => {
         <p className="cs-body">“It’s a great idea and something I haven’t seen on the
           market yet.”
         </p>
-        <p className="cs-body margin-bottom-40px">“FinWell could be useful for me since it prompts me to
+        <p className="cs-body margin-bottom-80px">“FinWell could be useful for me since it prompts me to
           reflect on purchases and be
           more mindful of what I’m spending money on.”
         </p>
@@ -711,7 +674,7 @@ export const FinWell = () => {
         <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-did-i-learn-title">What Did I
           Learn?</h3>
         <p className="cs-subtitle-2 margin-bottom-12px">Levelling Up</p>
-        <p className="cs-body margin-bottom-40px"><strong className="highlight">On the technical side,
+        <p className="cs-body margin-bottom-80px"><strong className="highlight">On the technical side,
           I
           got to explore mobile interaction patterns and specific guidelines to keep in mind when designing
           for mobile.</strong> For example, I spent a lot of time looking at mobile design systems like Google's

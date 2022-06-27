@@ -34,7 +34,7 @@ import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Access = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Access";
@@ -123,14 +123,14 @@ export const Access = () => {
 
         <AnchorLinks callerType="access"/>
       <div className="overview anchor-area margin-bottom-160px" id="overview-area" key="overview-group">
-        <h3 className="cs-title mid-align-title margin-bottom-80px" id="overview-title">Overview</h3>
+        <h3 className="cs-title mid-align-title margin-bottom-40px" id="overview-title">Overview</h3>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">I led a small team to build and
           maintain an agency-wide design system for an entire
           ecosystem
           of software products.</h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Context</h3>
-        <p className="cs-body margin-bottom-80px">Our design team was
+        <p className="cs-body margin-bottom-40px">Our design team was
           designing
           and launching a suite of tools designed to digitize the agency experience and help various user groups in
           the
@@ -144,7 +144,7 @@ export const Access = () => {
         </h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="my-contributions-title">My Contributions</h3>
-        <ul className="margin-bottom-40px">
+        <ul className="margin-bottom-80px">
           <li className="cs-body"><strong className="highlight">I spearheaded the entire design system project as the
             lead product
             designer.</strong></li>
@@ -180,9 +180,9 @@ export const Access = () => {
 
         <div className="ideation margin-bottom-160px anchor-area" id="ideation-area" key="ideation-group">
           <h2 className="cs-title mid-align-title margin-bottom-40px" id="ideation-title"><strong
-            className="blue-text">01 </strong>-
+              className="blue-text">01 </strong>-
             Ideation</h2>
-          <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-are-users-experiencing-title">What Are
+          <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="what-are-users-experiencing-title">What Are
             Users
             Experiencing?</h3>
 
@@ -203,7 +203,7 @@ export const Access = () => {
             </div>
           </div>
 
-          <div className="row margin-bottom-80px">
+          <div className="row margin-bottom-40px">
             <div className="left-column">
               <img className="emoji margin-bottom-24px" src={Developer} alt=""/>
               <h3 className="cs-subtitle-2 margin-bottom-12px">Developers</h3>
@@ -230,7 +230,7 @@ export const Access = () => {
               fully on board before we started.</strong> We did this by:
           </p>
 
-          <ul className="margin-bottom-40px">
+          <ul className="margin-bottom-80px">
             <li className="cs-body">
               Organizing a company-wide meeting with all stakeholders present
               where we presented the long-term benefits of adopting
@@ -247,7 +247,7 @@ export const Access = () => {
             philosophies we defined and outlined to keep in mind throughout the process:</p>
 
           <div className="north-star-row margin-bottom-40px">
-            <div className="spacing-div margin-bottom-40px">
+            <div className="spacing-div margin-bottom-80px">
               <div className="left-column">
                 <img className="margin-bottom-24px" src={Documentation} alt=""/>
                 <h4 className="cs-subtitle-2 margin-bottom-24px">Documentation</h4>
@@ -279,66 +279,66 @@ export const Access = () => {
               examples of some of the most recognized design systems such as Shopify’s <a className="cs-body"
                                                                                           href="https://polaris.shopify.com/">Polaris</a>,
               IBM’s <a className="cs-body" href="https://carbondesignsystem.com/">Carbon</a>, or Saleforce’s <a
-                className="cs-body" href="https://www.salesforce.com/ca/campaign/lightning/">Lightning</a>. <strong
-                className="highlight">We took notes of all the standard practices and methods for
+                  className="cs-body" href="https://www.salesforce.com/ca/campaign/lightning/">Lightning</a>. <strong
+                  className="highlight">We took notes of all the standard practices and methods for
                 classification/presentation
                 and brainstormed how those examples could best serve our purposes.</strong></p>
           </div>
-      </div>
-
-      <div className="creation margin-bottom-160px anchor-area" id="creation-area" key="creation-group">
-        <h2 className="cs-title mid-align-title margin-bottom-80px" id="creation-title"><strong
-            className="blue-text">02 </strong>-
-          Creation</h2>
-        <h3 className="cs-manrope-150-line-height margin-bottom-80px">We started by breaking down the existing design
-          elements into
-          3 main categories.</h3>
-        <div className="row-42-58">
-          <div className="left-column-42 right-padding-28px">
-            <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="foundation-title">Foundation</p>
-            <p className="cs-body">
-              These fundamental visual elements can't be broken down into smaller elements and serve as the foundation
-              for the existence of all other components.
-            </p>
-          </div>
-          <div className="right-column-58">
-            <img src={DesignSystem} alt=""/>
-          </div>
         </div>
 
-        <div className="row-42-58 margin-bottom-80px">
-          <div className="left-column-42 right-padding-28px">
-            <p className="cs-body">
-              <strong className="highlight">I unified how our icons look by ensuring they all take up the same space
-                in a grid and have the same weight.</strong> I
-              also implemented a new icon naming convention to make it easier to find the icon you are looking for in
-              the asset panel.
-            </p>
+        <div className="creation margin-bottom-80px anchor-area" id="creation-area" key="creation-group">
+          <h2 className="cs-title mid-align-title margin-bottom-40px" id="creation-title"><strong
+              className="blue-text">02 </strong>-
+            Creation</h2>
+          <h3 className="cs-manrope-150-line-height margin-bottom-80px">We started by breaking down the existing design
+            elements into
+            3 main categories.</h3>
+          <div className="row-42-58">
+            <div className="left-column-42 right-padding-28px">
+              <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="foundation-title">Foundation</p>
+              <p className="cs-body">
+                These fundamental visual elements can't be broken down into smaller elements and serve as the foundation
+                for the existence of all other components.
+              </p>
+            </div>
+            <div className="right-column-58">
+              <img src={DesignSystem} alt=""/>
+            </div>
           </div>
-          <div className="right-column-58">
-            <img src={Iconography} alt=""/>
-          </div>
-        </div>
 
-        <div className="row-42-58 margin-bottom-80px">
-          <div className="left-column-42 right-padding-28px">
-            <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="components-title">Components</p>
-            <p className="cs-body">
-              These are the relatively simple UI elements reused from design to
-              design. We placed these on individual artboards and made sure that each component is:
-            </p>
+          <div className="row-42-58 margin-bottom-80px">
+            <div className="left-column-42 right-padding-28px">
+              <p className="cs-body">
+                <strong className="highlight">I unified how our icons look by ensuring they all take up the same space
+                  in a grid and have the same weight.</strong> I
+                also implemented a new icon naming convention to make it easier to find the icon you are looking for in
+                the asset panel.
+              </p>
+            </div>
+            <div className="right-column-58">
+              <img src={Iconography} alt=""/>
+            </div>
+          </div>
 
-            <ul>
-              <li className="cs-body">Made up of elements from the foundation</li>
-              <li className="cs-body">Following the 4px rule</li>
-              <li className="cs-body">Grouped with other similar components</li>
-              <li className="cs-body">Linked to accompanying documentation</li>
-            </ul>
+          <div className="row-42-58 margin-bottom-80px">
+            <div className="left-column-42 right-padding-28px">
+              <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="components-title">Components</p>
+              <p className="cs-body">
+                These are the relatively simple UI elements reused from design to
+                design. We placed these on individual artboards and made sure that each component is:
+              </p>
+
+              <ul>
+                <li className="cs-body">Made up of elements from the foundation</li>
+                <li className="cs-body">Following the 4px rule</li>
+                <li className="cs-body">Grouped with other similar components</li>
+                <li className="cs-body">Linked to accompanying documentation</li>
+              </ul>
+            </div>
+            <div className="right-column-58">
+              <img src={TextFields} alt=""/>
+            </div>
           </div>
-          <div className="right-column-58">
-            <img src={TextFields} alt=""/>
-          </div>
-        </div>
 
         <div className="row-42-58 margin-bottom-80px">
           <div className="left-column-42 right-padding-28px">
@@ -369,29 +369,29 @@ export const Access = () => {
           </div>
         </div>
 
-        <h3 className="cs-subtitle margin-bottom-80px sub-anchor-area" id="process-documentation-title">Process
-          Documentation</h3>
-        <h2 className="cs-manrope-150-line-height margin-bottom-80px">
-          Once we had organized the existing chaos, we knew we needed to document a
-          standard process for adding to and
-          maintaining the design system in the future.
-        </h2>
-        <img className="margin-bottom-0px" id="creation-flowchart" src={FlowChart} alt=""/>
+          <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="process-documentation-title">Process
+            Documentation</h3>
+          <h2 className="cs-manrope-150-line-height margin-bottom-40px">
+            Once we had organized the existing chaos, we knew we needed to document a
+            standard process for adding to and
+            maintaining the design system in the future.
+          </h2>
+          <img className="margin-bottom-0px" id="creation-flowchart" src={FlowChart} alt=""/>
 
-        <p className="cs-body">
-          <strong className="highlight"> With the new process in place, everyone on the team was on the same page and
-            new hires joining the design team noted that the process/classification made it easier to familiarize
-            themselves with the system and how it
-            functioned.</strong>
-        </p>
-      </div>
+          <p className="cs-body">
+            <strong className="highlight"> With the new process in place, everyone on the team was on the same page and
+              new hires joining the design team noted that the process/classification made it easier to familiarize
+              themselves with the system and how it
+              functioned.</strong>
+          </p>
+        </div>
 
         <div className="iteration margin-bottom-80px anchor-area" id="iteration-area" key="iteration-group">
           <h2 className="cs-title mid-align-title margin-bottom-40px" id="iteration-title"><strong
               className="blue-text">03 </strong>-
             Iteration</h2>
           <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="user-feedback-title">User Feedback</h3>
-          <p className="cs-body margin-bottom-40px">
+          <p className="cs-body margin-bottom-80px">
             From the beginning, we wanted to involve other parallel teams as early on as
             possible since
             the design system had to be optimized for everyone to be considered a success. To achieve this, <strong
@@ -404,7 +404,7 @@ export const Access = () => {
             Considerations</p>
 
           <img className="margin-bottom-40px image" src={DesignConsiderations} alt=""/>
-          <p className="cs-body margin-bottom-40px">All the teams enjoyed the constant updates in the #designsystem
+          <p className="cs-body margin-bottom-80px">All the teams enjoyed the constant updates in the #designsystem
             slack channel, which
             made them feel included.
           </p>
@@ -423,7 +423,7 @@ export const Access = () => {
           <img className="margin-bottom-40px" id="old-design-specs" src={OldDesignSpecs} alt=""/>
 
           <p className="cs-subtitle margin-bottom-12px no-bold">New Design Specs for Handoff</p>
-          <img className="margin-bottom-40px" id="new-design-specs" src={NewDesignSpec1} alt=""/>
+          <img className="margin-bottom-80px" id="new-design-specs" src={NewDesignSpec1} alt=""/>
           <p className="cs-subtitle margin-bottom-12px no-bold">Reprioritization</p>
           <p className="cs-body margin-bottom-40px">In one early iteration, we included redlines to
             indicate
@@ -442,13 +442,13 @@ export const Access = () => {
           <img className="margin-bottom-40px" id="new-design-specs" src={NewDesignSpec2} alt=""/>
 
           <p className="cs-subtitle margin-bottom-12px no-bold">Reprioritized Mini Prototypes of Component Behaviour</p>
-          <div className="figma-embed-wrapper margin-bottom-40px">
+          <div className="figma-embed-wrapper margin-bottom-80px">
             <iframe width="100%" height="100%"
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnJaUw4Tyxn7GOpUglOlAmQ%2FField-Behaviour-Mini-Prototype%3Fpage-id%3D0%253A1%26node-id%3D4%253A6186%26viewport%3D-975%252C-27%252C1%26scaling%3Dcontain%26starting-point-node-id%3D4%253A6186%26hotspot-hints%3D0"
                     allowFullScreen></iframe>
           </div>
 
-          <div className="row-42-58 margin-bottom-40px">
+          <div className="row-42-58 margin-bottom-80px">
             <div className="left-column-42 right-padding-28px">
               <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area"
                   id="iterations-for-product-managers-owners-title">Iterations for
@@ -467,7 +467,7 @@ export const Access = () => {
             </div>
           </div>
 
-          <div className="row-42-58 margin-bottom-40px">
+          <div className="row-42-58 margin-bottom-80px">
             <div className="left-column-42 right-padding-28px">
               <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area"
                   id="iterations-for-marketers-designers-title">Iterations for
