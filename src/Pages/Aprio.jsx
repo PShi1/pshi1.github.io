@@ -408,7 +408,7 @@ export const Aprio = () => {
         </div>
       </div>
 
-      <div className="reflection margin-bottom-80px anchor-area" id="reflection-area">
+      <div className="reflection margin-bottom-160px anchor-area" id="reflection-area">
         <h2 className="cs-title mid-align-title margin-bottom-40px sub-anchor-area" id="reflection-title"><strong
           className="orange-text">05 </strong>- Reflection</h2>
         <p className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-did-i-learn-title">What Did I Learn?</p>

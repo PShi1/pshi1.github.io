@@ -553,7 +553,7 @@ export const Access = () => {
           </div>
         </div>
 
-        <div className="reflection margin-bottom-80px anchor-area" id="reflection-area" key="reflection-group">
+        <div className="reflection margin-bottom-160px anchor-area" id="reflection-area" key="reflection-group">
           <h2 className="cs-title mid-align-title margin-bottom-40px" id="reflection-title"><strong
             className="blue-text">05 </strong>-
             Reflection</h2>

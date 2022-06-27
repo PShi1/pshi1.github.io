@@ -99,7 +99,7 @@ const AnchorLinks = ({callerType}) => {
         let topY = window.scrollY + anchorDiv.offsetTop - offset;
         let BottomOfTopBoxY = headerImageDiv.offsetTop + headerImageDiv.offsetHeight;
 
-        if (finalImageDiv && bottomY >= topOfBottomBoxY) {
+        if (finalImageDiv && bottomY >= topOfBottomBoxY + offset) {
           if (!anchorDiv.classList.contains("hidden")) {
             anchorDiv.classList.add("hidden");
           }

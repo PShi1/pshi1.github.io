@@ -562,15 +562,15 @@ export const FinWell = () => {
       </div>
 
       <div className="test-and-iterate margin-bottom-160px anchor-area" id="testing-and-iteration-area">
-        <h2 className="cs-title mid-align-title margin-bottom-40px" id="test-and-iterate-title"><strong
-            className="yellow-text">05</strong> - Testing & Iteration</h2>
+        <h2 className="cs-title mid-align-title margin-bottom-40px" id="testing-and-iteration-title"><strong
+          className="yellow-text">05</strong> - Testing & Iteration</h2>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="first-usability-test-title">First Usability
           Test</h3>
         <p className="cs-body margin-bottom-40px margin-top-0px">While I had some research and heuristics to help guide
           my
           decision-making, I knew I needed to do evaluative research with actual users to validate the solution. <strong
-              className="highlight">I ran 12 users
+            className="highlight">I ran 12 users
             through a 30-minute unguided usability test using interactive prototypes on
             Figma.</strong> For the testing goals, I wanted to learn their first impressions of the app/features,
           how easily they can navigate the app, and observe their task completion time.
@@ -650,9 +650,9 @@ export const FinWell = () => {
         </div>
       </div>
 
-      <div className="reflection margin-bottom-80px anchor-area" id="reflection-area" key="reflection-group">
+      <div className="reflection margin-bottom-160px anchor-area" id="reflection-area" key="reflection-group">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="reflection-title"><strong
-            className="yellow-text">06 </strong>-
+          className="yellow-text">06 </strong>-
           Reflection</h2>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="concept-feedback-title">Concept
