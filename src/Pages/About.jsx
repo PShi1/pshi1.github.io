@@ -5,9 +5,9 @@ import Selfie1 from '../Assets/AboutPageImages/Selfie1.svg';
 import Selfie2 from '../Assets/AboutPageImages/Selfie2.svg';
 import Selfie3 from '../Assets/AboutPageImages/Selfie3.svg';
 import DownArrow from '../Assets/arrow-down.svg';
-import UpArrow from '../Assets/arrow-up.svg';
 import Books from "../Assets/Books.png"
 import {copyEmail, fadeInIntro, hideScrollBar, setPageToDarkMode} from "../App";
+import UpArrow from "../Assets/arrow-up.svg";
 
 export const About = () => {
   useEffect(() => {
@@ -39,6 +39,26 @@ export const About = () => {
     }
   }
 
+  /**
+   * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen
+   */
+  const fadeInOnScroll = () => {
+    let elements1 = document.getElementsByClassName("appear-on-scroll");
+    let scroll = window.scrollY;
+    let innerHeight = window.innerHeight;
+
+    window.addEventListener("scroll", () => {
+      scroll = window.scrollY;
+
+      for (const element of elements1) {
+        let pos = element.offsetTop;
+        if (scroll + innerHeight / 1.3 >= pos) {
+          element.classList.add("play-animation");
+        }
+      }
+    })
+  }
+
   const handleCollapsible = (e) => {
     let id = e.target.id;
     let element = document.getElementById(id + "-item");
@@ -60,26 +80,6 @@ export const About = () => {
       element.style.height = "0";
       arrow.src = DownArrow;
     }
-  }
-
-  /**
-   * Adds a listener to the page's scroll, that will fade in (activate) objects as they appear on the screen
-   */
-  const fadeInOnScroll = () => {
-    let elements1 = document.getElementsByClassName("appear-on-scroll");
-    let scroll = window.scrollY;
-    let innerHeight = window.innerHeight;
-
-    window.addEventListener("scroll", () => {
-      scroll = window.scrollY;
-
-      for (const element of elements1) {
-        let pos = element.offsetTop;
-        if (scroll + innerHeight / 1.3 >= pos) {
-          element.classList.add("play-animation");
-        }
-      }
-    })
   }
 
   return (

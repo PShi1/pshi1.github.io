@@ -48,6 +48,8 @@ import Iteration2 from '../Assets/FinWellPageImages/Iteration2.png';
 import Iteration3 from '../Assets/FinWellPageImages/Iteration3.png';
 import Process from '../Assets/FinWellPageImages/Process.png';
 import Insights from '../Assets/FinWellPageImages/Insights.png';
+import DownArrow from "../Assets/ArrowDownBlack.svg";
+import UpArrow from "../Assets/ArrowUpBlack.svg";
 
 /**
  * FinWell page component
@@ -137,60 +139,91 @@ export const FinWell = () => {
     }
   }
 
+  const handleCollapsible = (e) => {
+    let id = e.target.id;
+    let element = document.getElementById(id + "-item");
+    let collapsibleHeader = document.getElementById(id);
+    let arrow = document.getElementById(id + "-arrow");
+    if (!element.classList.contains("active")) {
+      if (element.classList.contains("closed")) {
+        element.classList.replace("closed", "active");
+        collapsibleHeader.classList.replace("closed", "active");
+      } else {
+        element.classList.add("active");
+        collapsibleHeader.classList.add("active");
+      }
+      element.style.height = element.scrollHeight + "px";
+      arrow.src = UpArrow;
+      let h2 = document.getElementById("click-to-view-testing-process");
+      if (h2) {
+        h2.innerText = "Click to Hide Testing Process";
+      }
+    } else {
+      element.classList.replace("active", "closed");
+      collapsibleHeader.classList.replace("active", "closed");
+      element.style.height = "0";
+      arrow.src = DownArrow;
+      let h2 = document.getElementById("click-to-view-testing-process");
+      if (h2) {
+        h2.innerText = "Click to View Testing Process";
+      }
+    }
+  }
+
   return (
-      <div className="finwell-page">
-        <AnchorLinks callerType="finwell"/>
-        <div className="intro-wrapper margin-bottom-80px">
-          <img src={FinWellHeaderImage} alt="" className="finwell-header clickable" id="header-image" onClick={() => {
-            scrollToOverview()
-          }}/>
-        </div>
+    <div className="finwell-page">
+      <AnchorLinks callerType="finwell"/>
+      <div className="intro-wrapper margin-bottom-80px">
+        <img src={FinWellHeaderImage} alt="" className="finwell-header clickable" id="header-image" onClick={() => {
+          scrollToOverview()
+        }}/>
+      </div>
 
-        <div className="overview margin-bottom-160px anchor-area" id="overview-area">
-          <h3 className="cs-title margin-bottom-80px mid-align-title" id="overview-title">Overview</h3>
-          <h2 className="cs-manrope-150-line-height margin-bottom-80px">FinWell is an intelligent budgeting app that
-            helps
-            increase mindfulness and reduce overspending by prompting users to reflect on past purchases over time.
-          </h2>
+      <div className="overview margin-bottom-160px anchor-area" id="overview-area">
+        <h3 className="cs-title margin-bottom-80px mid-align-title" id="overview-title">Overview</h3>
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">FinWell is an intelligent budgeting app that
+          helps
+          increase mindfulness and reduce overspending by prompting users to reflect on past purchases over time.
+        </h2>
 
-          <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Problem</h3>
-          <p className="cs-body margin-bottom-40px">There is an evident lack of financial education in this modern age,
-            which leads to many people not knowing how to manage their finances and a general lack of financial
-            literacy.
-            <strong className="highlight"> One prominent example of this is the frequent purchase of items that
-              collectively go over budget and later
-              cause guilt and regret, also known as impulsive spending.</strong></p>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Problem</h3>
+        <p className="cs-body margin-bottom-40px">There is an evident lack of financial education in this modern age,
+          which leads to many people not knowing how to manage their finances and a general lack of financial
+          literacy.
+          <strong className="highlight"> One prominent example of this is the frequent purchase of items that
+            collectively go over budget and later
+            cause guilt and regret, also known as impulsive spending.</strong></p>
 
-          <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Solution</h3>
-          <p className="cs-body margin-bottom-40px"><strong className="highlight">FinWell is a
-            budgeting app that leverages AI to help young adults develop good financial habits by introducing them to
-            simple financial concepts like budgeting and goal setting.</strong> It also lets users track their feelings
-            about past
-            purchases by prompting self-reflection entries at specific time intervals after a purchase. This encourages
-            users to
-            be more mindful and deliberate when spending money to ensure their purchases retain their value.
-          </p>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Solution</h3>
+        <p className="cs-body margin-bottom-40px"><strong className="highlight">FinWell is a
+          budgeting app that leverages AI to help young adults develop good financial habits by introducing them to
+          simple financial concepts like budgeting and goal setting.</strong> It also lets users track their feelings
+          about past
+          purchases by prompting self-reflection entries at specific time intervals after a purchase. This encourages
+          users to
+          be more mindful and deliberate when spending money to ensure their purchases retain their value.
+        </p>
 
-          <div className="three-column-row margin-bottom-0px">
-            <div className="left-column margin-bottom-0px">
-              <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-timeline-title">Project Timeline</h3>
-              <p className="cs-body">2 months (Q2 2021)
-              </p>
-            </div>
-            <div className="center-column margin-bottom-0px">
-              <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-type-title">Project Type</h3>
-              <p className="cs-body">Sole Designer/Researcher, Course
-                Project,
-                Full Case Study,
-                Mobile</p>
-            </div>
-            <div className="right-column margin-bottom-0px">
-              <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-tools-title">Project Tools</h3>
-              <p className="cs-body">Figma, Google Forms, Miro, LucidSpark,
-                Adobe Illustrator, Google Meet, Loom, Fireflies, Typeform</p>
-            </div>
+        <div className="three-column-row margin-bottom-0px">
+          <div className="left-column margin-bottom-0px">
+            <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-timeline-title">Project Timeline</h3>
+            <p className="cs-body">2 months (Q2 2021)
+            </p>
+          </div>
+          <div className="center-column margin-bottom-0px">
+            <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-type-title">Project Type</h3>
+            <p className="cs-body">Sole Designer/Researcher, Course
+              Project,
+              Full Case Study,
+              Mobile</p>
+          </div>
+          <div className="right-column margin-bottom-0px">
+            <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-tools-title">Project Tools</h3>
+            <p className="cs-body">Figma, Google Forms, Miro, LucidSpark,
+              Adobe Illustrator, Google Meet, Loom, Fireflies, Typeform</p>
           </div>
         </div>
+      </div>
 
       <div className="process margin-bottom-160px anchor-area" id="process-area">
         <h2 className="cs-title mid-align-title margin-bottom-80px" id="process-title"><strong
@@ -545,41 +578,55 @@ export const FinWell = () => {
             find the location of the features, and observe their reactions and task completion time.
           </p>
 
-          <p className="cs-body margin-bottom-0px"><strong className="highlight">I started the sessions by asking the
-            testers a couple of questions to determine
-            their demographic and general spending habits to see how well they would fit into my target user
-            group.</strong> Questions included:</p>
-          <ul className="margin-top-0px margin-bottom-40px">
-            <li className="cs-body">How often have you bought something on an impulse?</li>
-            <li className="cs-body">Describe the last time you remember yourself in a scenario making an impulsive
-              purchase
-            </li>
-            <li className="cs-body">What are the main factors that influence your buying decisions?</li>
-          </ul>
+          <div className="collapsibles-region margin-bottom-60px">
+            <div className="collapsible-header" id="temp" onClick={(e) => handleCollapsible(e)}>
+              <h2 id="click-to-view-testing-process">Click to View Testing Process</h2>
+              <img src={DownArrow} alt="" id="temp-arrow"/>
+            </div>
+            <div className="collapsible-item" id="temp-item">
+              <p className="cs-body margin-bottom-0px"><strong className="highlight">I started the sessions by asking
+                the
+                testers a couple of questions to determine
+                their demographic and general spending habits to see how well they would fit into my target user
+                group.</strong> Questions included:</p>
+              <ul className="margin-top-0px margin-bottom-40px">
+                <li className="cs-body">How often have you bought something on an impulse?</li>
+                <li className="cs-body">Describe the last time you remember yourself in a scenario making an impulsive
+                  purchase
+                </li>
+                <li className="cs-body">What are the main factors that influence your buying decisions?</li>
+              </ul>
 
-          <p className="cs-body margin-bottom-0px"><strong className="highlight">To test the design and functionality of
-            FinWell, I asked
-            testers to perform a series of tasks and observed how they performed and how long each task took
-            them.</strong> The testers were instructed to think aloud, and I would only step in and gently guide them
-            when
-            they spent over 3 minutes stuck on a task. The tasks covered all of the main functionalities and included:
-          </p>
+              <p className="cs-body margin-bottom-0px"><strong className="highlight">To test the design and
+                functionality of
+                FinWell, I asked
+                testers to perform a series of tasks and observed how they performed and how long each task took
+                them.</strong> The testers were instructed to think aloud, and I would only step in and gently guide
+                them
+                when
+                they spent over 3 minutes stuck on a task. The tasks covered all of the main functionalities and
+                included:
+              </p>
 
-          <ul className="margin-top-0px margin-bottom-40px">
-            <li className="cs-body">Signing up for a new account and navigating to the home screen</li>
-            <li className="cs-body">Creating a new monthly budget for $3000
-            </li>
-            <li className="cs-body">Creating a goal for a new cell phone that costs $900</li>
-            <li className="cs-body">Creating a journal entry for the new MacBook they just purchased</li>
-            <li className="cs-body">Finding a past journal entry about a blue dress and deleting it</li>
-            <li className="cs-body">Viewing an insight on your spending habits and expanding it to view recommended
-              actions items
-            </li>
-          </ul>
+              <ul className="margin-top-0px margin-bottom-40px">
+                <li className="cs-body">Signing up for a new account and navigating to the home screen</li>
+                <li className="cs-body">Creating a new monthly budget for $3000
+                </li>
+                <li className="cs-body">Creating a goal for a new cell phone that costs $900</li>
+                <li className="cs-body">Creating a journal entry for the new MacBook they just purchased</li>
+                <li className="cs-body">Finding a past journal entry about a blue dress and deleting it</li>
+                <li className="cs-body">Viewing an insight on your spending habits and expanding it to view recommended
+                  actions items
+                </li>
+              </ul>
 
-          <p className="cs-body margin-bottom-80px"><strong className="highlight">After the tasks, I ended the testing
-            with a general qualitative feedback session, asking them questions about their opinion on the design,
-            functionality, and usability (rate out of 10).</strong></p>
+              <p className="cs-body margin-bottom-24px"><strong className="highlight">After the tasks, I ended the
+                testing
+                with a general qualitative feedback session, asking them questions about their opinion on the design,
+                functionality, and usability (rate out of 10).</strong></p>
+            </div>
+          </div>
+
 
           <p className="cs-manrope-150-line-height margin-bottom-80px">Subjectively, 8 out
             of 15 participants

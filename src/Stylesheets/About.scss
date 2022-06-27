@@ -134,8 +134,12 @@
     }
 
     @keyframes animate-arrow {
-      from {transform: translateY(0vw)}
-      to {transform: translateY(0.5vw)}
+      from {
+        transform: translateY(0vw)
+      }
+      to {
+        transform: translateY(0.5vw)
+      }
     }
 
     .collapsible-item {
