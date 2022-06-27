@@ -14,11 +14,16 @@
     }
   }
 
+  .cs-body, .cs-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .mid-align-title {
     text-align: center;
   }
 
-  .overview, .process, .design-mockups, .reflection {
+  .overview, .process, .ideation, .design-mockups, .reflection {
     width: $default-case-study-margin;
     margin: auto;
   }
@@ -36,7 +41,7 @@
     padding-top: 6vw;
   }
 
-  .process {
+  .ideation, .overview {
     .left-column {
       width: 50%;
       display: inline-block;
@@ -60,7 +65,7 @@
       }
     }
 
-    .north-star-row {
+    .north-star-row, .three-column-row {
       display: flex;
       flex-wrap: wrap;
 
@@ -90,12 +95,12 @@
 
   .impact {
     background-color: $black;
-    padding-top: 0.8vw;
-    padding-bottom: 3.12vw;
+    padding-top: 3.2vw;
+    padding-bottom: 3.2vw;
 
     .impact-inner {
       width: $default-case-study-margin;
-      margin: 3.125vw auto auto auto;
+      margin: 0 auto auto auto;
     }
 
     p, .cs-body {

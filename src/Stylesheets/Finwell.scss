@@ -10,6 +10,11 @@
     color: black;
   }
 
+  .cs-body, .cs-subtitle, .cs-subtitle-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .mid-align-title {
     text-align: center;
   }
@@ -84,6 +89,35 @@
     width: $default-case-study-margin;
   }
 
+  .overview {
+    .three-column-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .spacing-div {
+        display: flex;
+      }
+
+      .left-column, .center-column, .right-column {
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .left-column {
+        padding-right: 2.5%;
+      }
+
+      .center-column {
+        padding: 0 2.5%;
+      }
+
+      .right-column {
+        padding-left: 2.5%;
+      }
+    }
+  }
+
   .process {
     .column {
       display: inline-block;
@@ -131,11 +165,11 @@
     }
 
     #intelligent-budgeting-bubbles {
-      transform: translateY(-8%);
+      transform: translateY(-20%);
     }
 
     #purchase-tracking-bubbles {
-      transform: translateY(-10%);
+      transform: translateY(-25%);
     }
 
     #actionable-insights-bubbles {
@@ -165,10 +199,11 @@
         width: 60%;
         display: inline-block;
         box-sizing: border-box;
+        padding-top: 6vw;
 
         img {
           width: 65%;
-          padding-top: 5vw;
+          padding-top: 4vw;
           max-width: 30vw;
           float: right;
         }
@@ -198,7 +233,7 @@
     }
 
     #actionable-insights-container {
-      margin-top: 20%;
+      margin-top: 10%;
 
       .actionable-insights {
         display: flex;

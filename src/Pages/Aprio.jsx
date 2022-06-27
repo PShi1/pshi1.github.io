@@ -105,16 +105,16 @@ export const Aprio = () => {
   return (
     <div className="aprio-page">
       <AnchorLinks callerType="aprio"/>
-      <img className="full-width-image margin-bottom-80px anchor-area clickable" src={AprioHeaderImage} alt=""
+      <img className="full-width-image margin-bottom-40px anchor-area clickable" src={AprioHeaderImage} alt=""
            id="header-image"
            onClick={() => {
              scrollToOverview()
            }}/>
 
-      <div className="overview anchor-area" id="overview-area">
-        <h3 className="cs-title mid-align-title margin-bottom-80px" id="overview-title">Overview</h3>
+      <div className="overview anchor-area margin-bottom-160px" id="overview-area">
+        <h3 className="cs-title mid-align-title margin-bottom-40px" id="overview-title">Overview</h3>
 
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="privacy-disclaimer-title">Privacy
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="privacy-disclaimer-title">Privacy
           Disclaimer</h3>
         <p className="cs-body margin-bottom-80px"><strong className="highlight">To protect Aprio’s extremely
           classified
@@ -129,8 +129,8 @@ export const Aprio = () => {
           portal
           for a top 50 US accounting firm.</h2>
 
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="context-title">Problem</h3>
-        <p className="cs-body margin-bottom-80px"> Aprio is an elite accounting firm with
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Problem</h3>
+        <p className="cs-body margin-bottom-40px"> Aprio is an elite accounting firm with
           a massive problem. It was exponentially growing in size and revenue every quarter,
           but its employees were stuck using external software
           that was decades old. It was slow, inefficient, and heavily outdated. <strong className="highlight"> My
@@ -138,7 +138,7 @@ export const Aprio = () => {
             create a client management portal that would digitize the client experience and help launch the firm
             into the future.</strong></p>
 
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="context-title">Solution</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Solution</h3>
         <p className="cs-body margin-bottom-80px"> The internal software, later named AMP (Aprio
           Management Portal),
           allowed Aprio employees to see the data collected on their clients, manage task assignments, and change client
@@ -151,12 +151,12 @@ export const Aprio = () => {
           1,000 Aprio employees and over
           10,000 Aprio clients all around the globe.</h2>
 
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="my-contributions-title">What Did I Do?</h3>
+        <h3 className="cs-subtitle-2 margin-bottom-12px" id="my-contributions-title">What Did I Do?</h3>
         <p className="cs-body">This was my most challenging project to date, but it also allowed me to work on
           something
           impactful and grow tremendously as a product designer. With guidance and support from senior
           designers: </p>
-        <ul className="margin-bottom-80px">
+        <ul className="margin-bottom-40px">
           <li className="cs-body"><strong className="highlight"> I developed a detailed design process and product
             roadmap for
             the preliminary releases of AMP. </strong></li>
@@ -174,30 +174,40 @@ export const Aprio = () => {
           </li>
         </ul>
 
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-timeline-title">Project Timeline</h3>
-        <p className="cs-body margin-bottom-80px">4 months from project start to
-          development start (Q1 2022 -> Q2 2022)
-        </p>
-
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
-        <p className="cs-body margin-bottom-80px">Sole Designer, Work
-          Project, Partial
-          (Confidential) Case
-          Study, Web</p>
-        <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
-        <p className="cs-body margin-bottom-160px">Figma, FigJam, Miro, Lucidspark, Jira, Confluence, Slack, Optimal
-          Workshop, Userback, Maze</p>
+        <div className="three-column-row margin-bottom-0px">
+          <div className="left-column margin-bottom-0px">
+            <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-timeline-title">Project Timeline</h3>
+            <p className="cs-body margin-bottom-0px">4 months from project start to
+              development start (Q1 2022 -> Q2 2022)
+            </p>
+          </div>
+          <div className="center-column margin-bottom-0px">
+            <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Type</h3>
+            <p className="cs-body margin-bottom-0px margin-top-0px">Sole Designer, Work
+              Project, Partial
+              (Confidential) Case
+              Study, Web</p>
+          </div>
+          <div className="right-column margin-bottom-0px">
+            <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-tools-title">Project Tools</h3>
+            <p className="cs-body margin-bottom-0px">Figma, FigJam, Miro, Lucidspark, Jira, Confluence, Optimal
+              Workshop, Maze</p>
+          </div>
+        </div>
       </div>
 
       <div className="process margin-bottom-160px anchor-area" id="process-area">
-        <h2 className="cs-title mid-align-title margin-bottom-80px" id="process-title"><strong
-            className="orange-text">01 </strong>-
+        <h2 className="cs-title mid-align-title margin-bottom-40px" id="process-title"><strong
+          className="orange-text">01 </strong>-
           Process</h2>
-        <img className="full-width-image margin-bottom-160px" src={AprioProcess} alt=""/>
-        <h2 className="cs-title mid-align-title margin-bottom-80px" id="process-title"><strong
-            className="orange-text">02 </strong>-
+        <img className="full-width-image" src={AprioProcess} alt=""/>
+      </div>
+
+      <div className="ideation margin-bottom-160px anchor-area" id="ideation-area">
+        <h2 className="cs-title mid-align-title margin-bottom-40px" id="ideation-title"><strong
+          className="orange-text">02 </strong>-
           Ideation</h2>
-        <div className="row margin-bottom-80px">
+        <div className="row margin-bottom-40px">
           <h3 className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-are-users-experiencing-title">What Are
             Users Experiencing?</h3>
           <div className="left-column">
@@ -216,8 +226,9 @@ export const Aprio = () => {
           </div>
         </div>
 
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="my-north-star-title">Design North Star</h3>
-        <p className="cs-body margin-bottom-36px">
+        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="design-north-star-title">Design North
+          Star</h3>
+        <p className="cs-body margin-bottom-40px">
           After several discovery meetings and user interviews, I started ideating with these
           guiding principles in mind:
         </p>
@@ -252,9 +263,9 @@ export const Aprio = () => {
         </div>
       </div>
 
-      <div className="design-mockups margin-bottom-80px anchor-area" id="design-mockups-area">
-        <h2 className="cs-title mid-align-title margin-bottom-80px sub-anchor-area" id="design-mockups-title"><strong
-            className="orange-text">03 </strong>- Design Mockups</h2>
+      <div className="design-mockups margin-bottom-100px anchor-area" id="design-mockups-area">
+        <h2 className="cs-title mid-align-title margin-bottom-40px sub-anchor-area" id="design-mockups-title"><strong
+          className="orange-text">03 </strong>- Design Mockups</h2>
 
         <p className="cs-subtitle margin-bottom-12px sub-anchor-area" id="dashboard-title">Dashboard</p>
         <p className="cs-body margin-bottom-0px">The dashboard is a home screen where
@@ -349,13 +360,13 @@ export const Aprio = () => {
             lookup time.
           </li>
         </ul>
-        <video autoPlay muted loop={true} src={Video2} className="full-width-image margin-bottom-40px"/>
+        <video autoPlay muted loop={true} src={Video2} className="full-width-image"/>
       </div>
 
-      <div className="impact margin-bottom-160px anchor-area" id="impact-area">
+      <div className="impact margin-bottom-80px anchor-area" id="impact-area">
         <div className="impact-inner">
-          <p className="cs-title mid-align-title margin-bottom-80px sub-anchor-area" id="impact-title"><strong
-              className="orange-text">04</strong> - Impact</p>
+          <p className="cs-title mid-align-title margin-bottom-40px sub-anchor-area" id="impact-title"><strong
+            className="orange-text">04</strong> - Impact</p>
           <div className="margin-bottom-12px">
             <div className="impact-left">
               <p className="cs-title margin-bottom-32px">Before AMP</p>
@@ -399,10 +410,10 @@ export const Aprio = () => {
       </div>
 
       <div className="reflection margin-bottom-80px anchor-area" id="reflection-area">
-        <h2 className="cs-title mid-align-title margin-bottom-80px sub-anchor-area" id="reflection-title"><strong
-            className="orange-text">05 </strong>- Reflection</h2>
+        <h2 className="cs-title mid-align-title margin-bottom-40px sub-anchor-area" id="reflection-title"><strong
+          className="orange-text">05 </strong>- Reflection</h2>
         <p className="cs-subtitle margin-bottom-40px sub-anchor-area" id="what-did-i-learn-title">What Did I Learn?</p>
-        <p className="cs-subtitle-2 margin-bottom-0px" id="always-validate-user-assumptions-title">Always
+        <p className="cs-subtitle-2 margin-bottom-12px" id="always-validate-user-assumptions-title">Always
           Validate User Assumptions</p>
         <p className="cs-body margin-bottom-40px">Throughout this project, I had the pleasure to talk to employees at
           all different
@@ -413,13 +424,13 @@ export const Aprio = () => {
           realized that higher-level employees such as directors or managers often miss the mark or are entirely
           incorrect in identifying the struggles of lower-level
           employees such as associates.</p>
-        <p className="cs-subtitle-2 margin-bottom-0px" id="advocate-for-ux-title">Advocate for UX</p>
-        <p className="cs-body margin-bottom-80px">During this project, I often found myself in a
+        <p className="cs-subtitle-2 margin-bottom-12px" id="advocate-for-ux-title">Advocate for UX</p>
+        <p className="cs-body margin-bottom-40px">During this project, I often found myself in a
           room with
           people very used to thinking about
           problems from a business perspective. In those situations, educating and defending the rationale behind your
           design decisions with facts and data is crucial to the project's success. <strong
-              className="highlight"> I learned a lot about how to advocate
+            className="highlight"> I learned a lot about how to advocate
             for a proper design process and how to articulately present to
             stakeholders.</strong></p>
         <p className="cs-subtitle margin-bottom-0px sub-anchor-area" id="next-steps-title">Next Steps</p>

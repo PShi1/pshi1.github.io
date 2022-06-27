@@ -27,9 +27,38 @@
     width: 100%;
   }
 
-  .overview, .ideation, .creation, .iteration, .organization, .impact-inner, .reflection {
+  .overview, .ideation, .creation, .iteration, .impact-inner, .reflection {
     width: $default-case-study-margin;
     margin: auto;
+  }
+
+  .overview {
+    .three-column-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .spacing-div {
+        display: flex;
+      }
+
+      .left-column, .center-column, .right-column {
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .left-column {
+        padding-right: 2.5%;
+      }
+
+      .center-column {
+        padding: 0 2.5%;
+      }
+
+      .right-column {
+        padding-left: 2.5%;
+      }
+    }
   }
 
   .left-column-42 {
@@ -54,7 +83,7 @@
     }
 
     #file-organization-2 {
-      width: 35%;
+      width: 30%;
       margin: auto;
     }
 
@@ -129,13 +158,7 @@
   }
 
   .iteration {
-    #old-design-specs, #new-design-specs {
-      width: 100%;
-    }
-  }
-
-  .organization {
-    #onboarding {
+    #old-design-specs, #new-design-specs, #onboarding {
       width: 100%;
     }
   }
@@ -146,12 +169,10 @@
 
   .impact {
     background-color: $black;
-    padding-top: 1.56vw;
-    margin-top: 2.07vw;
-    padding-bottom: 3.12vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 
     .impact-inner {
-      margin-top: 3.125vw;
       background-color: $black;
 
       p, .cs-body {
