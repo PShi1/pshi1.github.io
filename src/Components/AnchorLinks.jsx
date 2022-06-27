@@ -430,15 +430,18 @@ const AnchorLinks = ({callerType}) => {
           <h4 id="second-usability-test-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("second-usability-test-title")
           }}>Second Usability Test</h4>
-          <h4 id="final-prototype-title-anchor" className="subgroup" onClick={() => {
+        </div>
+
+        <div className="group" id="final-prototype-area-anchor">
+          <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("final-prototype-title")
-          }}>Final Prototype</h4>
+          }}><strong className="yellow-text">06</strong> - Final Prototype</h3>
         </div>
 
         <div className="group" id="reflection-area-anchor">
           <h3 className="h3-group" onClick={() => {
             findAndGoToLinkedTitle("reflection-title")
-          }}><strong className="yellow-text">06</strong> - Reflection</h3>
+          }}><strong className="yellow-text">07</strong> - Reflection</h3>
           <h4 id="concept-feedback-title-anchor" className="subgroup" onClick={() => {
             findAndGoToLinkedTitle("concept-feedback-title")
           }}>Concept Feedback</h4>

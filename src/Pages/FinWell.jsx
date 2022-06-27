@@ -635,12 +635,16 @@ export const FinWell = () => {
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="second-usability-test-title">Second
           Usability Test</h3>
         <p className="cs-body margin-bottom-40px margin-top-0px"><strong
-            className="highlight">I wanted to test the impact of my iterations so I recruited
+          className="highlight">I wanted to test the impact of my iterations so I recruited
           10 new users and conducted the the same 30-minute usability test.</strong>
         </p>
         <img className="image margin-bottom-80px" src={TestingResult2} alt=""/>
-        <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="final-prototype-title">Final
-          Prototype</h3>
+      </div>
+
+      <div className="final-prototype margin-bottom-160px anchor-area" id="final-prototype-area">
+        <h2 className="cs-title mid-align-title margin-bottom-40px" id="final-prototype-title"><strong
+          className="yellow-text">06 </strong>-
+          Final Prototype</h2>
         <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">Try out the Figma
           prototype yourself and go through the flow of reviewing a product you just purchased!</strong></p>
         <div className="figma-embed-wrapper" id="prototype-container">
@@ -652,7 +656,7 @@ export const FinWell = () => {
 
       <div className="reflection margin-bottom-160px anchor-area" id="reflection-area" key="reflection-group">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="reflection-title"><strong
-          className="yellow-text">06 </strong>-
+          className="yellow-text">07 </strong>-
           Reflection</h2>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="concept-feedback-title">Concept
