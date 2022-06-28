@@ -34,7 +34,7 @@ import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Access = () => {
   useEffect(() => {
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Access";
@@ -136,11 +136,12 @@ export const Access = () => {
           the
           startup
           ecosystem.
-          With the sheer number of designs we were creating every day, the inconsistencies between design components
-          became increasingly apparent.</p>
+          The sheer number of daily designs we created made the inconsistencies between design components
+          increasingly apparent.</p>
 
-        <h2 className="cs-manrope-150-line-height margin-bottom-80px">As a team, we decided we needed to develop a
+        <h2 className="cs-manrope-150-line-height margin-bottom-80px">As a team, we decided that we needed to develop a
           robust design system to support our designs' long-term scalability and consistency.
+
         </h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="my-contributions-title">My Contributions</h3>
@@ -152,7 +153,7 @@ export const Access = () => {
             language, and process.
           </li>
           <li className="cs-body">I organized and launched the first published version of
-            the design system
+            the design system.
           </li>
           <li className="cs-body">I tested with several other parallel teams to make sure the system would
             also benefit others members using it.
@@ -226,15 +227,14 @@ export const Access = () => {
             Buy-In</h3>
 
           <p className="cs-body">
-            <strong className="highlight"> To ensure the success of this project, it was crucial to get stakeholders
-              fully on board before we started.</strong> We did this by:
+            <strong className="highlight"> Getting all stakeholders fully on board before we started was crucial to
+              ensure the entire project's success.</strong> We did this by:
           </p>
 
           <ul className="margin-bottom-80px">
             <li className="cs-body">
-              Organizing a company-wide meeting with all stakeholders present
-              where we presented the long-term benefits of adopting
-              a design system and how it would address all of their pain points individually.
+              Organizing a stakeholders' meeting where we presented the long-term benefits of adopting a design system
+              and how it would address their specific pain points.
             </li>
             <li className="cs-body">
               Involving other teams early in monthly meetings to get their input and ensure they feel included in the
@@ -275,12 +275,11 @@ export const Access = () => {
               Research</h3>
             <p className="cs-body">This was the first design system we had ever built from scratch, so we relied on
               research
-              and followed the
-              examples of some of the most recognized design systems such as Shopify’s <a className="cs-body"
-                                                                                          href="https://polaris.shopify.com/">Polaris</a>,
-              IBM’s <a className="cs-body" href="https://carbondesignsystem.com/">Carbon</a>, or Saleforce’s <a
+              and modelled it after some of the most recognized design systems such as Shopify’s <a className="cs-body"
+                                                                                                    href="https://polaris.shopify.com/">Polaris</a>,
+              IBM’s <a className="cs-body" href="https://carbondesignsystem.com/">Carbon</a>, or Salesforce’s <a
                   className="cs-body" href="https://www.salesforce.com/ca/campaign/lightning/">Lightning</a>. <strong
-                  className="highlight">We took notes of all the standard practices and methods for
+                  className="highlight">We took notes of all the standard practices for
                 classification/presentation
                 and brainstormed how those examples could best serve our purposes.</strong></p>
           </div>
@@ -356,7 +355,8 @@ export const Access = () => {
         <div className="row-42-58 margin-bottom-80px">
           <div className="left-column-42 right-padding-28px">
             <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="patterns-title">Patterns</h3>
-            <p className="cs-body">These standard layouts are reused in many different designs with slight variations to
+            <p className="cs-body">These are the standard layouts reused in many different designs with slight
+              variations to
               individual components. For each pattern, we ensured that it is:</p>
             <ul>
               <li className="cs-body">Made up of components already in the design system</li>
@@ -379,10 +379,10 @@ export const Access = () => {
           <img className="margin-bottom-0px" id="creation-flowchart" src={FlowChart} alt=""/>
 
           <p className="cs-body">
-            <strong className="highlight"> With the new process in place, everyone on the team was on the same page and
-              new hires joining the design team noted that the process/classification made it easier to familiarize
-              themselves with the system and how it
-              functioned.</strong>
+            <strong className="highlight"> With the new process in place, everyone on the team was on the same page.
+              New hires joining the design team noted that the process/classification made it easier to familiarize
+              themselves with the system and its
+              function.</strong>
           </p>
         </div>
 
@@ -396,9 +396,10 @@ export const Access = () => {
             possible since
             the design system had to be optimized for everyone to be considered a success. To achieve this, <strong
               className="highlight">I
-            conducted team and individual interviews with the development, product, and marketing teams to discover
+            conducted team and individual interviews with the development, product, and marketing teams. The goal was to
+            discover
             how we could improve
-            our current design handoffs and what their thoughts about our new design system/process. </strong>
+            our current design handoffs and gather their thoughts about our new design system/process. </strong>
           </p>
           <p className="cs-subtitle margin-bottom-40px sub-anchor-area" id="design-considerations-title">Design
             Considerations</p>
@@ -456,7 +457,7 @@ export const Access = () => {
               <p className="cs-body">
                 To improve lookup for product owners and managers,<strong className="highlight"> I engineered a new
                 system
-                to use coloured covers and status tags to organize the existing Figma files</strong> so it was easy to
+                to use coloured covers and status tags to organize the existing Figma files</strong>. Now it was easy to
                 tell what the file was about
                 and the
                 project's status from a quick glance.
@@ -475,7 +476,7 @@ export const Access = () => {
               <p className="cs-body">
                 To improve lookup for marketers and graphic designers, <strong className="highlight">I separated the
                 3 categories identified
-                above into pages and added additional pages for workspaces or other visual elements such as
+                above into pages. I also added additional pages for workspaces or other visual elements such as
                 illustrations.</strong>
               </p>
             </div>
@@ -493,9 +494,8 @@ export const Access = () => {
               Confluence introducing the
               design system and the established process.</strong> I also included a welcome page as the first page in
             the
-            design system
-            Figma file to introduce
-            new users to the system and highlighted answers to common questions so anyone
+            design system file to introduce
+            new users to the system and highlight answers to common questions so anyone
             could pick up using
             the design system quickly!
           </p>
@@ -538,17 +538,20 @@ export const Access = () => {
               </div>
             </div>
 
-            <p className="cs-body margin-bottom-40px">After we published the first version of the system and process, we
+            <p className="cs-body margin-bottom-40px">After we published the first version, we
               conducted a
               company-wide review meeting; members of other teams praised our design considerations, and the response to
-              all of our hard work was astoundingly positive.
+              all of our hard work was very positive. </p>
+            <p className="cs-body margin-bottom-40px"> Finally, we took a look at the tickets created
+              by designers for developers for QA purposes on 6
+              similarly sized
+              projects. We compared the numbers before and after the implementation of the new design system/handoff
+              process.
             </p>
             <h2 className="cs-manrope margin-bottom-0px off-white-text">
-              Finally, we took a look at the design-related Jira tickets created by designers during QA for 4
-              similarly sized
-              projects. Comparing the numbers before and after the design system implementation, we found an average
-              decrease of
-              46%.
+              We found an average
+              decrease ⬇️of
+              46% in the number of design-related tickets.
             </h2>
           </div>
         </div>

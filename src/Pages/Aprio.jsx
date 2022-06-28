@@ -26,7 +26,7 @@ import {RedirectLinks} from "../Components/RedirectLinks";
 
 export const Aprio = () => {
   useEffect(() => {
-   // window.scrollTo(0, 0);
+   window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Aprio";
@@ -120,7 +120,7 @@ export const Aprio = () => {
           classified
           information, I am not allowed to display the entirety of my work.</strong> Specific
           details and photos in this case study have been simplified, altered, or omitted entirely. The data used in the
-          mockups below are meant to be placeholders and are not accurate
+          mockups below are meant to be placeholders. They are not accurate
           to the attributes and data used in the actual product. If you would like to
           learn more in-depth about my work for Aprio, feel free to contact me directly.</p>
 
@@ -131,8 +131,8 @@ export const Aprio = () => {
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="context-title">Problem</h3>
         <p className="cs-body margin-bottom-80px"> Aprio is an elite accounting firm with
-          a massive problem. It was exponentially growing in size and revenue every quarter,
-          but its employees were stuck using external software
+          a massive problem. It was exponentially growing in size and revenue every quarter. However, its employees were
+          stuck using external software
           that was decades old. It was slow, inefficient, and heavily outdated. <strong className="highlight"> My
             objective was to
             create a client management portal that would digitize the client experience and help launch the firm
@@ -152,7 +152,7 @@ export const Aprio = () => {
           10,000 Aprio clients all around the globe.</h2>
 
         <h3 className="cs-subtitle-2 margin-bottom-12px" id="my-contributions-title">What Did I Do?</h3>
-        <p className="cs-body">This was my most challenging project to date, but it also allowed me to work on
+        <p className="cs-body">AMP was my most challenging project to date. However, it also allowed me to work on
           something
           impactful and grow tremendously as a product designer. With guidance and support from senior
           designers: </p>
@@ -237,7 +237,7 @@ export const Aprio = () => {
             <div className="left-column">
               <img src={Target} alt=""/>
               <h4 className="cs-subtitle-2">Target Audience</h4>
-              <p className="cs-body">This was my first time designing for an enterprise audience, so I took the
+              <p className="cs-body">AMP was my first time designing for an enterprise audience, so I took the
                 extra
                 time to
                 learn about their many personalized needs and
@@ -402,7 +402,7 @@ export const Aprio = () => {
             extremely positive.
           </p>
           <h2 className="cs-manrope margin-bottom-0px off-white-text">
-            AMP successfully reduced average support ticket resolution times by 61% in
+            AMP successfully reduced ⬇️average support ticket resolution times by 61% in
             the
             small-scale implementation.</h2>
         </div>

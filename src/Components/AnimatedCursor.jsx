@@ -37,8 +37,8 @@ export function AnimatedCursor({
   const animateOuterCursor = React.useCallback(
     (time) => {
       if (previousTimeRef.current !== undefined) {
-        coords.x += (endX.current - coords.x) / 8
-        coords.y += (endY.current - coords.y) / 8
+        coords.x += (endX.current - coords.x)
+        coords.y += (endY.current - coords.y)
         cursorOuterRef.current.style.top = coords.y + 'px'
         cursorOuterRef.current.style.left = coords.x + 'px'
       }

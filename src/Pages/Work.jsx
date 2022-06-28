@@ -19,7 +19,7 @@ export const Work = () => {
   const webCards = ["access-card", "sponsorcircle-card", "aprio-card", "pivot-card"];
   const mobileCards = ["finwell-card", "sponsorcircle-card", "knowbie-card"];
   const prototypingCards = ["finwell-card", "access-card", "knowbie-card", "pivot-card"];
-  const designSystemCards = ["access-card", "pivot-card"];
+  const designSystemCards = ["access-card", "finwell-card", "pivot-card"];
   const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {

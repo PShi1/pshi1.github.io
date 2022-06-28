@@ -67,7 +67,7 @@ export const FinWell = () => {
    * Before page load, add an event listener that, when page is loaded will add in listeners for fade in components
    */
   useEffect(() => {
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     fadeInOnScroll();
 
@@ -202,7 +202,7 @@ export const FinWell = () => {
           about past
           purchases by prompting self-reflection entries at specific time intervals after a purchase. This encourages
           users to
-          be more mindful and deliberate when spending money to ensure their purchases retain their value.
+          be more mindful and deliberate when spending money to ensure their purchases retain value over time.
         </p>
 
         <div className="three-column-row margin-bottom-0px">
@@ -275,9 +275,9 @@ export const FinWell = () => {
             <div className="left-column">
               <h1 className="solution-title" id="actionable-insights-title">Actionable Insights</h1>
               <h2 className="solution-subtitle">Build better financial habits.</h2>
-              <p className="solution-text">FinWell produces actionable insights based on identified patterns and
+              <p className="solution-text">FinWell produces actionable insights based on patterns and
                 highlights
-                any areas for improvements.</p>
+                areas for improvement.</p>
             </div>
             <div className="right-column">
               <img src={iPhone4} alt=""/>
@@ -299,15 +299,15 @@ export const FinWell = () => {
             className="yellow-text">03</strong> -
           Discovery</h2>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">I knew I wanted to explore the personal finance
-          space, but I wanted to dive deeper by conducting generative research to pinpoint my problem statement and
+          space. However, I wanted to dive deeper by conducting generative research to pinpoint my problem statement and
           user
           group.
         </h2>
         <h4 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="secondary-research-title">Secondary
           Research</h4>
-        <p className="cs-body margin-bottom-40px">Reviewing literary papers and other secondary sources
-          taught me that with student and credit debt rising, the average person’s ability to budget and save is
-          diminishing from year to year. <strong className="highlight">
+        <p className="cs-body margin-bottom-40px">Reviewing literary papers and other secondary sources taught me that
+          the average person's ability to budget and save diminishes yearly with student and credit debt rising. <strong
+              className="highlight">
             This issue is especially prevalent in young adults since there is minimal exposure to financial literacy
             through
             school.</strong> Here are some key economic statistics I uncovered through secondary research:
@@ -398,7 +398,7 @@ export const FinWell = () => {
           <div className="margin-bottom-40px">
             <div className="left-column">
               <h4 className="large-number-font margin-bottom-12px">60%</h4>
-              <p className="cs-body margin-top-0px">of respondents rated their own financial literacy a 3 or lower on
+              <p className="cs-body margin-top-0px">of respondents rated their financial literacy a 3 or lower on
                 a
                 scale of
                 1-5.</p>
@@ -425,7 +425,7 @@ export const FinWell = () => {
             survey
             respondents for a follow-up virtual interview to dive deep
             into
-            how they made purchasing decisions and uncover their pain points when it comes to saving money.
+            how they made purchasing decisions and uncover their pain points when saving money.
           </h2>These
           respondents were chosen based on 5 main criteria:
         </p>
@@ -481,7 +481,7 @@ export const FinWell = () => {
           Design</h2>
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="ideation-title">Ideation</h3>
         <p className="cs-body margin-bottom-40px"><strong className="highlight">Through mind mapping, I
-          came up with 4 unique solutions that addresses at least one if not more of the pain
+          came up with 4 unique solutions that address at least one if not more of the pain
           points uncovered during the discovery phase:</strong></p>
 
         <img className="image margin-bottom-80px" src={Ideation} alt=""/>
@@ -492,29 +492,20 @@ export const FinWell = () => {
           choosing a
           solution out of the 4, <strong className="highlight"> I conducted quick guerilla testing by approaching
             target users at a
-            coffee shop, presenting the different concepts, and gathering user feedback.</strong> I first showed
-          them minimalistic wireframes, explained the proposed features, then asked for feedback the pros and cons of
-          each solution.
+            coffee shop, presenting the different concepts, and gathering user feedback.</strong> I first showed them
+          minimalistic wireframes, then explained the proposed features, and finally asked for feedback on each
+          solution.
         </p>
         <Gallery className="margin-bottom-80px" images={guerillaTestingImages} uniquePrefix={"guerilla-testing"}/>
 
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="testing-feedback-title">Testing
           Feedback</h3>
-        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">After gathering the
+        <p className="cs-body margin-bottom-40px margin-top-0px">After gathering the
           feedback from 10
           different target users, I decided to proceed with solution #4 as the primary solution while incorporating
-          budgeting elements of solution #1 to retain users of the app.</strong> Most users were interested in
-          solution
-          #4 since it was something they hadn’t seen before, and many saw it as something they would use. Participants
-          also expressed interest in solution #1. Still, they noted that there were many existing options in the
-          market,
-          and it would have to have some innovative features to be competitive. As for solutions #2 and #3,
-          participants
-          raised concerns about how it would be challenging to personalize the content based on the different users
-          and
-          how the app would have difficulty sustaining a long-term user base while providing value.</p>
+          budgeting elements of solution #1 to retain users of the app.</p>
 
-        <p className="cs-manrope-150-line-height margin-bottom-80px">I will be designing an intelligent budgeting app
+        <p className="cs-manrope-150-line-height margin-bottom-80px">The solution will be an intelligent budgeting app
           with the
           additional
           feature of
@@ -570,15 +561,15 @@ export const FinWell = () => {
         <p className="cs-body margin-bottom-40px margin-top-0px">While I had some research and heuristics to help guide
           my
           decision-making, I knew I needed to do evaluative research with actual users to validate the solution. <strong
-            className="highlight">I ran 12 users
+              className="highlight">I ran 12 users
             through a 30-minute unguided usability test using interactive prototypes on
             Figma.</strong> For the testing goals, I wanted to learn their first impressions of the app/features,
-          how easily they can navigate the app, and observe their task completion time.
+          how easily they can navigate around, and observe their task completion time.
         </p>
 
         <div className="collapsibles-region margin-bottom-80px">
           <div className="collapsible-header" id="temp" onClick={(e) => handleCollapsible(e)}>
-            <h2 id="click-to-view-testing-process">Click to View Testing Process</h2>
+            <h2 id="click-to-view-testing-process">Click to View Detailed Testing Process</h2>
             <img src={DownArrow} alt="" id="temp-arrow"/>
           </div>
           <div className="collapsible-item" id="temp-item">
@@ -635,22 +626,22 @@ export const FinWell = () => {
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="second-usability-test-title">Second
           Usability Test</h3>
         <p className="cs-body margin-bottom-40px margin-top-0px"><strong
-          className="highlight">I wanted to test the impact of my iterations so I recruited
-          10 new users and conducted the the same 30-minute usability test.</strong>
+            className="highlight">I wanted to test the impact of my iterations, so I recruited
+          12 new users and conducted the same 30-minute usability test.</strong>
         </p>
         <img className="image margin-bottom-80px" src={TestingResult2} alt=""/>
       </div>
 
       <div className="final-prototype margin-bottom-160px anchor-area" id="final-prototype-area">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="final-prototype-title"><strong
-          className="yellow-text">06 </strong>-
+            className="yellow-text">06 </strong>-
           Final Prototype</h2>
-        <p className="cs-body margin-bottom-40px margin-top-0px"><strong className="highlight">Try out the Figma
-          prototype yourself and go through the flow of reviewing a product you just purchased!</strong></p>
+        <p className="cs-body margin-bottom-40px margin-top-0px">Try out the final Figma
+          prototype of FinWell yourself! Use the left sidebar to navigate the different user flows.</p>
         <div className="figma-embed-wrapper" id="prototype-container">
           <iframe width="100%" height="100%"
-                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FunLE9AKolaQI5LchZdZ30e%2FFinWell%3Fpage-id%3D72%253A0%26node-id%3D727%253A8448%26viewport%3D1682%252C7008%252C0.14%26scaling%3Dcontain%26starting-point-node-id%3D727%253A8448"
-                  allowFullScreen/>
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FunLE9AKolaQI5LchZdZ30e%2FFinWell%3Fpage-id%3D1556%253A13734%26node-id%3D1556%253A13734%26viewport%3D938%252C309%252C0.12%26scaling%3Dcontain%26starting-point-node-id%3D1556%253A15894%26show-proto-sidebar%3D1"
+                  allowFullScreen></iframe>
         </div>
       </div>
 
@@ -662,7 +653,7 @@ export const FinWell = () => {
         <h3 className="cs-subtitle margin-bottom-12px sub-anchor-area" id="concept-feedback-title">Concept
           Feedback</h3>
         <p className="cs-body"><strong className="highlight">I shared the finished
-          prototype of FinWell with a
+          prototype of FinWell with
           members of the online
           design community
           as well as other young adults in my network and received positive feedback.</strong> Here are a few quotes:
