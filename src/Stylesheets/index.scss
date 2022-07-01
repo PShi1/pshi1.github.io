@@ -116,7 +116,9 @@ $light-finwell-yellow: #FFE78E;
 $finwell-yellow: #F0CA36;
 
 $solearn-blue: #6FC7FF;
+$light-solearn-blue: #B4E0FD;
 $bookbuds-pink: #FF645F;
+$light-bookbuds-pink: #FCCDCC;
 $handmade-yellow: #FFE789;
 $featuredDrawings-blue: #85FFF1;
 $recharge-purple: #57417C;
@@ -333,7 +335,7 @@ h4 {
 }
 
 .grey-text {
-  color: $grey-9c9c9c;
+  color: $grey-9c9c9c !important;
 }
 
 .colour-gradient {

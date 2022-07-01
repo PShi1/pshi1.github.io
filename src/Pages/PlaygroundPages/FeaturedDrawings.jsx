@@ -18,7 +18,7 @@ export const FeaturedDrawings = () => {
 
     setPageToLightMode();
     document.title = "Emma Li | Featured Drawings";
-    setupScrollBar("#85FFF1");
+    setupScrollBar("#0FAB99");
     turnAllMenuStatesOff();
     highlight();
   }, []);

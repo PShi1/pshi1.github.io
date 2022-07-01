@@ -4,6 +4,10 @@
   cursor: none;
   padding-bottom: 5.5vw;
 
+  #spacer {
+    margin-bottom: (220vw * $scaling-value) !important;
+  }
+
   .header-outer-div {
     width: $default-margin-width;
     margin: auto;
@@ -125,7 +129,7 @@
     width: $default-margin-width;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 7vw;
+    padding-top: 1vw;
     justify-content: space-between;
     perspective: 1000px;
 
@@ -203,8 +207,8 @@
     content: "Illustration";
   }
 
-  #branding-tag p:before, #branding-tag p:after {
-    content: "Branding";
+  #collaboration-tag p:before, #collaboration-tag p:after {
+    content: "Collaboration";
   }
 
   #solearn-card, #handmade-online-store-card, #featured-drawings-card, #bookbuds-card, #recharge-card {

@@ -149,14 +149,14 @@ export const BookBuds = () => {
 
       <div className="style-guide margin-bottom-160px anchor-area" id="style-guide-area">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="style-guide-title"><strong
-          className="light-pink-text">02 </strong>-
+            className="light-pink-text">02 </strong>-
           Style Guide</h2>
         <Gallery uniquePrefix={"bookbuds"} images={bookbudsImages}/>
       </div>
 
       <div className="final-prototype margin-bottom-160px anchor-area" id="final-prototype-area">
-        <h2 className="cs-title mid-align-title margin-bottom-40px" id="final-prototype-title"><strong
-          className="light-pink-text">03 </strong>-
+        <h2 className="cs-title mid-align-title margin-bottom-80px" id="final-prototype-title"><strong
+            className="light-pink-text">03 </strong>-
           Final Prototype</h2>
         <div className="figma-embed-wrapper" id="prototype-container">
           <iframe width="100%" height="100%"

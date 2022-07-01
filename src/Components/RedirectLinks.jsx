@@ -4,7 +4,7 @@ export const RedirectLinks = ({currentPage, category}) => {
   if (category === "caseStudies") {
     return (
       <div className="redirect-links">
-        <h3 className="looking-for-more margin-bottom-24px">Looking for more? 💭</h3>
+        <h3 className="looking-for-more margin-bottom-24px">Looking for more? 🔎 </h3>
 
         <div className="multiple-redirects">
           <p onClick={() => window.location.assign("/#/")} className="redirect-font underline-effect clickable">All</p>

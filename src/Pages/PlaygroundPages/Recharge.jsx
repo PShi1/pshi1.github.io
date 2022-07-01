@@ -16,7 +16,7 @@ export const Recharge = () => {
 
     setPageToLightMode();
     document.title = "Emma Li | Recharge";
-    setupScrollBar("#E6DFF5");
+    setupScrollBar("#3E2D5A");
     turnAllMenuStatesOff();
     highlight();
   }, []);

@@ -145,14 +145,14 @@ export const Solearn = () => {
 
       <div className="brainstorming margin-bottom-160px anchor-area" id="brainstorming-area">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="brainstorming-title"><strong
-          className="light-blue-text">02 </strong>-
+            className="light-blue-text">02 </strong>-
           Brainstorming</h2>
         <img className="image" src={Brainstorming} alt=""/>
       </div>
 
-      <div className="final-prototype margin-bottom-160px anchor-area" id="final-prototype-area">
+      <div className="final-prototype margin-bottom-40px anchor-area" id="final-prototype-area">
         <h2 className="cs-title mid-align-title margin-bottom-40px" id="final-prototype-title"><strong
-          className="light-blue-text">03 </strong>-
+            className="light-blue-text">03 </strong>-
           Final Prototype</h2>
         <div className="figma-embed-wrapper" id="prototype-container">
           <iframe width="100%" height="100%"

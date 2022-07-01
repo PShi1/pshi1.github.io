@@ -87,10 +87,10 @@ export const Footer = () => {
         <div className="left-column">
 
           <p className="large-text margin-bottom-24px"> Let's connect! ✨</p>
-          <p className="medium-text"> Designed + coded with lots of ❤️ and ☕ (with dev help from <a
-            className="clickable grey-underline"
-            href={"https://www.linkedin.com/in/ptrshi/"}
-            target={"_blank"}>Peter
+          <p className="medium-text grey-text"> Designed + coded with lots of ❤️ and ☕ (with dev help from <a
+              className="clickable grey-underline grey-text"
+              href={"https://www.linkedin.com/in/ptrshi/"}
+              target={"_blank"}>Peter
             Shi</a>)</p>
         </div>
 

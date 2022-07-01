@@ -16,6 +16,7 @@ import "../Stylesheets/Playground.scss";
 
 export const Playground = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     // Mark current header link as active
     if (!document.getElementById("play-menu-item").classList.contains("active")) {
       document.getElementById("play-menu-item").classList.add("active");
@@ -30,16 +31,16 @@ export const Playground = () => {
     fadeInIntro();
     fadeInOnScroll();
     setPageToDarkMode();
-    document.title = "Emma Li | Playground";
+    document.title = "Emma Li | Play";
     hideScrollBar();
   }, []);
 
   const tags = ["all-tag", "ux-design-tag", "illustration-tag", "branding-tag"];
   const [currentTag, setCurrentTag] = useState("all-tag");
   const allCards = ["solearn-card", "handmade-online-store-card", "featured-drawings-card", "bookbuds-card", "recharge-card"];
-  const uxDesignCards = ["solearn-card", "handmade-online-store-card", "featured-drawings-card"];
-  const illustrationCards = ["solearn-card", "handmade-online-store-card", "featured-drawings-card"];
-  const brandingCards = ["solearn-card", "handmade-online-store-card", "featured-drawings-card"];
+  const uxDesignCards = ["solearn-card", "bookbuds-card", "recharge-card"];
+  const illustrationCards = ["featured-drawings-card", "solearn-card"];
+  const collaborationCards = ["recharge-card", "solearn-card", "bookbuds-card", "handmade-online-store-card"];
   const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
@@ -65,8 +66,8 @@ export const Playground = () => {
         cardsArrayUsed = uxDesignCards;
       } else if (currentTag === "illustration-tag") {
         cardsArrayUsed = illustrationCards;
-      } else if (currentTag === "branding-tag") {
-        cardsArrayUsed = brandingCards;
+      } else if (currentTag === "collaboration-tag") {
+        cardsArrayUsed = collaborationCards;
       } else {
         cardsArrayUsed = allCards;
       }
@@ -203,16 +204,16 @@ export const Playground = () => {
 
           <div className="typewriter-wrapper-div margin-bottom-120px">
             <div className="intro-fade">
-              <p className="b0 margin-bottom-80px">Here are a collection of some projects I did purely for fun. ✨
+              <p className="b0" id="spacer">Here are some projects I did purely for fun. 🤗
               </p>
             </div>
           </div>
 
-          <div className="margin-bottom-80px intro-fade scroll-down" id="scroll-down"
+          <div className="margin-bottom-160px intro-fade scroll-down" id="scroll-down"
                onClick={() => scrollToCaseStudies()}>
-        <span id="scroll-title" className="manrope-24px-300weight">
-          Explore The Playground
-        </span>
+            <span id="scroll-title" className="manrope-24px-300weight">
+              Explore The Playground
+            </span>
           </div>
         </div>
 
@@ -230,8 +231,8 @@ export const Playground = () => {
             <p className="cs-body invert-target"/>
           </div>
 
-          <div className="tag-container invert" id="branding-tag"
-               onClick={() => handleTagClick("branding-tag")}>
+          <div className="tag-container invert" id="collaboration-tag"
+               onClick={() => handleTagClick("collaboration-tag")}>
             <p className="cs-body invert-target"/>
           </div>
         </div>
@@ -249,6 +250,11 @@ export const Playground = () => {
               <img className="first-inactive" src={FeaturedDrawingsCardActive} alt=""/>
             </Link>
 
+            <Link className="cards-div active appear-on-scroll-2" to="/recharge" id="recharge-card">
+              <img className="first-active" src={RechargeCard} alt=""/>
+              <img className="first-inactive" src={RechargeCardActive} alt=""/>
+            </Link>
+
             <Link className="cards-div active appear-on-scroll-2" to="/solearn" id="solearn-card">
               <img className="first-active" src={SolearnCard} alt=""/>
               <img className="first-inactive" src={SolearnCardActive} alt=""/>
@@ -257,11 +263,6 @@ export const Playground = () => {
             <Link className="cards-div active appear-on-scroll-2" to="/bookbuds" id="bookbuds-card">
               <img className="first-active" src={BookBudsCard} alt=""/>
               <img className="first-inactive" src={BookBudsCardActive} alt=""/>
-            </Link>
-
-            <Link className="cards-div active appear-on-scroll-2" to="/recharge" id="recharge-card">
-              <img className="first-active" src={RechargeCard} alt=""/>
-              <img className="first-inactive" src={RechargeCardActive} alt=""/>
             </Link>
           </div>
         </div>

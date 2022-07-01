@@ -86,7 +86,7 @@ export const About = () => {
     <div className="background">
       <div className="about-page">
         <div className="intro">
-          <div className="columns margin-bottom-80px intro-fade">
+          <div className="columns margin-bottom-40px intro-fade">
             <div className="left-column">
               <h1>Passionate.</h1>
               <h1>Creative.</h1>
@@ -96,9 +96,13 @@ export const About = () => {
             <div className="right-column">
               <img src={Stars} alt=""/>
             </div>
-            <p className="b0 intro-fade off-white-text" id="subtitle-text">Or at least <strong
-              className="colour-gradient">that's what my mom tells me.</strong> 😎</p>
           </div>
+
+          <div className="intro-fade">
+            <p className="b0 margin-bottom-60px temp">Or at least that's what my mom tells me. 😎
+            </p>
+          </div>
+
           <div className="intro-fade scroll-down intro-fade" id="scroll-down" onClick={() => scrollToCaseStudies()}>
             <span id="scroll-title" className="manrope-24px-300weight">
               Curious Yet?
