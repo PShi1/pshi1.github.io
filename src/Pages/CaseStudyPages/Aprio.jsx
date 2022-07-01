@@ -1,32 +1,32 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../App";
-import "../Stylesheets/Aprio.scss"
-import AprioHeaderImage from "../Assets/AprioPageImages/AprioHeaderImage.png";
-import AprioProcess from '../Assets/AprioPageImages/AprioProcess.png';
-import FemaleDev from '../Assets/AprioPageImages/FemaleDev.svg';
-import Woman from '../Assets/AprioPageImages/Woman.svg';
-import Target from '../Assets/AprioPageImages/Target.svg';
-import Easy from '../Assets/AprioPageImages/1234.svg';
-import PuzzlePiece from '../Assets/AprioPageImages/PuzzlePiece.svg';
-import Dashboard from '../Assets/AprioPageImages/Dashboard.png'
-import ClientProfiles from '../Assets/AprioPageImages/ClientProfiles.png';
-import ListOfUsers from '../Assets/AprioPageImages/ListOfUsers.png';
-import TaskPage from '../Assets/AprioPageImages/TaskPage.png';
-import AprioFinalImage from '../Assets/AprioPageImages/AprioFinalImage.png';
-import Video1 from '../Assets/AprioPageImages/Video1.mkv';
-import Video2 from '../Assets/AprioPageImages/Video2.mkv';
-import AnchorLinks from "../Components/AnchorLinks";
+import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import "../../Stylesheets/Aprio.scss"
+import AprioHeaderImage from "../../Assets/AprioPageImages/AprioHeaderImage.png";
+import AprioProcess from '../../Assets/AprioPageImages/AprioProcess.png';
+import FemaleDev from '../../Assets/AprioPageImages/FemaleDev.svg';
+import Woman from '../../Assets/AprioPageImages/Woman.svg';
+import Target from '../../Assets/AprioPageImages/Target.svg';
+import Easy from '../../Assets/AprioPageImages/1234.svg';
+import PuzzlePiece from '../../Assets/AprioPageImages/PuzzlePiece.svg';
+import Dashboard from '../../Assets/AprioPageImages/Dashboard.png'
+import ClientProfiles from '../../Assets/AprioPageImages/ClientProfiles.png';
+import ListOfUsers from '../../Assets/AprioPageImages/ListOfUsers.png';
+import TaskPage from '../../Assets/AprioPageImages/TaskPage.png';
+import AprioFinalImage from '../../Assets/AprioPageImages/AprioFinalImage.png';
+import Video1 from '../../Assets/AprioPageImages/Video1.mkv';
+import Video2 from '../../Assets/AprioPageImages/Video2.mkv';
+import AnchorLinks from "../../Components/AnchorLinks";
 import {
   cursorDefaultColor,
   cursorLightModeColor,
   cursorLightModeInnerOpacity,
   cursorLightModeOuterOpacity
-} from "../Components/AnimatedCursor";
-import {RedirectLinks} from "../Components/RedirectLinks";
+} from "../../Components/AnimatedCursor";
+import {RedirectLinks} from "../../Components/RedirectLinks";
 
 export const Aprio = () => {
   useEffect(() => {
-   window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     setPageToLightMode();
     document.title = "Emma Li | Aprio";
@@ -444,8 +444,7 @@ export const Aprio = () => {
       <img className="margin-bottom-160px full-width-image anchor-area" id="final-image" src={AprioFinalImage}
            alt=""/>
 
-      <RedirectLinks currentPage="aprio" prevCaseStudy="finwell" prevCaseStudyText="FinWell" nextCaseStudy="access"
-                     nextCaseStudyText="Access"/>
+      <RedirectLinks currentPage="aprio" category="caseStudies"/>
     </div>
   )
 }

@@ -1,57 +1,57 @@
 import React, {useEffect} from 'react';
-import '../Stylesheets/Finwell.scss';
-import FinWellHeaderImage from '../Assets/FinWellPageImages/FinWellHeaderImage.png';
-import iPhone1 from '../Assets/FinWellPageImages/iPhone1.png'
-import iPhone2 from '../Assets/FinWellPageImages/iPhone2.png'
-import iPhone3 from '../Assets/FinWellPageImages/iPhone3.png'
-import iPhone4 from '../Assets/FinWellPageImages/iPhone4.png'
-import IntelligentBudgetingBubbles from '../Assets/FinWellPageImages/IntelligentBudgetingBubbles.png';
-import PurchaseTrackingBubbles from '../Assets/FinWellPageImages/PurchaseTrackingBubbles.png';
-import ActionableInsightsBubbles from '../Assets/FinWellPageImages/ActionableInsightsBubbles.png';
-import StressedEmoji from '../Assets/StressedEmoji.svg';
-import Books from '../Assets/FinWellPageImages/Books.svg';
-import CompetitiveAnalysis from '../Assets/FinWellPageImages/CompetitiveAnalysis.png';
-import AffinityMap from '../Assets/FinWellPageImages/AffinityMap.png';
-import AnxiousAnnie from '../Assets/FinWellPageImages/AnxiousAnnie.png';
-import ConfidentCarl from '../Assets/FinWellPageImages/ConfidentCarl.png';
-import AnxiousAnnieEmpathyMap from '../Assets/FinWellPageImages/AnxiousAnnieEmpathyMap.png';
-import ConfidentCarlEmpathyMap from '../Assets/FinWellPageImages/ConfidentCarlEmpathyMap.png';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../App";
-import ParentChildSign from '../Assets/FinWellPageImages/ParentChildSign.svg';
-import Survey from '../Assets/FinWellPageImages/Survey.png';
-import UserInterviews from '../Assets/FinWellPageImages/UserInterviews.png'
-import Ideation from '../Assets/FinWellPageImages/Ideation.png';
-import GuerillaTesting1 from '../Assets/FinWellPageImages/GuerillaTesting1.png';
-import GuerillaTesting2 from '../Assets/FinWellPageImages/GuerillaTesting2.png';
-import UserStories from '../Assets/FinWellPageImages/UserStories.png';
-import InformationArchitecture from '../Assets/FinWellPageImages/InformationArchitecture.png';
-import StyleGuide0 from '../Assets/FinWellPageImages/StyleGuide0.png';
-import StyleGuide1 from '../Assets/FinWellPageImages/StyleGuide1.png';
-import StyleGuide2 from '../Assets/FinWellPageImages/StyleGuide2.png';
-import StyleGuide3 from '../Assets/FinWellPageImages/StyleGuide3.png';
-import StyleGuide4 from '../Assets/FinWellPageImages/StyleGuide4.png';
-import StyleGuide5 from '../Assets/FinWellPageImages/StyleGuide5.png';
-import StyleGuide6 from '../Assets/FinWellPageImages/StyleGuide6.png';
-import StyleGuide7 from '../Assets/FinWellPageImages/StyleGuide7.png';
-import StyleGuide8 from '../Assets/FinWellPageImages/StyleGuide8.png';
-import AnchorLinks from "../Components/AnchorLinks";
-import FinalImage from '../Assets/FinWellPageImages/FinalImage.png';
-import {Gallery} from "../Components/Gallery";
-import SketchingWireframes from "../Assets/FinWellPageImages/SketchingWireframes.png";
-import UserFlows1 from '../Assets/FinWellPageImages/UserFlows1.png';
-import UserFlows2 from '../Assets/FinWellPageImages/UserFlows2.png';
-import UserFlows3 from '../Assets/FinWellPageImages/UserFlows3.png';
-import UserFlows4 from '../Assets/FinWellPageImages/UserFlows4.png';
-import {RedirectLinks} from "../Components/RedirectLinks";
-import Iteration1 from '../Assets/FinWellPageImages/Iteration1.png';
-import Iteration2 from '../Assets/FinWellPageImages/Iteration2.png';
-import Iteration3 from '../Assets/FinWellPageImages/Iteration3.png';
-import Process from '../Assets/FinWellPageImages/Process.png';
-import Insights from '../Assets/FinWellPageImages/Insights.png';
-import DownArrow from "../Assets/ArrowDownBlack.svg";
-import UpArrow from "../Assets/ArrowUpBlack.svg";
-import TestingResult1 from '../Assets/FinWellPageImages/TestingResult1.png';
-import TestingResult2 from '../Assets/FinWellPageImages/TestingResult2.png';
+import '../../Stylesheets/Finwell.scss';
+import FinWellHeaderImage from '../../Assets/FinWellPageImages/FinWellHeaderImage.png';
+import iPhone1 from '../../Assets/FinWellPageImages/iPhone1.png'
+import iPhone2 from '../../Assets/FinWellPageImages/iPhone2.png'
+import iPhone3 from '../../Assets/FinWellPageImages/iPhone3.png'
+import iPhone4 from '../../Assets/FinWellPageImages/iPhone4.png'
+import IntelligentBudgetingBubbles from '../../Assets/FinWellPageImages/IntelligentBudgetingBubbles.png';
+import PurchaseTrackingBubbles from '../../Assets/FinWellPageImages/PurchaseTrackingBubbles.png';
+import ActionableInsightsBubbles from '../../Assets/FinWellPageImages/ActionableInsightsBubbles.png';
+import StressedEmoji from '../../Assets/StressedEmoji.svg';
+import Books from '../../Assets/FinWellPageImages/Books.svg';
+import CompetitiveAnalysis from '../../Assets/FinWellPageImages/CompetitiveAnalysis.png';
+import AffinityMap from '../../Assets/FinWellPageImages/AffinityMap.png';
+import AnxiousAnnie from '../../Assets/FinWellPageImages/AnxiousAnnie.png';
+import ConfidentCarl from '../../Assets/FinWellPageImages/ConfidentCarl.png';
+import AnxiousAnnieEmpathyMap from '../../Assets/FinWellPageImages/AnxiousAnnieEmpathyMap.png';
+import ConfidentCarlEmpathyMap from '../../Assets/FinWellPageImages/ConfidentCarlEmpathyMap.png';
+import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../../App";
+import ParentChildSign from '../../Assets/FinWellPageImages/ParentChildSign.svg';
+import Survey from '../../Assets/FinWellPageImages/Survey.png';
+import UserInterviews from '../../Assets/FinWellPageImages/UserInterviews.png'
+import Ideation from '../../Assets/FinWellPageImages/Ideation.png';
+import GuerillaTesting1 from '../../Assets/FinWellPageImages/GuerillaTesting1.png';
+import GuerillaTesting2 from '../../Assets/FinWellPageImages/GuerillaTesting2.png';
+import UserStories from '../../Assets/FinWellPageImages/UserStories.png';
+import InformationArchitecture from '../../Assets/FinWellPageImages/InformationArchitecture.png';
+import StyleGuide0 from '../../Assets/FinWellPageImages/StyleGuide0.png';
+import StyleGuide1 from '../../Assets/FinWellPageImages/StyleGuide1.png';
+import StyleGuide2 from '../../Assets/FinWellPageImages/StyleGuide2.png';
+import StyleGuide3 from '../../Assets/FinWellPageImages/StyleGuide3.png';
+import StyleGuide4 from '../../Assets/FinWellPageImages/StyleGuide4.png';
+import StyleGuide5 from '../../Assets/FinWellPageImages/StyleGuide5.png';
+import StyleGuide6 from '../../Assets/FinWellPageImages/StyleGuide6.png';
+import StyleGuide7 from '../../Assets/FinWellPageImages/StyleGuide7.png';
+import StyleGuide8 from '../../Assets/FinWellPageImages/StyleGuide8.png';
+import AnchorLinks from "../../Components/AnchorLinks";
+import FinalImage from '../../Assets/FinWellPageImages/FinalImage.png';
+import {Gallery} from "../../Components/Gallery";
+import SketchingWireframes from "../../Assets/FinWellPageImages/SketchingWireframes.png";
+import UserFlows1 from '../../Assets/FinWellPageImages/UserFlows1.png';
+import UserFlows2 from '../../Assets/FinWellPageImages/UserFlows2.png';
+import UserFlows3 from '../../Assets/FinWellPageImages/UserFlows3.png';
+import UserFlows4 from '../../Assets/FinWellPageImages/UserFlows4.png';
+import {RedirectLinks} from "../../Components/RedirectLinks";
+import Iteration1 from '../../Assets/FinWellPageImages/Iteration1.png';
+import Iteration2 from '../../Assets/FinWellPageImages/Iteration2.png';
+import Iteration3 from '../../Assets/FinWellPageImages/Iteration3.png';
+import Process from '../../Assets/FinWellPageImages/Process.png';
+import Insights from '../../Assets/FinWellPageImages/Insights.png';
+import DownArrow from "../../Assets/ArrowDownBlack.svg";
+import UpArrow from "../../Assets/ArrowUpBlack.svg";
+import TestingResult1 from '../../Assets/FinWellPageImages/TestingResult1.png';
+import TestingResult2 from '../../Assets/FinWellPageImages/TestingResult2.png';
 
 /**
  * FinWell page component
@@ -692,8 +692,7 @@ export const FinWell = () => {
       </div>
 
       <img src={FinalImage} alt="" className="image margin-bottom-160px" id="final-image"/>
-      <RedirectLinks currentPage="finwell" prevCaseStudy="access" prevCaseStudyText="Access" nextCaseStudy="aprio"
-                     nextCaseStudyText="Aprio"/>
+      <RedirectLinks currentPage="finwell" category="caseStudies"/>
     </div>
   )
 }

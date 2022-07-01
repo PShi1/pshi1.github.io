@@ -1,6 +1,6 @@
 @import 'index';
 
-.work-page {
+.playground-page {
   cursor: none;
   padding-bottom: 5.5vw;
 
@@ -18,16 +18,33 @@
     }
   }
 
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-
   .down-arrow {
     z-index: 11000;
     height: fit-content;
     width: fit-content;
     transform: scale(0.5);
     position: fixed;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+
+    .left-column {
+      width: 65%;
+      display: inline-block;
+    }
+
+    .right-column {
+      width: 35%;
+      display: inline-flex;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        height: 100%;
+      }
+    }
   }
 
   .row {
@@ -40,44 +57,8 @@
 
       h1 {
         margin-top: 0;
+        margin-bottom: 2vw;
       }
-    }
-  }
-
-  .typewriter-wrapper-div {
-    display: block;
-
-    .typewriter-prefix {
-      display: inline-block;
-      padding-right: 0.4vw;
-
-    }
-
-    .wrap {
-      overflow-wrap: break-word;
-    }
-
-    .typewrite {
-      max-width: fit-content;
-      display: inline-block;
-
-      p {
-        overflow: hidden;
-        border-right: .05em solid white;
-        white-space: nowrap;
-        animation: typing 3.5s steps(30, start), blink-caret .75s step-end infinite;
-        float: left;
-      }
-    }
-
-    @keyframes typing {
-      from {width: 0}
-      to {width: 100%}
-    }
-
-    @keyframes blink-caret {
-      from, to {border-color: transparent}
-      50% {border-color: white}
     }
   }
 
@@ -173,14 +154,14 @@
     cursor: pointer;
   }
 
-  .tag-container p{
+  .tag-container p {
     transform-style: preserve-3d;
     transform: translateZ(-0.9766vw);
     transition: transform 0.4s;
   }
 
   .tag-container p:before,
-  .tag-container p:after{
+  .tag-container p:after {
     padding: 0.5vw 1.56vw;
     height: 2.734vw;
     display: flex;
@@ -196,64 +177,63 @@
     border: 1px solid $white;
   }
 
-  .tag-container p:after{
+  .tag-container p:after {
     background-color: $white;
     color: black;
     transform: rotateX(90deg) translateZ(3.125vw);
   }
 
-  .tag-container p:hover{
+  .tag-container p:hover {
     transform: translateZ(-1.758vw) rotateX(-88deg);
   }
 
-  .tag-container.active p{
+  .tag-container.active p {
     transform: translateZ(-1.758vw) rotateX(-88deg);
   }
 
-  #all-tag p:before, #all-tag p:after{
+  #all-tag p:before, #all-tag p:after {
     content: "All";
   }
 
-  #web-tag p:before, #web-tag p:after{
-    content: "Web";
+  #ux-design-tag p:before, #ux-design-tag p:after {
+    content: "UX Design";
   }
 
-  #mobile-tag p:before, #mobile-tag p:after{
-    content: "Mobile";
+  #illustration-tag p:before, #illustration-tag p:after {
+    content: "Illustration";
   }
 
-  #prototyping-tag p:before, #prototyping-tag p:after{
-    content: "Prototyping";
+  #branding-tag p:before, #branding-tag p:after {
+    content: "Branding";
   }
 
-  #design-system-tag p:before, #design-system-tag p:after{
-    content: "Design System";
-  }
-
-  #access-card, #sponsorcircle-card, #aprio-card, #pivot-card, #knowbie-card, #finwell-card {
+  #solearn-card, #handmade-online-store-card, #featured-drawings-card, #bookbuds-card, #recharge-card {
     margin-left: 1%;
     margin-right: 1%;
   }
 
-  #access-card, #sponsorcircle-card, #knowbie-card {
-    z-index: 100;
-  }
   // End button test
 
   // Start appear on scroll
-  .appear-on-scroll-1, .appear-on-scroll-2{
+  .appear-on-scroll-1, .appear-on-scroll-2 {
     opacity: 0;
     animation-duration: 1.5s;
   }
 
-  .appear-on-scroll-1.play-animation, .appear-on-scroll-2.play-animation{
+  .appear-on-scroll-1.play-animation, .appear-on-scroll-2.play-animation {
     animation-name: appearOnScroll;
     opacity: 100%;
   }
 
   @keyframes appearOnScroll {
-    from {transform: translateY(2vw); opacity: 0;}
-    to {transform: translateY(0); opacity: 100%;}
+    from {
+      transform: translateY(2vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 100%;
+    }
   }
   // End appear on scroll
 
@@ -282,10 +262,11 @@
     height: var(--cursor-outline-size);
     background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
   }
+
   // End cursor testing
 }
 
-@media screen and (max-width: $mobile-view-max-width){
+@media screen and (max-width: $mobile-view-max-width) {
   .work-page {
     width: $default-mobile-margin-width;
 

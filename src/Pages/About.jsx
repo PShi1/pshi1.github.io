@@ -17,9 +17,9 @@ export const About = () => {
     if (!document.getElementById("about-menu-item").classList.contains("active")) {
       document.getElementById("about-menu-item").classList.add("active");
     }
-    // if (document.getElementById("play-menu-item").classList.contains("active")) {
-    //   document.getElementById("play-menu-item").classList.remove("active");
-    // }
+    if (document.getElementById("play-menu-item").classList.contains("active")) {
+      document.getElementById("play-menu-item").classList.remove("active");
+    }
     if (document.getElementById("work-menu-item").classList.contains("active")) {
       document.getElementById("work-menu-item").classList.remove("active");
     }

@@ -454,6 +454,105 @@ const AnchorLinks = ({callerType}) => {
         </div>
       </div>
     );
+  } else if (callerType === "solearn") {
+    return (
+      <div className="anchor-links-wrapper hidden solearn-colours" id="anchor-links-wrapper">
+        <div className="anchor-links-background"/>
+        <div className="group" id="overview-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("overview-title")
+          }}>Overview</h3>
+        </div>
+
+        <div className="group" id="user-research-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("user-research-title")
+          }}><strong className="light-blue-text">01</strong> - User Research</h3>
+        </div>
+
+        <div className="group" id="brainstorming-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("brainstorming-title")
+          }}><strong className="light-blue-text">02</strong> - Brainstorming</h3>
+        </div>
+
+        <div className="group" id="final-prototype-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("final-prototype-title")
+          }}><strong className="light-blue-text">03</strong> - Final Prototype</h3>
+        </div>
+      </div>
+    );
+  } else if (callerType === "bookbuds") {
+    return (
+      <div className="anchor-links-wrapper hidden bookbuds-colours" id="anchor-links-wrapper">
+        <div className="anchor-links-background"/>
+        <div className="group" id="overview-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("overview-title")
+          }}>Overview</h3>
+        </div>
+
+        <div className="group" id="user-flows-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("user-flows-title")
+          }}><strong className="light-pink-text">01</strong> - User Flows</h3>
+        </div>
+
+        <div className="group" id="style-guide-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("style-guide-title")
+          }}><strong className="light-pink-text">02</strong> - Style Guide</h3>
+        </div>
+
+        <div className="group" id="final-prototype-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("final-prototype-title")
+          }}><strong className="light-pink-text">03</strong> - Final Prototype</h3>
+        </div>
+      </div>
+    );
+  } else if (callerType === "recharge") {
+    return (
+      <div className="anchor-links-wrapper hidden recharge-colours" id="anchor-links-wrapper">
+        <div className="anchor-links-background"/>
+        <div className="group" id="overview-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("overview-title")
+          }}>Overview</h3>
+        </div>
+
+        <div className="group" id="user-research-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("user-research-title")
+          }}><strong className="purple-text">01</strong> - User Research</h3>
+        </div>
+
+        <div className="group" id="logo-brainstorm-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("logo-brainstorm-title")
+          }}><strong className="purple-text">02</strong> - Logo Brainstorm</h3>
+        </div>
+
+        <div className="group" id="design-system-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("design-system-title")
+          }}><strong className="purple-text">03</strong> - Design System</h3>
+        </div>
+
+        <div className="group" id="final-prototype-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("final-prototype-title")
+          }}><strong className="purple-text">04</strong> - Final Prototype</h3>
+        </div>
+
+        <div className="group" id="about-page-area-anchor">
+          <h3 className="h3-group" onClick={() => {
+            findAndGoToLinkedTitle("about-page-title")
+          }}><strong className="purple-text">05</strong> - About Page</h3>
+        </div>
+      </div>
+    );
   } else {
     return (<></>);
   }

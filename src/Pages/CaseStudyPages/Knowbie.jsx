@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import {setupScrollBar, turnAllMenuStatesOff} from "../App";
-import "../Stylesheets/index.scss"
+import {setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import "../../Stylesheets/index.scss"
 
 export const Knowbie = () => {
   useEffect(() => {

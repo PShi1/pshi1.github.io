@@ -23,7 +23,7 @@ body {
   overscroll-behavior: none;
 }
 
-.knowbie-page, .pivot-page, .sponsor-circle-page, .playground-page {
+.knowbie-page, .pivot-page, .sponsor-circle-page {
   h2 {
     margin: auto;
     text-align: center;
@@ -114,6 +114,14 @@ $light-aprio-orange: #FFDFC7;
 $aprio-orange: #FF6D00;
 $light-finwell-yellow: #FFE78E;
 $finwell-yellow: #F0CA36;
+
+$solearn-blue: #6FC7FF;
+$bookbuds-pink: #FF645F;
+$handmade-yellow: #FFE789;
+$featuredDrawings-blue: #85FFF1;
+$recharge-purple: #57417C;
+$light-recharge-purple: #E6DFF5;
+
 
 $main-background-colour-dark: $blackv2;
 
@@ -310,6 +318,18 @@ h4 {
 
 .off-white-text {
   color: $off-white !important;
+}
+
+.light-blue-text {
+  color: $solearn-blue;
+}
+
+.light-pink-text {
+  color: $bookbuds-pink;
+}
+
+.purple-text {
+  color: $recharge-purple;
 }
 
 .grey-text {
@@ -872,6 +892,86 @@ h4 {
 }
 
 // End of Redirect Links
+
+// Start of Skip to Prototype Button
+.link-to-prototype-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 6vw;
+
+  .prototype-button {
+    box-sizing: border-box;
+
+    p {
+      line-height: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 2.4vw;
+
+    p {
+      /* Jump to Prototype */
+      font-family: $manrope-font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1vw;
+      line-height: 100%;
+      max-height: 2.7vw;
+      color: $blackv2;
+    }
+  }
+}
+
+.prototype-button {
+  position: relative;
+  display: inline-flex;
+  perspective: 1000px;
+}
+
+.prototype-button p {
+  transform-style: preserve-3d;
+  transform: translateZ(-0.9766vw);
+  transition: transform 0.4s;
+}
+
+.prototype-button p:before,
+.prototype-button p:after {
+  padding: 0.4vw 1.2vw;
+  height: 2.734vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.prototype-button p:before {
+  color: $blackv2;
+  background: $white;
+  transform: rotateY(0deg) translateZ(1.367vw);
+  border: 2px solid $blackv2;
+}
+
+.prototype-button p:after {
+  background-color: $blackv2;
+  color: $white;
+  transform: rotateX(90deg) translateZ(3.125vw);
+}
+
+.prototype-button p:hover {
+  transform: translateZ(0vw) rotateX(-88deg);
+}
+
+.prototype-button p:before, .prototype-button p:after {
+  content: "Skip to Prototype";
+}
+
+// End of Skip to Prototype Button
 
 // Boiler Plate
 

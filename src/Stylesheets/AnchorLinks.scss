@@ -18,6 +18,24 @@
   }
 }
 
+.solearn-colours {
+  h3, h4 {
+    border-color: $solearn-blue !important;
+  }
+}
+
+.bookbuds-colours {
+  h3, h4 {
+    border-color: $bookbuds-pink !important;
+  }
+}
+
+.recharge-colours {
+  h3, h4 {
+    border-color: $recharge-purple !important;
+  }
+}
+
 .anchor-links-wrapper {
   position: fixed;
   width: 20%;

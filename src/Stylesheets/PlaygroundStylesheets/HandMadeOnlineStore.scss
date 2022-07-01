@@ -1,0 +1,142 @@
+@import '../index';
+
+.handmade-online-store-page {
+  background-color: $off-white;
+  animation-name: temp;
+  animation-duration: 3s;
+
+  @keyframes temp {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  .cs-body, .cs-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mid-align-title {
+    text-align: center;
+  }
+
+  .overview, .phone-case-photos {
+    width: $default-case-study-margin;
+    margin: auto;
+  }
+
+  .photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+      width: 45%;
+      height: 45%;
+      margin-bottom: 5vw;
+      box-sizing: border-box;
+    }
+  }
+
+  .image {
+    width: 100%;
+    z-index: 100100;
+    position: relative;
+  }
+
+  #header-image {
+    height: 47vw;
+    z-index: 100100;
+    position: relative;
+    padding-top: 6vw;
+  }
+
+  .overview {
+    .left-column {
+      width: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-right: 0;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .right-column {
+      width: 50%;
+      float: right;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 5%;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .three-column-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .spacing-div {
+        display: flex;
+      }
+
+      .left-column, .center-column, .right-column {
+        width: 33%;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .left-column {
+        padding-right: 2.5%;
+      }
+
+      .center-column {
+        padding: 0 2.5%;
+      }
+
+      .right-column {
+        padding-left: 2.5%;
+      }
+    }
+  }
+
+  .figma-embed-wrapper {
+    width: 100%;
+    height: 73vw;
+  }
+
+  .highlight {
+    width: max-content;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, $off-white 50%, $solearn-blue 50%);
+    background-position: 0 0;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-weight: initial;
+  }
+
+  .highlight.active {
+    animation-name: highlight;
+  }
+
+  @keyframes highlight {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -100% 0;
+    }
+  }
+
+  .prototype-button p:before, .prototype-button p:after {
+    content: "Link to Instagram";
+  }
+}

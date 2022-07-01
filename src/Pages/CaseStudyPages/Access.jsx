@@ -1,36 +1,36 @@
 import React, {useEffect} from 'react';
-import AccessHeader from '../Assets/AccessPageImages/AccessHeader.png';
-import '../Stylesheets/Access.scss';
-import FemaleArtist from '../Assets/FemaleArtist.svg';
-import MaleArtist from '../Assets/MaleArtist.svg';
-import Developer from '../Assets/Developer.svg';
-import EndUser from '../Assets/EndUser.svg';
-import Documentation from '../Assets/Documentation.svg';
-import Eyes from '../Assets/Eyes.svg';
-import Cog from '../Assets/Cog.svg';
-import DesignSystem from '../Assets/AccessPageImages/DesignSystem.png';
-import Iconography from '../Assets/AccessPageImages/Iconography.png';
-import TextFields from '../Assets/AccessPageImages/TextFields.png';
-import ComponentCategorization from '../Assets/AccessPageImages/ComponentCategorization.png';
-import Patterns from '../Assets/AccessPageImages/Patterns.png';
-import FlowChart from '../Assets/AccessPageImages/FlowChart.png';
-import FileOrganization1 from '../Assets/AccessPageImages/FileOrganization1.png';
-import FileOrganization2 from '../Assets/AccessPageImages/FileOrganization2.png';
-import Onboarding from '../Assets/AccessPageImages/Onboarding.png';
-import AccessFinalImage from '../Assets/AccessPageImages/AccessFinalImage.png';
-import OldDesignSpecs from '../Assets/AccessPageImages/OldDesignSpecs.png';
-import NewDesignSpec1 from '../Assets/AccessPageImages/NewDesignSpecs.png';
-import NewDesignSpec2 from '../Assets/AccessPageImages/NewDesignSpecs2.png';
-import DesignConsiderations from '../Assets/AccessPageImages/DesignConsiderations.png';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../App";
-import AnchorLinks from "../Components/AnchorLinks";
+import AccessHeader from '../../Assets/AccessPageImages/AccessHeader.png';
+import '../../Stylesheets/Access.scss';
+import FemaleArtist from '../../Assets/FemaleArtist.svg';
+import MaleArtist from '../../Assets/MaleArtist.svg';
+import Developer from '../../Assets/Developer.svg';
+import EndUser from '../../Assets/EndUser.svg';
+import Documentation from '../../Assets/Documentation.svg';
+import Eyes from '../../Assets/Eyes.svg';
+import Cog from '../../Assets/Cog.svg';
+import DesignSystem from '../../Assets/AccessPageImages/DesignSystem.png';
+import Iconography from '../../Assets/AccessPageImages/Iconography.png';
+import TextFields from '../../Assets/AccessPageImages/TextFields.png';
+import ComponentCategorization from '../../Assets/AccessPageImages/ComponentCategorization.png';
+import Patterns from '../../Assets/AccessPageImages/Patterns.png';
+import FlowChart from '../../Assets/AccessPageImages/FlowChart.png';
+import FileOrganization1 from '../../Assets/AccessPageImages/FileOrganization1.png';
+import FileOrganization2 from '../../Assets/AccessPageImages/FileOrganization2.png';
+import Onboarding from '../../Assets/AccessPageImages/Onboarding.png';
+import AccessFinalImage from '../../Assets/AccessPageImages/AccessFinalImage.png';
+import OldDesignSpecs from '../../Assets/AccessPageImages/OldDesignSpecs.png';
+import NewDesignSpec1 from '../../Assets/AccessPageImages/NewDesignSpecs.png';
+import NewDesignSpec2 from '../../Assets/AccessPageImages/NewDesignSpecs2.png';
+import DesignConsiderations from '../../Assets/AccessPageImages/DesignConsiderations.png';
+import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import AnchorLinks from "../../Components/AnchorLinks";
 import {
   cursorDefaultColor,
   cursorLightModeColor,
   cursorLightModeInnerOpacity,
   cursorLightModeOuterOpacity
-} from "../Components/AnimatedCursor";
-import {RedirectLinks} from "../Components/RedirectLinks";
+} from "../../Components/AnimatedCursor";
+import {RedirectLinks} from "../../Components/RedirectLinks";
 
 export const Access = () => {
   useEffect(() => {
@@ -590,8 +590,7 @@ export const Access = () => {
 
       <img className="anchor-area" id="final-image" src={AccessFinalImage} alt=""/>
 
-      <RedirectLinks currentPage="access" prevCaseStudy="aprio" prevCaseStudyText="Aprio" nextCaseStudy="finwell"
-                     nextCaseStudyText="FinWell"/>
+        <RedirectLinks currentPage="access" category="caseStudies"/>
     </div>
   )
 }
