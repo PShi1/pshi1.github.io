@@ -14,6 +14,7 @@ import Instagram from '../Assets/FooterImages/InstagramLight.svg';
 import InstagramActive from '../Assets/FooterImages/InstagramLightActive.svg';
 import {copyEmail} from "../App";
 
+
 export const Footer = () => {
   useEffect(() => {
     let elements = document.getElementsByClassName('typewrite-footer');
@@ -84,6 +85,7 @@ export const Footer = () => {
     <div className="footer" id="footer">
       <div className="center-column margin-bottom-40px" id="footer-center-column">
         <div className="left-column">
+
           <p className="large-text margin-bottom-24px"> Let's connect! ✨</p>
           <p className="medium-text"> Designed + coded with lots of ❤️ and ☕ (with dev help from <a
             className="clickable grey-underline"

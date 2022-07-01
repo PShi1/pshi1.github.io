@@ -163,7 +163,7 @@ export const Access = () => {
         <div className="three-column-row margin-bottom-0px">
           <div className="left-column margin-bottom-0px">
             <h3 className="cs-subtitle-2 margin-bottom-12px" id="project-timeline-title">Project Timeline</h3>
-            <p className="cs-body margin-bottom-0px">3 months (Q2 2021 -> Q3 2021)
+            <p className="cs-body margin-bottom-0px">3 months (Q3 2021 -> Q4 2021)
             </p>
           </div>
           <div className="center-column margin-bottom-0px">

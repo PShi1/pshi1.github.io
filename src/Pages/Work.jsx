@@ -15,10 +15,10 @@ import {Link} from "react-router-dom";
 export const Work = () => {
   const tags = ["all-tag", "web-tag", "mobile-tag", "prototyping-tag", "design-system-tag"];
   const [currentTag, setCurrentTag] = useState("all-tag");
-  const allCards = ["finwell-card", "access-card", "aprio-card"];
+  const allCards = ["access-card", "aprio-card", "finwell-card"];
   const webCards = ["access-card", "sponsorcircle-card", "aprio-card", "pivot-card"];
   const mobileCards = ["finwell-card", "sponsorcircle-card", "knowbie-card"];
-  const prototypingCards = ["finwell-card", "access-card", "knowbie-card", "pivot-card"];
+  const prototypingCards = ["access-card", "finwell-card", "knowbie-card", "pivot-card"];
   const designSystemCards = ["access-card", "finwell-card", "pivot-card"];
   const [firstRender, setFirstRender] = useState(true);
 
