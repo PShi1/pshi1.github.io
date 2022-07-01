@@ -8,10 +8,10 @@ import MailLight from '../Assets/FooterImages/MailLight.svg';
 import LinkedinLight from '../Assets/FooterImages/LinkedinLight.svg';
 import MailLightActive from "../Assets/FooterImages/MailLightActive.svg";
 import LinkedinActiveLight from '../Assets/FooterImages/LinkedinLightActive.svg';
-import InstagramLight from '../Assets/FooterImages/Instagram.svg';
-import InstagramLightActive from '../Assets/FooterImages/InstagramActive.svg';
-import Instagram from '../Assets/FooterImages/InstagramLight.svg';
-import InstagramActive from '../Assets/FooterImages/InstagramLightActive.svg';
+import InstagramLight from '../Assets/FooterImages/InstagramLight.svg';
+import InstagramLightActive from '../Assets/FooterImages/InstagramLightActive.svg';
+import Instagram from '../Assets/FooterImages/Instagram.svg';
+import InstagramActive from '../Assets/FooterImages/InstagramActive.svg';
 import {copyEmail} from "../App";
 
 

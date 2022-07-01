@@ -24,11 +24,10 @@ export const Work = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
-      let toRotate = "[\"a life long learner.\", \"an engaging story teller.\", \"a driven entrepreneur.\",\n" +
-        "              \"a curious researcher.\", \"an imaginative problem solver.\", \"a technology enthusiast.\", \"an accessibility advocate.\"]";
+      let toRotate = "[\"a life long learner.\", \"a driven entrepreneur.\",\n" +
+          "              \"a curious researcher.\", \"an accessibility advocate.\", \"an imaginative problem solver.\", \"a tech enthusiast.\"]";
       let period = "2000"
       if (toRotate) {
         new TxtType(elements[i], JSON.parse(toRotate), period);
@@ -295,14 +294,17 @@ export const Work = () => {
 
         <div id="case-studies-container">
           <div className="minus-margin-sides">
-            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
-              <img className="first-active" src={FinWellCard} alt=""/>
-              <img className="first-inactive" src={FinWellCardActive} alt=""/>
+            <Link className="cards-div active appear-on-scroll-2" to="/aprio" id="aprio-card">
+              <img className="first-active" src={AprioCard} alt=""/>
+              <img className="first-inactive" src={AprioCardActive} alt=""/>
             </Link>
-
             <Link className="cards-div active appear-on-scroll-2" to="/access" id="access-card">
               <img className="first-active" src={AccessCard} alt=""/>
               <img className="first-inactive" src={AccessCardActive} alt=""/>
+            </Link>
+            <Link className="cards-div active appear-on-scroll-2" to="/finwell" id="finwell-card">
+              <img className="first-active" src={FinWellCard} alt=""/>
+              <img className="first-inactive" src={FinWellCardActive} alt=""/>
             </Link>
 
             {/*<Link className="cards-div active appear-on-scroll-2" to="/sponsorcircle" id="sponsorcircle-card">*/}
@@ -314,11 +316,6 @@ export const Work = () => {
             {/*  <img className="first-active" src={KnowbieCard} alt=""/>*/}
             {/*  <img className="first-inactive" src={KnowbieCardActive} alt=""/>*/}
             {/*</Link>*/}
-
-            <Link className="cards-div active appear-on-scroll-2" to="/aprio" id="aprio-card">
-              <img className="first-active" src={AprioCard} alt=""/>
-              <img className="first-inactive" src={AprioCardActive} alt=""/>
-            </Link>
 
             {/*<Link className="cards-div active appear-on-scroll-2" to="/pivot" id="pivot-card">*/}
             {/*  <img className="first-active" src={PivotCard} alt=""/>*/}

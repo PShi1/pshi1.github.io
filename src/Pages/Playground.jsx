@@ -40,7 +40,7 @@ export const Playground = () => {
   const allCards = ["solearn-card", "handmade-online-store-card", "featured-drawings-card", "bookbuds-card", "recharge-card"];
   const uxDesignCards = ["solearn-card", "bookbuds-card", "recharge-card"];
   const illustrationCards = ["featured-drawings-card", "solearn-card"];
-  const collaborationCards = ["recharge-card", "solearn-card", "bookbuds-card", "handmade-online-store-card"];
+  const collaborationCards = ["recharge-card", "solearn-card", "bookbuds-card"];
   const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
