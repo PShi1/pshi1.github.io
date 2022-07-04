@@ -984,6 +984,9 @@ h4 {
 
 // End of Skip to Prototype Button
 
+canvas {
+  z-index: 9999999 !important;
+}
 // Boiler Plate
 
 body {

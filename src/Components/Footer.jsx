@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import '../Stylesheets/Footer.scss'
 import Linkedin from "../Assets/FooterImages/Linkedin.svg"
 import LinkedinActive from '../Assets/FooterImages/LinkedinActive.svg'
@@ -13,7 +13,7 @@ import InstagramLightActive from '../Assets/FooterImages/InstagramLightActive.sv
 import Instagram from '../Assets/FooterImages/Instagram.svg';
 import InstagramActive from '../Assets/FooterImages/InstagramActive.svg';
 import {copyEmail} from "../App";
-
+import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
 
 export const Footer = () => {
   useEffect(() => {
@@ -33,6 +33,12 @@ export const Footer = () => {
     document.body.appendChild(css);
   }, []);
 
+  const onHover = useCallback(() => {
+    confetti({
+      particleCount: 150,
+      spread: 60
+    });
+  });
 
   const redirectLinkedin = () => {
     window.open("https://www.linkedin.com/in/emmalili/", "_blank");
@@ -52,7 +58,7 @@ export const Footer = () => {
     this.isDeleting = false;
   };
 
-  TxtType.prototype.tick = function() {
+  TxtType.prototype.tick = function () {
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
     let delta = 100; // This sets the normal time per char
@@ -63,7 +69,7 @@ export const Footer = () => {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap large-text colour-gradient">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap large-text colour-gradient">' + this.txt + '</span>';
 
     let that = this;
 
@@ -76,7 +82,7 @@ export const Footer = () => {
       delta = 500;
     }
 
-    setTimeout(function() {
+    setTimeout(function () {
       that.tick();
     }, delta);
   };
@@ -86,11 +92,12 @@ export const Footer = () => {
       <div className="center-column margin-bottom-40px" id="footer-center-column">
         <div className="left-column">
 
-          <p className="large-text margin-bottom-24px"> Let's connect! ✨</p>
+          <p className="large-text margin-bottom-24px"> Let's connect! <strong className="confetti-hover"
+                                                                               onMouseEnter={onHover}>✨</strong></p>
           <p className="medium-text grey-text"> Designed + coded with lots of ❤️ and ☕ (with dev help from <a
-              className="clickable grey-underline grey-text"
-              href={"https://www.linkedin.com/in/ptrshi/"}
-              target={"_blank"}>Peter
+            className="clickable grey-underline grey-text"
+            href={"https://www.linkedin.com/in/ptrshi/"}
+            target={"_blank"}>Peter
             Shi</a>)</p>
         </div>
 
