@@ -38,6 +38,27 @@
     }
   }
 
+  .left-side {
+    width: 67%;
+  }
+
+  .right-side {
+    width: 33%;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    img {
+      width: 100%;
+      display: none;
+    }
+
+    img.active {
+      display: block;
+      object-fit: scale-down;
+    }
+  }
+
   .row {
     display: inline-flex;
     align-items: center;

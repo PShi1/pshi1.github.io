@@ -8,6 +8,10 @@ import DownArrow from '../Assets/arrow-down.svg';
 import Books from "../Assets/Books.png"
 import {copyEmail, fadeInIntro, hideScrollBar, setPageToDarkMode} from "../App";
 import UpArrow from "../Assets/arrow-up.svg";
+import StorePhoto from '../Assets/AboutPageImages/StorePhoto.png';
+import pho from '../Assets/AboutPageImages/pho.gif';
+import overwatch from '../Assets/AboutPageImages/overwatch.gif';
+import guitar from '../Assets/AboutPageImages/guitar.gif';
 
 export const About = () => {
   useEffect(() => {
@@ -79,6 +83,37 @@ export const About = () => {
       collapsibleHeader.classList.replace("active", "closed");
       element.style.height = "0";
       arrow.src = DownArrow;
+    }
+  }
+
+  const showPic = (type) => {
+    let phone = document.getElementById("phone");
+    let pho = document.getElementById("pho");
+    let overwatch = document.getElementById("overwatch");
+    let guitar = document.getElementById("guitar");
+    let pics = [phone, pho, overwatch, guitar];
+    for (const pic of pics) {
+      if (pic && pic.classList.contains("active")) {
+        pic.classList.remove("active");
+      }
+    }
+
+    if (type === "phone") {
+      if (phone && !phone.classList.contains("active")) {
+        phone.classList.add("active");
+      }
+    } else if (type === "pho") {
+      if (pho && !pho.classList.contains("active")) {
+        pho.classList.add("active");
+      }
+    } else if (type === "overwatch") {
+      if (overwatch && !overwatch.classList.contains("active")) {
+        overwatch.classList.add("active");
+      }
+    } else if (type === "guitar") {
+      if (guitar && !guitar.classList.contains("active")) {
+        guitar.classList.add("active");
+      }
     }
   }
 
@@ -205,12 +240,32 @@ export const About = () => {
               <img src={DownArrow} alt="" id="after-hours-arrow"/>
             </div>
             <div className="collapsible-item" id="after-hours-item">
-              <ul id="after-hours-ul">
-                <li className="b4">I run my own online store selling 3D phone cases, you can find my work <a className="b4 link" href="https://www.instagram.com/ttqq_handmade/?hl=en" target="_blank" rel="noreferrer">here.</a></li>
-                <li className="b4">I'm a huge foodie, and my favourite dish is Pho.</li>
-                <li className="b4">I get a lot of enjoyment from video games like League or Overwatch.</li>
-                <li className="b4">I'm currently learning how to play the guitar, one YouTube tutorial at a time.</li>
-              </ul>
+              <div className="left-side">
+                <ul id="after-hours-ul">
+                  <li className="b4 grey-underline" onMouseEnter={() => showPic("phone")}>I run my own online store
+                    selling 3D phone
+                    cases.
+                  </li>
+                  <li className="b4 grey-underline" onMouseEnter={() => showPic("pho")}>I'm a huge foodie, and my
+                    favourite dish is
+                    Pho.
+                  </li>
+                  <li className="b4 grey-underline" onMouseEnter={() => showPic("overwatch")}>I get a lot of enjoyment
+                    from video games
+                    like League or Overwatch.
+                  </li>
+                  <li className="b4 grey-underline" onMouseEnter={() => showPic("guitar")}>I'm learning how to play the
+                    guitar, one YouTube tutorial at a time.
+                  </li>
+                </ul>
+              </div>
+              <div className="right-side">
+                <img id="phone" src={StorePhoto} alt=""/>
+                <img id="pho" src={pho} alt=""/>
+                <img id="overwatch" src={overwatch} alt=""/>
+                <img id="guitar" src={guitar} alt=""/>
+              </div>
+
             </div>
           </div>
 

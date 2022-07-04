@@ -90,7 +90,7 @@ export function AnimatedCursor({
 
   React.useEffect(() => {
     const clickables = document.querySelectorAll(
-      'a, input[type="submit"], input[type="image"], label[for], select, button, .link, .cards-div, .tag-container, .scroll-down, .footer-icon, .collapsible-header, .hover-cursor, .group, .subgroup, .clickable, .confetti-hover'
+      'a, input[type="submit"], input[type="image"], label[for], select, button, .link, .cards-div, .tag-container, .scroll-down, .footer-icon, .collapsible-header, .hover-cursor, .group, .subgroup, .clickable, .confetti-hover, .grey-underline'
     )
 
     const mouseoverCallback = (l) => {
