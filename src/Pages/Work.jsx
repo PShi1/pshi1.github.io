@@ -27,7 +27,7 @@ export const Work = () => {
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
       let toRotate = "[\"a life long learner.\", \"a driven entrepreneur.\",\n" +
-          "              \"a curious researcher.\", \"an accessibility advocate.\", \"an imaginative problem solver.\", \"a tech enthusiast.\"]";
+        "              \"a curious researcher.\", \"an accessibility advocate.\", \"an imaginative problem solver.\", \"a tech enthusiast.\"]";
       let period = "2000"
       if (toRotate) {
         new TxtType(elements[i], JSON.parse(toRotate), period);
@@ -211,7 +211,7 @@ export const Work = () => {
       if (scroll + innerHeight / 1.1 >= pos) {
         setFirstRender(false);
         setTimeout(function () {
-          finwellCard.classList.add("play-animation");
+          aprioCard.classList.add("play-animation");
         }, 300);
 
         setTimeout(function () {
@@ -220,7 +220,7 @@ export const Work = () => {
         }, 400);
 
         setTimeout(function () {
-          aprioCard.classList.add("play-animation");
+          finwellCard.classList.add("play-animation");
           // sponsorcircleCard.classList.add("play-animation");
           // pivotCard.classList.add("play-animation");
         }, 700);
@@ -256,8 +256,21 @@ export const Work = () => {
               <p className="b0 margin-bottom-80px"><strong
                 className="off-white-strong-font-style">Currently building 0 -> 1 products </strong>@ Moken Agency.
               </p>
-              <p className="typewriter-prefix b0 off-white-text">I'm also</p>
-              <div className="typewrite"/>
+              <h4 className="wordCarousel b0">
+                <span className="b0 off-white-text">I'm also </span>
+                <div>
+                  <ul className="flip7">
+                    <li className="b0"><strong className="colour-gradient">a tech enthusiast.</strong> 💻</li>
+                    <li className="b0"><strong className="colour-gradient">an engaging story teller.</strong> 🐉</li>
+                    <li className="b0"><strong className="colour-gradient">an imaginative problem solver. </strong> 💡
+                    </li>
+                    <li className="b0"><strong className="colour-gradient">an accessibility advocate.</strong> 🔮</li>
+                    <li className="b0"><strong className="colour-gradient">a curious researcher.</strong> 🔎</li>
+                    <li className="b0"><strong className="colour-gradient">a driven entrepreneur.</strong> 🦄</li>
+                    <li className="b0"><strong className="colour-gradient">a life long learner.</strong> 📚</li>
+                  </ul>
+                </div>
+              </h4>
             </div>
           </div>
 

@@ -99,7 +99,9 @@ export const About = () => {
           </div>
 
           <div className="intro-fade">
-            <p className="b0 margin-bottom-60px temp">Or at least that's what my mom tells me. 😎
+            <p className="b0 margin-bottom-60px off-white-text">Or at least <strong className="colour-gradient">that's
+              what my mom
+              tells me. </strong> 😎
             </p>
           </div>
 

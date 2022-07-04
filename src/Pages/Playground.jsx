@@ -204,7 +204,8 @@ export const Playground = () => {
 
           <div className="typewriter-wrapper-div margin-bottom-120px">
             <div className="intro-fade">
-              <p className="b0" id="spacer">Here are some projects I did purely for fun. 🤗
+              <p className="b0 off-white-text" id="spacer">Here are some <strong
+                className="colour-gradient">projects I did purely for fun.</strong> 🐶
               </p>
             </div>
           </div>

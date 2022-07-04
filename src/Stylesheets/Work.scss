@@ -282,7 +282,90 @@
     height: var(--cursor-outline-size);
     background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
   }
+
   // End cursor testing
+
+  // New typewriter
+  .wordCarousel {
+    margin: 0;
+    display: flex;
+
+    div {
+      overflow: hidden;
+      position: relative;
+      height: 2.5vw;
+      display: inline-block;
+
+      ul {
+        padding-left: 0.5vw;
+      }
+
+      li {
+        font-family: $manrope-font-family;
+        font-weight: 700;
+        height: 2.5vw;
+        margin-bottom: 2.5vw;
+        display: block;
+      }
+    }
+  }
+
+  .flip7 {
+    animation: flip7 20s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+  }
+
+  @keyframes flip7 {
+    0% {
+      margin-top: -35vw;
+    }
+    5% {
+      margin-top: -30vw;
+    }
+    14% {
+      margin-top: -30vw;
+    }
+    19% {
+      margin-top: -25vw;
+    }
+    28% {
+      margin-top: -25vw;
+    }
+    33% {
+      margin-top: -20vw;
+    }
+    42% {
+      margin-top: -20vw;
+    }
+    47% {
+      margin-top: -15vw;
+    }
+    56% {
+      margin-top: -15vw;
+    }
+    60% {
+      margin-top: -10vw;
+    }
+    70% {
+      margin-top: -10vw;
+    }
+    75% {
+      margin-top: -5vw;
+    }
+    84% {
+      margin-top: -5vw;
+    }
+    89% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -25vw;
+    }
+  }
+
+  // End typewriter
 }
 
 @media screen and (max-width: $mobile-view-max-width){
