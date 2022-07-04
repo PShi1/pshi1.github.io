@@ -203,7 +203,15 @@ export const copyEmail = (type) => {
       el.style.opacity = "0";
     }, 2000);
   }
+}
 
+export const hideLoading = () => {
+  setTimeout(() => {
+    document.getElementById("loading-page").classList.add("active");
+    setTimeout(() => {
+      document.getElementById("loading-page").classList.add("none");
+    }, 700)
+  }, 1700);
 }
 
 export default App;

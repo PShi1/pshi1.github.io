@@ -2,20 +2,9 @@
 
 .featured-drawings-page {
   background-color: $off-white;
-  animation-name: temp;
-  animation-duration: 3s;
 
   #featured-drawings-gallery {
     padding-top: 6vw;
-  }
-
-  @keyframes temp {
-    from {
-      opacity: 0
-    }
-    to {
-      opacity: 1
-    }
   }
 
   .cs-body, .cs-subtitle {

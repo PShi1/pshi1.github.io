@@ -2,20 +2,9 @@
 
 .solearn-page {
   background-color: $off-white;
-  animation-name: temp;
-  animation-duration: 3s;
 
   a {
     color: black;
-  }
-
-  @keyframes temp {
-    from {
-      opacity: 0
-    }
-    to {
-      opacity: 1
-    }
   }
 
   .cs-body, .cs-subtitle {

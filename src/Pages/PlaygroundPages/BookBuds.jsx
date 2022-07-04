@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import "../../Stylesheets/PlaygroundStylesheets/BookBuds.scss"
 import BookBudsHeaderImage from '../../Assets/BookBudsPageAssets/BookBudsHeaderImage.png';
 import BookBudsFinalImage from '../../Assets/BookBudsPageAssets/BookBudsFinalImage.png';
@@ -10,6 +10,7 @@ import StyleGuide3 from '../../Assets/BookBudsPageAssets/StyleGuide3.png';
 import AnchorLinks from "../../Components/AnchorLinks";
 import {RedirectLinks} from "../../Components/RedirectLinks";
 import {Gallery} from "../../Components/Gallery";
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const BookBuds = () => {
   const bookbudsImages = [StyleGuide1, StyleGuide2, StyleGuide3];
@@ -22,6 +23,7 @@ export const BookBuds = () => {
     setupScrollBar("#FF645F");
     turnAllMenuStatesOff();
     highlight();
+    hideLoading();
   }, []);
 
   /**
@@ -70,6 +72,7 @@ export const BookBuds = () => {
 
   return (
     <div className="bookbuds-page">
+      <LoadingPage/>
       <AnchorLinks callerType="bookbuds"/>
       <img className="image margin-bottom-40px anchor-area clickable" src={BookBudsHeaderImage} alt=""
            id="header-image"
@@ -122,7 +125,8 @@ export const BookBuds = () => {
           </div>
           <div className="center-column margin-bottom-0px">
             <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Team</h3>
-            <p className="cs-body margin-bottom-0px margin-top-0px"><a href="https://www.linkedin.com/in/cecilia-yue/">Cecilia
+            <p className="cs-body margin-bottom-0px margin-top-0px"><a href="https://www.linkedin.com/in/cecilia-yue/"
+                                                                       target="_blank">Cecilia
               Yue</a> (UX Design)</p>
           </div>
           <div className="right-column margin-bottom-0px">

@@ -22,7 +22,7 @@ import OldDesignSpecs from '../../Assets/AccessPageImages/OldDesignSpecs.png';
 import NewDesignSpec1 from '../../Assets/AccessPageImages/NewDesignSpecs.png';
 import NewDesignSpec2 from '../../Assets/AccessPageImages/NewDesignSpecs2.png';
 import DesignConsiderations from '../../Assets/AccessPageImages/DesignConsiderations.png';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import AnchorLinks from "../../Components/AnchorLinks";
 import {
   cursorDefaultColor,
@@ -31,6 +31,7 @@ import {
   cursorLightModeOuterOpacity
 } from "../../Components/AnimatedCursor";
 import {RedirectLinks} from "../../Components/RedirectLinks";
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const Access = () => {
   useEffect(() => {
@@ -45,6 +46,7 @@ export const Access = () => {
 
     turnAllMenuStatesOff();
     setImpactAreaToHaveReversedCursorColours();
+    hideLoading();
   }, []);
 
   /**
@@ -114,14 +116,15 @@ export const Access = () => {
   }
 
   return (
-      <div className="access-page">
-        <div className="access-header-wrapper margin-bottom-80px anchor-area">
-          <img className="access-header clickable" src={AccessHeader} alt="" id="header-image" onClick={() => {
-            scrollToOverview()
-          }}/>
-        </div>
+    <div className="access-page">
+      <div className="access-header-wrapper margin-bottom-80px anchor-area">
+        <img className="access-header clickable" src={AccessHeader} alt="" id="header-image" onClick={() => {
+          scrollToOverview()
+        }}/>
+      </div>
+      <LoadingPage/>
 
-        <AnchorLinks callerType="access"/>
+      <AnchorLinks callerType="access"/>
       <div className="overview anchor-area margin-bottom-160px" id="overview-area" key="overview-group">
         <h3 className="cs-title mid-align-title margin-bottom-40px" id="overview-title">Overview</h3>
         <h2 className="cs-manrope-150-line-height margin-bottom-80px">I led a small team to build and

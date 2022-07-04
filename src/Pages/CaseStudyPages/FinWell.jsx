@@ -16,7 +16,7 @@ import AnxiousAnnie from '../../Assets/FinWellPageImages/AnxiousAnnie.png';
 import ConfidentCarl from '../../Assets/FinWellPageImages/ConfidentCarl.png';
 import AnxiousAnnieEmpathyMap from '../../Assets/FinWellPageImages/AnxiousAnnieEmpathyMap.png';
 import ConfidentCarlEmpathyMap from '../../Assets/FinWellPageImages/ConfidentCarlEmpathyMap.png';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff,} from "../../App";
 import ParentChildSign from '../../Assets/FinWellPageImages/ParentChildSign.svg';
 import Survey from '../../Assets/FinWellPageImages/Survey.png';
 import UserInterviews from '../../Assets/FinWellPageImages/UserInterviews.png'
@@ -52,6 +52,7 @@ import DownArrow from "../../Assets/ArrowDownBlack.svg";
 import UpArrow from "../../Assets/ArrowUpBlack.svg";
 import TestingResult1 from '../../Assets/FinWellPageImages/TestingResult1.png';
 import TestingResult2 from '../../Assets/FinWellPageImages/TestingResult2.png';
+import {LoadingPage} from "../../Components/LoadingPage";
 
 /**
  * FinWell page component
@@ -76,6 +77,7 @@ export const FinWell = () => {
     setupScrollBar("#F0CA36");
     turnAllMenuStatesOff();
     highlight();
+    hideLoading();
   }, []);
 
   /**
@@ -174,6 +176,7 @@ export const FinWell = () => {
 
   return (
     <div className="finwell-page">
+      <LoadingPage/>
       <AnchorLinks callerType="finwell"/>
       <div className="intro-wrapper margin-bottom-80px">
         <img src={FinWellHeaderImage} alt="" className="finwell-header clickable" id="header-image" onClick={() => {

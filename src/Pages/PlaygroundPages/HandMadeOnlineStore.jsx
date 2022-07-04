@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import "../../Stylesheets/PlaygroundStylesheets/HandMadeOnlineStore.scss"
 import HandMadeHeaderImage from '../../Assets/HandMadePageAssets/HandMadeHeaderImage.png';
 import AnchorLinks from "../../Components/AnchorLinks";
@@ -14,6 +14,7 @@ import Image7 from '../../Assets/HandMadePageAssets/Image7.png'
 import Image8 from '../../Assets/HandMadePageAssets/Image8.png'
 import Image9 from '../../Assets/HandMadePageAssets/Image9.png'
 import Image10 from '../../Assets/HandMadePageAssets/Image10.png'
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const HandMadeOnlineStore = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ export const HandMadeOnlineStore = () => {
     setupScrollBar("#FFE789");
     turnAllMenuStatesOff();
     highlight();
+    hideLoading();
   }, []);
 
   /**
@@ -69,6 +71,7 @@ export const HandMadeOnlineStore = () => {
 
   return (
     <div className="handmade-online-store-page">
+      <LoadingPage/>
       <AnchorLinks callerType="handmade"/>
       <img className="image margin-bottom-40px anchor-area clickable" src={HandMadeHeaderImage} alt=""
            id="header-image"

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import "../../Stylesheets/Aprio.scss"
 import AprioHeaderImage from "../../Assets/AprioPageImages/AprioHeaderImage.png";
 import AprioProcess from '../../Assets/AprioPageImages/AprioProcess.png';
@@ -23,6 +23,7 @@ import {
   cursorLightModeOuterOpacity
 } from "../../Components/AnimatedCursor";
 import {RedirectLinks} from "../../Components/RedirectLinks";
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const Aprio = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ export const Aprio = () => {
     turnAllMenuStatesOff();
     highlight();
     setImpactAreaToHaveReversedCursorColours();
+    hideLoading();
   }, []);
 
   /**
@@ -104,6 +106,7 @@ export const Aprio = () => {
 
   return (
     <div className="aprio-page">
+      <LoadingPage/>
       <AnchorLinks callerType="aprio"/>
       <img className="full-width-image margin-bottom-40px anchor-area clickable" src={AprioHeaderImage} alt=""
            id="header-image"

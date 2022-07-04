@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import "../../Stylesheets/PlaygroundStylesheets/Recharge.scss"
 import RechargeHeaderImage from '../../Assets/RechargePageImages/RechargeHeaderImage.png';
 import UserResearch from '../../Assets/RechargePageImages/UserResearch.png';
@@ -9,6 +9,7 @@ import AboutPage from '../../Assets/RechargePageImages/AboutPage.png';
 import AnchorLinks from "../../Components/AnchorLinks";
 import {RedirectLinks} from "../../Components/RedirectLinks";
 import RechargeFinalImage from "../../Assets/RechargePageImages/RechargeFinalImage.png";
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const Recharge = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ export const Recharge = () => {
     setupScrollBar("#3E2D5A");
     turnAllMenuStatesOff();
     highlight();
+    hideLoading();
   }, []);
 
   /**
@@ -68,6 +70,7 @@ export const Recharge = () => {
 
   return (
     <div className="recharge-page">
+      <LoadingPage/>
       <AnchorLinks callerType="recharge"/>
       <img className="image margin-bottom-40px anchor-area clickable" src={RechargeHeaderImage} alt=""
            id="header-image"
@@ -124,10 +127,10 @@ export const Recharge = () => {
           <div className="center-column margin-bottom-0px">
             <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Team</h3>
             <p className="cs-body margin-bottom-0px margin-top-0px"><a
-              href="https://www.linkedin.com/in/pingchengzhang/">Ping
+              href="https://www.linkedin.com/in/pingchengzhang/" target="_blank">Ping
               Zhang</a> (Product Manager)</p>
             <p className="cs-body margin-bottom-0px margin-top-0px"><a
-              href="https://www.linkedin.com/in/mihail-soltan/">Mihail
+              href="https://www.linkedin.com/in/mihail-soltan/" target="_blank">Mihail
               Soltan</a> (Developer)</p>
             <p className="cs-body margin-bottom-0px margin-top-0px">Miguel
               S. (Developer)</p>

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import "../../Stylesheets/PlaygroundStylesheets/Solearn.scss"
 import SolearnHeaderImage from '../../Assets/SolearnPageAssets/SolearnHeaderImage.png';
 import SolearnFinalImage from '../../Assets/SolearnPageAssets/SolearnFinalImage.png';
@@ -7,6 +7,7 @@ import UserResearch from '../../Assets/SolearnPageAssets/UserResearch.png';
 import Brainstorming from '../../Assets/SolearnPageAssets/Brainstorming.png';
 import AnchorLinks from "../../Components/AnchorLinks";
 import {RedirectLinks} from "../../Components/RedirectLinks";
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const Solearn = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ export const Solearn = () => {
     setupScrollBar("#6FC7FF");
     turnAllMenuStatesOff();
     highlight();
+    hideLoading();
   }, []);
 
   /**
@@ -65,6 +67,7 @@ export const Solearn = () => {
 
   return (
     <div className="solearn-page">
+      <LoadingPage/>
       <AnchorLinks callerType="solearn"/>
       <img className="image margin-bottom-40px anchor-area clickable" src={SolearnHeaderImage} alt=""
            id="header-image"
@@ -118,7 +121,8 @@ export const Solearn = () => {
           </div>
           <div className="center-column margin-bottom-0px">
             <h3 className="cs-subtitle-2 margin-bottom-16px" id="project-type-title">Project Team</h3>
-            <p className="cs-body margin-bottom-0px margin-top-0px"><a href="https://www.linkedin.com/in/windfulsoul/">Aiden
+            <p className="cs-body margin-bottom-0px margin-top-0px"><a href="https://www.linkedin.com/in/windfulsoul/"
+                                                                       target="_blank">Aiden
               Ko Song</a> (UX Design)</p>
           </div>
           <div className="right-column margin-bottom-0px">

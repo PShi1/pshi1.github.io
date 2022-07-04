@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
+import {hideLoading, setPageToLightMode, setupScrollBar, turnAllMenuStatesOff} from "../../App";
 import "../../Stylesheets/PlaygroundStylesheets/FeaturedDrawings.scss"
 import AnchorLinks from "../../Components/AnchorLinks";
 import {RedirectLinks} from "../../Components/RedirectLinks";
@@ -11,6 +11,7 @@ import Image5 from '../../Assets/FeaturedDrawingsPageAssets/Image5.png'
 import Image6 from '../../Assets/FeaturedDrawingsPageAssets/Image6.png'
 import Image7 from '../../Assets/FeaturedDrawingsPageAssets/Image7.png'
 import Image8 from '../../Assets/FeaturedDrawingsPageAssets/Image8.png'
+import {LoadingPage} from "../../Components/LoadingPage";
 
 export const FeaturedDrawings = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ export const FeaturedDrawings = () => {
     setupScrollBar("#0FAB99");
     turnAllMenuStatesOff();
     highlight();
+    hideLoading();
   }, []);
 
   /**
@@ -55,6 +57,7 @@ export const FeaturedDrawings = () => {
 
   return (
     <div className="featured-drawings-page">
+      <LoadingPage/>
       <AnchorLinks callerType="handmade"/>
 
       <div className="drawing-area anchor-area" id="featured-drawings-gallery">
