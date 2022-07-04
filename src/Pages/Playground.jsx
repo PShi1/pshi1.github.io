@@ -227,6 +227,7 @@ export const Playground = () => {
             <p className="cs-body invert-target"/>
           </div>
 
+          
           <div className="tag-container invert" id="illustration-tag"
                onClick={() => handleTagClick("illustration-tag")}>
             <p className="cs-body invert-target"/>
