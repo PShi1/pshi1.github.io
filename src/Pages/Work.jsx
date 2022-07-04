@@ -6,8 +6,9 @@ import AprioCard from '../Assets/WorkPageImages/AprioCard.png';
 import AprioCardActive from '../Assets/WorkPageImages/AprioCardActive.png'
 import FinWellCard from '../Assets/WorkPageImages/FinWellCard.png';
 import FinWellCardActive from '../Assets/WorkPageImages/FinWellCardActive.png';
-import {fadeInIntro, hideScrollBar, setPageToDarkMode,} from "../App";
+import {fadeInIntro, hideLoading, hideScrollBar, setPageToDarkMode,} from "../App";
 import {Link} from "react-router-dom";
+import {LoadingPage} from "../Components/LoadingPage";
 
 /**
  * Page component for the main page
@@ -58,6 +59,9 @@ export const Work = () => {
     setPageToDarkMode();
     document.title = "Emma Li's Portfolio";
     hideScrollBar();
+    if (!window.location.href.includes("work")) {
+      hideLoading();
+    }
   }, []);
 
   useEffect(() => {
@@ -240,6 +244,7 @@ export const Work = () => {
 
   return (
     <div className="background">
+      <LoadingPage/>
       <div className="work-page">
         <div className="header-outer-div">
           <div className="row">

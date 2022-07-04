@@ -152,7 +152,7 @@ export function AnimatedCursor({
       transition: 'opacity 0.15s ease-in-out, transform 0.15s ease-in-out'
     },
     cursorInner: {
-      zIndex: 9999999,
+      zIndex: 9999500,
       position: 'fixed',
       borderRadius: '50%',
       width: innerSize + "vw",
@@ -163,7 +163,7 @@ export function AnimatedCursor({
       mixBlendMode: 'normal',
     },
     cursorOuter: {
-      zIndex: 9999998,
+      zIndex: 9999499,
       position: 'fixed',
       borderRadius: '50%',
       pointerEvents: 'none',

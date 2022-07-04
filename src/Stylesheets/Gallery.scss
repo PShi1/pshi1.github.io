@@ -41,6 +41,11 @@
     left: 3%;
   }
 
+  // Change this if the exported arrow opacity changes... This is to match left arrow already having opacity...
+  .right-arrow-container {
+    opacity: 0.85;
+  }
+
   .left-arrow-container:hover {
     transform: translateX(-10%);
     transition: transform 0.3s ease-in-out;

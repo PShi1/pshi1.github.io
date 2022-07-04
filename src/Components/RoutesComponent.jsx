@@ -19,7 +19,8 @@ export const RoutesComponent = () => {
     return (
       <Routes>
           <Route exact path="/" element={<Work/>}/>
-          <Route path="/about" element={<About/>}/>
+            <Route path="/work" element={<Work/>}/>
+            <Route path="/about" element={<About/>}/>
           <Route path="/playground" element={<Playground/>}/>
           <Route path="/finwell" element={<FinWell/>}/>
           <Route path="/pivot" element={<Pivot/>}/>

@@ -2,6 +2,10 @@ import '../Stylesheets/LoadingPage.scss';
 import React from "react";
 
 export const LoadingPage = () => {
+  if (window.location.href.includes("work")) {
+    return (<></>)
+  }
+
   return (
     <div className="loading-page" id="loading-page">
       <div className="spinner">

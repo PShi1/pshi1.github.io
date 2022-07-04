@@ -40,7 +40,7 @@ export const Header = () => {
     <div className="nav-wrapper active" id="nav-wrapper">
       <nav className="navbar" id="navbar-inner">
         <div className="logo">
-          <a href="/#/" className="">
+          <a href="/#/work" className="">
             <div className="invert-target">
               <img className="logo1" id="logo" src={Logo} alt="logo" width="80px" height="80px" align="center"/>
               <img className="logo2" id="logo" src={LogoActive} alt="logo" width="80px" height="80px" align="center"/>
@@ -54,7 +54,7 @@ export const Header = () => {
           </a>
         </div>
         <ul className="menu">
-          <li className="menu-item" id="work-menu-item"><Link to="/">
+          <li className="menu-item" id="work-menu-item"><Link to="/work">
             <h3>Work</h3>
           </Link></li>
           <li className="menu-item" id="play-menu-item"><Link to="/playground">
