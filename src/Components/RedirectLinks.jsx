@@ -11,6 +11,15 @@ export const RedirectLinks = ({currentPage, category}) => {
 
           <p className="redirect-font spacing">/</p>
 
+          {currentPage === "aprio" ?
+            <p onClick={() => window.location.assign("/#/aprio")}
+               className="redirect-font constant-underline">Aprio</p>
+            :
+            <p onClick={() => window.location.assign("/#/aprio")}
+               className="redirect-font underline-effect clickable">Aprio</p>}
+
+          <p className="redirect-font spacing">/</p>
+
           {currentPage === "access" ?
             <p onClick={() => window.location.assign("/#/access")}
                className="redirect-font constant-underline">Access</p>
@@ -27,14 +36,6 @@ export const RedirectLinks = ({currentPage, category}) => {
             <p onClick={() => window.location.assign("/#/finwell")}
                className="redirect-font underline-effect clickable">FinWell</p>}
 
-          <p className="redirect-font spacing">/</p>
-
-          {currentPage === "aprio" ?
-            <p onClick={() => window.location.assign("/#/aprio")}
-               className="redirect-font constant-underline">Aprio</p>
-            :
-            <p onClick={() => window.location.assign("/#/aprio")}
-               className="redirect-font underline-effect clickable">Aprio</p>}
         </div>
       </div>
     )
@@ -67,6 +68,15 @@ export const RedirectLinks = ({currentPage, category}) => {
 
           <p className="redirect-font spacing">/</p>
 
+          {currentPage === "recharge" ?
+            <p onClick={() => window.location.assign("/#/recharge")}
+               className="redirect-font constant-underline">Recharge</p>
+            :
+            <p onClick={() => window.location.assign("/#/recharge")}
+               className="redirect-font underline-effect clickable">Recharge</p>}
+
+          <p className="redirect-font spacing">/</p>
+
           {currentPage === "solearn" ?
             <p onClick={() => window.location.assign("/#/solearn")}
                className="redirect-font constant-underline">Solearn</p>
@@ -83,14 +93,6 @@ export const RedirectLinks = ({currentPage, category}) => {
             <p onClick={() => window.location.assign("/#/bookbuds")}
                className="redirect-font underline-effect clickable">BookBuds</p>}
 
-          <p className="redirect-font spacing">/</p>
-
-          {currentPage === "recharge" ?
-            <p onClick={() => window.location.assign("/#/recharge")}
-               className="redirect-font constant-underline">Recharge</p>
-            :
-            <p onClick={() => window.location.assign("/#/recharge")}
-               className="redirect-font underline-effect clickable">Recharge</p>}
         </div>
       </div>
     )
