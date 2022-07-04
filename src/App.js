@@ -206,12 +206,22 @@ export const copyEmail = (type) => {
 }
 
 export const hideLoading = () => {
+  disableScroll();
   setTimeout(() => {
     document.getElementById("loading-page").classList.add("active");
+    enableScroll();
     setTimeout(() => {
       document.getElementById("loading-page").classList.add("none");
     }, 700)
   }, 1700);
+}
+
+export const disableScroll = () => {
+  document.body.classList.add("stop-scrolling");
+}
+
+export const enableScroll = () => {
+  document.body.classList.remove("stop-scrolling");
 }
 
 export default App;
